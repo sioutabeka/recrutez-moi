@@ -1,0 +1,14 @@
+node_modules
+
+# Env (très important)
+.env
+.env.*
+
+# Prisma
+/src/generated/prisma
+
+# Logs
+*.log
+
+# OS
+.DS_Store

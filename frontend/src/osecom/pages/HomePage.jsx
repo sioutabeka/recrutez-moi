@@ -81,11 +81,9 @@ const EXPERIENCES = [
     place: "Paris · Station F (avec 42)",
     bullets: [
       "Arrivée quand l'équipe faisait 4 personnes · Rattachée au fondateur",
-      "Head of Community 1 an, puis Head of Marketing & Growth",
-      "Construit de zéro : refonte site + DA, blog, webinars, partenariats, stratégie d'acquisition",
-      "Machine à contenu : +50 interviews d'experts, +30 webinars, lead magnets",
-      "+20 000 freelances inscrits en organique — traction servant de preuve à la levée de 1,5 M€ (oct. 2022)",
-      "LeGratin depuis intégrée au groupe Nexoris · Encadrement 2 juniors (UX/UI + marketing)",
+      "Construction de toute la fonction marketing sur 3 ans",
+      "Encadrement de 2 juniors (UX/UI + marketing)",
+      "LeGratin depuis intégrée au groupe Nexoris",
     ],
   },
   {
@@ -305,14 +303,13 @@ export default function HomePage() {
       <VideoCV />
       <Signature />
       <LeGratinCase />
-      <CreatorCommunity />
+      <OseComCase />
       <ServicesOffer />
       <Story />
       <Timeline />
       <Formation />
       <Tools />
       <Method2 />
-      <HandsOn />
       <PortfolioStrip
         title={
           <h2>Mes réalisations</h2>
@@ -499,6 +496,49 @@ function LeGratinCase() {
   );
 }
 
+function OseComCase() {
+  return (
+    <section className="osecom-case" data-reveal>
+      <div className="osecom-case__inner">
+        <span className="mono">AUJOURD'HUI · OSECOM · INDÉPENDANTE</span>
+        <h2>Marketing indépendante — une dizaine de clients, deux offres, un outil IA maison.</h2>
+        <p className="osecom-case__intro">
+          Depuis 2018, en parallèle des postes salariés puis à temps plein
+          depuis 2024. En direct avec les marques, sans agence intermédiaire.
+          Forfaits 1-5 K€.
+        </p>
+        <div className="osecom-case__grid">
+          <div className="osecom-case__col">
+            <span className="mono mono--sm">PRODUCTION AUDIOVISUELLE & CONTENU</span>
+            <p>
+              Nuxe, Pierre Fabre, Blissim, Maison Farida, Capsul —
+              conception, tournage, montage, direction de shootings.
+            </p>
+          </div>
+          <div className="osecom-case__col">
+            <span className="mono mono--sm">DIGITAL COMPLET POUR TPE & PME</span>
+            <p>
+              MKL Energy (site + supports d'aide à la vente), FlatLab
+              (site + réseaux + automatisation), un pressing local
+              (outil de carrousels IA déployé).
+            </p>
+          </div>
+        </div>
+        <p className="osecom-case__closing">
+          <strong>L'outil de carrousels</strong> — construit en JavaScript,
+          assisté par IA — permet à une petite entreprise de publier
+          régulièrement sans recruter. Meilleure preuve concrète de la
+          combinaison marketing + code + IA.
+        </p>
+        <Link to={ROUTES.service("osecom")} className="link-arrow">
+          Voir le détail
+          <IconArrow size={14} />
+        </Link>
+      </div>
+    </section>
+  );
+}
+
 function CreatorCommunity() {
   return (
     <section className="cc-block" data-reveal>
@@ -541,7 +581,7 @@ const METHOD_STEPS = [
     num: "02",
     title: "Faire",
     tagline: "Transformer la stratégie en quelque chose de concret.",
-    text: "Contenus, social media, campagnes, newsletters, webinars, événements, supports, landing pages : je peux concevoir, produire et coordonner l'exécution.",
+    text: "Contenus, campagnes, newsletters, webinars, événements, supports, landing pages : je peux concevoir, produire, coordonner l'exécution — et piloter les prestataires, l'équipe et le budget qui vont avec.",
   },
   {
     num: "03",
@@ -629,19 +669,14 @@ function Story() {
           une idée qui sort dans les temps et qui produit un chiffre.
         </p>
         <p>
-          <strong>Ce que j'ai construit.</strong> Quand je suis arrivée
-          chez LeGratin.io, plateforme de freelances incubée à Station F
-          avec 42, on était quatre. J'ai commencé comme Head of Community :
-          faire venir des développeurs freelance, qui sont l'une des
-          audiences les plus difficiles à convaincre en marketing. Au bout
-          d'un an je suis devenue Head of Marketing & Growth, rattachée au
-          fondateur, avec deux personnes à encadrer. J'ai construit le
-          blog, les webinars, les partenariats, les lead magnets, la
-          stratégie d'acquisition — 50 interviews d'experts et de
-          directeurs techniques, une trentaine de webinars, plus de
-          20 000 freelances inscrits, presque entièrement en organique.
-          Ces chiffres ont servi de traction pour lever 1,5 M€. J'étais
-          aussi actionnaire. LeGratin a depuis rejoint le groupe Nexoris.
+          <strong>Ce que j'ai construit.</strong> Chez LeGratin.io,
+          plateforme de freelances incubée à Station F avec 42, je suis
+          arrivée quand l'équipe était à quatre. J'y ai construit toute
+          la fonction marketing pendant trois ans, d'abord comme Head of
+          Community puis comme Head of Marketing & Growth, rattachée au
+          fondateur, avec deux personnes à encadrer. J'étais aussi
+          actionnaire. Le détail des dispositifs et des résultats est
+          plus haut sur la page.
         </p>
         <p>
           <strong>Où je vais.</strong> À Station F, j'étais entourée de

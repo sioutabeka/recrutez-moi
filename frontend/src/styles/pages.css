@@ -1800,6 +1800,49 @@
 }
 
 /* ─────────────────────────────────────────────
+   Home — OseCom mini case (aujourd'hui)
+   ───────────────────────────────────────────── */
+.osecom-case{ max-width:var(--maxw); margin:0 auto; padding:40px var(--pad); }
+.osecom-case__inner{
+  background:var(--paper); border:1px solid rgba(42,24,16,.12);
+  border-radius:24px; padding:36px 26px;
+}
+.osecom-case__inner .mono{
+  display:block; margin-bottom:14px; color:var(--olive);
+}
+.osecom-case__inner h2{
+  font-family:var(--serif); font-size:clamp(22px, 3vw, 34px);
+  line-height:1.2; letter-spacing:-.02em; font-weight:700;
+  margin-bottom:14px; max-width:760px;
+}
+.osecom-case__intro{
+  font-size:14px; line-height:1.6; color:var(--brown-s);
+  margin-bottom:22px; max-width:640px;
+}
+.osecom-case__grid{
+  display:grid; grid-template-columns:1fr; gap:18px;
+  padding:20px 0; margin-bottom:20px;
+  border-top:1px solid rgba(42,24,16,.08);
+  border-bottom:1px solid rgba(42,24,16,.08);
+}
+.osecom-case__col span{
+  display:block; margin-bottom:8px;
+  color:var(--brown); font-weight:500;
+}
+.osecom-case__col p{
+  font-size:13px; line-height:1.55; color:var(--brown-s);
+}
+.osecom-case__closing{
+  font-size:14px; line-height:1.6; color:var(--brown);
+  margin-bottom:14px; max-width:640px;
+}
+.osecom-case__closing strong{ color:var(--olive); }
+@media (min-width: 780px){
+  .osecom-case__inner{ padding:48px 40px; }
+  .osecom-case__grid{ grid-template-columns:1fr 1fr; gap:32px; }
+}
+
+/* ─────────────────────────────────────────────
    Home — Creator/Community + Hands-on blocks
    ───────────────────────────────────────────── */
 .cc-block{

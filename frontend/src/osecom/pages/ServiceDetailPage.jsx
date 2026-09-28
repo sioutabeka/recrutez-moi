@@ -23,7 +23,9 @@ export default function ServiceDetailPage() {
       {service.solution && <SolutionSection solution={service.solution} />}
       {service.offer && <OfferSection offer={service.offer} />}
       <SymptomsSection service={service} />
-      <GallerySection service={service} />
+      {service.gallery && service.gallery.length > 0 && (
+        <GallerySection service={service} />
+      )}
       {service.tools && service.tools.length > 0 && (
         <ToolsSection tools={service.tools} />
       )}

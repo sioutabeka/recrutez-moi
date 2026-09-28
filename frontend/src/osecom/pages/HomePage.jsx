@@ -305,10 +305,6 @@ export default function HomePage() {
       <LeGratinCase />
       <OseComCase />
       <ServicesOffer />
-      <Story />
-      <Timeline />
-      <Formation />
-      <Tools />
       <Method2 />
       <PortfolioStrip
         title={

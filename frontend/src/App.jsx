@@ -24,7 +24,7 @@ export default function App() {
           <Route path="/services/:slug" element={<ServiceDetailPage />} />
           <Route path={ROUTES.ugc} element={<UGCPage />} />
           <Route path={ROUTES.blog} element={<BlogPage />} />
-          <Route path={ROUTES.about} element={<Navigate to={ROUTES.home} replace />} />
+          <Route path={ROUTES.about} element={<AboutPage />} />
           <Route path={ROUTES.contact} element={<ContactPage />} />
           <Route path={ROUTES.portfolio} element={<PortfolioPage />} />
           <Route path="/legal/:slug" element={<LegalPage />} />

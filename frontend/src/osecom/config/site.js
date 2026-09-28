@@ -36,6 +36,7 @@ export const BRANDS = [
 
 export const NAV_ITEMS = [
   { to: ROUTES.home, label: "Home", end: true },
+  { to: ROUTES.about, label: "Portrait" },
   { to: ROUTES.services, label: "Expérience" },
   { to: ROUTES.portfolio, label: "Réalisations" },
 ];

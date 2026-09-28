@@ -13,42 +13,38 @@ import { useHeroDrift } from "../lib/hooks";
 import { ROUTES } from "../config/routes";
 import { BRANDS, SITE } from "../config/site";
 
-const HERO_LAST_WORDS = ["capture", "rentabilité", "mécanique"];
 const HERO_LINES = [
-  "Marketeuse polyvalente.",
-  ["Obsédée par la ", <WordRotator key="rot" words={HERO_LAST_WORDS} />, " de l'attention."],
+  "Je transforme les communautés",
+  "en leviers de croissance.",
 ];
 
 const SIGNATURE_PILLARS = [
   {
-    title: "Social media, contenu & programmation éditoriale",
-    tagline: "Je définis ce qu'on raconte, et je produis ce qui le raconte.",
+    title: "Community",
+    tagline: "Construire des communautés qui s'engagent.",
     skills:
-      "Stratégie social media et ligne éditoriale multi-marques · calendrier éditorial · community management et modération · tournage, montage, retouche photo · UGC, Reels, TikTok, carrousels · programmation d'interviews, de webinars et de talks · identification et recrutement d'intervenants · production assistée par IA.",
-    proof:
-      "50 interviews et 30 webinars produits chez LeGratin.io, avec des directeurs techniques et des experts du secteur. Vidéos tournées et montées pour Nuxe.",
+      "Animation, programmes ambassadeurs, créateurs, influence, partenariats : je construis des écosystèmes qui donnent envie de participer, revenir et recommander.",
+    proof: null,
   },
   {
-    title: "Supports, web & outils",
-    tagline: "Tout ce qu'il faut construire autour du contenu pour qu'il serve à quelque chose.",
+    title: "Creator & Content",
+    tagline: "Créer des contenus qui donnent envie d'agir.",
     skills:
-      "Sites et landing pages · lead magnets · supports print — brochures, fiches produits, flyers, plaquettes · présentations et supports d'aide à la vente · documentation corporate · outils sur mesure.",
-    proof:
-      "Un outil de carrousels codé en JavaScript, qui permet à un commerce de proximité de publier régulièrement sans embaucher personne. Site, outil de présentation et supports commerciaux pour MKL Energy.",
+      "Stratégie éditoriale, social content, UGC, formats courts, influence : je conçois les dispositifs et peux aussi produire les contenus moi-même.",
+    proof: null,
   },
   {
-    title: "Growth, communauté & acquisition",
-    tagline: "Faire venir des gens — et savoir pourquoi ils sont venus.",
+    title: "Growth",
+    tagline: "Relier l'audience au business.",
     skills:
-      "Stratégie d'acquisition · croissance organique · construction et animation de communautés · influence et activation de créateurs · funnels et automatisation · CRM et emailing — HubSpot, Brevo, Lemlist · événements et partenariats · KPI et reporting.",
-    proof:
-      "+20 000 freelances inscrits en organique, dont une majorité de développeurs. Cette traction a financé une levée de 1,5 M€.",
+      "Acquisition, activation, conversion, CRM, paid, analytics : je cherche les leviers qui transforment une audience en utilisateurs et des utilisateurs en croissance.",
+    proof: null,
   },
   {
-    title: "Ce sur quoi je veux me spécialiser",
-    tagline: "Ma seule condition pour un poste : pouvoir exécuter ce que je sais faire, et avoir l'espace pour apprendre le reste.",
+    title: "Brand",
+    tagline: "Donner un cap à l'ensemble.",
     skills:
-      "Le paid sur de plus gros volumes — Meta, TikTok, Google Ads · l'acquisition et le référencement sur les réseaux sociaux · le SEA, après des années de SEO · et le référencement dans les LLM, que presque aucune direction marketing ne sait encore adresser.",
+      "Positionnement, ligne éditoriale, ton et identité : parce qu'une communauté se construit plus facilement autour d'une marque qui sait ce qu'elle veut raconter.",
     proof: null,
   },
 ];
@@ -306,13 +302,17 @@ export default function HomePage() {
   return (
     <main className="page page--home">
       <Hero />
+      <VideoCV />
       <Signature />
+      <LeGratinCase />
+      <CreatorCommunity />
       <ServicesOffer />
       <Story />
       <Timeline />
       <Formation />
       <Tools />
-      <Method />
+      <Method2 />
+      <HandsOn />
       <PortfolioStrip
         title={
           <h2>Mes réalisations</h2>
@@ -334,18 +334,23 @@ function Hero() {
       <div className="hero__row">
         <div className="hero__col-text" ref={textRef}>
           <div className="hero__meta">
-            <span className="mono">HI · MOI C'EST ESSIA · MARKETING & CONTENUS</span>
-            <span className="mono"> · PARIS · EN RECHERCHE DE CDI</span>
+            <span className="mono">HI, MOI C'EST ESSIA · MARKETING & CONTENUS</span>
           </div>
 
           <MorphHeadline lines={HERO_LINES} accentIdx={-1} />
 
           <div className="hero__base">
             <p className="hero__sub">
-              Pense la marque, produit le contenu, code l'outil, mesure
-              l'impact — un seul profil pour ce que quatre feraient à moitié.
+              7 ans d'expérience en marketing et communication, dont 3 ans
+              comme Head of Marketing & Growth chez LeGratin.io. J'y ai
+              piloté l'acquisition et l'activation de +20 000 freelances en
+              1 an, en combinant contenu, SEO, outbound, communauté,
+              partenariats et automatisation.
               <br />
-              9 ans · CDI Paris · Trilingue FR·EN·AR · dispo immédiate.
+              <br />
+              Aujourd'hui, je construis des stratégies qui font travailler
+              ensemble contenu, créateurs, communautés et acquisition — de
+              l'idée au pilotage des résultats.
             </p>
 
             <div className="hero__cta">
@@ -357,11 +362,15 @@ function Hero() {
               >
                 Télécharger mon CV
               </a>
-              <a href="#experiences" className="btn btn--ghost">
-                Voir mon parcours
+              <a href="/portfolio" className="btn btn--ghost">
+                Voir mes réalisations
                 <IconArrow />
               </a>
             </div>
+
+            <p className="hero__meta-bottom mono">
+              CDI · Paris / Île-de-France · Disponible immédiatement · FR · EN · AR
+            </p>
           </div>
         </div>
 
@@ -370,8 +379,29 @@ function Hero() {
             <img src={essiaHome} alt="Essia Ben Kheder" className="hero__img" />
           </div>
           <div className="hero__chip hero__chip--2">
-            <span className="mono">marque · contenu · communauté · croissance</span>
+            <span className="mono">Growth · Community · Creator Marketing · Content</span>
           </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function VideoCV() {
+  return (
+    <section className="video-cv" data-reveal>
+      <div className="video-cv__head">
+        <span className="mono">MA VIDÉO DE PRÉSENTATION</span>
+        <h2>Découvre qui je suis en 60 secondes.</h2>
+        <p>Le plus rapide pour comprendre mon approche, mon parcours et ce que je cherche.</p>
+      </div>
+      <div className="video-cv__frame">
+        <div className="video-cv__placeholder">
+          <svg viewBox="0 0 60 60" width="60" height="60" className="video-cv__play" aria-hidden="true">
+            <circle cx="30" cy="30" r="28" fill="none" stroke="currentColor" strokeWidth="2" />
+            <path d="M 24 20 L 42 30 L 24 40 Z" fill="currentColor" />
+          </svg>
+          <p className="mono video-cv__label">VIDÉO À VENIR</p>
         </div>
       </div>
     </section>
@@ -382,9 +412,9 @@ function Signature() {
   return (
     <section className="signature" data-reveal>
       <div className="signature__head">
-        <span className="mono">CE QUE JE FAIS</span>
-        <h2>Quatre terrains — trois que je maîtrise, un que je veux ouvrir.</h2>
-        <p>Depuis 9 ans, entre régie, agence, plateforme tech et indépendante. Ce que je fais tous les jours, et ce que je veux ajouter dans mon prochain poste.</p>
+        <span className="mono">MES QUATRE TERRAINS</span>
+        <h2>Une approche transverse du marketing.</h2>
+        <p>Un objectif : transformer l'attention en croissance. Quatre terrains complémentaires que je fais travailler ensemble.</p>
       </div>
 
       <div className="signature__grid">
@@ -423,6 +453,129 @@ function Trust() {
             {b}
           </span>
         ))}
+      </div>
+    </section>
+  );
+}
+
+function LeGratinCase() {
+  return (
+    <section className="legratin-case" data-reveal>
+      <div className="legratin-case__inner">
+        <span className="mono">LEGRATIN.IO · HEAD OF MARKETING & GROWTH · CODIR</span>
+        <h2>Construire une communauté qui devient un moteur de croissance.</h2>
+        <p className="legratin-case__intro">
+          LeGratin.io était une plateforme de freelances. Mon rôle : développer
+          l'acquisition, l'activation et l'engagement de cette communauté.
+          J'ai construit et piloté plusieurs leviers en parallèle :
+        </p>
+        <ul className="legratin-case__levers">
+          <li>Contenu & SEO</li>
+          <li>Outbound & automatisation LinkedIn</li>
+          <li>Webinars & newsletters</li>
+          <li>Animation communautaire</li>
+          <li>Partenariats B2B</li>
+          <li>Acquisition & conversion</li>
+        </ul>
+        <div className="legratin-case__stat">
+          <span className="legratin-case__num">+20 000</span>
+          <span className="legratin-case__label">freelances acquis et activés en 1 an</span>
+        </div>
+        <p className="legratin-case__closing">
+          Une expérience où j'ai appris à considérer la communauté non comme
+          une audience à animer, mais comme un véritable actif de croissance.
+        </p>
+        <Link to={ROUTES.service("legratin")} className="link-arrow">
+          Voir le case study
+          <IconArrow size={14} />
+        </Link>
+      </div>
+    </section>
+  );
+}
+
+function CreatorCommunity() {
+  return (
+    <section className="cc-block" data-reveal>
+      <div className="cc-block__head">
+        <span className="mono">CREATOR · COMMUNITY · INFLUENCE</span>
+        <h2>Des audiences aux écosystèmes.</h2>
+      </div>
+      <div className="cc-block__body">
+        <p>
+          Je travaille sur les dispositifs qui permettent à une marque de ne
+          pas dépendre uniquement de sa propre prise de parole.
+        </p>
+        <p>
+          Créateurs, UGC, influence, communautés, partenariats : j'identifie
+          les bons profils, imagine les formats et construis les mécaniques
+          d'activation.
+        </p>
+        <p>
+          L'objectif n'est pas seulement de générer de la visibilité. C'est de
+          créer des relais capables de contribuer à l'acquisition, à
+          l'engagement et à la fidélisation.
+        </p>
+        <Link to={ROUTES.portfolio} className="link-arrow">
+          Voir mes réalisations
+          <IconArrow size={14} />
+        </Link>
+      </div>
+    </section>
+  );
+}
+
+const METHOD_STEPS = [
+  ["01", "Comprendre", "Je pars du problème, de la cible et de l'objectif business avant de choisir un canal."],
+  ["02", "Tester", "Je construis rapidement un premier dispositif : contenu, programme créateurs, campagne, partenariat ou mécanique communautaire."],
+  ["03", "Mesurer", "Je définis les KPI dès le départ : acquisition, engagement, activation, conversion, rétention ou contribution au business."],
+  ["04", "Itérer", "Je garde ce qui fonctionne, j'arrête ce qui ne fonctionne pas et je réalloue l'effort vers les leviers qui créent le plus de valeur."],
+];
+
+function Method2() {
+  return (
+    <section className="about-pillars" data-reveal>
+      <h2>Ma façon de travailler.</h2>
+      <p className="about-pillars__intro">
+        Un cycle simple, appliqué à chaque mission — de la stratégie éditoriale
+        à un programme créateurs, d'une campagne paid à un dispositif
+        communautaire.
+      </p>
+      <div className="about-pillars__grid">
+        {METHOD_STEPS.map(([n, title, text], i) => (
+          <div
+            key={n}
+            className="about-pillars__card"
+            data-reveal
+            style={{ "--delay": i * 0.08 + "s" }}
+          >
+            <span className="about-pillars__n">{n}</span>
+            <h4>{title}</h4>
+            <p>{text}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function HandsOn() {
+  return (
+    <section className="cc-block cc-block--dark" data-reveal>
+      <div className="cc-block__head">
+        <span className="mono">STRATÉGIE + EXÉCUTION</span>
+        <h2>Je peux penser le dispositif et le mettre en œuvre.</h2>
+      </div>
+      <div className="cc-block__body">
+        <p>
+          Stratégie, copywriting, contenu, tournage, montage, landing pages,
+          automatisation : je suis à l'aise entre la réflexion et l'exécution.
+        </p>
+        <p>
+          Cette capacité me permet de tester rapidement, d'apprendre du
+          terrain et d'éviter de transformer chaque idée en projet à
+          six semaines.
+        </p>
       </div>
     </section>
   );
@@ -670,10 +823,24 @@ function Method() {
 function FinalCta() {
   return (
     <section className="about-cta">
-      <h2>Un poste à me proposer ?</h2>
-      <a href={SITE.cvUrl} target="_blank" rel="noreferrer" className="btn btn--olive">
-        Télécharger mon CV
-      </a>
+      <span className="mono about-cta__eyebrow">VOUS RECRUTEZ ?</span>
+      <h2>Parlons Growth, Community & Marketing.</h2>
+      <p className="about-cta__text">
+        Vous cherchez quelqu'un capable de construire une communauté,
+        développer des programmes créateurs et relier ces dispositifs à des
+        objectifs d'acquisition et d'engagement ? Je serais ravie d'échanger.
+      </p>
+      <p className="about-cta__meta mono">
+        CDI · Growth · Community · Marketing · Content · Paris / Île-de-France
+      </p>
+      <div className="about-cta__row">
+        <Link to={ROUTES.contact} className="btn btn--olive">
+          Me contacter
+        </Link>
+        <a href={SITE.cvUrl} target="_blank" rel="noreferrer" className="btn btn--ghost">
+          Télécharger mon CV
+        </a>
+      </div>
     </section>
   );
 }

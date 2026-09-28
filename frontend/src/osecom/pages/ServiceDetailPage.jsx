@@ -1,8 +1,12 @@
 import { Link, Navigate, useParams } from "react-router-dom";
 import IconArrow from "../components/IconArrow";
+import Placeholder from "../components/Placeholder";
 import { SERVICES } from "../data/services";
 import { ROUTES } from "../config/routes";
 import { SITE } from "../config/site";
+
+// Palette de tons pour les tuiles galerie placeholders
+const GALLERY_TONES = ["rose", "olive", "sky", "cream", "yellow", "brown"];
 
 export default function ServiceDetailPage() {
   const { slug } = useParams();
@@ -19,6 +23,7 @@ export default function ServiceDetailPage() {
       {service.solution && <SolutionSection solution={service.solution} />}
       {service.offer && <OfferSection offer={service.offer} />}
       <SymptomsSection service={service} />
+      <GallerySection service={service} />
       {service.tools && service.tools.length > 0 && (
         <ToolsSection tools={service.tools} />
       )}
@@ -32,9 +37,9 @@ export default function ServiceDetailPage() {
 function ServiceHero({ service }) {
   return (
     <section className="srvd-hero">
-      <Link to={ROUTES.services} className="srvd-back">
+      <Link to="/#experiences" className="srvd-back">
         <BackArrow />
-        <span>Toutes mes expertises</span>
+        <span>Retour à mes expériences</span>
       </Link>
       <span className="mono srvd-hero__tag">{service.tag}</span>
       <h1>{service.titleEN || service.title + "."}</h1>
@@ -102,7 +107,7 @@ function OfferSection({ offer }) {
   return (
     <section className="srvd-offer" data-reveal>
       <div className="srvd-offer__head">
-        <span className="mono">L'OFFRE</span>
+        <span className="mono">CE QUE J'AI CONSTRUIT</span>
         <h2>{offer.title}</h2>
       </div>
       <div className="srvd-offer__grid">
@@ -118,6 +123,13 @@ function OfferSection({ offer }) {
             </span>
             <h4>{card.title}</h4>
             <p>{card.text}</p>
+            {card.bullets && card.bullets.length > 0 && (
+              <ul className="srvd-offer__bullets">
+                {card.bullets.map((b) => (
+                  <li key={b}>{b}</li>
+                ))}
+              </ul>
+            )}
           </div>
         ))}
       </div>
@@ -182,16 +194,48 @@ function ResultsSection({ results }) {
   );
 }
 
+function GallerySection({ service }) {
+  // Nombre de tuiles selon la richesse du contenu (LeGratin/OseCom en ont plus)
+  const richSlugs = ["legratin", "outil-carrousels", "osecom"];
+  const tileCount = richSlugs.includes(service.slug) ? 6 : 4;
+  const tiles = Array.from({ length: tileCount }, (_, i) => ({
+    tone: GALLERY_TONES[(i + service.slug.length) % GALLERY_TONES.length],
+    label: `${service.title.split(" ")[0].toLowerCase()} ${String(i + 1).padStart(2, "0")}`,
+  }));
+
+  return (
+    <section className="srvd-gallery" data-reveal>
+      <span className="mono">SUPPORTS & RÉALISATIONS</span>
+      <h2>Un aperçu du travail livré.</h2>
+      <p className="srvd-gallery__note">
+        Visuels réels en cours d'ajout — mockups, écrans et supports produits pendant l'expérience.
+      </p>
+      <div className="srvd-gallery__grid">
+        {tiles.map((tile, i) => (
+          <div
+            key={i}
+            className="srvd-gallery__tile"
+            data-reveal
+            style={{ "--delay": i * 0.05 + "s" }}
+          >
+            <Placeholder ratio="4/3" label={tile.label} tone={tile.tone} />
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
 function FinalCta({ service }) {
   const cta = service.finalCta;
   return (
     <section className="srvd-cta" data-reveal>
       <div className="srvd-cta__card">
-        <span className="mono">PRÊT À COMMENCER ?</span>
-        <h2>{cta?.title || "On en parle"} 30 minutes ?</h2>
+        <span className="mono">CETTE EXPÉRIENCE T'INTÉRESSE ?</span>
+        <h2>{cta?.title || "On en parle ?"}</h2>
         <p>
           {cta?.text ||
-            "Un appel pour cadrer votre besoin, voir si c'est aligné, et savoir où on peut aller ensemble."}
+            "Un échange pour comprendre comment cette expérience peut nourrir ton besoin."}
         </p>
 
         {(cta?.forWho || cta?.notForWho) && (
@@ -213,10 +257,10 @@ function FinalCta({ service }) {
 
         <div className="srvd-cta__row">
           <Link to={ROUTES.contact} className="btn btn--rose">
-            {service.primaryCta || "Prendre rendez-vous"}
+            {service.primaryCta || "Me contacter"}
           </Link>
-          <Link to={ROUTES.services} className="btn btn--ghost">
-            Voir tous les services
+          <Link to="/#experiences" className="btn btn--ghost">
+            Voir toutes mes expériences
           </Link>
         </div>
       </div>
@@ -227,7 +271,7 @@ function FinalCta({ service }) {
 function NextService({ next }) {
   return (
     <section className="srvd-next" data-reveal>
-      <span className="mono">SERVICE SUIVANT</span>
+      <span className="mono">EXPÉRIENCE SUIVANTE</span>
       <Link to={ROUTES.service(next.slug)} className="srvd-next__link">
         <span>{next.title}</span>
         <IconArrow size={22} />

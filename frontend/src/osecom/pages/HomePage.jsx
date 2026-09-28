@@ -14,37 +14,37 @@ import { ROUTES } from "../config/routes";
 import { BRANDS, SITE } from "../config/site";
 
 const HERO_LINES = [
-  "Je transforme les communautés",
-  "en leviers de croissance.",
+  "Je transforme le marketing",
+  "en moteur de croissance.",
 ];
 
 const SIGNATURE_PILLARS = [
   {
-    title: "Community",
-    tagline: "Construire des communautés qui s'engagent.",
+    title: "Stratégie & Growth",
+    tagline: "Transformer les enjeux business en leviers de croissance.",
     skills:
-      "Animation, programmes ambassadeurs, créateurs, influence, partenariats : je construis des écosystèmes qui donnent envie de participer, revenir et recommander.",
+      "Positionnement, acquisition, activation, parcours, SEO, paid, outbound, CRM, analytics, automatisation : je réfléchis aux canaux, aux audiences et aux mécaniques qui permettent de générer de la croissance.",
     proof: null,
   },
   {
-    title: "Creator & Content",
-    tagline: "Créer des contenus qui donnent envie d'agir.",
+    title: "Content & Social",
+    tagline: "Faire exister une marque dans le réel.",
     skills:
-      "Stratégie éditoriale, social content, UGC, formats courts, influence : je conçois les dispositifs et peux aussi produire les contenus moi-même.",
+      "Stratégie éditoriale, social media, copywriting, formats courts, UGC, webinars, interviews, newsletters, supports digitaux : je conçois les contenus, mais je peux aussi les produire et les déployer.",
     proof: null,
   },
   {
-    title: "Growth",
-    tagline: "Relier l'audience au business.",
+    title: "Community & Activation",
+    tagline: "Créer de l'engagement au-delà de l'audience.",
     skills:
-      "Acquisition, activation, conversion, CRM, paid, analytics : je cherche les leviers qui transforment une audience en utilisateurs et des utilisateurs en croissance.",
+      "Community building, animation, événements, partenariats, créateurs, ambassadeurs, expériences : je transforme une audience en communauté et la communauté en levier d'acquisition, d'engagement et de fidélisation.",
     proof: null,
   },
   {
-    title: "Brand",
-    tagline: "Donner un cap à l'ensemble.",
+    title: "Brand, Digital & AI",
+    tagline: "Construire et faire évoluer l'écosystème de marque.",
     skills:
-      "Positionnement, ligne éditoriale, ton et identité : parce qu'une communauté se construit plus facilement autour d'une marque qui sait ce qu'elle veut raconter.",
+      "Branding, positionnement, identité, site, expérience digitale, coordination de prestataires et intégration de l'IA dans les process et la création : je relie la marque, les outils et les nouveaux usages pour faire évoluer le dispositif marketing.",
     proof: null,
   },
 ];
@@ -334,23 +334,28 @@ function Hero() {
       <div className="hero__row">
         <div className="hero__col-text" ref={textRef}>
           <div className="hero__meta">
-            <span className="mono">HI, MOI C'EST ESSIA · MARKETING & CONTENUS</span>
+            <span className="mono">HI, MOI C'EST ESSIA · MARKETING, GROWTH & CONTENT</span>
           </div>
 
           <MorphHeadline lines={HERO_LINES} accentIdx={-1} />
 
           <div className="hero__base">
             <p className="hero__sub">
-              7 ans d'expérience en marketing et communication, dont 3 ans
-              comme Head of Marketing & Growth chez LeGratin.io. J'y ai
-              piloté l'acquisition et l'activation de +20 000 freelances en
-              1 an, en combinant contenu, SEO, outbound, communauté,
-              partenariats et automatisation.
+              9 ans d'expérience en marketing et communication, dont 3 ans
+              chez LeGratin.io à piloter le marketing, l'acquisition et la
+              communauté.
               <br />
               <br />
-              Aujourd'hui, je construis des stratégies qui font travailler
-              ensemble contenu, créateurs, communautés et acquisition — de
-              l'idée au pilotage des résultats.
+              En 1 an, j'ai contribué à l'acquisition et à l'activation de{" "}
+              <strong>+20 000 freelances</strong>, en combinant contenu, SEO,
+              outbound, paid acquisition, partenariats, événements et
+              community building.
+              <br />
+              <br />
+              Aujourd'hui, je conçois et pilote des stratégies qui font
+              travailler ensemble{" "}
+              <strong>contenu, social media, acquisition, communautés et IA</strong>{" "}
+              — avec une obsession : transformer l'attention en croissance.
             </p>
 
             <div className="hero__cta">
@@ -526,10 +531,24 @@ function CreatorCommunity() {
 }
 
 const METHOD_STEPS = [
-  ["01", "Comprendre", "Je pars du problème, de la cible et de l'objectif business avant de choisir un canal."],
-  ["02", "Tester", "Je construis rapidement un premier dispositif : contenu, programme créateurs, campagne, partenariat ou mécanique communautaire."],
-  ["03", "Mesurer", "Je définis les KPI dès le départ : acquisition, engagement, activation, conversion, rétention ou contribution au business."],
-  ["04", "Itérer", "Je garde ce qui fonctionne, j'arrête ce qui ne fonctionne pas et je réalloue l'effort vers les leviers qui créent le plus de valeur."],
+  {
+    num: "01",
+    title: "Penser",
+    tagline: "Comprendre le problème avant de produire.",
+    text: "Positionnement, stratégie marketing, acquisition, parcours, audiences, canaux, objectifs et KPI : je pars du business et construis une stratégie cohérente autour.",
+  },
+  {
+    num: "02",
+    title: "Faire",
+    tagline: "Transformer la stratégie en quelque chose de concret.",
+    text: "Contenus, social media, campagnes, newsletters, webinars, événements, supports, landing pages : je peux concevoir, produire et coordonner l'exécution.",
+  },
+  {
+    num: "03",
+    title: "Mesurer",
+    tagline: "Regarder ce qui fonctionne. Puis l'améliorer.",
+    text: "Données, acquisition, engagement, conversion, SEO, paid, CRM, analytics : je mesure les résultats, identifie les leviers et ajuste la stratégie en conséquence.",
+  },
 ];
 
 function Method2() {
@@ -542,16 +561,17 @@ function Method2() {
         communautaire.
       </p>
       <div className="about-pillars__grid">
-        {METHOD_STEPS.map(([n, title, text], i) => (
+        {METHOD_STEPS.map((step, i) => (
           <div
-            key={n}
+            key={step.num}
             className="about-pillars__card"
             data-reveal
             style={{ "--delay": i * 0.08 + "s" }}
           >
-            <span className="about-pillars__n">{n}</span>
-            <h4>{title}</h4>
-            <p>{text}</p>
+            <span className="about-pillars__n">{step.num}</span>
+            <h4>{step.title}</h4>
+            <p className="about-pillars__tagline">{step.tagline}</p>
+            <p>{step.text}</p>
           </div>
         ))}
       </div>

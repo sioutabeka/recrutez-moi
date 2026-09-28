@@ -37,7 +37,7 @@ export default function ServiceDetailPage() {
 function ServiceHero({ service }) {
   return (
     <section className="srvd-hero">
-      <Link to="/#experiences" className="srvd-back">
+      <Link to={ROUTES.services} className="srvd-back">
         <BackArrow />
         <span>Retour à mes expériences</span>
       </Link>
@@ -259,7 +259,7 @@ function FinalCta({ service }) {
           <Link to={ROUTES.contact} className="btn btn--rose">
             {service.primaryCta || "Me contacter"}
           </Link>
-          <Link to="/#experiences" className="btn btn--ghost">
+          <Link to={ROUTES.services} className="btn btn--ghost">
             Voir toutes mes expériences
           </Link>
         </div>

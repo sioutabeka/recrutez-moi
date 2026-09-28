@@ -38,6 +38,12 @@
 }
 .hero__meta{ display:flex; gap:14px; align-items:center; flex-wrap:wrap; justify-content:center; }
 .hero__base{ max-width:520px; margin-top:0; align-self:center; }
+.hero__lede{
+  font-family:var(--serif); font-style:italic;
+  font-size:clamp(15px, 2vw, 20px); line-height:1.4;
+  color:var(--brown); margin:6px auto 20px;
+  max-width:520px;
+}
 .hero__sub{ font-size:14px; line-height:1.55; color:var(--brown-s); margin-bottom:24px; }
 .hero__sub .mono{ display:inline-block; margin-right:6px; }
 .hero__cta{ display:flex; gap:12px; flex-wrap:wrap; justify-content:center; }
@@ -1120,7 +1126,12 @@
   font-family:var(--serif); font-size:22px; font-weight:600;
   margin-bottom:10px; letter-spacing:-.015em;
 }
-.about-pillars__card p{ font-size:14px; color:var(--brown-s); line-height:1.55; }
+.about-pillars__card p{ font-size:14px; color:var(--brown-s); line-height:1.55; margin-bottom:8px; }
+.about-pillars__card p:last-child{ margin-bottom:0; }
+.about-pillars__tagline{
+  font-family:var(--serif); font-style:italic;
+  font-size:15px !important; color:var(--brown) !important;
+}
 
 .about-cta{ text-align:center; padding:50px var(--pad) 80px; max-width:var(--maxw); margin:0 auto; }
 .about-cta__eyebrow{ display:block; margin-bottom:14px; color:var(--olive); }

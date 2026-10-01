@@ -6,7 +6,7 @@ import WordRotator from "../components/WordRotator";
 import { useHeroDrift } from "../lib/hooks";
 import { ROUTES } from "../config/routes";
 import { SITE } from "../config/site";
-import aboutHero from "../../assets/about-hero.jpg";
+import aboutHero from "../../assets/essia-portrait.png";
 import aboutStory from "../../assets/about-story.jpg";
 
 const ABOUT_HERO_WORDS = ["marketing", "growth", "content", "community"];

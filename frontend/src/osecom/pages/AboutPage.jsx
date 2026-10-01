@@ -21,37 +21,49 @@ const EDUCATION = [
     period: "2024 — 2025",
     degree: "Développeur Full-Stack JavaScript",
     school: "GOMYCODE · Temps plein",
-    text: "Stack MERN (React, Node.js, MongoDB, SQL). Non pas pour devenir développeuse, mais pour arrêter de dépendre d'un tiers pour faire exister une idée.",
+    text: "Stack MERN (React, Node.js, MongoDB, SQL).",
+    monogram: "GC",
+    tone: "olive",
   },
   {
     period: "2018 — 2019",
     degree: "Master 2 Marketing Digital & E-business",
     school: "ESG Paris",
-    text: "Stratégie digitale, SEO/SEA, e-commerce, data & automation, UX/UI, gestion de projet.",
+    text: "Stratégie digitale, SEO/SEA, e-commerce, data & automation.",
+    monogram: "EP",
+    tone: "rose",
   },
   {
     period: "2017 — 2018",
     degree: "Master 1 Communication 360°",
     school: "European Communication School · Toulouse",
-    text: "Communication intégrée — un socle qui structure ma façon d'articuler stratégie et exécution.",
+    text: "Communication intégrée — stratégie et exécution.",
+    monogram: "EC",
+    tone: "sky",
   },
   {
     period: "2014 — 2017",
     degree: "Licence Information-Communication",
     school: "Université Côte d'Azur · Nice",
-    text: "Parcours Organisations & stratégies numériques. Fondamentaux : communication, art, anthropologie, web.",
+    text: "Parcours Organisations & stratégies numériques.",
+    monogram: "UC",
+    tone: "yellow",
   },
   {
     period: "2013 — 2014",
     degree: "Anglais général",
     school: "Kaplan International Languages · Londres",
-    text: "Année anglophone pour ancrer un niveau opérationnel.",
+    text: "Année anglophone.",
+    monogram: "KL",
+    tone: "cream",
   },
   {
     period: "2013",
     degree: "Baccalauréat Scientifique",
     school: "Lycée Pierre Mendès France · Tunis",
-    text: "Filière scientifique. Point de départ.",
+    text: "Filière scientifique.",
+    monogram: "PMF",
+    tone: "brown",
   },
 ];
 
@@ -244,24 +256,39 @@ function Story() {
 
 function Formation() {
   return (
-    <section className="about-pillars" data-reveal>
-      <h2>Formation.</h2>
-      <p className="about-pillars__intro">
-        De la communication aux médias, du marketing digital au dev — chaque
-        étape m'a donné une nouvelle façon de lire le métier.
-      </p>
-      <div className="about-pillars__grid">
+    <section className="formation" data-reveal>
+      <div className="formation__head">
+        <h2>Formation.</h2>
+        <p>
+          De la communication aux médias, du marketing digital au dev — cinq
+          villes, six étapes, une même curiosité.
+        </p>
+      </div>
+      <div className="formation__list">
         {EDUCATION.map((ed, i) => (
-          <div
+          <article
             key={ed.period + ed.degree}
-            className="about-pillars__card"
+            className="formation__item"
             data-reveal
-            style={{ "--delay": i * 0.1 + "s" }}
+            style={{ "--delay": i * 0.08 + "s" }}
           >
-            <span className="about-pillars__n">{ed.period}</span>
-            <h4>{ed.degree}{ed.school && ` — ${ed.school}`}</h4>
-            <p>{ed.text}</p>
-          </div>
+            <div
+              className={`formation__logo formation__logo--${ed.tone || "olive"}`}
+              aria-hidden="true"
+            >
+              {ed.monogram || "·"}
+            </div>
+            <div className="formation__period">
+              <span>{ed.period}</span>
+            </div>
+            <div className="formation__body">
+              <h4 className="formation__degree">{ed.degree}</h4>
+              {ed.school && (
+                <span className="formation__school">{ed.school}</span>
+              )}
+              {ed.text && <p className="formation__text">{ed.text}</p>}
+            </div>
+          </article>
         ))}
       </div>
     </section>

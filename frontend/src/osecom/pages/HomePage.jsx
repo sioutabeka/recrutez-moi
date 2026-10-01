@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { Link } from "react-router-dom";
-import essiaHome from "../../assets/essiahome.webp";
+import essiaHome from "../../assets/essia-hero.png";
 import aboutStory from "../../assets/about-story.jpg";
 import IconArrow from "../components/IconArrow";
 import MorphHeadline from "../components/MorphHeadline";
@@ -302,15 +302,9 @@ export default function HomePage() {
       <Hero />
       <VideoCV />
       <Signature />
-      <LeGratinCase />
-      <OseComCase />
+      <Realisations />
       <ServicesOffer />
       <Method2 />
-      <PortfolioStrip
-        title={
-          <h2>Mes réalisations</h2>
-        }
-      />
       <FinalCta />
     </main>
   );
@@ -406,6 +400,27 @@ function VideoCV() {
   );
 }
 
+function Manifesto() {
+  return (
+    <section className="manifesto" data-reveal>
+      <div className="manifesto__inner">
+        <span className="mono">MON FIL ROUGE</span>
+        <blockquote className="manifesto__quote">
+          Née à Tunis, formée à Nice, Toulouse, Paris et Londres. Une même
+          obsession depuis Skyblog jusqu'aux LLM :{" "}
+          <em>comprendre comment se distribue l'attention</em> — et savoir
+          la transformer en croissance.
+        </blockquote>
+        <p className="manifesto__sub">
+          Je ne suis pas venue au marketing par la stratégie. Je suis venue
+          par l'attention — celle qu'on capte, qu'on structure, qu'on
+          mesure. Le reste, c'est de la méthode.
+        </p>
+      </div>
+    </section>
+  );
+}
+
 function Signature() {
   return (
     <section className="signature" data-reveal>
@@ -450,6 +465,63 @@ function Trust() {
           <span key={b} className="trust__brand">
             {b}
           </span>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+const REALISATIONS = [
+  {
+    tag: "IN-HOUSE · PLATEFORME TECH · 2021-2024",
+    title: "LeGratin.io",
+    subtitle: "Head of Marketing & Growth · CODIR · Actionnaire",
+    text: "Construction de toute la fonction marketing d'une plateforme tech de freelances IT. +20 000 freelances inscrits en organique, traction ayant servi à la levée de 1,5 M€. Intégrée depuis au groupe Nexoris.",
+    href: "/services/legratin",
+    tone: "rose",
+  },
+  {
+    tag: "FREELANCE · MARKETING × CODE × IA · 2025",
+    title: "L'outil de carrousels",
+    subtitle: "JavaScript · Assisté par IA · En local",
+    text: "Un outil construit en JavaScript et assisté par IA qui transforme les articles de blog en carrousels sociaux au ton et à la DA de chaque marque. Fonctionne en local, sur l'abonnement Claude du client. Déployé chez un pressing de proximité qui publie régulièrement sans embaucher personne.",
+    href: "/portfolio#outil-carrousels",
+    tone: "olive",
+  },
+  {
+    tag: "FREELANCE · CONSULTANTE · 2018 → AUJOURD'HUI",
+    title: "OseCom — Une dizaine de clients",
+    subtitle: "En direct avec les marques, sans agence",
+    text: "Deux offres : production audiovisuelle (Nuxe, Pierre Fabre, Blissim, Maison Farida, Capsul) et digital complet pour TPE & PME (MKL Energy, FlatLab). Forfaits 1-5 K€. Menée en parallèle des postes salariés jusqu'en 2024, à temps plein depuis.",
+    href: "/services/osecom",
+    tone: "sky",
+  },
+];
+
+function Realisations() {
+  return (
+    <section className="realisations" data-reveal>
+      <div className="realisations__head">
+        <span className="mono">QUELQUES RÉALISATIONS</span>
+        <h2>Ce que j'ai construit — en un coup d'œil.</h2>
+      </div>
+      <div className="realisations__grid">
+        {REALISATIONS.map((r, i) => (
+          <article
+            key={r.title}
+            className={`realisations__card realisations__card--${r.tone}`}
+            data-reveal
+            style={{ "--delay": i * 0.08 + "s" }}
+          >
+            <span className="mono realisations__tag">{r.tag}</span>
+            <h3 className="realisations__title">{r.title}</h3>
+            <span className="realisations__subtitle">{r.subtitle}</span>
+            <p className="realisations__text">{r.text}</p>
+            <Link to={r.href} className="link-arrow realisations__cta">
+              Voir en détail
+              <IconArrow size={12} />
+            </Link>
+          </article>
         ))}
       </div>
     </section>

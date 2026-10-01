@@ -21,6 +21,8 @@ const TIMELINE = [
     role: "Consultante indépendante · Marketing & Contenus",
     company: "OseCom — micro-entreprise",
     place: "Paris · En direct avec les marques, sans agence",
+    monogram: "OS",
+    tone: "olive",
     bullets: [
       "Menée en parallèle des postes salariés jusqu'en 2024, à temps plein depuis",
       "Une dizaine de clients accompagnés · Forfaits 1-5 K€",
@@ -35,6 +37,8 @@ const TIMELINE = [
     role: "Head of Community puis Head of Marketing & Growth · CODIR · Actionnaire",
     company: "LeGratin.io — Plateforme tech de freelances IT",
     place: "Paris · Station F (avec 42)",
+    monogram: "LG",
+    tone: "rose",
     bullets: [
       "Arrivée quand l'équipe faisait 4 personnes · Rattachée au fondateur",
       "Construction de toute la fonction marketing sur 3 ans",
@@ -48,6 +52,8 @@ const TIMELINE = [
     role: "Cheffe de projet & Business Developer",
     company: "Agence KaliKado",
     place: "Paris · Cycle complet",
+    monogram: "KK",
+    tone: "yellow",
     bullets: [
       "Prospection → vente → exécution → bilan : je ramenais mes propres clients",
       "Clients : Andros (Bonne Maman, Mamie Nova), L'Or Espresso, L'Arbre Vert, FDJ",
@@ -61,6 +67,8 @@ const TIMELINE = [
     role: "Cheffe de projet Digital",
     company: "Agence Bergamotte",
     place: "Paris · Secteur régulé",
+    monogram: "BG",
+    tone: "sky",
     bullets: [
       "Clients institutionnels : Axa, Macif, Matmut, Banque Populaire",
       "Print autant que digital · Je rédigeais moi-même",
@@ -74,6 +82,8 @@ const TIMELINE = [
     role: "Chargée de communication & développement",
     company: "EduSup",
     place: "Toulouse · Seule sur périmètre",
+    monogram: "ES",
+    tone: "cream",
     bullets: [
       "Stratégie de communication globale et digitale",
       "Campagnes radio et affichage (conception + déploiement)",
@@ -87,6 +97,8 @@ const TIMELINE = [
     role: "Community Manager",
     company: "Université Nice Sophia Antipolis",
     place: "Nice",
+    monogram: "UN",
+    tone: "yellow",
     bullets: [
       "Projet de bibliothèque numérique",
       "Structuration de contenus · Rédaction web",
@@ -99,6 +111,8 @@ const TIMELINE = [
     role: "Planning stratégique",
     company: "Groupe Nice-Matin — Régie publicitaire",
     place: "Nice · Premier poste",
+    monogram: "NM",
+    tone: "brown",
     bullets: [
       "Analyse stratégique, veille médias, data",
       "Coordination de projets au sein de la régie",
@@ -175,7 +189,12 @@ function ExperienceTimeline() {
                 <span className="about-timeline__place">{exp.place}</span>
               )}
             </div>
-            <span className="about-timeline__dot" aria-hidden="true" />
+            <span
+              className={`about-timeline__dot about-timeline__dot--logo about-timeline__dot--${exp.tone || "olive"}`}
+              aria-hidden="true"
+            >
+              {exp.monogram || ""}
+            </span>
             <div className="about-timeline__side about-timeline__side--right">
               <ul className="about-timeline__bullets">
                 {exp.bullets.map((b, j) => (

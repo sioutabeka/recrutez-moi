@@ -473,11 +473,11 @@ function Trust() {
 
 const REALISATIONS = [
   {
-    tag: "IN-HOUSE · PLATEFORME TECH · 2021-2024",
-    title: "LeGratin.io",
-    subtitle: "Head of Marketing & Growth · CODIR · Actionnaire",
-    text: "Construction de toute la fonction marketing d'une plateforme tech de freelances IT. +20 000 freelances inscrits en organique, traction ayant servi à la levée de 1,5 M€. Intégrée depuis au groupe Nexoris.",
-    href: "/services/legratin",
+    tag: "FREELANCE · CONCIERGERIE · DIGITAL COMPLET",
+    title: "FlatLab",
+    subtitle: "Site, réseaux sociaux, automatisation",
+    text: "Accompagnement digital complet d'une conciergerie : création du site, structuration de la présence sur les réseaux, automatisation des process. Un dispositif de bout en bout pour que la marque existe en ligne sans mobiliser l'équipe au quotidien.",
+    href: "/services/osecom",
     tone: "rose",
   },
   {
@@ -489,10 +489,10 @@ const REALISATIONS = [
     tone: "olive",
   },
   {
-    tag: "FREELANCE · CONSULTANTE · 2018 → AUJOURD'HUI",
+    tag: "SOCIÉTÉ · AVR. 2026 → AUJOURD'HUI",
     title: "OseCom — Une dizaine de clients",
     subtitle: "En direct avec les marques, sans agence",
-    text: "Deux offres : production audiovisuelle (Nuxe, Pierre Fabre, Blissim, Maison Farida, Capsul) et digital complet pour TPE & PME (MKL Energy, FlatLab). Forfaits 1-5 K€. Menée en parallèle des postes salariés jusqu'en 2024, à temps plein depuis.",
+    text: "Société fondée en avril 2026, en continuation de missions freelance menées en parallèle depuis 2018. Deux offres : production audiovisuelle (Nuxe, Pierre Fabre, Blissim) et digital complet pour TPE & PME (MKL Energy, FlatLab). Forfaits 1-5 K€.",
     href: "/services/osecom",
     tone: "sky",
   },

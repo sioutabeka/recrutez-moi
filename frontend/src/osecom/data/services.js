@@ -207,7 +207,7 @@ export const SERVICES = [
   },
   {
     slug: "osecom",
-    tag: "INDÉPENDANTE · 2018 → AUJOURD'HUI",
+    tag: "INDÉPENDANTE · AVR. 2026 → AUJOURD'HUI",
     title: "OseCom",
     titleEN: "OseCom — Consultante indépendante, en direct avec les marques.",
     tone: "cream",
@@ -227,11 +227,11 @@ export const SERVICES = [
       "JavaScript / IA",
       "Direction de shootings",
     ],
-    duration: "En parallèle depuis 2018 · À temps plein depuis 2024",
+    duration: "Société fondée avr. 2026 · Activité freelance depuis 2018",
     rythm: "En direct avec les marques, sans agence",
     format: "Micro-entreprise · Forfaits 1-5 K€",
     intro:
-      "Deux offres. Production audiovisuelle et contenu de marque pour Nuxe, Pierre Fabre, Blissim, Maison Farida, Capsul. Digital complet pour TPE et PME — MKL Energy (énergie), FlatLab (conciergerie), un pressing local. Un outil maison construit en JavaScript qui transforme les articles de blog en carrousels sociaux, déployé chez les clients qui n'ont pas les moyens de recruter un profil social media.",
+      "Société fondée en avril 2026, en continuation de missions freelance menées en parallèle des postes salariés depuis 2018. Deux offres. Production audiovisuelle et contenu de marque pour Nuxe, Pierre Fabre, Blissim, Maison Farida, Capsul. Digital complet pour TPE et PME — MKL Energy (énergie), FlatLab (conciergerie), un pressing local. Un outil maison construit en JavaScript qui transforme les articles de blog en carrousels sociaux, déployé chez les clients qui n'ont pas les moyens de recruter un profil social media.",
     primaryCta: "Me contacter",
     tools: [
       "CapCut", "Premiere Pro", "After Effects", "Canva", "Photoshop",

@@ -49,22 +49,6 @@ function CaseStudy({ project }) {
         <h2>{project.title}</h2>
         <p>{project.description}</p>
       </div>
-      <div className="pf-case__grid">
-        {project.images.map((img, j) => (
-          <div
-            key={j}
-            className="pf-case__tile"
-            data-reveal
-            style={{ "--delay": j * 0.05 + "s" }}
-          >
-            <Placeholder
-              ratio="4/5"
-              src={img}
-              alt={`${project.title} — visuel ${j + 1}`}
-            />
-          </div>
-        ))}
-      </div>
     </section>
   );
 }

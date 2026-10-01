@@ -207,12 +207,12 @@ export const SERVICES = [
   },
   {
     slug: "osecom",
-    tag: "INDÉPENDANTE · AVR. 2026 → AUJOURD'HUI",
+    tag: "INDÉPENDANTE · SEPT. 2024 → AUJOURD'HUI",
     title: "OseCom",
-    titleEN: "OseCom — Consultante indépendante, en direct avec les marques.",
+    titleEN: "OseCom — Freelance Marketing, Growth & Content, en direct avec les marques.",
     tone: "cream",
     copy:
-      "Micro-entreprise menée en parallèle des postes salariés jusqu'en 2024, à temps plein depuis. Une dizaine de clients accompagnés en direct, sans agence intermédiaire, sur forfaits de 1 à 5 K€.",
+      "Freelance à temps plein depuis septembre 2024, après trois ans en interne chez LeGratin.io. Une dizaine de clients accompagnés en direct, sans agence intermédiaire, sur forfaits de 1 à 5 K€.",
     symptoms: [
       "Nuxe, Pierre Fabre, Blissim, Maison Farida : production audiovisuelle ponctuelle",
       "MKL Energy : site + supports d'aide à la vente (brochures, fiches, flyers)",
@@ -227,11 +227,11 @@ export const SERVICES = [
       "JavaScript / IA",
       "Direction de shootings",
     ],
-    duration: "Société fondée avr. 2026 · Activité freelance depuis 2018",
+    duration: "Sept. 2024 → aujourd'hui · 2 ans et plus",
     rythm: "En direct avec les marques, sans agence",
-    format: "Micro-entreprise · Forfaits 1-5 K€",
+    format: "Freelance · Forfaits 1-5 K€",
     intro:
-      "Société fondée en avril 2026, en continuation de missions freelance menées en parallèle des postes salariés depuis 2018. Deux offres. Production audiovisuelle et contenu de marque pour Nuxe, Pierre Fabre, Blissim, Maison Farida, Capsul. Digital complet pour TPE et PME — MKL Energy (énergie), FlatLab (conciergerie), un pressing local. Un outil maison construit en JavaScript qui transforme les articles de blog en carrousels sociaux, déployé chez les clients qui n'ont pas les moyens de recruter un profil social media.",
+      "Activité freelance lancée en septembre 2024, après trois ans en interne chez LeGratin.io. Deux offres. Production audiovisuelle et contenu de marque pour Nuxe, Pierre Fabre, Blissim, Maison Farida, Capsul. Digital complet pour TPE et PME — MKL Energy (énergie), FlatLab (conciergerie), un pressing local. Un outil maison construit en JavaScript qui transforme les articles de blog en carrousels sociaux, déployé chez les clients qui n'ont pas les moyens de recruter un profil social media.",
     primaryCta: "Me contacter",
     tools: [
       "CapCut", "Premiere Pro", "After Effects", "Canva", "Photoshop",

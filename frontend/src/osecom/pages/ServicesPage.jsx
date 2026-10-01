@@ -17,14 +17,13 @@ const SRV_HERO_LINES = [
 const TIMELINE = [
   {
     slug: "osecom",
-    period: "Avr. 2026 → Aujourd'hui",
-    role: "Fondatrice & Creative Director",
-    company: "OseCom — société",
+    period: "Sept. 2024 → Aujourd'hui",
+    role: "Freelance · Marketing, Growth & Content",
+    company: "OseCom — Indépendante",
     place: "Paris · Hybride · En direct avec les marques",
     monogram: "OS",
     tone: "olive",
     bullets: [
-      "Société fondée en avril 2026, en continuation de missions freelance menées en parallèle depuis 2018",
       "Une dizaine de clients accompagnés · Forfaits 1-5 K€",
       "Production audiovisuelle : Nuxe, Pierre Fabre, Blissim, Maison Farida, Capsul",
       "Digital complet TPE/PME : MKL Energy, FlatLab, un pressing",
@@ -33,7 +32,7 @@ const TIMELINE = [
   },
   {
     slug: "legratin",
-    period: "2021 — 2024",
+    period: "Sept. 2021 → Sept. 2024",
     role: "Head of Community puis Head of Marketing & Growth · CODIR · Actionnaire",
     company: "LeGratin.io — Plateforme tech de freelances IT",
     place: "Paris · Station F (avec 42)",
@@ -63,10 +62,10 @@ const TIMELINE = [
   },
   {
     slug: "bergamotte",
-    period: "2018 — 2019",
+    period: "Sept. 2018 → Mai 2019",
     role: "Cheffe de projet Digital",
     company: "Agence Bergamotte",
-    place: "Paris · Secteur régulé",
+    place: "Paris 15 · Secteur régulé",
     monogram: "BG",
     tone: "sky",
     bullets: [
@@ -78,7 +77,7 @@ const TIMELINE = [
   },
   {
     slug: "edusup",
-    period: "2017 — 2018",
+    period: "Sept. 2017 → Sept. 2018",
     role: "Chargée de communication & développement",
     company: "EduSup",
     place: "Toulouse · Seule sur périmètre",

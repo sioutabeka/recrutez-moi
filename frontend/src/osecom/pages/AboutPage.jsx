@@ -20,7 +20,7 @@ const EDUCATION = [
   {
     period: "2024 — 2025",
     degree: "Développeur Full-Stack JavaScript",
-    school: "GOMYCODE · Temps plein",
+    school: "GOMYCODE",
     text: "Stack MERN (React, Node.js, MongoDB, SQL).",
     monogram: "GC",
     tone: "olive",
@@ -241,13 +241,13 @@ function Story() {
         </p>
         <p>
           <strong>Où je vais.</strong> À Station F, j'étais entourée de
-          développeurs. Ça m'a donné envie de m'y mettre : un an de bootcamp
-          full-stack JavaScript, à temps plein. Pas pour devenir
-          développeuse, mais pour arrêter de dépendre de quelqu'un d'autre
-          pour faire exister une idée. Depuis, je construis mes propres
-          outils — dont un qui transforme les articles de blog en carrousels
-          et qui permet à une petite entreprise d'exister sur les réseaux
-          sans recruter.
+          développeurs. Ça m'a donné envie de m'y mettre : une formation
+          full-stack JavaScript chez GOMYCODE, en parallèle du lancement de
+          mon activité freelance. Pas pour devenir développeuse, mais pour
+          arrêter de dépendre de quelqu'un d'autre pour faire exister une
+          idée. Depuis, je construis mes propres outils — dont un qui
+          transforme les articles de blog en carrousels et qui permet à une
+          petite entreprise d'exister sur les réseaux sans recruter.
         </p>
       </div>
     </section>

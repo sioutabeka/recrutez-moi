@@ -61,12 +61,11 @@ const FACTS = [
 const EXPERIENCES = [
   {
     slug: "osecom",
-    period: "2018 → Aujourd'hui",
-    role: "Consultante indépendante · Marketing & Contenus",
-    company: "OseCom — micro-entreprise",
+    period: "Sept. 2024 → Aujourd'hui",
+    role: "Freelance · Marketing, Growth & Content",
+    company: "OseCom — Indépendante",
     place: "Paris · En direct avec les marques, sans agence",
     bullets: [
-      "Menée en parallèle des postes salariés jusqu'en 2024, à temps plein depuis",
       "Une dizaine de clients accompagnés · Forfaits 1-5 K€",
       "Production audiovisuelle : Nuxe (5-6 vidéos 2025), Pierre Fabre, Blissim, Maison Farida, Capsul",
       "Digital complet TPE/PME : MKL Energy (site + supports d'aide à la vente), FlatLab, un pressing",
@@ -489,10 +488,10 @@ const REALISATIONS = [
     tone: "olive",
   },
   {
-    tag: "SOCIÉTÉ · AVR. 2026 → AUJOURD'HUI",
+    tag: "FREELANCE · SEPT. 2024 → AUJOURD'HUI",
     title: "OseCom — Une dizaine de clients",
     subtitle: "En direct avec les marques, sans agence",
-    text: "Société fondée en avril 2026, en continuation de missions freelance menées en parallèle depuis 2018. Deux offres : production audiovisuelle (Nuxe, Pierre Fabre, Blissim) et digital complet pour TPE & PME (MKL Energy, FlatLab). Forfaits 1-5 K€.",
+    text: "Activité freelance lancée en septembre 2024, après trois ans en interne chez LeGratin.io. Deux offres : production audiovisuelle (Nuxe, Pierre Fabre, Blissim) et digital complet pour TPE & PME (MKL Energy, FlatLab). Forfaits 1-5 K€.",
     href: "/services/osecom",
     tone: "sky",
   },
@@ -571,8 +570,8 @@ function OseComCase() {
         <span className="mono">AUJOURD'HUI · OSECOM · INDÉPENDANTE</span>
         <h2>Marketing indépendante — une dizaine de clients, deux offres, un outil IA maison.</h2>
         <p className="osecom-case__intro">
-          Depuis 2018, en parallèle des postes salariés puis à temps plein
-          depuis 2024. En direct avec les marques, sans agence intermédiaire.
+          Depuis septembre 2024, après trois ans en interne chez
+          LeGratin.io. En direct avec les marques, sans agence intermédiaire.
           Forfaits 1-5 K€.
         </p>
         <div className="osecom-case__grid">

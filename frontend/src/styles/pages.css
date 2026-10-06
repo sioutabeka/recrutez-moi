@@ -1608,15 +1608,20 @@
 .about-timeline__dot--logo{
   border-radius:50%; transform:translate(-50%, 0);
 }
-.about-timeline__dot--img{
-  background:#fff; padding:0; overflow:hidden;
+.about-timeline__dot--logo.about-timeline__dot--img,
+.formation__logo.formation__logo--img{
+  background:#fff;
+  border:1px solid rgba(42,24,16,.14);
+  box-shadow:0 0 0 1px rgba(42,24,16,.06);
+  padding:6px;
+  overflow:hidden;
+  box-sizing:border-box;
 }
 .about-timeline__dot--img img,
 .formation__logo--img img{
-  width:100%; height:100%; object-fit:cover; display:block;
-}
-.formation__logo--img{
-  background:#fff; padding:0; overflow:hidden;
+  width:100%; height:100%;
+  object-fit:contain;
+  display:block;
 }
 .about-timeline__period{
   font-family:var(--mono); font-size:12px; font-weight:500;

@@ -361,8 +361,8 @@ export const SERVICES = [
   {
     slug: "edusup",
     tag: "TOULOUSE · SEULE PÉRIMÈTRE · 2017 → 2018",
-    title: "EduSup",
-    titleEN: "EduSup — Communication offline avec achat média, en autonomie.",
+    title: "Pigier",
+    titleEN: "Pigier — Communication offline avec achat média, en autonomie.",
     tone: "cream",
     copy:
       "Chargée de communication & développement. Seule en charge du périmètre Toulouse : campagnes radio et affichage, relations presse avec retombées, événements.",

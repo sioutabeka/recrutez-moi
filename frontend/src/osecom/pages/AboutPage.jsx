@@ -8,6 +8,12 @@ import { ROUTES } from "../config/routes";
 import { SITE } from "../config/site";
 import aboutHero from "../../assets/essia-portrait.jpg";
 import aboutStory from "../../assets/essia-story.png";
+import logoGomycode from "../../assets/logo-gomycode.png";
+import logoEsg from "../../assets/logo-esg-paris.png";
+import logoEcs from "../../assets/logo-ecs-toulouse.png";
+import logoUcaNice from "../../assets/logo-universite-nice.png";
+import logoKaplan from "../../assets/logo-kaplan.png";
+import logoPmf from "../../assets/logo-pmf-tunis.jpeg";
 
 const ABOUT_HERO_WORDS = ["marketing", "growth", "content", "community"];
 const ABOUT_HERO_LINES = [
@@ -23,6 +29,7 @@ const EDUCATION = [
     school: "GOMYCODE",
     text: "Stack MERN (React, Node.js, MongoDB, SQL).",
     monogram: "GC",
+    logo: logoGomycode,
     tone: "olive",
   },
   {
@@ -31,6 +38,7 @@ const EDUCATION = [
     school: "ESG Paris",
     text: "Stratégie digitale, SEO/SEA, e-commerce, data & automation.",
     monogram: "EP",
+    logo: logoEsg,
     tone: "rose",
   },
   {
@@ -39,6 +47,7 @@ const EDUCATION = [
     school: "European Communication School · Toulouse",
     text: "Communication intégrée — stratégie et exécution.",
     monogram: "EC",
+    logo: logoEcs,
     tone: "sky",
   },
   {
@@ -47,6 +56,7 @@ const EDUCATION = [
     school: "Université Côte d'Azur · Nice",
     text: "Parcours Organisations & stratégies numériques.",
     monogram: "UC",
+    logo: logoUcaNice,
     tone: "yellow",
   },
   {
@@ -55,6 +65,7 @@ const EDUCATION = [
     school: "Kaplan International Languages · Londres",
     text: "Année anglophone.",
     monogram: "KL",
+    logo: logoKaplan,
     tone: "cream",
   },
   {
@@ -63,6 +74,7 @@ const EDUCATION = [
     school: "Lycée Pierre Mendès France · Tunis",
     text: "Filière scientifique.",
     monogram: "PMF",
+    logo: logoPmf,
     tone: "brown",
   },
 ];
@@ -273,10 +285,10 @@ function Formation() {
             style={{ "--delay": i * 0.08 + "s" }}
           >
             <div
-              className={`formation__logo formation__logo--${ed.tone || "olive"}`}
+              className={`formation__logo formation__logo--${ed.tone || "olive"}${ed.logo ? " formation__logo--img" : ""}`}
               aria-hidden="true"
             >
-              {ed.monogram || "·"}
+              {ed.logo ? <img src={ed.logo} alt="" /> : (ed.monogram || "·")}
             </div>
             <div className="formation__period">
               <span>{ed.period}</span>

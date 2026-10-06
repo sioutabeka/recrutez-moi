@@ -1,6 +1,13 @@
 import { useRef } from "react";
 import { Link } from "react-router-dom";
 import aboutHero from "../../assets/about-hero.jpg";
+import logoOsecom from "../../assets/logo-osecom-freelance.jpeg";
+import logoLegratin from "../../assets/logo-legratin.jpeg";
+import logoKalikado from "../../assets/logo-kalikado.png";
+import logoBergamotte from "../../assets/logo-bergamotte.jpeg";
+import logoPigier from "../../assets/logo-pigier.png";
+import logoUniversiteNice from "../../assets/logo-universite-nice.png";
+import logoNiceMatin from "../../assets/logo-nice-matin.jpeg";
 import IconArrow from "../components/IconArrow";
 import MorphHeadline from "../components/MorphHeadline";
 import { useHeroDrift } from "../lib/hooks";
@@ -22,6 +29,7 @@ const TIMELINE = [
     company: "OseCom — Indépendante",
     place: "Paris · Hybride · En direct avec les marques",
     monogram: "OS",
+    logo: logoOsecom,
     tone: "olive",
     bullets: [
       "Une dizaine de clients accompagnés · Forfaits 1-5 K€",
@@ -37,6 +45,7 @@ const TIMELINE = [
     company: "LeGratin.io — Plateforme tech de freelances IT",
     place: "Paris · Station F (avec 42)",
     monogram: "LG",
+    logo: logoLegratin,
     tone: "rose",
     bullets: [
       "Arrivée quand l'équipe faisait 4 personnes · Rattachée au fondateur",
@@ -52,6 +61,7 @@ const TIMELINE = [
     company: "Agence KaliKado — Conseil & Solutions Sampling",
     place: "Neuilly-sur-Seine · Cycle complet",
     monogram: "KK",
+    logo: logoKalikado,
     tone: "yellow",
     bullets: [
       "Prospection → vente → exécution → bilan : je ramenais mes propres clients",
@@ -67,6 +77,7 @@ const TIMELINE = [
     company: "Agence Bergamotte",
     place: "Paris 15 · Secteur régulé",
     monogram: "BG",
+    logo: logoBergamotte,
     tone: "sky",
     bullets: [
       "Clients institutionnels : Axa, Macif, Matmut, Banque Populaire",
@@ -79,9 +90,10 @@ const TIMELINE = [
     slug: "edusup",
     period: "Sept. 2017 → Sept. 2018",
     role: "Chargée de communication & développement",
-    company: "EduSup",
+    company: "Pigier",
     place: "Toulouse · Seule sur périmètre",
-    monogram: "ES",
+    monogram: "PG",
+    logo: logoPigier,
     tone: "cream",
     bullets: [
       "Stratégie de communication globale et digitale",
@@ -97,6 +109,7 @@ const TIMELINE = [
     company: "Université Nice Sophia Antipolis",
     place: "Nice",
     monogram: "UN",
+    logo: logoUniversiteNice,
     tone: "yellow",
     bullets: [
       "Projet de bibliothèque numérique",
@@ -111,6 +124,7 @@ const TIMELINE = [
     company: "Groupe Nice-Matin — Régie publicitaire",
     place: "Nice · Premier poste",
     monogram: "NM",
+    logo: logoNiceMatin,
     tone: "brown",
     bullets: [
       "Analyse stratégique, veille médias, data",
@@ -189,10 +203,10 @@ function ExperienceTimeline() {
               )}
             </div>
             <span
-              className={`about-timeline__dot about-timeline__dot--logo about-timeline__dot--${exp.tone || "olive"}`}
+              className={`about-timeline__dot about-timeline__dot--logo about-timeline__dot--${exp.tone || "olive"}${exp.logo ? " about-timeline__dot--img" : ""}`}
               aria-hidden="true"
             >
-              {exp.monogram || ""}
+              {exp.logo ? <img src={exp.logo} alt="" /> : (exp.monogram || "")}
             </span>
             <div className="about-timeline__side about-timeline__side--right">
               <ul className="about-timeline__bullets">

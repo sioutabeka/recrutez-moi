@@ -115,7 +115,7 @@ const EXPERIENCES = [
     slug: "edusup",
     period: "2017 — 2018",
     role: "Chargée de communication & développement",
-    company: "EduSup",
+    company: "Pigier",
     place: "Toulouse · Seule sur périmètre",
     bullets: [
       "Stratégie de communication globale et digitale",

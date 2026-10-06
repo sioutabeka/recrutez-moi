@@ -1623,6 +1623,14 @@
   object-fit:contain;
   display:block;
 }
+.about-timeline__dot--logo.about-timeline__dot--img.about-timeline__dot--fill{
+  padding:0;
+  border:2px solid var(--paper);
+  box-shadow:0 0 0 1px rgba(42,24,16,.12);
+}
+.about-timeline__dot--fill img{
+  object-fit:cover;
+}
 .about-timeline__period{
   font-family:var(--mono); font-size:12px; font-weight:500;
   color:var(--olive); display:block; margin-bottom:6px;

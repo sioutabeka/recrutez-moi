@@ -1,11 +1,13 @@
 import { useRef } from "react";
 import { Link } from "react-router-dom";
 import aboutHero from "../../assets/about-hero.jpg";
+import logoOsecom from "../../assets/logo-osecom-freelance.jpeg";
 import logoLegratin from "../../assets/logo-legratin.jpeg";
 import logoKalikado from "../../assets/logo-kalikado.png";
 import logoBergamotte from "../../assets/logo-bergamotte.jpeg";
 import logoPigier from "../../assets/logo-pigier.png";
 import logoUniversiteNice from "../../assets/logo-universite-nice.png";
+import logoNiceMatin from "../../assets/logo-nice-matin.jpeg";
 import IconArrow from "../components/IconArrow";
 import MorphHeadline from "../components/MorphHeadline";
 import { useHeroDrift } from "../lib/hooks";
@@ -27,6 +29,8 @@ const TIMELINE = [
     company: "OseCom — Indépendante",
     place: "Paris · Hybride · En direct avec les marques",
     monogram: "OS",
+    logo: logoOsecom,
+    logoFill: true,
     tone: "olive",
     bullets: [
       "Une dizaine de clients accompagnés · Forfaits 1-5 K€",
@@ -121,6 +125,8 @@ const TIMELINE = [
     company: "Groupe Nice-Matin — Régie publicitaire",
     place: "Nice · Premier poste",
     monogram: "NM",
+    logo: logoNiceMatin,
+    logoFill: true,
     tone: "brown",
     bullets: [
       "Analyse stratégique, veille médias, data",
@@ -199,7 +205,7 @@ function ExperienceTimeline() {
               )}
             </div>
             <span
-              className={`about-timeline__dot about-timeline__dot--logo about-timeline__dot--${exp.tone || "olive"}${exp.logo ? " about-timeline__dot--img" : ""}`}
+              className={`about-timeline__dot about-timeline__dot--logo about-timeline__dot--${exp.tone || "olive"}${exp.logo ? " about-timeline__dot--img" : ""}${exp.logoFill ? " about-timeline__dot--fill" : ""}`}
               aria-hidden="true"
             >
               {exp.logo ? <img src={exp.logo} alt="" /> : (exp.monogram || "")}

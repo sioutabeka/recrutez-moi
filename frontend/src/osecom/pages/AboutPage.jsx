@@ -30,6 +30,7 @@ const EDUCATION = [
     text: "Stack MERN (React, Node.js, MongoDB, SQL).",
     monogram: "GC",
     logo: logoGomycode,
+    logoFill: true,
     tone: "olive",
   },
   {
@@ -48,6 +49,7 @@ const EDUCATION = [
     text: "Communication intégrée — stratégie et exécution.",
     monogram: "EC",
     logo: logoEcs,
+    logoFill: true,
     tone: "sky",
   },
   {
@@ -66,6 +68,7 @@ const EDUCATION = [
     text: "Année anglophone.",
     monogram: "KL",
     logo: logoKaplan,
+    logoFill: true,
     tone: "cream",
   },
   {
@@ -285,7 +288,7 @@ function Formation() {
             style={{ "--delay": i * 0.08 + "s" }}
           >
             <div
-              className={`formation__logo formation__logo--${ed.tone || "olive"}${ed.logo ? " formation__logo--img" : ""}`}
+              className={`formation__logo formation__logo--${ed.tone || "olive"}${ed.logo ? " formation__logo--img" : ""}${ed.logoFill ? " formation__logo--fill" : ""}`}
               aria-hidden="true"
             >
               {ed.logo ? <img src={ed.logo} alt="" /> : (ed.monogram || "·")}

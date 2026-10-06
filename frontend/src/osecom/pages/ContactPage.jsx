@@ -401,7 +401,7 @@ function Confirmation({ data, onRestart }) {
       </svg>
       <h3>Message envoyé.</h3>
       <p>
-        Merci {data.name || "à vous"} — je vous reviens très vite pour caler
+        Merci {data.name || "à vous"} · je vous reviens très vite pour caler
         l'échange du <strong>{data.date}</strong>.
       </p>
       <p className="mono">Récapitulatif</p>

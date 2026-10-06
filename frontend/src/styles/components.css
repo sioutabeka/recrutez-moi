@@ -159,7 +159,7 @@
   position:relative;
   background:var(--brown);
   color:var(--bg);
-  /* Tall outer wrapper — ScrollTrigger uses this length for the pin duration */
+  /* Tall outer wrapper · ScrollTrigger uses this length for the pin duration */
 }
 .pin-services__inner{
   height:100vh; width:100%;
@@ -271,7 +271,7 @@
 }
 
 /* ── Pinned services · MOBILE ─────────────────────────────────
-   Sticky card stack — same pattern as the /services page cards
+   Sticky card stack · same pattern as the /services page cards
    (each card uses position:sticky + progressive top offset). Pure
    CSS, no GSAP pin, so iOS/Android viewport jitter can't make the
    layout vibrate. */

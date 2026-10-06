@@ -88,7 +88,7 @@ function BlogHero() {
         Mes notes sur la stratégie sociale, le contenu et la croissance des
         marques. Court, direct, terrain.{" "}
         <strong>
-          Une façon de voir comment je pense — utile pour un recruteur ou une
+          Une façon de voir comment je pense · utile pour un recruteur ou une
           équipe qui recrute.
         </strong>
       </p>
@@ -165,7 +165,7 @@ function NewsletterSubscribe() {
         </p>
         {subscribed ? (
           <p className="mono blog-subscribe__ack">
-            ✓ INSCRIPTION ENREGISTRÉE — VOUS RECEVREZ LE PREMIER NUMÉRO.
+            ✓ INSCRIPTION ENREGISTRÉE · VOUS RECEVREZ LE PREMIER NUMÉRO.
           </p>
         ) : (
           <form className="blog-subscribe__form" onSubmit={handleSubscribe}>

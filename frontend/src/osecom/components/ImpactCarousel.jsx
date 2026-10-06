@@ -33,7 +33,7 @@ const WORKS = [
  * - Active row big & bold, neighbors slightly faded, others muted.
  * - Up/Down arrows or direct row clicks move the cursor.
  * - The image on the right is keyed on activeIndex so React unmounts/remounts
- *   it — the CSS fade-in animation runs every time it changes.
+ *   it · the CSS fade-in animation runs every time it changes.
  */
 export default function ImpactCarousel() {
   const [activeIndex, setActiveIndex] = useState(0);

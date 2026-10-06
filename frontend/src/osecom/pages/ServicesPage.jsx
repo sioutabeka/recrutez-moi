@@ -20,13 +20,13 @@ const SRV_HERO_LINES = [
   "Une même obsession.",
 ];
 
-// Rich experience list — merge SERVICES data (has intro/tools/results) with additional Timeline metadata
+// Rich experience list · merge SERVICES data (has intro/tools/results) with additional Timeline metadata
 const TIMELINE = [
   {
     slug: "osecom",
     period: "Sept. 2024 → Aujourd'hui",
     role: "Freelance · Marketing, Growth & Content",
-    company: "OseCom — Indépendante",
+    company: "OseCom · Indépendante",
     place: "Paris · Hybride · En direct avec les marques",
     monogram: "OS",
     logo: logoOsecom,
@@ -43,7 +43,7 @@ const TIMELINE = [
     slug: "legratin",
     period: "Sept. 2021 → Sept. 2024",
     role: "Head of Community puis Head of Marketing & Growth · CODIR · Actionnaire",
-    company: "LeGratin.io — Plateforme tech de freelances IT",
+    company: "LeGratin.io · Plateforme tech de freelances IT",
     place: "Paris · Station F (avec 42)",
     monogram: "LG",
     logo: logoLegratin,
@@ -59,7 +59,7 @@ const TIMELINE = [
     slug: "kalikado",
     period: "Mai 2019 → Janv. 2021",
     role: "Cheffe de projet & Business Developer",
-    company: "Agence KaliKado — Conseil & Solutions Sampling",
+    company: "Agence KaliKado · Conseil & Solutions Sampling",
     place: "Neuilly-sur-Seine · Cycle complet",
     monogram: "KK",
     logo: logoKalikado,
@@ -67,7 +67,7 @@ const TIMELINE = [
     bullets: [
       "Prospection → vente → exécution → bilan : je ramenais mes propres clients",
       "Clients : Groupe Andros (Bonne Maman, Mamie Nova), L'Or Espresso, L'Arbre Vert, FDJ",
-      "Spécialité : sampling contextuel — grille-pain déclenche confiture",
+      "Spécialité : sampling contextuel · grille-pain déclenche confiture",
       "Canaux : box hôtelières, partenariats e-commerce, jeux-concours",
     ],
   },
@@ -105,7 +105,7 @@ const TIMELINE = [
   },
   {
     slug: "universite-nice",
-    period: "2016 — 2017",
+    period: "2016 → 2017",
     role: "Community Manager",
     company: "Université Nice Sophia Antipolis",
     place: "Nice",
@@ -122,7 +122,7 @@ const TIMELINE = [
     slug: "nice-matin",
     period: "2015",
     role: "Planning stratégique",
-    company: "Groupe Nice-Matin — Régie publicitaire",
+    company: "Groupe Nice-Matin · Régie publicitaire",
     place: "Nice · Premier poste",
     monogram: "NM",
     logo: logoNiceMatin,
@@ -177,7 +177,7 @@ function ExperienceHero() {
 
         <div className="srv-hero__col-media" ref={mediaRef}>
           <div className="srv-hero__media">
-            <img src={aboutHero} alt="Essia Ben Kheder — Expériences" className="srv-hero__img" />
+            <img src={aboutHero} alt="Essia Ben Kheder · Expériences" className="srv-hero__img" />
           </div>
         </div>
       </div>

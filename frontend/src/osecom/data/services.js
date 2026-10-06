@@ -3,10 +3,10 @@ export const SERVICES = [
     slug: "legratin",
     tag: "CDI · CODIR · ACTIONNAIRE · 2021 → 2024",
     title: "LeGratin.io",
-    titleEN: "LeGratin.io — Responsable Marketing & Communauté.",
+    titleEN: "LeGratin.io · Responsable Marketing & Communauté.",
     tone: "rose",
     copy:
-      "Une fonction marketing complète — pensée et exécutée. Acquisition, contenu, CRM, automation, onboarding, sales enablement : un profil Marketing & Growth généraliste, pas un rôle social media.",
+      "Une fonction marketing complète · pensée et exécutée. Acquisition, contenu, CRM, automation, onboarding, sales enablement : un profil Marketing & Growth généraliste, pas un rôle social media.",
     symptoms: [
       "Acquisition & activation de freelances",
       "Croissance et engagement communautaire",
@@ -59,7 +59,7 @@ export const SERVICES = [
           subtitle: "L'entreprise",
           text: [
             "Plateforme tech de mise en relation avec des freelances, à mon arrivée constituée d'une équipe restreinte.",
-            "Une audience développeurs et freelances IT — difficile à convaincre par les canaux marketing classiques.",
+            "Une audience développeurs et freelances IT · difficile à convaincre par les canaux marketing classiques.",
           ],
         },
         {
@@ -73,7 +73,7 @@ export const SERVICES = [
     },
     solution: {
       title: "MA THÈSE",
-      text: "Construire une fonction marketing complète — pas un rôle social media.",
+      text: "Construire une fonction marketing complète · pas un rôle social media.",
       supporting:
         "Un profil Marketing & Growth généraliste, capable de construire un système de bout en bout : acquisition, SEO, contenu, lead gen, CRM, automation, onboarding, activation, conversion, KPI, optimisation, sales enablement.",
     },
@@ -87,7 +87,7 @@ export const SERVICES = [
           bullets: [
             "SEO & référencement (blog, comparateurs \"Le Gratin vs Malt\", interviews)",
             "Lead generation via landing pages, formulaires, webinars",
-            "Google Ads (ponctuel — stratégie principalement organique)",
+            "Google Ads (ponctuel · stratégie principalement organique)",
             "Conversion & CRO sur les parcours utilisateurs",
             "Growth marketing bi-face (clients + freelances)",
             "Performance marketing avec arbitrage inbound / outbound / events",
@@ -96,7 +96,7 @@ export const SERVICES = [
         {
           title: "Data & Performance",
           text:
-            "Pilotage marketing orienté objectifs business. KPI, coût d'acquisition, analyse du funnel — présentés en hebdo au CODIR.",
+            "Pilotage marketing orienté objectifs business. KPI, coût d'acquisition, analyse du funnel · présentés en hebdo au CODIR.",
           bullets: [
             "Mise en place & suivi des KPI marketing",
             "Coût d'acquisition par canal",
@@ -122,7 +122,7 @@ export const SERVICES = [
         {
           title: "Content Marketing",
           text:
-            "Stratégie éditoriale complète — SEO, LinkedIn, interviews, case studies. Le contenu comme point d'entrée SEO ET commercial.",
+            "Stratégie éditoriale complète · SEO, LinkedIn, interviews, case studies. Le contenu comme point d'entrée SEO ET commercial.",
           bullets: [
             "Content strategy globale",
             "SEO content sur requêtes stratégiques",
@@ -148,7 +148,7 @@ export const SERVICES = [
         {
           title: "B2B & Sales Enablement",
           text:
-            "Marketing au service des commerciaux — création de portes d'entrée non-directement-commerciales et de contenus qui font converser.",
+            "Marketing au service des commerciaux · création de portes d'entrée non-directement-commerciales et de contenus qui font converser.",
           bullets: [
             "Lead generation B2B (contenus, landing pages, webinars)",
             "Sales enablement : contenus pour équipes commerciales",
@@ -174,7 +174,7 @@ export const SERVICES = [
         {
           title: "Marketing Operations",
           text:
-            "Structurer et faire tenir la fonction marketing dans la durée — plan, budget, prestataires, process, pilotage transverse.",
+            "Structurer et faire tenir la fonction marketing dans la durée · plan, budget, prestataires, process, pilotage transverse.",
           bullets: [
             "Élaboration & pilotage du plan marketing",
             "Marketing automation (parcours & pipelines)",
@@ -192,24 +192,24 @@ export const SERVICES = [
       points: [
         "+20 000 freelances inscrits, en organique",
         "Plusieurs centaines d'inscrits par webinar (30+ webinars produits)",
-        "50+ interviews d'experts et de DT — levier édito, SEO et commercial",
+        "50+ interviews d'experts et de DT · levier édito, SEO et commercial",
         "1,5 M€ levés en octobre 2022 (Angelsquare, Super Capital, utilisateurs)",
         "LeGratin depuis intégrée au groupe Nexoris",
       ],
       closing:
-        "Une communauté qui devient un actif de croissance — et qui finance la levée.",
+        "Une communauté qui devient un actif de croissance · et qui finance la levée.",
     },
     finalCta: {
-      title: "Marketing & Growth généraliste — capable de construire une fonction marketing.",
+      title: "Marketing & Growth généraliste · capable de construire une fonction marketing.",
       text:
-        "Pas un profil social media. Un profil qui pense la fonction, la structure, la pilote et l'exécute — de l'acquisition au sales enablement.",
+        "Pas un profil social media. Un profil qui pense la fonction, la structure, la pilote et l'exécute · de l'acquisition au sales enablement.",
     },
   },
   {
     slug: "osecom",
     tag: "INDÉPENDANTE · SEPT. 2024 → AUJOURD'HUI",
     title: "OseCom",
-    titleEN: "OseCom — Freelance Marketing, Growth & Content, en direct avec les marques.",
+    titleEN: "OseCom · Freelance Marketing, Growth & Content, en direct avec les marques.",
     tone: "cream",
     copy:
       "Freelance à temps plein depuis septembre 2024, après trois ans en interne chez LeGratin.io. Une dizaine de clients accompagnés en direct, sans agence intermédiaire, sur forfaits de 1 à 5 K€.",
@@ -231,7 +231,7 @@ export const SERVICES = [
     rythm: "En direct avec les marques, sans agence",
     format: "Freelance · Forfaits 1-5 K€",
     intro:
-      "Activité freelance lancée en septembre 2024, après trois ans en interne chez LeGratin.io. Deux offres. Production audiovisuelle et contenu de marque pour Nuxe, Pierre Fabre, Blissim, Maison Farida, Capsul. Digital complet pour TPE et PME — MKL Energy (énergie), FlatLab (conciergerie), un pressing local. Un outil maison construit en JavaScript qui transforme les articles de blog en carrousels sociaux, déployé chez les clients qui n'ont pas les moyens de recruter un profil social media.",
+      "Activité freelance lancée en septembre 2024, après trois ans en interne chez LeGratin.io. Deux offres. Production audiovisuelle et contenu de marque pour Nuxe, Pierre Fabre, Blissim, Maison Farida, Capsul. Digital complet pour TPE et PME · MKL Energy (énergie), FlatLab (conciergerie), un pressing local. Un outil maison construit en JavaScript qui transforme les articles de blog en carrousels sociaux, déployé chez les clients qui n'ont pas les moyens de recruter un profil social media.",
     primaryCta: "Me contacter",
     tools: [
       "CapCut", "Premiere Pro", "After Effects", "Canva", "Photoshop",
@@ -247,7 +247,7 @@ export const SERVICES = [
       cards: [
         {
           title: "Production audiovisuelle & contenu de marque",
-          text: "Nuxe (5-6 vidéos en 2025), Pierre Fabre, Blissim, Maison Farida, Capsul. Tournage, montage, direction de shootings — production ponctuelle sur des marques prestigieuses du secteur beauté, pharma et food.",
+          text: "Nuxe (5-6 vidéos en 2025), Pierre Fabre, Blissim, Maison Farida, Capsul. Tournage, montage, direction de shootings · production ponctuelle sur des marques prestigieuses du secteur beauté, pharma et food.",
         },
         {
           title: "Digital complet pour TPE & PME",
@@ -255,7 +255,7 @@ export const SERVICES = [
         },
         {
           title: "L'outil de carrousels",
-          text: "Construit en JavaScript, assisté par IA. Transforme les articles de blog en carrousels sociaux au ton et à la DA de la marque. Fonctionne en local, sur l'abonnement Claude du client — pas de SaaS, le client reste propriétaire.",
+          text: "Construit en JavaScript, assisté par IA. Transforme les articles de blog en carrousels sociaux au ton et à la DA de la marque. Fonctionne en local, sur l'abonnement Claude du client · pas de SaaS, le client reste propriétaire.",
         },
       ],
     },
@@ -269,7 +269,7 @@ export const SERVICES = [
     slug: "kalikado",
     tag: "AGENCE · CYCLE COMPLET · 2019 → 2021",
     title: "Agence KaliKado",
-    titleEN: "KaliKado — Business dev, exécution, bilan. En cycle complet.",
+    titleEN: "KaliKado · Business dev, exécution, bilan. En cycle complet.",
     tone: "yellow",
     copy:
       "Cheffe de projet & Business Developer. J'allais chercher mes propres clients, je leur vendais la campagne, je l'exécutais, puis je présentais les bilans chiffrés en direct.",
@@ -291,7 +291,7 @@ export const SERVICES = [
     rythm: "De la prospection au bilan",
     format: "CDI · Agence",
     intro:
-      "Un rôle en cycle complet : je ramenais mes clients, je concevais la campagne, je l'exécutais, je présentais le bilan. Spécialité de l'agence : le sampling contextuel — une personne qui commandait une machine à laver recevait un échantillon de thé ; un grille-pain déclenchait une confiture Bonne Maman. Box hôtelières, partenariats e-commerce, jeux-concours.",
+      "Un rôle en cycle complet : je ramenais mes clients, je concevais la campagne, je l'exécutais, je présentais le bilan. Spécialité de l'agence : le sampling contextuel · une personne qui commandait une machine à laver recevait un échantillon de thé ; un grille-pain déclenchait une confiture Bonne Maman. Box hôtelières, partenariats e-commerce, jeux-concours.",
     primaryCta: "Me contacter",
     tools: [
       "Excel", "PowerPoint", "Keynote", "Canva", "Suite Adobe",
@@ -324,10 +324,10 @@ export const SERVICES = [
     slug: "bergamotte",
     tag: "AGENCE · SECTEUR RÉGULÉ · 2018 → 2019",
     title: "Agence Bergamotte",
-    titleEN: "Bergamotte — Éditorial print & digital pour Axa, Macif, Matmut, Banque Populaire.",
+    titleEN: "Bergamotte · Éditorial print & digital pour Axa, Macif, Matmut, Banque Populaire.",
     tone: "sky",
     copy:
-      "Cheffe de projet Digital. Clients institutionnels du secteur financier et assurantiel. Print autant que digital — je rédigeais moi-même, encadrée par une équipe.",
+      "Cheffe de projet Digital. Clients institutionnels du secteur financier et assurantiel. Print autant que digital · je rédigeais moi-même, encadrée par une équipe.",
     symptoms: [
       "Axa",
       "Macif",
@@ -346,7 +346,7 @@ export const SERVICES = [
     rythm: "Organisation par epics",
     format: "CDI · Agence",
     intro:
-      "Pilotage de projets éditoriaux digitaux de A à Z pour des acteurs du secteur bancaire et assurantiel. Cadrage, planning, coordination interne et prestataires, budgets, délais, qualité. Contenus SEO, newsletters, scripts vidéo, benchmarks, recommandations stratégiques. La particularité : print autant que digital — la plupart des profils marketing de ma génération n'ont jamais touché aux supports imprimés.",
+      "Pilotage de projets éditoriaux digitaux de A à Z pour des acteurs du secteur bancaire et assurantiel. Cadrage, planning, coordination interne et prestataires, budgets, délais, qualité. Contenus SEO, newsletters, scripts vidéo, benchmarks, recommandations stratégiques. La particularité : print autant que digital · la plupart des profils marketing de ma génération n'ont jamais touché aux supports imprimés.",
     primaryCta: "Me contacter",
     tools: [
       "Trello", "Notion", "Suite Adobe", "InDesign", "Photoshop",
@@ -355,14 +355,14 @@ export const SERVICES = [
 
     finalCta: {
       title: "Un projet dans un secteur régulé ?",
-      text: "C'est mon seul pont vers la finance et l'assurance — contacte-moi si le contexte t'intéresse.",
+      text: "C'est mon seul pont vers la finance et l'assurance · contacte-moi si le contexte t'intéresse.",
     },
   },
   {
     slug: "edusup",
     tag: "TOULOUSE · SEULE PÉRIMÈTRE · 2017 → 2018",
     title: "Pigier",
-    titleEN: "Pigier — Communication offline avec achat média, en autonomie.",
+    titleEN: "Pigier · Communication offline avec achat média, en autonomie.",
     tone: "cream",
     copy:
       "Chargée de communication & développement. Seule en charge du périmètre Toulouse : campagnes radio et affichage, relations presse avec retombées, événements.",
@@ -400,7 +400,7 @@ export const SERVICES = [
     slug: "universite-nice",
     tag: "UNIVERSITÉ · BIBLIOTHÈQUE NUMÉRIQUE · 2016 → 2017",
     title: "Université Nice Sophia Antipolis",
-    titleEN: "Univ. Nice — Community management sur projet de bibliothèque numérique.",
+    titleEN: "Univ. Nice · Community management sur projet de bibliothèque numérique.",
     tone: "olive",
     copy:
       "Community Manager sur un projet de bibliothèque numérique. Structuration de contenus, rédaction web, community management.",
@@ -437,7 +437,7 @@ export const SERVICES = [
     slug: "nice-matin",
     tag: "RÉGIE PUBLICITAIRE · PREMIER POSTE · 2015",
     title: "Groupe Nice-Matin",
-    titleEN: "Nice-Matin — Planning stratégique en régie publicitaire. Le fil rouge commence ici.",
+    titleEN: "Nice-Matin · Planning stratégique en régie publicitaire. Le fil rouge commence ici.",
     tone: "yellow",
     copy:
       "Planning stratégique au sein de la régie publicitaire. Analyse stratégique, veille médias, data, coordination de projets. Le point de départ, et le début du fil rouge.",

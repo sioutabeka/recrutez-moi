@@ -24,7 +24,7 @@ const ABOUT_HERO_LINES = [
 
 const EDUCATION = [
   {
-    period: "2024 — 2025",
+    period: "2024 → 2025",
     degree: "Développeur Full-Stack JavaScript",
     school: "GOMYCODE",
     text: "Stack MERN (React, Node.js, MongoDB, SQL).",
@@ -34,7 +34,7 @@ const EDUCATION = [
     tone: "olive",
   },
   {
-    period: "2018 — 2019",
+    period: "2018 → 2019",
     degree: "Master 2 Marketing Digital & E-business",
     school: "ESG Paris",
     text: "Stratégie digitale, SEO/SEA, e-commerce, data & automation.",
@@ -43,17 +43,17 @@ const EDUCATION = [
     tone: "rose",
   },
   {
-    period: "2017 — 2018",
+    period: "2017 → 2018",
     degree: "Master 1 Communication 360°",
     school: "European Communication School · Toulouse",
-    text: "Communication intégrée — stratégie et exécution.",
+    text: "Communication intégrée · stratégie et exécution.",
     monogram: "EC",
     logo: logoEcs,
     logoFill: true,
     tone: "sky",
   },
   {
-    period: "2014 — 2017",
+    period: "2014 → 2017",
     degree: "Licence Information-Communication",
     school: "Université Côte d'Azur · Nice",
     text: "Parcours Organisations & stratégies numériques.",
@@ -62,7 +62,7 @@ const EDUCATION = [
     tone: "yellow",
   },
   {
-    period: "2013 — 2014",
+    period: "2013 → 2014",
     degree: "Anglais général",
     school: "Kaplan International Languages · Londres",
     text: "Année anglophone.",
@@ -241,7 +241,7 @@ function Story() {
           <strong>D'où je viens.</strong> J'ai commencé du côté où l'on
           exécute : projets éditoriaux, print et digital, pour Axa, Macif,
           Matmut et Banque Populaire chez Bergamotte. Puis chez KaliKado, un
-          rôle en cycle complet — j'allais chercher mes clients, je leur
+          rôle en cycle complet · j'allais chercher mes clients, je leur
           vendais la campagne, et je l'exécutais moi-même. C'est là que j'ai
           appris ce qu'un client attend vraiment : pas une idée brillante,
           une idée qui sort dans les temps et qui produit un chiffre.
@@ -260,7 +260,7 @@ function Story() {
           full-stack JavaScript chez GOMYCODE, en parallèle du lancement de
           mon activité freelance. Pas pour devenir développeuse, mais pour
           arrêter de dépendre de quelqu'un d'autre pour faire exister une
-          idée. Depuis, je construis mes propres outils — dont un qui
+          idée. Depuis, je construis mes propres outils · dont un qui
           transforme les articles de blog en carrousels et qui permet à une
           petite entreprise d'exister sur les réseaux sans recruter.
         </p>
@@ -275,7 +275,7 @@ function Formation() {
       <div className="formation__head">
         <h2>Formation.</h2>
         <p>
-          De la communication aux médias, du marketing digital au dev — cinq
+          De la communication aux médias, du marketing digital au dev · cinq
           villes, six étapes, une même curiosité.
         </p>
       </div>
@@ -356,7 +356,7 @@ function Tools() {
           <span className="mono about-tools__cat">{category}</span>
           <div className="about-tools__chips">
             {items.map(({ name, level }) => (
-              <span key={name} className="about-tools__chip" aria-label={`${name} — niveau ${level} sur 3`}>
+              <span key={name} className="about-tools__chip" aria-label={`${name} · niveau ${level} sur 3`}>
                 <span>{name}</span>
                 <span className="about-tools__dots" aria-hidden="true">
                   <i className={level >= 1 ? "on" : ""} />

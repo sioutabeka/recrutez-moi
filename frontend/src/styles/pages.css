@@ -1558,7 +1558,7 @@
 }
 
 /* ─────────────────────────────────────────────
-   About — Timeline chronologique (Expériences)
+   About · Timeline chronologique (Expériences)
    ───────────────────────────────────────────── */
 .about-timeline{ max-width:var(--maxw); margin:0 auto; padding:60px var(--pad); }
 .about-timeline > h2{
@@ -1693,7 +1693,7 @@
 }
 
 /* ─────────────────────────────────────────────
-   About — Story + Formation side-by-side
+   About · Story + Formation side-by-side
    ───────────────────────────────────────────── */
 .story-formation{
   max-width:var(--maxw); margin:0 auto;
@@ -1748,7 +1748,7 @@
 }
 
 /* ─────────────────────────────────────────────
-   About — Formation (liste académique + logos)
+   About · Formation (liste académique + logos)
    ───────────────────────────────────────────── */
 .formation{ max-width:820px; margin:0 auto; padding:50px var(--pad); }
 .formation__head{ text-align:center; margin-bottom:36px; }
@@ -1827,7 +1827,7 @@
 }
 
 /* ─────────────────────────────────────────────
-   Home — Outils par activité (chips + niveau)
+   Home · Outils par activité (chips + niveau)
    ───────────────────────────────────────────── */
 .about-tools{ max-width:var(--maxw); margin:0 auto; padding:60px var(--pad); }
 .about-tools__head{ text-align:center; margin-bottom:44px; }
@@ -1884,7 +1884,7 @@
 }
 
 /* ─────────────────────────────────────────────
-   Home — Vidéo CV
+   Home · Vidéo CV
    ───────────────────────────────────────────── */
 .video-cv{ max-width:var(--maxw); margin:0 auto; padding:60px var(--pad); }
 .video-cv__head{ text-align:center; margin-bottom:32px; }
@@ -1922,7 +1922,7 @@
 }
 
 /* ─────────────────────────────────────────────
-   Home — Manifesto (fil rouge personnel)
+   Home · Manifesto (fil rouge personnel)
    ───────────────────────────────────────────── */
 .manifesto{
   max-width:820px; margin:0 auto; padding:70px var(--pad) 40px;
@@ -2004,7 +2004,7 @@
 }
 
 /* ─────────────────────────────────────────────
-   Home — Réalisations (previews texte-only)
+   Home · Réalisations (previews texte-only)
    ───────────────────────────────────────────── */
 .realisations{ max-width:var(--maxw); margin:0 auto; padding:60px var(--pad); }
 .realisations__head{ text-align:center; margin-bottom:36px; }
@@ -2061,7 +2061,7 @@
 }
 
 /* ─────────────────────────────────────────────
-   Home — OseCom mini case (aujourd'hui)
+   Home · OseCom mini case (aujourd'hui)
    ───────────────────────────────────────────── */
 .osecom-case{ max-width:var(--maxw); margin:0 auto; padding:40px var(--pad); }
 .osecom-case__inner{
@@ -2104,7 +2104,7 @@
 }
 
 /* ─────────────────────────────────────────────
-   Home — Creator/Community + Hands-on blocks
+   Home · Creator/Community + Hands-on blocks
    ───────────────────────────────────────────── */
 .cc-block{
   max-width:var(--maxw); margin:0 auto;

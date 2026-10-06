@@ -29,7 +29,7 @@ export default function Layout() {
   const { pathname, hash } = useLocation();
   const isFirstRender = useRef(true);
 
-  // Intro loader — only fires once on mount.
+  // Intro loader · only fires once on mount.
   useEffect(() => {
     const id = setTimeout(() => setLoading(false), TIMING.LOADER_MS);
     return () => clearTimeout(id);

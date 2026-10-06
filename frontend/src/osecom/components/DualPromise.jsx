@@ -39,7 +39,7 @@ export default function DualPromise() {
         </h3>
         <p>
           À LeGratin.io, la traction que j'ai construite a servi à lever
-          1,5 M€, puis a positionné l'entreprise en cible d'acquisition —
+          1,5 M€, puis a positionné l'entreprise en cible d'acquisition,
           depuis intégrée au groupe Nexoris. Le marketing, ce n'est pas ce
           qu'on saupoudre en fin d'année.
         </p>

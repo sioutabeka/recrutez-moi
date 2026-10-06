@@ -29,7 +29,7 @@ export default function App() {
           <Route path={ROUTES.portfolio} element={<PortfolioPage />} />
           <Route path="/legal/:slug" element={<LegalPage />} />
 
-          {/* Legacy redirects — kept so older URLs and inbound links still work */}
+          {/* Legacy redirects · kept so older URLs and inbound links still work */}
           <Route path="/strategy" element={<Navigate to={ROUTES.services} replace />} />
           <Route path="/community-management" element={<Navigate to={ROUTES.services} replace />} />
           <Route path="/acquisition" element={<Navigate to={ROUTES.services} replace />} />

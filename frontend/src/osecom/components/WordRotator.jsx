@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 /**
  * Inline word cycler. Cycles through `words` every `interval` ms.
  * The previous word slides up + fades out while the next rises from below.
- * Designed to live inside a serif headline — inherits font/size/color.
+ * Designed to live inside a serif headline · inherits font/size/color.
  */
 export default function WordRotator({ words, interval = 2400 }) {
   const [i, setI] = useState(0);

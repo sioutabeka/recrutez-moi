@@ -10,7 +10,7 @@ export const STEPS = [
     num: "01",
     label: "Marque",
     title: "Tenir la voix, poser le cap.",
-    text: "Positionnement, ligne éditoriale, ton. Je fais tenir une marque debout — sur une plateforme B2B comme sur un produit beauté ou food.",
+    text: "Positionnement, ligne éditoriale, ton. Je fais tenir une marque debout · sur une plateforme B2B comme sur un produit beauté ou food.",
     accent: "#F5BADF",
     bg: "linear-gradient(135deg, #F5BADF 0%, #E791C0 100%)",
   },
@@ -18,7 +18,7 @@ export const STEPS = [
     num: "02",
     label: "Contenu",
     title: "Produire soi-même, pas déléguer.",
-    text: "Stratégie éditoriale, tournage, montage, copy. Je passe du cadrage au montage sans changer de casquette — bootcamp full-stack en bonus pour le code.",
+    text: "Stratégie éditoriale, tournage, montage, copy. Je passe du cadrage au montage sans changer de casquette · bootcamp full-stack en bonus pour le code.",
     accent: "#7C8136",
     bg: "linear-gradient(135deg, #7C8136 0%, #5C611F 100%)",
   },
@@ -26,7 +26,7 @@ export const STEPS = [
     num: "03",
     label: "Communauté",
     title: "Faire venir même les plus difficiles.",
-    text: "Interviews d'experts, webinars, activation de créateurs, écosystèmes. Chez LeGratin.io : +20 000 freelances inscrits, sur une audience développeurs — réputée réfractaire au marketing.",
+    text: "Interviews d'experts, webinars, activation de créateurs, écosystèmes. Chez LeGratin.io : +20 000 freelances inscrits, sur une audience développeurs · réputée réfractaire au marketing.",
     accent: "#C8D3E8",
     bg: "linear-gradient(135deg, #C8D3E8 0%, #8FA0BE 100%)",
   },
@@ -166,7 +166,7 @@ function PinnedServicesDesktop() {
     };
 
     // Single setup, gated on fonts.ready so we measure with real glyph
-    // metrics from the first frame — no rebuild needed. Race a 2s
+    // metrics from the first frame · no rebuild needed. Race a 2s
     // timeout so we don't deadlock if a font request hangs.
     const ready = document.fonts?.ready ?? Promise.resolve();
     const timeout = new Promise((r) => setTimeout(r, 2000));

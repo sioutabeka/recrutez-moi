@@ -8,7 +8,7 @@ export const SITE = {
   city: "Paris",
   region: "75",
   email: "essiabenkheder@gmail.com",
-  emailHref: "mailto:essiabenkheder@gmail.com?subject=Opportunité%20CDI%20—%20Marketing",
+  emailHref: "mailto:essiabenkheder@gmail.com?subject=Opportunité%20CDI%20-%20Marketing",
   phone: "07 77 00 12 94",
   phoneHref: "tel:+33777001294",
   cvUrl: "/cv-essia-ben-kheder.pdf",

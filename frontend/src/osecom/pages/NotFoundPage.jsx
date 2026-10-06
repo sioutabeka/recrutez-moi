@@ -13,7 +13,7 @@ export default function NotFoundPage() {
         </h1>
         <p>
           La page que vous cherchez n'existe plus, a été déplacée, ou n'a jamais
-          existé. Pas de stress — voici par où repartir.
+          existé. Pas de stress · voici par où repartir.
         </p>
         <div className="nf__cta">
           <Link to={ROUTES.home} className="btn btn--olive">

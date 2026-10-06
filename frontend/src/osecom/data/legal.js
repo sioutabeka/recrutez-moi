@@ -1,4 +1,4 @@
-// Pages légales — toutes en français
+// Pages légales · toutes en français
 // Les valeurs entre [CROCHETS] sont à remplacer par tes vraies infos.
 
 export const LEGAL = {
@@ -15,9 +15,9 @@ export const LEGAL = {
           "Le présent site est édité par Essia Ben Kheder, exerçant sous le nom commercial OseCom.",
         ],
         list: [
-          "Statut juridique : [À COMPLÉTER — micro-entrepreneur / EI / EURL / SASU / …]",
-          "Adresse : [À COMPLÉTER — adresse postale complète]",
-          "SIRET : [À COMPLÉTER — numéro à 14 chiffres]",
+          "Statut juridique : [À COMPLÉTER · micro-entrepreneur / EI / EURL / SASU / …]",
+          "Adresse : [À COMPLÉTER · adresse postale complète]",
+          "SIRET : [À COMPLÉTER · numéro à 14 chiffres]",
           "N° TVA intracommunautaire : [À COMPLÉTER si assujettie]",
           "Email : contact@osecom.plus",
           "Directrice de la publication : Essia Ben Kheder",
@@ -26,7 +26,7 @@ export const LEGAL = {
       {
         h: "Hébergement",
         body: [
-          "Le site est hébergé par : [À COMPLÉTER — Vercel Inc., OVH, Hostinger, etc.]",
+          "Le site est hébergé par : [À COMPLÉTER · Vercel Inc., OVH, Hostinger, etc.]",
         ],
         list: [
           "Raison sociale : [À COMPLÉTER]",

@@ -4,7 +4,7 @@
  * - `items`: strings to render
  * - `dir`: "left" (default) or "right"
  * - `speed`: animation duration in seconds (lower = faster)
- * - `theme`: "olive" | "rose" | "cream" — background palette
+ * - `theme`: "olive" | "rose" | "cream" · background palette
  */
 export default function Marquee({ items, dir = "left", speed = 40, theme = "olive" }) {
   const looped = [...items, ...items, ...items];

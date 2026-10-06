@@ -7,14 +7,14 @@ import aboutStory from "../../assets/about-story.jpg";
 import epjewelsCover from "../../assets/epjewels-cover.jpg";
 
 const TEASERS = [
-  { label: "L'outil de carrousels — Marketing × Code × IA", slug: "outil-carrousels", img: aboutStory },
-  { label: "LeGratin.io — Vitrine de projets", slug: "legratin", img: aboutHero },
+  { label: "L'outil de carrousels · Marketing × Code × IA", slug: "outil-carrousels", img: aboutStory },
+  { label: "LeGratin.io · Vitrine de projets", slug: "legratin", img: aboutHero },
   { label: "UGC & création de contenu", slug: "ugc-creation", img: epjewelsCover },
 ];
 
 /**
  * 3-card teaser linking to the corresponding case study on /portfolio.
- * Used on Home (with the heading) and About (without — passed via props).
+ * Used on Home (with the heading) and About (without · passed via props).
  */
 export default function PortfolioStrip({ eyebrow = "RÉALISATIONS", title }) {
   return (

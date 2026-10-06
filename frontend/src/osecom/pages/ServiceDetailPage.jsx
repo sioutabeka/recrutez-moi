@@ -210,7 +210,7 @@ function GallerySection({ service }) {
       <span className="mono">SUPPORTS & RÉALISATIONS</span>
       <h2>Un aperçu du travail livré.</h2>
       <p className="srvd-gallery__note">
-        Visuels réels en cours d'ajout — mockups, écrans et supports produits pendant l'expérience.
+        Visuels réels en cours d'ajout · mockups, écrans et supports produits pendant l'expérience.
       </p>
       <div className="srvd-gallery__grid">
         {tiles.map((tile, i) => (

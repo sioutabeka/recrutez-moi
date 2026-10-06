@@ -1,7 +1,7 @@
 /**
  * Per-character "rise" animation headline.
  * - `lines`: array. Each entry is a string (animated per-char) OR an array
- *   of segments — a segment is either a string or a React node rendered
+ *   of segments · a segment is either a string or a React node rendered
  *   as-is (used for inline widgets like a word rotator).
  * - `accentIdx`: index of the line painted in the olive accent color.
  *

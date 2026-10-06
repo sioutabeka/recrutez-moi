@@ -5,7 +5,7 @@
    - Global utilities (.mono, .accent)
    ============================================================ */
 
-/* Open Sauce Sans — self-hosted from /public/fonts (not on Google Fonts). */
+/* Open Sauce Sans · self-hosted from /public/fonts (not on Google Fonts). */
 @font-face{
   font-family:"Open Sauce Sans"; font-style:normal; font-weight:400;
   font-display:swap;
@@ -29,9 +29,9 @@
 
 :root{
   /* Colors */
-  --bg:    #F7F5EB;   /* page background — neutral cream */
-  --cream: #F3EAD0;   /* warm accent — used on break sections & as text on dark cards */
-  --paper: #FFF9E8;   /* card background — slightly warmer than --bg */
+  --bg:    #F7F5EB;   /* page background · neutral cream */
+  --cream: #F3EAD0;   /* warm accent · used on break sections & as text on dark cards */
+  --paper: #FFF9E8;   /* card background · slightly warmer than --bg */
   --olive: #7C8136;
   --olive-d: #5C611F;
   --rose:  #F5BADF;

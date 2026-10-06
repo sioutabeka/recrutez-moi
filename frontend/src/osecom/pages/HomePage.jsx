@@ -51,7 +51,7 @@ const SIGNATURE_PILLARS = [
 
 const FACTS = [
   ["BASÉE À PARIS 🇫🇷", "CDI · Disponible immédiatement"],
-  ["MARKETING & CONTENUS ✨", "De la stratégie au montage — et au code"],
+  ["MARKETING & CONTENUS ✨", "De la stratégie au montage · et au code"],
   ["9 ANS DANS LE MÉTIER 💼", "Régie, agence, plateforme tech, indépendante"],
   ["+20 000 FREELANCES INSCRITS 🚀", "LeGratin.io · En organique · CODIR · Actionnaire"],
   ["1,5 M€ LEVÉS · INTÉGRATION NEXORIS 💰", "Ma traction marketing a servi de preuve à la levée d'octobre 2022"],
@@ -63,20 +63,20 @@ const EXPERIENCES = [
     slug: "osecom",
     period: "Sept. 2024 → Aujourd'hui",
     role: "Freelance · Marketing, Growth & Content",
-    company: "OseCom — Indépendante",
+    company: "OseCom · Indépendante",
     place: "Paris · En direct avec les marques, sans agence",
     bullets: [
       "Une dizaine de clients accompagnés · Forfaits 1-5 K€",
       "Production audiovisuelle : Nuxe (5-6 vidéos 2025), Pierre Fabre, Blissim, Maison Farida, Capsul",
       "Digital complet TPE/PME : MKL Energy (site + supports d'aide à la vente), FlatLab, un pressing",
-      "Outil de carrousels construit en JavaScript, assisté par IA — fonctionne en local",
+      "Outil de carrousels construit en JavaScript, assisté par IA · fonctionne en local",
     ],
   },
   {
     slug: "legratin",
-    period: "2021 — 2024",
+    period: "2021 → 2024",
     role: "Head of Community puis Head of Marketing & Growth · CODIR · Actionnaire",
-    company: "LeGratin.io — Plateforme tech de freelances IT",
+    company: "LeGratin.io · Plateforme tech de freelances IT",
     place: "Paris · Station F (avec 42)",
     bullets: [
       "Arrivée quand l'équipe faisait 4 personnes · Rattachée au fondateur",
@@ -87,20 +87,20 @@ const EXPERIENCES = [
   },
   {
     slug: "kalikado",
-    period: "2019 — 2021",
+    period: "2019 → 2021",
     role: "Cheffe de projet & Business Developer",
     company: "Agence KaliKado",
     place: "Paris · Cycle complet",
     bullets: [
       "Prospection → vente → exécution → bilan : je ramenais mes propres clients",
       "Clients : Andros (Bonne Maman, Mamie Nova), L'Or Espresso, L'Arbre Vert, FDJ",
-      "Spécialité : sampling contextuel — grille-pain déclenche confiture, machine à laver déclenche thé",
+      "Spécialité : sampling contextuel · grille-pain déclenche confiture, machine à laver déclenche thé",
       "Canaux : box hôtelières, partenariats e-commerce, jeux-concours",
     ],
   },
   {
     slug: "bergamotte",
-    period: "2018 — 2019",
+    period: "2018 → 2019",
     role: "Cheffe de projet Digital",
     company: "Agence Bergamotte",
     place: "Paris · Secteur régulé",
@@ -113,7 +113,7 @@ const EXPERIENCES = [
   },
   {
     slug: "edusup",
-    period: "2017 — 2018",
+    period: "2017 → 2018",
     role: "Chargée de communication & développement",
     company: "Pigier",
     place: "Toulouse · Seule sur périmètre",
@@ -126,7 +126,7 @@ const EXPERIENCES = [
   },
   {
     slug: "universite-nice",
-    period: "2016 — 2017",
+    period: "2016 → 2017",
     role: "Community Manager",
     company: "Université Nice Sophia Antipolis",
     place: "Nice",
@@ -140,43 +140,43 @@ const EXPERIENCES = [
     slug: "nice-matin",
     period: "2015",
     role: "Planning stratégique",
-    company: "Groupe Nice-Matin — Régie publicitaire",
+    company: "Groupe Nice-Matin · Régie publicitaire",
     place: "Nice · Premier poste",
     bullets: [
       "Analyse stratégique, veille médias, data",
       "Coordination de projets au sein de la régie",
-      "Le point de départ · Comprendre comment se distribue l'attention — d'abord dans un média régional, aujourd'hui dans les LLM",
+      "Le point de départ · Comprendre comment se distribue l'attention · d'abord dans un média régional, aujourd'hui dans les LLM",
     ],
   },
 ];
 
 const EDUCATION = [
   {
-    period: "2024 — 2025",
+    period: "2024 → 2025",
     degree: "Développeur Full-Stack JavaScript",
     school: "GOMYCODE · Temps plein",
     text: "Stack MERN (React, Node.js, MongoDB, SQL) · méthodologie agile. Non pas pour devenir développeuse, mais pour arrêter de dépendre d'un tiers pour faire exister une idée.",
   },
   {
-    period: "2018 — 2019",
+    period: "2018 → 2019",
     degree: "Master 2 Marketing Digital & E-business",
     school: "ESG Paris",
     text: "Stratégie digitale, SEO/SEA, e-commerce, data & automation, UX/UI, gestion de projet.",
   },
   {
-    period: "2017 — 2018",
+    period: "2017 → 2018",
     degree: "Master 1 Communication 360°",
     school: "European Communication School · Toulouse",
-    text: "Communication intégrée — un socle qui structure ma façon d'articuler stratégie et exécution.",
+    text: "Communication intégrée · un socle qui structure ma façon d'articuler stratégie et exécution.",
   },
   {
-    period: "2014 — 2017",
+    period: "2014 → 2017",
     degree: "Licence Information-Communication",
     school: "Université Côte d'Azur · Nice",
     text: "Parcours Organisations & stratégies numériques. Fondamentaux : communication, art, anthropologie, web.",
   },
   {
-    period: "2013 — 2014",
+    period: "2013 → 2014",
     degree: "Anglais général",
     school: "Kaplan International Languages · Londres",
     text: "Année anglophone pour ancrer un niveau opérationnel.",
@@ -192,7 +192,7 @@ const EDUCATION = [
 const PILLARS = [
   ["01", "Partir des données", "Les données parlent. C'est ma première étape sur toute mission, avant même de discuter d'idées."],
   ["02", "Partir de l'objectif", "Pas du canal. Je commence par le problème et le résultat visé, pas par le tool ou la plateforme."],
-  ["03", "Sortir des routines", "Je déteste \"on fait comme ça parce qu'on a toujours fait comme ça\". Le levier pertinent, on le choisit — on ne l'hérite pas."],
+  ["03", "Sortir des routines", "Je déteste \"on fait comme ça parce qu'on a toujours fait comme ça\". Le levier pertinent, on le choisit · on ne l'hérite pas."],
 ];
 
 // Niveau : 1 = Pratique · 2 = Confirmé · 3 = Expert / référente
@@ -341,7 +341,7 @@ function Hero() {
               Aujourd'hui, je conçois et pilote des stratégies qui font
               travailler ensemble{" "}
               <strong>contenu, social media, acquisition, communautés et IA</strong>{" "}
-              — avec une obsession : transformer l'attention en croissance.
+              · avec une obsession : transformer l'attention en croissance.
             </p>
 
             <div className="hero__cta">
@@ -407,12 +407,12 @@ function Manifesto() {
         <blockquote className="manifesto__quote">
           Née à Tunis, formée à Nice, Toulouse, Paris et Londres. Une même
           obsession depuis Skyblog jusqu'aux LLM :{" "}
-          <em>comprendre comment se distribue l'attention</em> — et savoir
+          <em>comprendre comment se distribue l'attention</em> · et savoir
           la transformer en croissance.
         </blockquote>
         <p className="manifesto__sub">
           Je ne suis pas venue au marketing par la stratégie. Je suis venue
-          par l'attention — celle qu'on capte, qu'on structure, qu'on
+          par l'attention · celle qu'on capte, qu'on structure, qu'on
           mesure. Le reste, c'est de la méthode.
         </p>
       </div>
@@ -489,7 +489,7 @@ const REALISATIONS = [
   },
   {
     tag: "FREELANCE · SEPT. 2024 → AUJOURD'HUI",
-    title: "OseCom — Une dizaine de clients",
+    title: "OseCom · Une dizaine de clients",
     subtitle: "En direct avec les marques, sans agence",
     text: "Activité freelance lancée en septembre 2024, après trois ans en interne chez LeGratin.io. Deux offres : production audiovisuelle (Nuxe, Pierre Fabre, Blissim) et digital complet pour TPE & PME (MKL Energy, FlatLab). Forfaits 1-5 K€.",
     href: "/services/osecom",
@@ -502,7 +502,7 @@ function Realisations() {
     <section className="realisations" data-reveal>
       <div className="realisations__head">
         <span className="mono">QUELQUES RÉALISATIONS</span>
-        <h2>Ce que j'ai construit — en un coup d'œil.</h2>
+        <h2>Ce que j'ai construit · en un coup d'œil.</h2>
       </div>
       <div className="realisations__grid">
         {REALISATIONS.map((r, i) => (
@@ -568,7 +568,7 @@ function OseComCase() {
     <section className="osecom-case" data-reveal>
       <div className="osecom-case__inner">
         <span className="mono">AUJOURD'HUI · OSECOM · INDÉPENDANTE</span>
-        <h2>Marketing indépendante — une dizaine de clients, deux offres, un outil IA maison.</h2>
+        <h2>Marketing indépendante · une dizaine de clients, deux offres, un outil IA maison.</h2>
         <p className="osecom-case__intro">
           Depuis septembre 2024, après trois ans en interne chez
           LeGratin.io. En direct avec les marques, sans agence intermédiaire.
@@ -578,7 +578,7 @@ function OseComCase() {
           <div className="osecom-case__col">
             <span className="mono mono--sm">PRODUCTION AUDIOVISUELLE & CONTENU</span>
             <p>
-              Nuxe, Pierre Fabre, Blissim, Maison Farida, Capsul —
+              Nuxe, Pierre Fabre, Blissim, Maison Farida, Capsul,
               conception, tournage, montage, direction de shootings.
             </p>
           </div>
@@ -592,8 +592,8 @@ function OseComCase() {
           </div>
         </div>
         <p className="osecom-case__closing">
-          <strong>L'outil de carrousels</strong> — construit en JavaScript,
-          assisté par IA — permet à une petite entreprise de publier
+          <strong>L'outil de carrousels</strong> · construit en JavaScript,
+          assisté par IA · permet à une petite entreprise de publier
           régulièrement sans recruter. Meilleure preuve concrète de la
           combinaison marketing + code + IA.
         </p>
@@ -648,7 +648,7 @@ const METHOD_STEPS = [
     num: "02",
     title: "Faire",
     tagline: "Transformer la stratégie en quelque chose de concret.",
-    text: "Contenus, campagnes, newsletters, webinars, événements, supports, landing pages : je peux concevoir, produire, coordonner l'exécution — et piloter les prestataires, l'équipe et le budget qui vont avec.",
+    text: "Contenus, campagnes, newsletters, webinars, événements, supports, landing pages : je peux concevoir, produire, coordonner l'exécution · et piloter les prestataires, l'équipe et le budget qui vont avec.",
   },
   {
     num: "03",
@@ -663,7 +663,7 @@ function Method2() {
     <section className="about-pillars" data-reveal>
       <h2>Ma façon de travailler.</h2>
       <p className="about-pillars__intro">
-        Un cycle simple, appliqué à chaque mission — de la stratégie éditoriale
+        Un cycle simple, appliqué à chaque mission · de la stratégie éditoriale
         à un programme créateurs, d'une campagne paid à un dispositif
         communautaire.
       </p>
@@ -730,7 +730,7 @@ function Story() {
           <strong>D'où je viens.</strong> J'ai commencé du côté où l'on
           exécute : projets éditoriaux, print et digital, pour Axa, Macif,
           Matmut et Banque Populaire chez Bergamotte. Puis chez KaliKado, un
-          rôle en cycle complet — j'allais chercher mes clients, je leur
+          rôle en cycle complet · j'allais chercher mes clients, je leur
           vendais la campagne, et je l'exécutais moi-même. C'est là que j'ai
           appris ce qu'un client attend vraiment : pas une idée brillante,
           une idée qui sort dans les temps et qui produit un chiffre.
@@ -751,7 +751,7 @@ function Story() {
           bootcamp full-stack JavaScript, à temps plein. Pas pour devenir
           développeuse, mais pour arrêter de dépendre de quelqu'un
           d'autre pour faire exister une idée. Depuis, je construis mes
-          propres outils — dont un qui transforme les articles de blog en
+          propres outils · dont un qui transforme les articles de blog en
           carrousels et qui permet à une petite entreprise d'exister sur
           les réseaux sans recruter. Je cherche une équipe où la personne
           qui pense la marque est aussi celle qui a les mains dans le
@@ -785,7 +785,7 @@ function Timeline() {
     <section id="experiences" className="about-timeline" data-reveal>
       <h2>Expériences.</h2>
       <p className="about-timeline__intro">
-        Un parcours entre régie, agence, plateforme tech et indépendante —
+        Un parcours entre régie, agence, plateforme tech et indépendante,
         sept postes, quatre univers, une même obsession.
       </p>
       <div className="about-timeline__track">
@@ -833,7 +833,7 @@ function Formation() {
     <section className="about-pillars" data-reveal>
       <h2>Formation.</h2>
       <p className="about-pillars__intro">
-        De la communication aux médias, du marketing digital au dev — chaque
+        De la communication aux médias, du marketing digital au dev · chaque
         étape m'a donné une nouvelle façon de lire le métier.
       </p>
       <div className="about-pillars__grid">
@@ -845,7 +845,7 @@ function Formation() {
             style={{ "--delay": i * 0.1 + "s" }}
           >
             <span className="about-pillars__n">{ed.period}</span>
-            <h4>{ed.degree}{ed.school && ` — ${ed.school}`}</h4>
+            <h4>{ed.degree}{ed.school && ` · ${ed.school}`}</h4>
             <p>{ed.text}</p>
           </div>
         ))}
@@ -861,7 +861,7 @@ function Tools() {
         <span className="mono">MES OUTILS · PAR ACTIVITÉ</span>
         <h2>Ce que j'utilise vraiment.</h2>
         <p>
-          Un inventaire honnête, avec un indicateur de niveau par outil —
+          Un inventaire honnête, avec un indicateur de niveau par outil,
           pour que tu saches à quoi t'attendre en entretien technique.
         </p>
         <div className="about-tools__legend mono">
@@ -901,7 +901,7 @@ function Tools() {
           <span className="mono about-tools__cat">{category}</span>
           <div className="about-tools__chips">
             {items.map(({ name, level }) => (
-              <span key={name} className="about-tools__chip" aria-label={`${name} — niveau ${level} sur 3`}>
+              <span key={name} className="about-tools__chip" aria-label={`${name} · niveau ${level} sur 3`}>
                 <span>{name}</span>
                 <span className="about-tools__dots" aria-hidden="true">
                   <i className={level >= 1 ? "on" : ""} />

@@ -87,7 +87,7 @@ function UgcHero() {
         <MorphHeadline lines={UGC_HERO_LINES} accentIdx={-1} />
         <p>
           Un aperçu de mon travail créatif : contenus, storytelling, design.
-          Une facette du profil — utile pour comprendre comment je pense
+          Une facette du profil · utile pour comprendre comment je pense
           l'esthétique et l'attention.
         </p>
         <div className="ugc-hero__pills">

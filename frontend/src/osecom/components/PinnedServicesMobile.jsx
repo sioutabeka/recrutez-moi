@@ -5,7 +5,7 @@ import { STEPS } from "./PinnedServices";
 const TONES = ["rose", "olive", "sky", "yellow"];
 
 /**
- * Mobile-only sticky card stack — same pattern as the cards on the
+ * Mobile-only sticky card stack · same pattern as the cards on the
  * /services page (each card uses position:sticky with a progressive
  * top offset, so they stack visibly as you scroll). Pure CSS, no
  * GSAP pin, no Lenis fight on mobile.
@@ -16,7 +16,7 @@ export default function PinnedServicesMobile() {
       <div className="pin-m__head">
         <span className="mono pin-m__eyebrow">MES QUATRE TERRAINS</span>
         <h2 className="pin-m__heading">
-          Marque, contenu, communauté, croissance — je tiens les quatre bouts.
+          Marque, contenu, communauté, croissance · je tiens les quatre bouts.
         </h2>
       </div>
 

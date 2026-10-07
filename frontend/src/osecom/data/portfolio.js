@@ -36,15 +36,6 @@ export const PORTFOLIO = [
     images: [phepheCover, phepheCover, phepheCover],
   },
   {
-    slug: "supports-digitaux",
-    tag: "FREELANCE · SUPPORTS D'AIDE À LA VENTE",
-    title: "Création de supports digitaux & print",
-    description:
-      "Brochures, fiches produits, flyers, plaquettes, présentations commerciales, documentation corporate · pour TPE et PME qui n'ont pas d'équipe marketing interne. Livrés pour MKL Energy (énergie/solaire) et d'autres clients indépendants.",
-    cover: maxmaraCover,
-    images: [maxmaraCover, maxmaraCover, maxmaraCover],
-  },
-  {
     slug: "landing-sites",
     tag: "FREELANCE · WEB · TPE & PME",
     title: "Landing pages & sites fonctionnels",
@@ -52,23 +43,5 @@ export const PORTFOLIO = [
       "Sites complets et landing pages livrés en autonomie · de la stratégie éditoriale à la conception, du code au déploiement. Pour MKL Energy, FlatLab (conciergerie) et d'autres TPE/PME. Formation full-stack JavaScript (GOMYCODE) mise à profit pour ne dépendre de personne.",
     cover: epjewelsCover,
     images: [epjewelsCover, epjewelsCover, epjewelsCover],
-  },
-  {
-    slug: "campagnes-ads",
-    tag: "FREELANCE · SOCIAL ADS",
-    title: "Campagnes Ads",
-    description:
-      "Setup, ciblage, création, suivi de KPI, optimisation. Campagnes Meta Ads, TikTok Ads, Google Ads sur budgets adaptés au contexte du client. Contenu ads produit à l'interne pour rester rapide et cohérent avec la marque.",
-    cover: aboutStory,
-    images: [aboutStory, aboutStory, aboutStory],
-  },
-  {
-    slug: "videos-ads",
-    tag: "FREELANCE · VIDÉOS PUBLICITAIRES",
-    title: "Vidéos pour Ads",
-    description:
-      "Concepts, scripts, tournage et montage de vidéos publicitaires courtes (Meta, TikTok, YouTube Shorts). Format natif, hook dans les 3 premières secondes, calibrés pour les algorithmes. Livraison en boucle rapide pour tester plusieurs variantes.",
-    cover: phepheCover,
-    images: [phepheCover, phepheCover, phepheCover],
   },
 ];

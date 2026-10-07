@@ -1,8 +1,9 @@
 const JOBS = [
-  ["Responsable Marketing & Contenus", "rose"],
-  ["Head of Marketing", "olive"],
-  ["Responsable Marketing & Communication", "sky"],
-  ["Growth & Community Manager senior", "cream"],
+  ["Responsable Marketing & Communication", "rose"],
+  ["Responsable Marketing", "olive"],
+  ["Responsable Communication", "sky"],
+  ["Marketing & Communication Manager", "cream"],
+  ["Chargée Marketing & Communication", "yellow"],
 ];
 
 /**

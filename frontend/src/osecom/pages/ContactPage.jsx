@@ -21,7 +21,7 @@ const BUDGETS = [
 
 const SLOTS = ["10:00", "11:30", "14:00", "15:30", "17:00"];
 
-const STEPS = ["01 · Date", "02 · Vous", "03 · Confirmation"];
+const STEPS = ["Date", "Vous", "Confirmation"];
 
 const INITIAL_DATA = {
   name: "",

@@ -2,6 +2,12 @@ import { useRef } from "react";
 import { Link } from "react-router-dom";
 import essiaHome from "../../assets/essia-hero.png";
 import aboutStory from "../../assets/about-story.jpg";
+import logoGomycode from "../../assets/logo-gomycode.png";
+import logoEsg from "../../assets/logo-esg-paris.png";
+import logoEcs from "../../assets/logo-ecs-toulouse.png";
+import logoUcaNice from "../../assets/logo-universite-nice.png";
+import logoKaplan from "../../assets/logo-kaplan.png";
+import logoPmf from "../../assets/logo-pmf-tunis.jpeg";
 import IconArrow from "../components/IconArrow";
 import MorphHeadline from "../components/MorphHeadline";
 import Marquee from "../components/Marquee";
@@ -14,37 +20,37 @@ import { ROUTES } from "../config/routes";
 import { BRANDS, SITE } from "../config/site";
 
 const HERO_LINES = [
-  "Je transforme le marketing",
-  "en moteur de croissance.",
+  "La vision stratégique,",
+  "les mains dans l'exécution.",
 ];
 
 const SIGNATURE_PILLARS = [
   {
-    title: "Stratégie & Growth",
-    tagline: "Transformer les enjeux business en leviers de croissance.",
+    title: "Marketing",
+    tagline: "Définir la direction, structurer et piloter.",
     skills:
-      "Positionnement, acquisition, activation, parcours, SEO, paid, outbound, CRM, analytics, automatisation : je réfléchis aux canaux, aux audiences et aux mécaniques qui permettent de générer de la croissance.",
+      "Positionnement, ICP et go-to-market jusqu'au plan marketing, budget et KPIs. Pilotage du funnel et du CRM, alignement sales-produit, reporting et management d'équipe.",
     proof: null,
   },
   {
-    title: "Content & Social",
-    tagline: "Faire exister une marque dans le réel.",
+    title: "Communication & Content",
+    tagline: "Construire une marque forte et la faire vivre.",
     skills:
-      "Stratégie éditoriale, social media, copywriting, formats courts, UGC, webinars, interviews, newsletters, supports digitaux : je conçois les contenus, mais je peux aussi les produire et les déployer.",
+      "De l'identité à la stratégie éditoriale : site, SEO, contenus, newsletters, social media, RP et événements. Stratégie, production et coordination des partenaires externes.",
     proof: null,
   },
   {
-    title: "Community & Activation",
-    tagline: "Créer de l'engagement au-delà de l'audience.",
+    title: "Growth & Community",
+    tagline: "Acquérir, convertir et engager.",
     skills:
-      "Community building, animation, événements, partenariats, créateurs, ambassadeurs, expériences : je transforme une audience en communauté et la communauté en levier d'acquisition, d'engagement et de fidélisation.",
+      "Construction et optimisation des mécaniques d'acquisition B2B & B2C : inbound, outbound, paid, landing pages, CRO et automation. Développement de communautés, partenariats, créateurs et ambassadeurs.",
     proof: null,
   },
   {
-    title: "Brand, Digital & AI",
-    tagline: "Construire et faire évoluer l'écosystème de marque.",
+    title: "Digital, IA & Tech",
+    tagline: "Intégrer les nouveaux outils aux usages marketing.",
     skills:
-      "Branding, positionnement, identité, site, expérience digitale, coordination de prestataires et intégration de l'IA dans les process et la création : je relie la marque, les outils et les nouveaux usages pour faire évoluer le dispositif marketing.",
+      "IA générative, automatisation, SEO/GEO, analytics et stack marketing intégrés aux process. Une pratique du code pour prototyper, collaborer avec les équipes tech et développer mes propres outils.",
     proof: null,
   },
 ];
@@ -155,7 +161,7 @@ const EDUCATION = [
     period: "2024 → 2025",
     degree: "Développeur Full-Stack JavaScript",
     school: "GOMYCODE · Temps plein",
-    text: "Stack MERN (React, Node.js, MongoDB, SQL) · méthodologie agile. Non pas pour devenir développeuse, mais pour arrêter de dépendre d'un tiers pour faire exister une idée.",
+    text: "Stack MERN (React, Node.js, MongoDB, SQL) · méthodologie agile. Pour construire mes propres outils sans dépendre d'un tiers.",
   },
   {
     period: "2018 → 2019",
@@ -299,13 +305,255 @@ export default function HomePage() {
   return (
     <main className="page page--home">
       <Hero />
-      <VideoCV />
+      {/* <VideoCV /> · masqué tant que la vidéo n'est pas prête */}
       <Signature />
+      <WhyMe />
       <Realisations />
+      <FormationStrip />
+      <ToolsStrip />
       <ServicesOffer />
-      <Method2 />
       <FinalCta />
     </main>
+  );
+}
+
+const WHY_ME = [
+  {
+    title: "Marketing × Code × IA",
+    text: "Je code en JavaScript, j'intègre l'IA à mes process, et j'ai construit mes propres outils (dont un générateur de carrousels assisté par Claude). Rare dans un profil marketing.",
+    tone: "rose",
+  },
+  {
+    title: "Production hands-on",
+    text: "Je ne pilote pas la production, je la fais. Tournage, montage, DA, carrousels, newsletters, landing pages. Autonome de A à Z pour aller vite sans équipe pléthorique.",
+    tone: "olive",
+  },
+  {
+    title: "Business mindset",
+    text: "CODIR et actionnaire chez LeGratin.io, dialogue direct avec le fondateur, contribution à la levée de 1,5 M€. Je pense marketing comme une fonction business, pas comme un centre de coûts.",
+    tone: "sky",
+  },
+  {
+    title: "Culture internationale",
+    text: "Trilingue FR/EN/AR (C2 · C1 · C1). Née à Tunis, formée à Nice, Toulouse, Paris et Londres. Habituée à travailler avec des équipes et des audiences de cultures différentes.",
+    tone: "yellow",
+  },
+];
+
+function WhyMe() {
+  return (
+    <section className="whyme" data-reveal>
+      <div className="whyme__head">
+        <span className="mono">POURQUOI MOI</span>
+        <h2>Ce qui me distingue d'un autre profil Marketing & Communication.</h2>
+      </div>
+      <div className="whyme__grid">
+        {WHY_ME.map((w, i) => (
+          <article
+            key={w.title}
+            className={`whyme__card whyme__card--${w.tone}`}
+            data-reveal
+            style={{ "--delay": i * 0.06 + "s" }}
+          >
+            <h4>{w.title}</h4>
+            <p>{w.text}</p>
+          </article>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+const FORMATION_STRIP = [
+  { logo: logoGomycode, logoFill: true, period: "2024 → 2025", degree: "Full-Stack JavaScript", school: "GOMYCODE" },
+  { logo: logoEsg, period: "2018 → 2019", degree: "Master 2 Marketing Digital & E-business", school: "ESG Paris" },
+  { logo: logoEcs, logoFill: true, period: "2017 → 2018", degree: "Master 1 Communication 360°", school: "ECS Toulouse" },
+  { logo: logoUcaNice, period: "2014 → 2017", degree: "Licence Information-Communication", school: "Université Côte d'Azur" },
+  { logo: logoKaplan, logoFill: true, period: "2013 → 2014", degree: "Anglais général", school: "Kaplan Londres" },
+  { logo: logoPmf, period: "2013", degree: "Baccalauréat Scientifique", school: "Lycée Pierre Mendès France" },
+];
+
+function FormationStrip() {
+  return (
+    <section className="formation-strip" data-reveal>
+      <div className="formation-strip__head">
+        <span className="mono">FORMATION</span>
+        <h2>Bac+5 Marketing & Communication.</h2>
+      </div>
+      <div className="formation-strip__grid">
+        {FORMATION_STRIP.map((ed, i) => (
+          <article
+            key={ed.school + ed.period}
+            className="formation-strip__item"
+            data-reveal
+            style={{ "--delay": i * 0.05 + "s" }}
+          >
+            <div className={`formation-strip__logo${ed.logoFill ? " formation-strip__logo--fill" : ""}`} aria-hidden="true">
+              <img src={ed.logo} alt="" />
+            </div>
+            <div className="formation-strip__meta">
+              <span className="formation-strip__degree">{ed.degree}</span>
+              <span className="formation-strip__school">{ed.school}</span>
+            </div>
+          </article>
+        ))}
+      </div>
+      <div className="formation-strip__cta">
+        <Link to={ROUTES.about} className="link-arrow">
+          Voir tout le profil
+          <IconArrow size={12} />
+        </Link>
+      </div>
+    </section>
+  );
+}
+
+const HOME_TOOLS = [
+  {
+    category: "CRM & AUTOMATION 📮",
+    tools: ["HubSpot", "Brevo", "Make", "Lemlist"],
+    tone: "rose",
+  },
+  {
+    category: "ADS & ANALYTICS 📊",
+    tools: ["Google Ads", "LinkedIn Ads", "Meta Ads", "GA4", "SEMrush"],
+    tone: "sky",
+  },
+  {
+    category: "CONTENU & CRÉA 🎬",
+    tools: ["CapCut", "Premiere Pro", "After Effects", "Canva", "Figma"],
+    tone: "olive",
+  },
+  {
+    category: "IA & DEV 🤖",
+    tools: ["Claude Team", "Claude Skills & MCP", "ChatGPT", "Midjourney", "JavaScript / React"],
+    tone: "yellow",
+  },
+];
+
+function ToolsStrip() {
+  return (
+    <section className="tools-strip" data-reveal>
+      <div className="tools-strip__head">
+        <span className="mono">STACK</span>
+        <h2>Les outils que j'utilise au quotidien.</h2>
+      </div>
+      <div className="tools-strip__grid">
+        {HOME_TOOLS.map((group, i) => (
+          <article
+            key={group.category}
+            className={`tools-strip__group tools-strip__group--${group.tone}`}
+            data-reveal
+            style={{ "--delay": i * 0.06 + "s" }}
+          >
+            <span className="tools-strip__cat mono">{group.category}</span>
+            <div className="tools-strip__chips">
+              {group.tools.map((t) => (
+                <span key={t} className="tools-strip__chip">{t}</span>
+              ))}
+            </div>
+          </article>
+        ))}
+      </div>
+      <div className="tools-strip__cta">
+        <Link to={ROUTES.about} className="link-arrow">
+          Voir tous les outils (niveau détaillé)
+          <IconArrow size={12} />
+        </Link>
+      </div>
+    </section>
+  );
+}
+
+const FOCUS = [
+  {
+    title: "SaaS B2B & HR Tech",
+    proof: "3 ans chez LeGratin.io",
+    text: "SaaS B2B marketplace talents IT, incubée à Station F avec 42. Je connais le cycle de vente SaaS, l'ICP DSI/CTO, les enjeux d'un fondateur qui lève, l'écosystème HR tech et le dialogue avec les équipes produit et développeurs.",
+    tone: "rose",
+  },
+  {
+    title: "Edtech & Formation",
+    proof: "Pigier · Université Nice Sophia Antipolis",
+    text: "Chargée de communication & développement chez Pigier (école de commerce, Toulouse) : stratégie de com, campagnes radio/affichage, RP, événements. Community management chez l'Université Nice sur un projet de bibliothèque numérique. Je comprends la cible RH, L&D et formation, et je sais parler aux apprenants autant qu'aux prescripteurs.",
+    tone: "olive",
+  },
+];
+
+function Sectors() {
+  return (
+    <section className="sectors" data-reveal>
+      <div className="sectors__head">
+        <span className="mono">MES UNIVERS DE PRÉDILECTION</span>
+        <h2>SaaS B2B et Edtech : deux univers où j'ai fait mes preuves.</h2>
+        <p>Mon parcours m'a amenée à travailler dans plusieurs secteurs, mais ce sont la tech B2B et l'éducation que je veux approfondir. Deux univers où je sais ce que je fais, où je comprends la cible, et où mon profil polyvalent apporte une vraie différence.</p>
+      </div>
+      <div className="sectors__grid sectors__grid--focus">
+        {FOCUS.map((s, i) => (
+          <article
+            key={s.title}
+            className={`sectors__card sectors__card--${s.tone}`}
+            data-reveal
+            style={{ "--delay": i * 0.08 + "s" }}
+          >
+            <h4>{s.title}</h4>
+            <span className="sectors__proof mono">{s.proof}</span>
+            <p>{s.text}</p>
+          </article>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+const TESTIMONIALS = [
+  {
+    quote:
+      "Essia est arrivée quand nous étions quatre. Elle a construit la fonction marketing & communication de l'entreprise de A à Z, avec autant d'autonomie que de rigueur dans le pilotage. Sa capacité à passer de la stratégie à l'exécution a été clé dans notre développement.",
+    author: "[À remplir : nom + rôle du fondateur LeGratin]",
+    context: "LeGratin.io · Fondateur",
+    tone: "rose",
+  },
+  {
+    quote:
+      "[Ajouter une reco LinkedIn d'un pair ou d'un n+1 qui parle de ton leadership marketing et de ta capacité à embarquer les équipes transverses — ex: directeur commercial LeGratin, directeur produit, autre membre du CODIR]",
+    author: "[Nom · Titre]",
+    context: "[Entreprise · Contexte]",
+    tone: "olive",
+  },
+  {
+    quote:
+      "[Ajouter une reco d'un client freelance ou d'un ancien employeur qui parle de ton exécution opérationnelle, de la qualité des livrables, de la fiabilité : Nuxe, Pierre Fabre, Blissim, MKL Energy, Bergamotte...]",
+    author: "[Nom · Titre]",
+    context: "[Entreprise · Contexte]",
+    tone: "sky",
+  },
+];
+
+function Testimonials() {
+  return (
+    <section className="testimonials" data-reveal>
+      <div className="testimonials__head">
+        <span className="mono">CE QU'ON DIT DE MOI</span>
+        <h2>Trois voix qui connaissent mon travail.</h2>
+      </div>
+      <div className="testimonials__grid">
+        {TESTIMONIALS.map((t, i) => (
+          <article
+            key={i}
+            className={`testimonials__card testimonials__card--${t.tone}`}
+            data-reveal
+            style={{ "--delay": i * 0.08 + "s" }}
+          >
+            <p className="testimonials__quote">« {t.quote} »</p>
+            <div className="testimonials__author">
+              <strong>{t.author}</strong>
+              <span className="mono">{t.context}</span>
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
   );
 }
 
@@ -320,28 +568,27 @@ function Hero() {
       <div className="hero__row">
         <div className="hero__col-text" ref={textRef}>
           <div className="hero__meta">
-            <span className="mono">HI, MOI C'EST ESSIA · MARKETING, GROWTH & CONTENT</span>
+            <span className="mono">ESSIA BEN KHEDER · RESPONSABLE MARKETING & COMMUNICATION · CDI PARIS</span>
           </div>
 
           <MorphHeadline lines={HERO_LINES} accentIdx={-1} />
 
           <div className="hero__base">
             <p className="hero__sub">
-              9 ans d'expérience en marketing et communication, dont 3 ans
-              chez LeGratin.io à piloter le marketing, l'acquisition et la
-              communauté.
+              9 ans en marketing et communication, dans la{" "}
+              <strong>startup, l'agence, l'éducation et le média</strong>.
+              Profil polyvalent, rigoureux, autonome : je tiens une fonction
+              marketing & communication complète, de la stratégie aux KPIs,
+              du site aux salons, de la génération de leads{" "}
+              <strong>B2B et B2C</strong> aux supports commerciaux.
               <br />
               <br />
-              En 1 an, j'ai contribué à l'acquisition et à l'activation de{" "}
-              <strong>+20 000 freelances</strong>, en combinant contenu, SEO,
-              outbound, paid acquisition, partenariats, événements et
-              community building.
-              <br />
-              <br />
-              Aujourd'hui, je conçois et pilote des stratégies qui font
-              travailler ensemble{" "}
-              <strong>contenu, social media, acquisition, communautés et IA</strong>{" "}
-              · avec une obsession : transformer l'attention en croissance.
+              Preuve récente : 3 ans chez <strong>LeGratin.io</strong>{" "}
+              (startup tech, Station F, CODIR, actionnaire) où j'ai construit
+              la fonction marketing de bout en bout : +20 000 utilisateurs
+              acquis en organique, 50+ interviews d'experts, 30+ webinars
+              produits, contribution directe à la levée de 1,5 M€ (groupe
+              Nexoris depuis).
             </p>
 
             <div className="hero__cta">
@@ -353,14 +600,22 @@ function Hero() {
               >
                 Télécharger mon CV
               </a>
-              <a href="/portfolio" className="btn btn--ghost">
-                Voir mes réalisations
+              <a
+                href={SITE.calendlyUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="btn btn--rose"
+              >
+                Prendre 15 min
+              </a>
+              <a href={SITE.emailHref} className="btn btn--ghost">
+                Me contacter
                 <IconArrow />
               </a>
             </div>
 
             <p className="hero__meta-bottom mono">
-              CDI · Paris / Île-de-France · Disponible immédiatement · FR · EN · AR
+              CDI · Paris · Disponible immédiatement · FR · EN · AR (C2 · C1 · C1)
             </p>
           </div>
         </div>
@@ -424,9 +679,9 @@ function Signature() {
   return (
     <section className="signature" data-reveal>
       <div className="signature__head">
-        <span className="mono">MES QUATRE TERRAINS</span>
-        <h2>Une approche transverse du marketing.</h2>
-        <p>Un objectif : transformer l'attention en croissance. Quatre terrains complémentaires que je fais travailler ensemble.</p>
+        <span className="mono">MES EXPERTISES</span>
+        <h2>Marketing & Communication, un profil transverse.</h2>
+        <p>Quatre expertises complémentaires, de la stratégie à l'exécution, avec un même objectif : faire du marketing un levier concret pour le business.</p>
       </div>
 
       <div className="signature__grid">
@@ -437,7 +692,6 @@ function Signature() {
             data-reveal
             style={{ "--delay": i * 0.08 + "s" }}
           >
-            <span className="signature__num">{String(i + 1).padStart(2, "0")}</span>
             <h4>{pillar.title}</h4>
             <p className="signature__tagline">{pillar.tagline}</p>
             <p className="signature__skills">{pillar.skills}</p>
@@ -472,28 +726,28 @@ function Trust() {
 
 const REALISATIONS = [
   {
-    tag: "FREELANCE · CONCIERGERIE · DIGITAL COMPLET",
-    title: "FlatLab",
-    subtitle: "Site, réseaux sociaux, automatisation",
-    text: "Accompagnement digital complet d'une conciergerie : création du site, structuration de la présence sur les réseaux, automatisation des process. Un dispositif de bout en bout pour que la marque existe en ligne sans mobiliser l'équipe au quotidien.",
-    href: "/services/osecom",
+    tag: "LEGRATIN.IO · 2021 → 2024",
+    title: "Construction d'une fonction marketing complète",
+    subtitle: "+20 000 utilisateurs organique · levée 1,5 M€",
+    text: "SaaS B2B, Station F, CODIR, actionnaire.",
+    href: "/portfolio#legratin",
     tone: "rose",
   },
   {
-    tag: "FREELANCE · MARKETING × CODE × IA · 2025",
-    title: "L'outil de carrousels",
-    subtitle: "JavaScript · Assisté par IA · En local",
-    text: "Un outil construit en JavaScript et assisté par IA qui transforme les articles de blog en carrousels sociaux au ton et à la DA de chaque marque. Fonctionne en local, sur l'abonnement Claude du client. Déployé chez un pressing de proximité qui publie régulièrement sans embaucher personne.",
-    href: "/portfolio#outil-carrousels",
-    tone: "olive",
+    tag: "FREELANCE · 2024-2025",
+    title: "Nuxe · Pierre Fabre · Blissim",
+    subtitle: "Production audiovisuelle en direct avec les marques",
+    text: "Direction créative, tournage, montage, shooting.",
+    href: "/portfolio#freelance-beauty",
+    tone: "sky",
   },
   {
-    tag: "FREELANCE · SEPT. 2024 → AUJOURD'HUI",
-    title: "OseCom · Une dizaine de clients",
-    subtitle: "En direct avec les marques, sans agence",
-    text: "Activité freelance lancée en septembre 2024, après trois ans en interne chez LeGratin.io. Deux offres : production audiovisuelle (Nuxe, Pierre Fabre, Blissim) et digital complet pour TPE & PME (MKL Energy, FlatLab). Forfaits 1-5 K€.",
-    href: "/services/osecom",
-    tone: "sky",
+    tag: "OUTIL MAISON · 2025",
+    title: "Générateur de carrousels sociaux",
+    subtitle: "JavaScript assisté par IA",
+    text: "Déployé chez un client, intégré à ses process.",
+    href: "/portfolio#outil-carrousels",
+    tone: "olive",
   },
 ];
 
@@ -501,8 +755,8 @@ function Realisations() {
   return (
     <section className="realisations" data-reveal>
       <div className="realisations__head">
-        <span className="mono">QUELQUES RÉALISATIONS</span>
-        <h2>Ce que j'ai construit · en un coup d'œil.</h2>
+        <span className="mono">RÉALISATIONS</span>
+        <h2>Des preuves de ce que je sais livrer.</h2>
       </div>
       <div className="realisations__grid">
         {REALISATIONS.map((r, i) => (
@@ -670,12 +924,11 @@ function Method2() {
       <div className="about-pillars__grid">
         {METHOD_STEPS.map((step, i) => (
           <div
-            key={step.num}
+            key={step.title}
             className="about-pillars__card"
             data-reveal
             style={{ "--delay": i * 0.08 + "s" }}
           >
-            <span className="about-pillars__n">{step.num}</span>
             <h4>{step.title}</h4>
             <p className="about-pillars__tagline">{step.tagline}</p>
             <p>{step.text}</p>
@@ -732,8 +985,8 @@ function Story() {
           Matmut et Banque Populaire chez Bergamotte. Puis chez KaliKado, un
           rôle en cycle complet · j'allais chercher mes clients, je leur
           vendais la campagne, et je l'exécutais moi-même. C'est là que j'ai
-          appris ce qu'un client attend vraiment : pas une idée brillante,
-          une idée qui sort dans les temps et qui produit un chiffre.
+          appris ce qu'un client attend vraiment : une idée qui sort dans
+          les temps et qui produit un chiffre.
         </p>
         <p>
           <strong>Ce que j'ai construit.</strong> Chez LeGratin.io,
@@ -748,9 +1001,8 @@ function Story() {
         <p>
           <strong>Où je vais.</strong> À Station F, j'étais entourée de
           développeurs. Ça m'a donné envie de m'y mettre : un an de
-          bootcamp full-stack JavaScript, à temps plein. Pas pour devenir
-          développeuse, mais pour arrêter de dépendre de quelqu'un
-          d'autre pour faire exister une idée. Depuis, je construis mes
+          bootcamp full-stack JavaScript, à temps plein, pour arrêter de
+          dépendre d'un tiers pour faire exister une idée. Depuis, je construis mes
           propres outils · dont un qui transforme les articles de blog en
           carrousels et qui permet à une petite entreprise d'exister sur
           les réseaux sans recruter. Je cherche une équipe où la personne
@@ -932,7 +1184,6 @@ function Method() {
             data-reveal
             style={{ "--delay": i * 0.1 + "s" }}
           >
-            <span className="about-pillars__n">{n}</span>
             <h4>{title}</h4>
             <p>{text}</p>
           </div>

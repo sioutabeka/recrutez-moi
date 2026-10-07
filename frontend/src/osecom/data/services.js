@@ -6,7 +6,7 @@ export const SERVICES = [
     titleEN: "LeGratin.io · Responsable Marketing & Communauté.",
     tone: "rose",
     copy:
-      "Une fonction marketing complète · pensée et exécutée. Acquisition, contenu, CRM, automation, onboarding, sales enablement : un profil Marketing & Growth généraliste, pas un rôle social media.",
+      "Une fonction marketing complète · pensée et exécutée. Acquisition, contenu, CRM, automation, onboarding, sales enablement : un profil Marketing & Growth généraliste capable de piloter chaque brique.",
     symptoms: [
       "Acquisition & activation de freelances",
       "Croissance et engagement communautaire",
@@ -73,7 +73,7 @@ export const SERVICES = [
     },
     solution: {
       title: "MA THÈSE",
-      text: "Construire une fonction marketing complète · pas un rôle social media.",
+      text: "Construire une fonction marketing complète, de l'acquisition au sales enablement.",
       supporting:
         "Un profil Marketing & Growth généraliste, capable de construire un système de bout en bout : acquisition, SEO, contenu, lead gen, CRM, automation, onboarding, activation, conversion, KPI, optimisation, sales enablement.",
     },
@@ -202,7 +202,7 @@ export const SERVICES = [
     finalCta: {
       title: "Marketing & Growth généraliste · capable de construire une fonction marketing.",
       text:
-        "Pas un profil social media. Un profil qui pense la fonction, la structure, la pilote et l'exécute · de l'acquisition au sales enablement.",
+        "Un profil qui pense la fonction, la structure, la pilote et l'exécute · de l'acquisition au sales enablement.",
     },
   },
   {

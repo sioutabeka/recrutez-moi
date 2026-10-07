@@ -1,6 +1,4 @@
-import { useRef } from "react";
 import { Link } from "react-router-dom";
-import aboutHero from "../../assets/about-hero.jpg";
 import logoOsecom from "../../assets/logo-osecom-freelance.jpeg";
 import logoLegratin from "../../assets/logo-legratin.jpeg";
 import logoKalikado from "../../assets/logo-kalikado.png";
@@ -9,16 +7,8 @@ import logoPigier from "../../assets/logo-pigier.png";
 import logoUniversiteNice from "../../assets/logo-universite-nice.png";
 import logoNiceMatin from "../../assets/logo-nice-matin.jpeg";
 import IconArrow from "../components/IconArrow";
-import MorphHeadline from "../components/MorphHeadline";
-import { useHeroDrift } from "../lib/hooks";
 import { SERVICES } from "../data/services";
 import { ROUTES } from "../config/routes";
-
-const SRV_HERO_LINES = [
-  "9 ans dans le métier.",
-  "Sept expériences.",
-  "Une même obsession.",
-];
 
 // Rich experience list · merge SERVICES data (has intro/tools/results) with additional Timeline metadata
 const TIMELINE = [
@@ -32,6 +22,7 @@ const TIMELINE = [
     logo: logoOsecom,
     logoFill: true,
     tone: "olive",
+    sectors: ["Freelance", "Beauté", "Pharma", "TPE/PME", "Production audiovisuelle"],
     bullets: [
       "Une dizaine de clients accompagnés · Forfaits 1-5 K€",
       "Production audiovisuelle : Nuxe, Pierre Fabre, Blissim, Maison Farida, Capsul",
@@ -48,6 +39,7 @@ const TIMELINE = [
     monogram: "LG",
     logo: logoLegratin,
     tone: "rose",
+    sectors: ["SaaS B2B", "HR Tech", "Startup", "Scale-up", "Marketplace"],
     bullets: [
       "Arrivée quand l'équipe faisait 4 personnes · Rattachée au fondateur",
       "Construction de toute la fonction marketing sur 3 ans",
@@ -64,11 +56,12 @@ const TIMELINE = [
     monogram: "KK",
     logo: logoKalikado,
     tone: "yellow",
+    sectors: ["Agence", "Grande consommation", "Sampling B2C", "Jeux & loterie"],
     bullets: [
-      "Prospection → vente → exécution → bilan : je ramenais mes propres clients",
-      "Clients : Groupe Andros (Bonne Maman, Mamie Nova), L'Or Espresso, L'Arbre Vert, FDJ",
-      "Spécialité : sampling contextuel · grille-pain déclenche confiture",
-      "Canaux : box hôtelières, partenariats e-commerce, jeux-concours",
+      "Rôle en cycle complet : je ramenais mes clients, vendais la campagne, la pilotais, présentais le bilan chiffré",
+      "Portefeuille clients : Groupe Andros (Bonne Maman, Mamie Nova), L'Or Espresso, L'Arbre Vert, FDJ",
+      "Résultat : [TODO Essia · ajouter 1 chiffre — nombre de campagnes vendues OU CA généré OU taux de reconduction]",
+      "Preuve : capacité à transformer un besoin client en revenus mesurables, en autonomie totale",
     ],
   },
   {
@@ -80,11 +73,12 @@ const TIMELINE = [
     monogram: "BG",
     logo: logoBergamotte,
     tone: "sky",
+    sectors: ["Agence", "B2B", "Services financiers", "Assurance", "Secteur régulé"],
     bullets: [
-      "Clients institutionnels : Axa, Macif, Matmut, Banque Populaire",
-      "Print autant que digital · Je rédigeais moi-même",
-      "Contenus SEO, newsletters, scripts vidéo, benchmarks",
-      "Pilotage projets de A à Z, organisation par epics",
+      "Comptes institutionnels : Axa, Macif, Matmut, Banque Populaire",
+      "Pilotage projets éditoriaux de A à Z (cadrage, planning, prestataires, budgets, qualité)",
+      "Résultat : [TODO Essia · ajouter 1 chiffre — nombre de projets livrés OU volume de contenus OU satisfaction client]",
+      "Preuve : capacité à opérer en secteur régulé avec exigence de conformité et de délais",
     ],
   },
   {
@@ -96,11 +90,12 @@ const TIMELINE = [
     monogram: "PG",
     logo: logoPigier,
     tone: "cream",
+    sectors: ["Édutech", "Éducation", "Formation", "Enseignement supérieur", "École de commerce"],
     bullets: [
-      "Stratégie de communication globale et digitale",
-      "Campagnes radio et affichage (conception + déploiement)",
-      "Relations presse avec retombées obtenues",
-      "Organisation d'événements · Contenus multi-formats",
+      "Seule sur le périmètre : stratégie, exécution, événements, RP",
+      "Campagnes radio et affichage conçues puis déployées",
+      "Résultat : [TODO Essia · ajouter 1 chiffre — nombre d'étudiants recrutés OU retombées presse OU hausse notoriété]",
+      "Preuve : capacité à construire une fonction communication en solo, de zéro",
     ],
   },
   {
@@ -112,6 +107,7 @@ const TIMELINE = [
     monogram: "UN",
     logo: logoUniversiteNice,
     tone: "yellow",
+    sectors: ["Éducation", "Enseignement supérieur", "Secteur public", "Bibliothèque numérique"],
     bullets: [
       "Projet de bibliothèque numérique",
       "Structuration de contenus · Rédaction web",
@@ -128,6 +124,7 @@ const TIMELINE = [
     logo: logoNiceMatin,
     logoFill: true,
     tone: "brown",
+    sectors: ["Média", "Régie publicitaire", "Presse régionale", "Planning stratégique"],
     bullets: [
       "Analyse stratégique, veille médias, data",
       "Coordination de projets au sein de la régie",
@@ -137,50 +134,28 @@ const TIMELINE = [
 ];
 
 // Experiences with a proper detail page ready
-const RICH_SLUGS = ["legratin", "osecom", "kalikado"];
+const RICH_SLUGS = ["legratin", "kalikado"];
 
 export default function ServicesPage() {
   return (
     <main className="page page--services">
-      <ExperienceHero />
+      <ExperienceIntro />
       <ExperienceTimeline />
       <ExperienceFoot />
     </main>
   );
 }
 
-function ExperienceHero() {
-  const sectionRef = useRef(null);
-  const textRef = useRef(null);
-  const mediaRef = useRef(null);
-  useHeroDrift(sectionRef, textRef, mediaRef);
-
+function ExperienceIntro() {
   return (
-    <section className="srv-hero" ref={sectionRef}>
-      <div className="srv-hero__row">
-        <div className="srv-hero__col-text" ref={textRef}>
-          <span className="mono">MON EXPÉRIENCE · RÉGIE, AGENCE, PLATEFORME, INDÉPENDANTE</span>
-          <MorphHeadline lines={SRV_HERO_LINES} accentIdx={-1} />
-          <p>
-            De la régie publicitaire d'un grand média régional en 2015 à la
-            plateforme tech incubée à Station F, en passant par deux agences
-            et une activité indépendante en direct avec les marques.{" "}
-            <strong>Un fil rouge : comprendre comment se distribue l'attention.</strong>
-          </p>
-          <p className="srv-hero__note">
-            Clique sur "En savoir plus" pour ouvrir le détail d'une expérience.
-          </p>
-          <Link to={ROUTES.contact} className="btn btn--rose">
-            Me contacter
-          </Link>
-        </div>
-
-        <div className="srv-hero__col-media" ref={mediaRef}>
-          <div className="srv-hero__media">
-            <img src={aboutHero} alt="Essia Ben Kheder · Expériences" className="srv-hero__img" />
-          </div>
-        </div>
-      </div>
+    <section className="srv-intro" data-reveal>
+      <span className="mono">UN MOT AVANT</span>
+      <p>
+        Après avoir construit en interne, livré en freelance, appris à
+        coder, j'ai envie d'une seule chose : m'embarquer dans une nouvelle
+        aventure, en équipe, et d'éprouver à nouveau la satisfaction des
+        résultats construits ensemble.
+      </p>
     </section>
   );
 }
@@ -202,6 +177,13 @@ function ExperienceTimeline() {
               <span className="about-timeline__company">{exp.company}</span>
               {exp.place && (
                 <span className="about-timeline__place">{exp.place}</span>
+              )}
+              {exp.sectors && exp.sectors.length > 0 && (
+                <div className="about-timeline__sectors">
+                  {exp.sectors.map((s) => (
+                    <span key={s} className="about-timeline__sector">{s}</span>
+                  ))}
+                </div>
               )}
             </div>
             <span
@@ -237,12 +219,14 @@ function ExperienceFoot() {
   return (
     <section className="srv-foot">
       <div className="srv-foot__card">
-        <span className="mono">VOUS RECRUTEZ ?</span>
-        <h2>Parlons Growth, Community & Marketing.</h2>
+        <span className="mono">VOUS RECRUTEZ UN·E RESPONSABLE MARKETING & COMMUNICATION ?</span>
+        <h2>Discutons de votre contexte.</h2>
         <p>
-          Vous cherchez quelqu'un capable de construire une communauté,
-          développer des programmes créateurs et relier ces dispositifs à
-          des objectifs d'acquisition et d'engagement ? Discutons.
+          Vous cherchez quelqu'un capable de tenir une fonction marketing &
+          communication complète, de la stratégie à l'exécution, en autonomie
+          ou en équipe ? Un profil transverse, opérationnel, qui connaît
+          aussi bien les contextes B2B tech que la grande consommation ?
+          Discutons.
         </p>
         <Link to={ROUTES.contact} className="btn btn--olive">
           Me contacter

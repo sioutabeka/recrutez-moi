@@ -3,8 +3,8 @@ import { ROUTES } from "./routes";
 export const SITE = {
   name: "Essia Ben Kheder",
   founder: "Essia Ben Kheder",
-  role: "Responsable Marketing & Contenus",
-  targetJob: "CDI · Responsable Marketing & Contenus · Head of Marketing",
+  role: "Responsable Marketing & Communication",
+  targetJob: "CDI · Responsable Marketing & Communication · Paris",
   city: "Paris",
   region: "75",
   email: "essiabenkheder@gmail.com",
@@ -12,9 +12,11 @@ export const SITE = {
   phone: "07 77 00 12 94",
   phoneHref: "tel:+33777001294",
   cvUrl: "/cv-essia-ben-kheder.pdf",
+  cvLatexUrl: "/cv-essia-ben-kheder-latex.pdf",
+  calendlyUrl: "https://calendly.com/essiabenkheder/15min",
   linkedinUrl: "https://www.linkedin.com/in/essiabenkheder/",
   copyright:
-    "© 2026 ESSIA BEN KHEDER · MARKETING & CONTENUS · PARIS · EN RECHERCHE DE CDI",
+    "© 2026 ESSIA BEN KHEDER · RESPONSABLE MARKETING & COMMUNICATION · EN RECHERCHE DE CDI · PARIS",
 };
 
 export const SOCIALS = [
@@ -36,7 +38,7 @@ export const BRANDS = [
 
 export const NAV_ITEMS = [
   { to: ROUTES.home, label: "Home", end: true },
-  { to: ROUTES.about, label: "Portrait" },
+  { to: ROUTES.about, label: "Profil" },
   { to: ROUTES.services, label: "Expérience" },
   { to: ROUTES.portfolio, label: "Réalisations" },
 ];
@@ -49,6 +51,7 @@ export const FOOTER_NAV = {
     { label: "Agence Bergamotte", to: ROUTES.service("bergamotte") },
   ],
   explore: [
+    { label: "Expérience", to: ROUTES.services },
     { label: "Réalisations", to: ROUTES.portfolio },
     { label: "Me contacter", to: ROUTES.contact },
   ],

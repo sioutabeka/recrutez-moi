@@ -2,7 +2,6 @@ import { useRef } from "react";
 import { Link } from "react-router-dom";
 import MorphHeadline from "../components/MorphHeadline";
 import Placeholder from "../components/Placeholder";
-import WordRotator from "../components/WordRotator";
 import { useHeroDrift } from "../lib/hooks";
 import { ROUTES } from "../config/routes";
 import { SITE } from "../config/site";
@@ -15,17 +14,16 @@ import logoUcaNice from "../../assets/logo-universite-nice.png";
 import logoKaplan from "../../assets/logo-kaplan.png";
 import logoPmf from "../../assets/logo-pmf-tunis.jpeg";
 
-const ABOUT_HERO_WORDS = ["marketing", "growth", "content", "community"];
 const ABOUT_HERO_LINES = [
-  "9 ans à l'intersection",
-  "du marketing, du contenu",
-  ["et de la ", <WordRotator key="rot" words={ABOUT_HERO_WORDS} />, "."],
+  "Comprendre les enjeux,",
+  "trouver des solutions,",
+  "les mettre en œuvre.",
 ];
 
 const EDUCATION = [
   {
     period: "2024 → 2025",
-    degree: "Développeur Full-Stack JavaScript",
+    degree: "Formation Full-Stack JavaScript",
     school: "GOMYCODE",
     text: "Stack MERN (React, Node.js, MongoDB, SQL).",
     monogram: "GC",
@@ -117,9 +115,10 @@ const TOOLS = [
   {
     category: "ADS & ANALYTICS 📊",
     items: [
+      { name: "Google Ads", level: 2 },
+      { name: "LinkedIn Ads", level: 2 },
       { name: "Meta Ads", level: 2 },
       { name: "TikTok Ads", level: 2 },
-      { name: "Google Ads", level: 2 },
       { name: "SEMrush", level: 3 },
       { name: "GA4", level: 3 },
       { name: "Meta Business Suite", level: 3 },
@@ -140,8 +139,8 @@ const TOOLS = [
   {
     category: "IA · TEXTE, IMAGE & VIDÉO 🤖",
     items: [
-      { name: "Claude", level: 3 },
-      { name: "Skills & MCP", level: 3 },
+      { name: "Claude Team", level: 3 },
+      { name: "Claude Skills & MCP", level: 3 },
       { name: "ChatGPT", level: 3 },
       { name: "Gemini", level: 2 },
       { name: "Midjourney", level: 3 },
@@ -177,8 +176,8 @@ export default function AboutPage() {
   return (
     <main className="page page--about">
       <AboutHero />
-      <Story />
       <Formation />
+      <Beyond />
       <Tools />
       <AboutCta />
     </main>
@@ -195,13 +194,10 @@ function AboutHero() {
     <section className="about-hero" ref={sectionRef}>
       <div className="about-hero__row">
         <div className="about-hero__col-text" ref={textRef}>
-          <span className="mono">HI, MOI C'EST ESSIA · MARKETING, GROWTH & CONTENT</span>
+          <span className="mono">HI, MOI C'EST ESSIA · MARKETING & COMMUNICATION</span>
           <MorphHeadline lines={ABOUT_HERO_LINES} accentIdx={-1} />
           <p>
-            Née à Tunis, formée à Nice, Toulouse, Paris et Londres.
-            Aujourd'hui en recherche d'un CDI à Paris, avec une seule
-            condition : pouvoir exécuter ce que je sais faire, et avoir
-            l'espace pour apprendre le reste.
+            Voilà ce qui me plaît et ce pourquoi je suis motivée.
           </p>
           <a href={SITE.cvUrl} target="_blank" rel="noreferrer" className="btn btn--olive about-hero__cta">
             Télécharger mon CV
@@ -229,40 +225,27 @@ function Story() {
       <div className="about-philo__body">
         <h2>Mon histoire.</h2>
         <p>
-          <strong>Racines.</strong> J'ai grandi à Tunis, entre l'art (arts
-          plastiques au lycée), le web (Skyblog puis tout ce qui a suivi) et
-          la course à pied. Bac S au Lycée Pierre Mendès France, une année
-          anglophone à Kaplan Londres, puis la France en trois villes :
-          Licence Information-Communication à l'Université Côte d'Azur,
-          Master 1 Communication 360° à l'ECS Toulouse, Master 2 Marketing
-          Digital & E-business à l'ESG Paris.
+          <strong>Racines.</strong> Grandi à Tunis, entre l'art, Internet
+          et une passion constante pour les médias et le social media.
+          Études à Nice, Toulouse, Paris. Un an à Londres pour l'anglais.
         </p>
         <p>
-          <strong>D'où je viens.</strong> J'ai commencé du côté où l'on
-          exécute : projets éditoriaux, print et digital, pour Axa, Macif,
-          Matmut et Banque Populaire chez Bergamotte. Puis chez KaliKado, un
-          rôle en cycle complet · j'allais chercher mes clients, je leur
-          vendais la campagne, et je l'exécutais moi-même. C'est là que j'ai
-          appris ce qu'un client attend vraiment : pas une idée brillante,
-          une idée qui sort dans les temps et qui produit un chiffre.
+          <strong>D'où je viens.</strong> J'ai appris le marketing en
+          l'exécutant. Bergamotte pour l'édito B2B : Axa, Macif, Matmut,
+          Banque Populaire. KaliKado pour le cycle complet : vendre,
+          produire, livrer un chiffre.
         </p>
         <p>
-          <strong>Ce que j'ai construit.</strong> Chez LeGratin.io, plateforme
-          de freelances incubée à Station F avec 42, je suis arrivée quand
-          l'équipe était à quatre. J'y ai construit toute la fonction
-          marketing pendant trois ans, d'abord comme Head of Community puis
-          comme Head of Marketing & Growth, rattachée au fondateur, avec deux
-          personnes à encadrer. J'étais aussi actionnaire.
+          <strong>Ce que j'ai construit.</strong> LeGratin.io, Station F.
+          L'équipe était à quatre quand je suis arrivée. J'y ai passé trois
+          ans comme Head of Marketing & Growth, actionnaire, à construire
+          toute la fonction marketing.
         </p>
         <p>
-          <strong>Où je vais.</strong> À Station F, j'étais entourée de
-          développeurs. Ça m'a donné envie de m'y mettre : une formation
-          full-stack JavaScript chez GOMYCODE, en parallèle du lancement de
-          mon activité freelance. Pas pour devenir développeuse, mais pour
-          arrêter de dépendre de quelqu'un d'autre pour faire exister une
-          idée. Depuis, je construis mes propres outils · dont un qui
-          transforme les articles de blog en carrousels et qui permet à une
-          petite entreprise d'exister sur les réseaux sans recruter.
+          <strong>Et puis le code.</strong> Entourée de développeurs à
+          Station F, j'ai décidé de ne plus dépendre d'un tiers pour faire
+          exister une idée. Bootcamp Full-Stack JavaScript, et depuis je
+          construis mes propres outils marketing.
         </p>
       </div>
     </section>
@@ -271,38 +254,31 @@ function Story() {
 
 function Formation() {
   return (
-    <section className="formation" data-reveal>
-      <div className="formation__head">
-        <h2>Formation.</h2>
-        <p>
-          De la communication aux médias, du marketing digital au dev · cinq
-          villes, six étapes, une même curiosité.
-        </p>
+    <section className="formation-detailed" data-reveal>
+      <div className="formation-detailed__head">
+        <span className="mono">FORMATION</span>
+        <h2>Bac+5 Marketing & Communication.</h2>
       </div>
-      <div className="formation__list">
+      <div className="formation-detailed__grid">
         {EDUCATION.map((ed, i) => (
           <article
             key={ed.period + ed.degree}
-            className="formation__item"
+            className="formation-detailed__item"
             data-reveal
-            style={{ "--delay": i * 0.08 + "s" }}
+            style={{ "--delay": i * 0.06 + "s" }}
           >
             <div
-              className={`formation__logo formation__logo--${ed.tone || "olive"}${ed.logo ? " formation__logo--img" : ""}${ed.logoFill ? " formation__logo--fill" : ""}`}
+              className={`formation-detailed__logo${ed.logoFill ? " formation-detailed__logo--fill" : ""}`}
               aria-hidden="true"
             >
               {ed.logo ? <img src={ed.logo} alt="" /> : (ed.monogram || "·")}
             </div>
-            <div className="formation__period">
-              <span>{ed.period}</span>
-            </div>
-            <div className="formation__body">
-              <h4 className="formation__degree">{ed.degree}</h4>
-              {ed.school && (
-                <span className="formation__school">{ed.school}</span>
-              )}
-              {ed.text && <p className="formation__text">{ed.text}</p>}
-            </div>
+            <span className="formation-detailed__period mono">{ed.period}</span>
+            <h4 className="formation-detailed__degree">{ed.degree}</h4>
+            {ed.school && (
+              <span className="formation-detailed__school">{ed.school}</span>
+            )}
+            {ed.text && <p className="formation-detailed__text">{ed.text}</p>}
           </article>
         ))}
       </div>
@@ -310,15 +286,61 @@ function Formation() {
   );
 }
 
+const BEYOND = [
+  {
+    title: "🌍 Voyage",
+    text: "Grandi à Tunis. Un mois au Japon, les États-Unis, un tour d'Europe. Et j'espère encore plein d'autres destinations.",
+    tone: "olive",
+  },
+  {
+    title: "🎨 Culture visuelle & artistique",
+    text: "Arts plastiques au lycée, musées et expos dès que l'occasion se présente, production audiovisuelle au quotidien. Un œil nourri qui me sert autant en direction artistique qu'en jugement sur un contenu.",
+    tone: "sky",
+  },
+  {
+    title: "💻 Internet & digital culture",
+    text: "Skyblog, Myspace, et tout ce qui a suivi. Les réseaux sociaux sont autant un hobby qu'un métier. Je suis les tendances, je comprends les codes, j'aime la culture internet pour ce qu'elle est.",
+    tone: "rose",
+  },
+  {
+    title: "🔎 Curieuse, surtout",
+    text: "Je peux passer d'un sujet marketing à une nouvelle techno, d'un documentaire à un rabbit hole improbable sur Internet. J'aime comprendre comment les choses fonctionnent.",
+    tone: "yellow",
+  },
+];
+
+function Beyond() {
+  return (
+    <section className="beyond" data-reveal>
+      <div className="beyond__head">
+        <span className="mono">AU-DELÀ DU CV</span>
+        <h2>Ce qui fait de moi une collègue sympa.</h2>
+      </div>
+      <div className="beyond__grid">
+        {BEYOND.map((b, i) => (
+          <article
+            key={b.title}
+            className={`beyond__card beyond__card--${b.tone}`}
+            data-reveal
+            style={{ "--delay": i * 0.06 + "s" }}
+          >
+            <h4>{b.title}</h4>
+            <p>{b.text}</p>
+          </article>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+const TOOL_TONES = ["rose", "olive", "sky", "yellow", "cream", "rose", "olive", "sky"];
+
 function Tools() {
   return (
     <section className="about-tools" data-reveal>
       <div className="about-tools__head">
-        <span className="mono">MES OUTILS · PAR ACTIVITÉ</span>
-        <h2>Ce que j'utilise vraiment.</h2>
-        <p>
-          Un inventaire honnête, avec un indicateur de niveau par outil.
-        </p>
+        <span className="mono">MES OUTILS</span>
+        <h2>Mon stack, par activité.</h2>
         <div className="about-tools__legend mono">
           <span>
             <span className="about-tools__dots">
@@ -346,28 +368,30 @@ function Tools() {
           </span>
         </div>
       </div>
-      {TOOLS.map(({ category, items }, i) => (
-        <div
-          key={category}
-          className="about-tools__group"
-          data-reveal
-          style={{ "--delay": i * 0.05 + "s" }}
-        >
-          <span className="mono about-tools__cat">{category}</span>
-          <div className="about-tools__chips">
-            {items.map(({ name, level }) => (
-              <span key={name} className="about-tools__chip" aria-label={`${name} · niveau ${level} sur 3`}>
-                <span>{name}</span>
-                <span className="about-tools__dots" aria-hidden="true">
-                  <i className={level >= 1 ? "on" : ""} />
-                  <i className={level >= 2 ? "on" : ""} />
-                  <i className={level >= 3 ? "on" : ""} />
+      <div className="about-tools__grid">
+        {TOOLS.map(({ category, items }, i) => (
+          <div
+            key={category}
+            className={`about-tools__group about-tools__group--${TOOL_TONES[i % TOOL_TONES.length]}`}
+            data-reveal
+            style={{ "--delay": i * 0.05 + "s" }}
+          >
+            <span className="mono about-tools__cat">{category}</span>
+            <div className="about-tools__chips">
+              {items.map(({ name, level }) => (
+                <span key={name} className="about-tools__chip" aria-label={`${name} · niveau ${level} sur 3`}>
+                  <span>{name}</span>
+                  <span className="about-tools__dots" aria-hidden="true">
+                    <i className={level >= 1 ? "on" : ""} />
+                    <i className={level >= 2 ? "on" : ""} />
+                    <i className={level >= 3 ? "on" : ""} />
+                  </span>
                 </span>
-              </span>
-            ))}
+              ))}
+            </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </section>
   );
 }
@@ -375,10 +399,10 @@ function Tools() {
 function AboutCta() {
   return (
     <section className="about-cta">
-      <span className="mono about-cta__eyebrow">VOUS RECRUTEZ ?</span>
-      <h2>Parlons Growth, Community & Marketing.</h2>
+      <span className="mono about-cta__eyebrow">VOUS RECRUTEZ UN·E RESPONSABLE MARKETING & COMMUNICATION ?</span>
+      <h2>Discutons.</h2>
       <p className="about-cta__text">
-        Envie d'en discuter ? Je réponds vite, en direct.
+        CDI à Paris, disponible immédiatement. Je réponds vite, en direct.
       </p>
       <div className="about-cta__row">
         <Link to={ROUTES.contact} className="btn btn--olive">

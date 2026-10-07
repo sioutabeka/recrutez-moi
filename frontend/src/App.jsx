@@ -1,4 +1,5 @@
-import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import { useEffect } from "react";
+import { BrowserRouter, Navigate, Route, Routes, useLocation } from "react-router-dom";
 
 import Layout from "./osecom/Layout";
 import AboutPage from "./osecom/pages/AboutPage";
@@ -13,9 +14,20 @@ import ServicesPage from "./osecom/pages/ServicesPage";
 import UGCPage from "./osecom/pages/UGCPage";
 import { ROUTES } from "./osecom/config/routes";
 
+function ScrollToTop() {
+  const { pathname, hash } = useLocation();
+  useEffect(() => {
+    // Si on a un hash (#section), on laisse le navigateur ancrer dessus
+    if (hash) return;
+    window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+  }, [pathname, hash]);
+  return null;
+}
+
 export default function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route element={<Layout />}>
           {/* Canonical routes */}

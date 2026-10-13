@@ -194,7 +194,7 @@ function ExperienceTimeline() {
             </span>
             <div className="about-timeline__side about-timeline__side--right">
               <ul className="about-timeline__bullets">
-                {exp.bullets.map((b, j) => (
+                {exp.bullets.filter((b) => !b.includes("[TODO")).map((b, j) => (
                   <li key={j}>{b}</li>
                 ))}
               </ul>

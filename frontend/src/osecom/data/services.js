@@ -217,7 +217,7 @@ export const SERVICES = [
       "Nuxe, Pierre Fabre, Blissim, Maison Farida : production audiovisuelle ponctuelle",
       "MKL Energy : site + supports d'aide à la vente (brochures, fiches, flyers)",
       "FlatLab (conciergerie) : site, réseaux, automatisation",
-      "Un pressing local : déploiement de mon outil de carrousels",
+      "Bel & Blanc (pressing) et d'autres clients : mon app de carrousels, adaptée à chaque DA",
     ],
     delivers: [
       "Direction créative",
@@ -231,7 +231,7 @@ export const SERVICES = [
     rythm: "En direct avec les marques, sans agence",
     format: "Freelance · Forfaits 1-5 K€",
     intro:
-      "Activité freelance lancée en septembre 2024, après trois ans en interne chez LeGratin.io. Deux offres. Production audiovisuelle et contenu de marque pour Nuxe, Pierre Fabre, Blissim, Maison Farida, Capsul. Digital complet pour TPE et PME · MKL Energy (énergie), FlatLab (conciergerie), un pressing local. Un outil maison construit en JavaScript qui transforme les articles de blog en carrousels sociaux, déployé chez les clients qui n'ont pas les moyens de recruter un profil social media.",
+      "Activité freelance lancée en septembre 2024, après trois ans en interne chez LeGratin.io. Deux offres. Production audiovisuelle et contenu de marque pour Nuxe, Pierre Fabre, Blissim, Maison Farida, Capsul. Digital complet pour TPE et PME · MKL Energy (énergie), FlatLab (conciergerie), un pressing local. Une app maison construite en JavaScript, sous forme de template adapté à chaque client, qui transforme les articles de blog que je rédige en carrousels sociaux. Déployée chez plusieurs clients qui n'ont pas les moyens de recruter un profil social media.",
     primaryCta: "Me contacter",
     tools: [
       "CapCut", "Premiere Pro", "After Effects", "Canva", "Photoshop",
@@ -251,11 +251,11 @@ export const SERVICES = [
         },
         {
           title: "Digital complet pour TPE & PME",
-          text: "MKL Energy (site + supports d'aide à la vente), FlatLab (site + réseaux + automatisation), un pressing (outil de carrousels). Aider une petite structure à exister en ligne sans devoir recruter.",
+          text: "MKL Energy (site + supports d'aide à la vente), FlatLab (site + réseaux + automatisation), Bel & Blanc, pressing (articles + carrousels). Aider une petite structure à exister en ligne sans devoir recruter.",
         },
         {
           title: "L'outil de carrousels",
-          text: "Construit en JavaScript, assisté par IA. Transforme les articles de blog en carrousels sociaux au ton et à la DA de la marque. Fonctionne en local, sur l'abonnement Claude du client · pas de SaaS, le client reste propriétaire.",
+          text: "Construit en JavaScript, assisté par IA, sous forme de template que j'adapte à chaque client. Je rédige les articles de blog, l'app les transforme en carrousels sociaux au ton et à la DA de la marque, selon des patterns narratifs que j'écris. Fonctionne en local, sur l'abonnement Claude du client, qui reste propriétaire.",
         },
       ],
     },

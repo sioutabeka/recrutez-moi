@@ -15,7 +15,17 @@ const CASE_STUDIES = [
     gallery: [
       { todo: "Screenshot blog LeGratin + interviews d'experts", caption: "50+ interviews d'experts et de DT" },
       { todo: "Screenshot dashboard HubSpot ou analytics", caption: "Pilotage KPIs hebdo CODIR" },
-      { todo: "Screenshot d'un webinar + inscrits", caption: "30+ webinars produits" },
+      {
+        srcs: [
+          "/portfolio/legratin-webinar-1.png",
+          "/portfolio/legratin-webinar-2.png",
+          "/portfolio/legratin-webinar-3.png",
+          "/portfolio/legratin-webinar-4.png",
+        ],
+        alt: "Visuels de webinars LeGratin.io diffusés en LinkedIn Live en 2023",
+        caption: "30+ webinars en LinkedIn Live · avec Le Wagon, Jump, Agence Bienfait.co",
+        wide: true,
+      },
       { todo: "Capture annonce de levée 1,5 M€ (presse)", caption: "Levée 1,5 M€ · oct. 2022" },
     ],
     chapters: [
@@ -29,7 +39,7 @@ const CASE_STUDIES = [
       },
       {
         title: "L'exécution",
-        text: "Mise en place HubSpot et parcours automatisés, stratégie SEO + content (blog, interviews d'experts, case studies), 30+ webinars produits comme dispositif de lead gen, événements B2B (VivaTech, Station F), refonte du site, direction artistique, relations presse, encadrement de 2 juniors.",
+        text: "Mise en place HubSpot et parcours automatisés, stratégie SEO + content (blog, interviews d'experts, case studies), 30+ webinars produits et animés en LinkedIn Live comme dispositif de lead gen (no-code, SEO, statut d'auto-entrepreneur…), avec des intervenants partenaires comme Le Wagon, Jump ou l'Agence Bienfait.co, événements B2B (VivaTech, Station F), refonte du site, direction artistique, relations presse, encadrement de 2 juniors.",
       },
     ],
     results: [
@@ -43,17 +53,30 @@ const CASE_STUDIES = [
   },
   {
     slug: "outil-carrousels",
-    tag: "OUTIL MAISON · JAVASCRIPT & IA · 2025 · EN LOCAL",
-    title: "Générateur de carrousels sociaux assisté par IA",
-    pitch: "Un outil que j'ai construit en JavaScript, assisté par Claude. Il transforme les articles de blog en carrousels sociaux au ton et à la direction artistique de chaque marque. Déployé chez une TPE qui publie désormais régulièrement sans recruter de social media.",
+    tag: "OUTIL MAISON · JAVASCRIPT & IA · 2025 · MULTI-CLIENTS",
+    title: "Carrousel Studio · générateur de carrousels assisté par IA",
+    pitch: "Une app que j'ai construite en JavaScript, assistée par Claude, sous forme de template que j'adapte à chaque client : direction artistique, ton, patterns narratifs, langues. En amont, je rédige les articles de blog dont l'outil se nourrit. Résultat : une chaîne de contenu complète, de l'article au carrousel publié.",
     heroImage: {
-      todo: "Capture d'écran de l'outil (UI) OU exemple de carrousel généré OU avant/après",
-      caption: "L'outil tourne en local, sur l'abonnement Claude du client",
+      src: "/portfolio/carrousel-studio-article.png",
+      alt: "Interface de Carrousel Studio : choix du pattern narratif et de la langue avant génération",
+      caption: "Un article, un pattern narratif, une langue · génération en 25 secondes environ",
     },
     gallery: [
-      { todo: "Screenshot interface de l'outil", caption: "Interface — collage d'article → paramètres marque → génération" },
-      { todo: "Carrousel exemple généré (3-4 slides)", caption: "Carrousel généré pour un pressing" },
-      { todo: "Avant/après (article brut vs carrousel social)", caption: "De l'article de blog au format social" },
+      {
+        src: "/portfolio/carrousel-studio-patterns.png",
+        alt: "Page des patterns narratifs de Carrousel Studio",
+        caption: "Les patterns narratifs que j'écris pour guider Claude",
+      },
+      {
+        src: "/portfolio/carrousel-studio-themes.png",
+        alt: "Sélection des thèmes visuels et export PNG dans Carrousel Studio",
+        caption: "Thèmes visuels à la DA du client · mode édition · export PNG",
+      },
+      {
+        src: "/portfolio/carrousel-studio-slide.png",
+        alt: "Slide de couverture d'un carrousel généré pour le pressing Bel & Blanc",
+        caption: "Slide de couverture générée pour Bel & Blanc, pressing artisanal",
+      },
     ],
     chapters: [
       {
@@ -62,17 +85,18 @@ const CASE_STUDIES = [
       },
       {
         title: "La solution",
-        text: "Un outil en JavaScript qui lit un article, détecte les points clés, génère un carrousel LinkedIn/Instagram au ton de la marque, respecte la direction artistique (couleurs, typo, template). Fonctionne en local, sur l'abonnement Claude du client — pas de SaaS, pas d'abonnement supplémentaire, le client reste propriétaire.",
+        text: "Je rédige d'abord les articles de blog experts de la marque. L'app les transforme ensuite en carrousels LinkedIn/Instagram en suivant des patterns narratifs que j'écris moi-même (le diagnostic, le geste-par-geste, les causes, les pièges), au ton et à la direction artistique du client (couleurs, typo, thèmes visuels), dans sa langue : chez Bel & Blanc, en français et en tounsi. Un mode édition permet de retoucher chaque slide avant l'export PNG. L'app tourne en local, sur l'abonnement Claude du client, qui en reste propriétaire.",
       },
       {
         title: "La différence",
-        text: "C'est l'illustration de ma manière d'intégrer les nouveaux outils aux process marketing : utile, pas gadget. Formation Full-Stack JavaScript GOMYCODE mise à profit pour prototyper vite, dialoguer avec les équipes produit et construire sans dépendre d'un tiers.",
+        text: "Un template unique, décliné client par client : chaque nouvelle marque récupère l'outil avec sa propre DA, sa voix et ses formats. C'est ma manière d'intégrer l'IA aux process marketing, avec une utilité concrète. Formation Full-Stack JavaScript GOMYCODE mise à profit pour prototyper vite, dialoguer avec les équipes produit et construire sans dépendre d'un tiers.",
       },
     ],
     results: [
-      "Déployé chez une TPE (pressing de proximité) qui publie régulièrement sans embaucher",
-      "[TODO Essia · ajouter 1 chiffre : nombre de carrousels générés / temps gagné par semaine]",
-      "Démontre la manière d'intégrer l'IA aux process marketing (pas en bullet point, en production)",
+      "Déployé chez plusieurs clients, chacun avec sa DA et sa voix",
+      "Un carrousel de 6 slides généré en 25 secondes environ, puis relu et ajusté",
+      "Bel & Blanc : 62 articles rédigés et classés, prêts à devenir des carrousels",
+      "Contenu bilingue français / tounsi pour une clientèle locale",
     ],
     tone: "olive",
   },
@@ -89,6 +113,24 @@ const CASE_STUDIES = [
       { todo: "Screenshot Instagram/TikTok Nuxe avec vidéo visible", caption: "Vidéos Nuxe 2025" },
       { todo: "Screenshot Pierre Fabre / Blissim / Maison Farida", caption: "Séries récurrentes · Pierre Fabre, Blissim" },
       { todo: "Behind-the-scenes tournage ou setup", caption: "Direction, tournage, montage en autonomie" },
+      {
+        video: "/portfolio/maison-farida.mp4",
+        poster: "/portfolio/maison-farida-poster.jpg",
+        alt: "Vidéo produite pour Maison Farida, pâtisserie à Paris",
+        caption: "Maison Farida · vidéo produite en freelance",
+      },
+      {
+        video: "/portfolio/nuxe-blissim-1.mp4",
+        poster: "/portfolio/nuxe-blissim-1-poster.jpg",
+        alt: "Vidéo produite pour la box Nuxe × Blissim",
+        caption: "Nuxe × Blissim · vidéo produite en freelance",
+      },
+      {
+        video: "/portfolio/nuxe-blissim-2.mp4",
+        poster: "/portfolio/nuxe-blissim-2-poster.jpg",
+        alt: "Vidéo produite pour la box Nuxe × Blissim, application d'un soin",
+        caption: "Nuxe × Blissim · vidéo produite en freelance",
+      },
     ],
     chapters: [
       {
@@ -113,8 +155,9 @@ const CASE_STUDIES = [
     title: "FlatLab",
     pitch: "Accompagnement digital complet de bout en bout d'une conciergerie : site, réseaux sociaux, automatisation. Un dispositif pour exister en ligne sans mobiliser l'équipe au quotidien.",
     heroImage: {
-      todo: "Capture d'écran du site FlatLab (home) OU grid Instagram",
-      caption: "FlatLab · Conciergerie · Digital complet",
+      src: "/portfolio/flatlab-site.jpg",
+      alt: "Page d'accueil du site FlatLab, conciergerie premium à Dubaï, Nice, Paris et en Tunisie",
+      caption: "Site FlatLab · conciergerie premium · Dubaï, Nice, Paris, Tunisie · FR / EN",
     },
     gallery: [
       { todo: "Screenshot site FlatLab desktop", caption: "Site livré en autonomie" },
@@ -162,7 +205,7 @@ function PortfolioHero() {
       </h1>
       <p>
         LeGratin.io en pilier (CODIR, actionnaire, +20 000 utilisateurs
-        acquis en organique, levée 1,5 M€), mon outil IA maison, et deux
+        acquis en organique, levée 1,5 M€), mon app IA de carrousels, et deux
         angles freelance : production audiovisuelle avec les marques
         exigeantes, et digital complet pour les TPE/PME. Chaque case répond
         à la même question : quelle preuve j'apporte ici ?
@@ -178,7 +221,13 @@ function PortfolioHero() {
   );
 }
 
+// Les visuels et chiffres pas encore fournis (todo / [TODO …]) restent masqués.
+const hasImage = (img) => Boolean(img && (img.src || img.srcs || img.video));
+const isFilled = (text) => !text.includes("[TODO");
+
 function CaseStudy({ cs }) {
+  const gallery = cs.gallery.filter(hasImage);
+  const results = cs.results.filter(isFilled);
   return (
     <section id={cs.slug} className={`pf-case pf-case--${cs.tone}`} data-reveal>
       <div className="pf-case__head">
@@ -187,15 +236,14 @@ function CaseStudy({ cs }) {
         <p className="pf-case__pitch">{cs.pitch}</p>
       </div>
 
-      <figure className="pf-case__hero">
-        <div className="pf-case__media pf-case__media--hero">
-          <div className="pf-case__placeholder">
-            <span className="mono">IMAGE À AJOUTER</span>
-            <p>{cs.heroImage.todo}</p>
+      {hasImage(cs.heroImage) && (
+        <figure className="pf-case__hero">
+          <div className="pf-case__media pf-case__media--hero pf-case__media--img">
+            <CaseImage src={cs.heroImage.src} alt={cs.heroImage.alt} />
           </div>
-        </div>
-        <figcaption className="pf-case__caption mono">{cs.heroImage.caption}</figcaption>
-      </figure>
+          <figcaption className="pf-case__caption mono">{cs.heroImage.caption}</figcaption>
+        </figure>
+      )}
 
       <div className="pf-case__body">
         <div className="pf-case__chapters">
@@ -207,30 +255,54 @@ function CaseStudy({ cs }) {
           ))}
         </div>
 
-        <aside className="pf-case__results">
-          <span className="mono">RÉSULTATS</span>
-          <ul>
-            {cs.results.map((r, i) => (
-              <li key={i}>{r}</li>
-            ))}
-          </ul>
-        </aside>
+        {results.length > 0 && (
+          <aside className="pf-case__results">
+            <span className="mono">RÉSULTATS</span>
+            <ul>
+              {results.map((r, i) => (
+                <li key={i}>{r}</li>
+              ))}
+            </ul>
+          </aside>
+        )}
       </div>
 
-      <div className="pf-case__gallery">
-        {cs.gallery.map((g, i) => (
-          <figure key={i} className="pf-case__gallery-item">
-            <div className="pf-case__media">
-              <div className="pf-case__placeholder">
-                <span className="mono">IMAGE {i + 1}</span>
-                <p>{g.todo}</p>
+      {gallery.length > 0 && (
+        <div className="pf-case__gallery">
+          {gallery.map((g, i) => (
+            <figure
+              key={i}
+              className={`pf-case__gallery-item${g.wide ? " pf-case__gallery-item--wide" : ""}${g.video ? " pf-case__gallery-item--video" : ""}`}
+            >
+              <div className="pf-case__media pf-case__media--img">
+                {g.video ? (
+                  <video src={g.video} poster={g.poster} aria-label={g.alt} controls playsInline preload="none" />
+                ) : g.srcs ? (
+                  <div className="pf-case__strip">
+                    {g.srcs.map((s) => (
+                      <a key={s} href={s} target="_blank" rel="noreferrer">
+                        <img src={s} alt={g.alt} loading="lazy" />
+                      </a>
+                    ))}
+                  </div>
+                ) : (
+                  <CaseImage src={g.src} alt={g.alt} />
+                )}
               </div>
-            </div>
-            <figcaption className="pf-case__caption mono">{g.caption}</figcaption>
-          </figure>
-        ))}
-      </div>
+              <figcaption className="pf-case__caption mono">{g.caption}</figcaption>
+            </figure>
+          ))}
+        </div>
+      )}
     </section>
+  );
+}
+
+function CaseImage({ src, alt }) {
+  return (
+    <a href={src} target="_blank" rel="noreferrer">
+      <img src={src} alt={alt} loading="lazy" />
+    </a>
   );
 }
 

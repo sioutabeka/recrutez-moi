@@ -2,13 +2,11 @@ import { Link } from "react-router-dom";
 import IconArrow from "./IconArrow";
 import Placeholder from "./Placeholder";
 import { ROUTES } from "../config/routes";
-import aboutHero from "../../assets/about-hero.jpg";
-import aboutStory from "../../assets/about-story.jpg";
 import epjewelsCover from "../../assets/epjewels-cover.jpg";
 
 const TEASERS = [
-  { label: "L'outil de carrousels · Marketing × Code × IA", slug: "outil-carrousels", img: aboutStory },
-  { label: "LeGratin.io · Vitrine de projets", slug: "legratin", img: aboutHero },
+  { label: "L'outil de carrousels · Marketing × Code × IA", slug: "outil-carrousels", img: "/portfolio/carrousel-studio-slide.png" },
+  { label: "LeGratin.io · Vitrine de projets", slug: "legratin", img: "/portfolio/legratin-webinar-2.png" },
   { label: "UGC & création de contenu", slug: "ugc-creation", img: epjewelsCover },
 ];
 

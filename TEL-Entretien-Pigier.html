@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<title>Entretien téléphone · Pigier Paris · Essia Ben Kheder</title>
+<style>
+  :root {
+    --brown: #2A1810;
+    --olive: #7C8136;
+    --grey-dark: #444;
+    --grey-mid: #777;
+    --grey-light: #ddd;
+    --paper: #FEFCF4;
+    --sand: #F6F2E6;
+    --soft: #F0E8D4;
+    --highlight: #FFF8E1;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  @page { size: A4; margin: 15mm; }
+  html, body {
+    background: #ecece8;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+    color: var(--brown);
+    font-size: 11pt; line-height: 1.65;
+  }
+  .page {
+    max-width: 760px;
+    margin: 20px auto;
+    padding: 50px 60px;
+    background: var(--paper);
+    box-shadow: 0 10px 40px rgba(0,0,0,.08);
+  }
+
+  header.cover {
+    text-align: center;
+    padding-bottom: 32px;
+    margin-bottom: 40px;
+  }
+  header.cover h1 {
+    font-size: 24pt; font-weight: 400;
+    letter-spacing: -0.01em; color: var(--brown);
+    margin-bottom: 8px;
+  }
+  header.cover .subtitle {
+    color: var(--olive); font-size: 12pt; font-weight: 500;
+    font-style: italic;
+  }
+
+  h2 {
+    font-size: 15pt; font-weight: 700;
+    color: var(--brown);
+    margin-top: 36px; margin-bottom: 16px;
+  }
+  h2 .time {
+    display: block;
+    font-size: 9.5pt;
+    color: var(--olive);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    margin-bottom: 4px;
+  }
+  h3 {
+    font-size: 12pt; font-weight: 700;
+    color: var(--brown);
+    margin-top: 18px; margin-bottom: 8px;
+  }
+  h4 {
+    font-size: 10.5pt; font-weight: 700;
+    color: var(--olive);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 6px;
+  }
+
+  p { margin-bottom: 12px; }
+  ul, ol { margin: 8px 0 16px 24px; }
+  li { margin: 8px 0; }
+  strong { color: var(--brown); }
+
+  .goodnews {
+    background: #E8F0D8;
+    border-radius: 8px;
+    padding: 20px 26px;
+    margin: 20px 0;
+    font-size: 11.5pt;
+  }
+  .goodnews h3 { color: var(--olive); margin-top: 0; }
+
+  .mantra {
+    background: var(--sand);
+    border-left: 4px solid var(--olive);
+    padding: 16px 22px;
+    margin: 16px 0;
+    font-size: 12pt;
+    font-style: italic;
+    color: var(--brown);
+    line-height: 1.5;
+  }
+
+  .big-breath {
+    background: var(--soft);
+    border-radius: 8px;
+    padding: 22px 28px;
+    margin: 20px 0;
+    text-align: center;
+    font-size: 13pt;
+    color: var(--brown);
+    line-height: 1.6;
+  }
+  .big-breath strong {
+    display: block;
+    font-size: 11pt;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--olive);
+    margin-bottom: 8px;
+    font-weight: 700;
+  }
+
+  .tech {
+    background: white;
+    border: 1px solid var(--grey-light);
+    border-radius: 6px;
+    padding: 16px 20px;
+    margin: 14px 0;
+  }
+
+  .setup {
+    background: var(--highlight);
+    border-left: 4px solid var(--olive);
+    padding: 18px 22px;
+    margin: 16px 0;
+  }
+
+  .warn {
+    background: #fff2e5;
+    border-left: 3px solid #c0691a;
+    padding: 12px 16px;
+    margin: 12px 0;
+    font-size: 10.5pt;
+  }
+
+  .signoff {
+    text-align: center;
+    margin-top: 48px;
+    padding-top: 32px;
+    border-top: 1px solid var(--grey-light);
+    font-size: 12pt;
+    color: var(--olive);
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  @media print {
+    html, body { background: white; }
+    .page { margin: 0; box-shadow: none; max-width: 100%; padding: 0; }
+    .no-print { display: none; }
+    h2, h3 { page-break-after: avoid; }
+    .big-breath, .mantra, .tech, .setup, .goodnews { page-break-inside: avoid; }
+  }
+  .print-hint {
+    position: fixed; top: 12px; right: 12px;
+    background: var(--olive); color: white;
+    padding: 10px 16px; border-radius: 999px;
+    font-size: 12px; cursor: pointer; border: none;
+    font-family: inherit; z-index: 10;
+    box-shadow: 0 4px 12px rgba(0,0,0,.15);
+  }
+  .print-hint:hover { background: var(--brown); }
+</style>
+</head>
+<body>
+
+<button class="print-hint no-print" onclick="window.print()">⬇ Enregistrer en PDF (Cmd+P)</button>
+
+<div class="page">
+
+  <header class="cover">
+    <h1>Entretien téléphone</h1>
+    <div class="subtitle">Pigier Paris La Villette · Mode d'emploi + Anti-stress</div>
+  </header>
+
+  <div class="goodnews">
+    <h3>La bonne nouvelle d'abord</h3>
+    <p>L'entretien téléphone, c'est <strong>beaucoup moins stressant qu'un entretien physique</strong>, à condition de le préparer bien :</p>
+    <ul>
+      <li>Tu peux avoir tes notes sous les yeux (ils ne verront jamais rien)</li>
+      <li>Tu peux boire, respirer, bouger, être pieds nus</li>
+      <li>Pas de poignée de main, pas de regard, pas de langage corporel à gérer</li>
+      <li>Pas de tenue à choisir, pas de trajet à faire</li>
+      <li>Pas d'inconnu·e en face qui te juge visuellement</li>
+    </ul>
+    <p><strong>Ta voix, c'est tout. Et ta voix, tu peux la maîtriser.</strong></p>
+  </div>
+
+  <h2><span class="time">La veille au soir</span>Préparer l'environnement</h2>
+
+  <div class="setup">
+    <h4>Choisis ton endroit</h4>
+    <ul>
+      <li><strong>Une pièce calme chez toi.</strong> Pas de café (bruit, écho). Pas la rue. Pas de voiture (sauf à l'arrêt dans un parking silencieux).</li>
+      <li><strong>Teste la connexion</strong> : wifi stable ou 4G forte. Si tu doutes, choisis l'endroit où tu as 5 barres.</li>
+      <li><strong>Pose un panneau "ne pas déranger"</strong> si tu n'es pas seule. Préviens quiconque sous le même toit.</li>
+      <li><strong>Vérifie la batterie</strong> de ton téléphone et prépare le chargeur.</li>
+    </ul>
+  </div>
+
+  <div class="setup">
+    <h4>Prépare tes supports</h4>
+    <ul>
+      <li>Imprime ton <strong>pitch (les 4 phrases clés)</strong> en gros caractères, A4, sous les yeux</li>
+      <li>Imprime <strong>une page avec les points durs</strong> : chiffres clés, nom du recruteur, mots-clés de l'offre</li>
+      <li>Un <strong>stylo et une feuille blanche</strong> pour noter en direct ce qu'ils disent</li>
+      <li>Un <strong>verre d'eau à température ambiante</strong> (pas glacée, ça serre la gorge)</li>
+    </ul>
+  </div>
+
+  <h2><span class="time">30 minutes avant</span>Mettre la voix en route</h2>
+
+  <ol>
+    <li><strong>Boire 1 verre d'eau à température ambiante.</strong> Une voix bien hydratée est plus posée.</li>
+    <li><strong>Fais des étirements de visage pendant 1 min.</strong> Ouvre grand la bouche, bouge la mâchoire, tire la langue, souris exagérément. Les muscles sont prêts.</li>
+    <li><strong>Lis à voix haute 2 pages d'un livre</strong> en articulant très exagérément. La voix s'échauffe comme un muscle. Essentiel.</li>
+    <li><strong>Respiration 4-7-8</strong> (voir plus bas) · 3 fois.</li>
+    <li><strong>Souris face à un miroir pendant 10 secondes.</strong> Oui, même au téléphone. Un sourire s'entend à travers l'appareil, c'est prouvé.</li>
+  </ol>
+
+  <div class="big-breath">
+    <strong>Respiration 4-7-8</strong>
+    Inspire par le nez pendant <strong>4 secondes</strong>.<br />
+    Retiens pendant <strong>7 secondes</strong>.<br />
+    Expire par la bouche pendant <strong>8 secondes</strong>.<br /><br />
+    Répète <strong>3 à 4 fois</strong>. Technique anti-stress validée scientifiquement.
+  </div>
+
+  <h2><span class="time">Juste avant la sonnerie</span>Posture &amp; état d'esprit</h2>
+
+  <h3>La règle d'or de l'entretien téléphone : <span style="color: var(--olive)">reste debout</span></h3>
+
+  <p>Oui, debout. Toute la différence du monde est là.</p>
+
+  <ul>
+    <li><strong>Debout, ta cage thoracique s'ouvre</strong>, l'air passe mieux, la voix est plus posée et plus profonde.</li>
+    <li><strong>Debout, tu peux marcher doucement</strong> dans la pièce. Le mouvement calme le stress.</li>
+    <li><strong>Debout, ton corps envoie à ton cerveau un signal d'engagement.</strong> Assise dans un canapé, tu auras une voix molle.</li>
+  </ul>
+
+  <p>Si tu dois absolument t'asseoir : <strong>chaise droite, pieds à plat au sol, dos décollé du dossier, cage thoracique ouverte</strong>. Jamais avachie.</p>
+
+  <div class="mantra">
+    Avant de décrocher, dis-toi lentement, dans ta tête :<br /><br />
+    « Je viens de chez eux. »<br />
+    « Je sais faire ce métier. »<br />
+    « Je raconte, je n'auditionne pas. »
+  </div>
+
+  <h2><span class="time">Les 10 premières secondes</span>Décrocher calmement</h2>
+
+  <div class="tech">
+    <h4>Protocole de décrochage</h4>
+    <ol>
+      <li>Laisse <strong>sonner 2 fois</strong> (pas plus, pas moins). Montre que tu es dispo, pas désespérée.</li>
+      <li>Décroche en respirant.</li>
+      <li>Dis : <strong>« Allô, oui, Essia Ben Kheder. »</strong> Clair, posé, un ton descendant à la fin (pas montant comme une question).</li>
+      <li>Laisse-les parler. <strong>Ne te lance pas tout de suite dans ton pitch.</strong> Attends qu'ils te demandent de te présenter.</li>
+      <li>Quand ils te saluent, réponds posément : <strong>« Bonjour [Prénom], très heureuse de pouvoir échanger avec vous aujourd'hui. »</strong></li>
+    </ol>
+  </div>
+
+  <h2><span class="time">Pendant l'entretien</span>Techniques spéciales téléphone</h2>
+
+  <h3>1. Articule plus que d'habitude</h3>
+  <div class="tech">
+    <p>Au téléphone, les consonnes passent moins bien. Articule les fins de mots. Si tu entends déjà ta voix "normale", c'est que ton interlocuteur·rice entend une voix molle. <strong>Exagère légèrement, ça rendra naturel pour eux.</strong></p>
+  </div>
+
+  <h3>2. Souris en parlant</h3>
+  <div class="tech">
+    <p>Un sourire s'entend. Vraiment. Ça change la vibration de ta voix. Garde un demi-sourire pendant tout l'entretien, même quand ça parle de choses sérieuses. Si besoin, scotche un post-it devant toi avec un smiley :)</p>
+  </div>
+
+  <h3>3. Baisse ton débit de 20%</h3>
+  <div class="tech">
+    <p>Le téléphone fait paraître la voix plus rapide qu'elle ne l'est. <strong>Parle plus lentement que d'habitude, consciemment.</strong> Si tu as l'impression de parler lentement, c'est le bon rythme pour eux.</p>
+  </div>
+
+  <h3>4. Marque les silences volontairement</h3>
+  <div class="tech">
+    <p>À la fin d'une phrase importante, laisse <strong>1 à 2 secondes de silence</strong> avant d'enchaîner. Ça laisse ton point imprimer dans leur tête. Et ça te donne le temps de penser à la suite.</p>
+  </div>
+
+  <h3>5. Bois de l'eau entre les blocs</h3>
+  <div class="tech">
+    <p>Si on te pose une question difficile, tu peux dire <strong>« une seconde, je bois une gorgée d'eau »</strong>. Ça te donne 5 secondes de réflexion sans en avoir l'air, et ça relaxe la gorge.</p>
+  </div>
+
+  <h3>6. Prends des notes pendant qu'ils parlent</h3>
+  <div class="tech">
+    <p>Écris les mots-clés de ce qu'ils disent. Ça te force à écouter activement, à ne pas être dans ta tête à préparer la suite, et ça te donne de la matière pour rebondir plus tard dans l'échange.</p>
+  </div>
+
+  <h2>Les 3 pièges spécifiques au téléphone</h2>
+
+  <div class="warn">
+    <strong>Piège 1 · Parler en même temps qu'eux.</strong><br />
+    Au téléphone, les signaux non-verbaux manquent. On croit qu'ils ont fini de parler, on se lance, et on se coupe. <strong>Attends 1 seconde complète</strong> après qu'ils ont parlé avant de répondre.
+  </div>
+
+  <div class="warn">
+    <strong>Piège 2 · Le silence qui panique.</strong><br />
+    S'il y a un silence, c'est peut-être qu'ils prennent des notes, ou qu'ils réfléchissent. <strong>Ne remplis pas</strong>. Tu peux dire posément : « Je vous ai bien perdu·e, ou vous prenez une note ? » si vraiment ça dure.
+  </div>
+
+  <div class="warn">
+    <strong>Piège 3 · Lire tes notes mot à mot.</strong><br />
+    L'avantage du téléphone c'est d'avoir ses notes. Le piège c'est de les lire. <strong>Les notes sont des points d'ancrage, pas un script.</strong> Jette un œil, puis parle en regardant un point fixe au mur.
+  </div>
+
+  <h2>Et à la fin de l'appel</h2>
+
+  <div class="tech">
+    <h4>Protocole de clôture</h4>
+    <ol>
+      <li>Reformule ce que tu as compris de la suite : <strong>« Si je comprends bien, les prochaines étapes seraient X. »</strong></li>
+      <li>Remercie : <strong>« Merci beaucoup pour cet échange. »</strong> Pas « merci de votre temps » (trop pauvre).</li>
+      <li>Ajoute : <strong>« Je suis vraiment ravie d'avoir pu échanger avec vous aujourd'hui. »</strong> Ton chaleureux, pas corporate.</li>
+      <li>Attends qu'ils raccrochent les premiers.</li>
+      <li>Raccroche, et <strong>respire</strong>. C'est fait.</li>
+    </ol>
+  </div>
+
+  <h2>Si tu paniques en plein appel</h2>
+
+  <div class="tech">
+    <h4>Protocole d'urgence · pendant l'appel</h4>
+    <ol>
+      <li><strong>Tu bois une gorgée d'eau.</strong> Ça te donne 5 secondes.</li>
+      <li>Tu dis : <strong>« Pardon, je prends 2 secondes pour reformuler ma pensée. »</strong> C'est totalement acceptable.</li>
+      <li>Tu respires une fois profondément.</li>
+      <li>Tu reprends : <strong>« Ce que je voulais dire, c'est... »</strong></li>
+    </ol>
+  </div>
+
+  <h2>Les 5 phrases magiques du téléphone</h2>
+
+  <ol>
+    <li>Pour gagner du temps : <strong>« C'est une bonne question, je prends un instant pour y répondre. »</strong></li>
+    <li>Pour reformuler : <strong>« Si je comprends bien, vous me demandez X. »</strong></li>
+    <li>Pour se ressaisir : <strong>« Pardon, je reprends : ce que je voulais dire c'est... »</strong></li>
+    <li>Pour marquer l'enthousiasme : <strong>« Ça me parle vraiment. »</strong> (plutôt que « c'est intéressant » qui est tiède)</li>
+    <li>Pour clôturer un bloc : <strong>« Voilà. Si vous voulez que je développe un point, dites-moi. »</strong></li>
+  </ol>
+
+  <div class="signoff">
+    Tu as un vrai parcours. Tu as une maison qui te connaît. Tu as des notes sous les yeux.<br />
+    <strong>Reste debout. Souris. Parle lentement. Respire.</strong><br />
+    Et tout ira bien.
+  </div>
+
+</div>
+
+</body>
+</html>

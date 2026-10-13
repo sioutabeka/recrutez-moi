@@ -1,0 +1,152 @@
+% ==============================================================
+% CV Essia Ben Kheder - Consultante SEA & Performance
+% Ciblé : Havas Market (Groupe Havas / Vivendi)
+% Compile avec : pdflatex ou XeLaTeX dans Overleaf
+% ==============================================================
+
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage[margin=1.5cm]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{fontawesome5}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+% Couleurs
+\definecolor{brown}{HTML}{2A1810}
+\definecolor{olive}{HTML}{7C8136}
+\definecolor{greydark}{HTML}{555555}
+\definecolor{greymid}{HTML}{888888}
+
+\hypersetup{colorlinks=true,urlcolor=olive,linkcolor=olive}
+
+% Désactiver indentation + espace paragraphes
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+% Format des titres de section
+\titleformat{\section}
+  {\color{olive}\normalfont\footnotesize\bfseries\MakeUppercase}
+  {}{0em}{}[\color{olive}\titlerule]
+\titlespacing*{\section}{0pt}{10pt}{6pt}
+
+% Format sous-titre expérience
+\newcommand{\expheader}[4]{%
+  \textbf{\color{brown}#1} \hfill \color{greydark}\footnotesize #2 \\[-1pt]
+  \textit{\color{greydark}\small #3} \hfill \color{greymid}\footnotesize #4 \\[2pt]
+}
+
+\begin{document}
+
+% ============== HEADER ==============
+\begin{center}
+  {\LARGE\bfseries\color{brown} ESSIA BEN KHEDER}\\[4pt]
+  {\color{olive}\normalsize Consultante SEA \& Performance Marketing}\\[6pt]
+  {\footnotesize\color{greydark}
+    \faEnvelope\ essiabenkheder@gmail.com \quad
+    \faPhone\ 07 77 00 12 94 \quad
+    \faMapMarker*\ Paris \quad
+    \faLinkedin\ \href{https://linkedin.com/in/essiabenkheder}{essiabenkheder} \quad
+    \faGlobe\ \href{https://recrutez-essia.com}{recrutez-essia.com}
+  }
+\end{center}
+
+\vspace{-6pt}
+
+% ============== PROFIL ==============
+\section{Profil}
+Profil marketing orienté performance et acquisition, formé en agence (Bergamotte, KaliKado), puis déployé en interne sur un SaaS B2B (LeGratin.io, Station F). Pilotage de campagnes multi-leviers (SEA, paid social, inbound, outbound), analyse de la performance (KPIs, CAC, ROI), tracking, reporting client. 9 ans d'expérience terrain, culture SEA et data-driven, à l'aise avec Google Ads, LinkedIn Ads, Meta Ads, GA4, Looker Studio et HubSpot. Je recherche aujourd'hui à rejoindre une agence performance de référence.
+
+% ============== EXPÉRIENCE ==============
+\section{Expérience Professionnelle}
+
+\expheader{LeGratin.io · Marketing \& Performance Manager}{Sept. 2021 → Sept. 2024}{SaaS B2B · Marketplace freelances IT · Station F · Paris}{3 ans · CDI}
+\begin{itemize}[leftmargin=12pt,itemsep=1pt,topsep=2pt]
+  \item Pilotage complet des leviers d'acquisition : SEA (Google Ads), paid social (LinkedIn Ads, Meta Ads), SEO, inbound, outbound, lead gen.
+  \item Mise en place du tracking GA4, HubSpot CRM, synchronisation sales enablement, reporting hebdomadaire au CODIR.
+  \item Pilotage des KPIs performance : MQL, SQL, pipeline, CAC, ROI, analyse du funnel.
+  \item Génération bi-face : B2B côté clients grands comptes, B2C côté utilisateurs freelances.
+  \item \textbf{Résultats : +20 000 utilisateurs acquis en organique sur budget contraint, 50+ webinars (lead gen), contribution directe à la levée de 1,5 M€ (oct. 2022). LeGratin intégrée au groupe Nexoris.}
+\end{itemize}
+
+\expheader{OseCom · Freelance Marketing \& Performance}{Sept. 2024 → Aujourd'hui}{En direct avec les marques · Paris · Hybride}{Freelance · Temps plein}
+\begin{itemize}[leftmargin=12pt,itemsep=1pt,topsep=2pt]
+  \item Campagnes paid social pour marques beauté/pharma (Nuxe, Pierre Fabre, Blissim) : Meta Ads, TikTok Ads.
+  \item Accompagnement e-commerce TPE/PME : setup tracking, landing pages, CRO, optimisation des parcours.
+  \item Production des assets paid (vidéos courtes, visuels social, UGC) pour test \& learn rapide.
+\end{itemize}
+
+\expheader{Agence KaliKado · Cheffe de projet \& Business Developer}{Mai 2019 → Janv. 2021}{Agence Conseil \& Solutions Sampling · Neuilly-sur-Seine}{1 an 9 mois · CDI}
+\begin{itemize}[leftmargin=12pt,itemsep=1pt,topsep=2pt]
+  \item Cycle complet agence : prospection B2B, pitch, négociation, exécution, bilan chiffré.
+  \item Portefeuille clients : Groupe Andros (Bonne Maman, Mamie Nova), L'Or Espresso, L'Arbre Vert, FDJ.
+  \item Pilotage de campagnes sampling multi-canaux : box hôtelières, partenariats e-commerce, jeux-concours.
+  \item Présentation des bilans de performance en direct aux clients.
+\end{itemize}
+
+\expheader{Agence Bergamotte · Cheffe de projet Digital}{Sept. 2018 → Mai 2019}{Agence B2B · Secteur régulé · Paris 15}{9 mois · CDI}
+\begin{itemize}[leftmargin=12pt,itemsep=1pt,topsep=2pt]
+  \item Comptes institutionnels grands comptes : Axa, Macif, Matmut, Banque Populaire.
+  \item Pilotage projets éditoriaux digitaux de A à Z : cadrage, planning, prestataires, budgets, qualité.
+  \item Contenus SEO, newsletters, benchmarks concurrentiels, recommandations stratégiques.
+\end{itemize}
+
+\expheader{Pigier · Chargée de communication \& développement}{Sept. 2017 → Sept. 2018}{École de commerce · Toulouse}{1 an · CDI}
+\begin{itemize}[leftmargin=12pt,itemsep=1pt,topsep=2pt]
+  \item Stratégie de communication globale et digitale, en autonomie complète.
+  \item Campagnes radio et affichage (conception + achat média + déploiement).
+  \item Relations presse, événements, contenus multi-formats.
+\end{itemize}
+
+\expheader{Groupe Nice-Matin · Planning stratégique}{2015}{Régie publicitaire · Nice}{Premier poste}
+\begin{itemize}[leftmargin=12pt,itemsep=1pt,topsep=2pt]
+  \item Analyse stratégique, veille médias, data audience.
+  \item Coordination de projets au sein de la régie publicitaire du groupe.
+\end{itemize}
+
+% ============== COMPÉTENCES TECHNIQUES ==============
+\section{Compétences techniques}
+
+\textbf{\color{brown}Paid Media \& SEA :} Google Ads, Bing Ads, LinkedIn Ads, Meta Ads, TikTok Ads, Amazon Ads (notions), setup campagnes, optimisation, A/B testing. \\[3pt]
+\textbf{\color{brown}Analytics \& Tracking :} GA4, Google Tag Manager, Looker Studio, SEMrush, Google Search Console, UTM, pixel social. \\[3pt]
+\textbf{\color{brown}CRM \& Automation :} HubSpot, Brevo, Lemlist, Make, PhantomBuster, marketing automation, scoring, segmentation. \\[3pt]
+\textbf{\color{brown}SEO \& Content :} SEO on-page, GEO (Generative Engine Optimization), stratégie éditoriale, landing pages, CRO. \\[3pt]
+\textbf{\color{brown}Reporting \& Pilotage :} KPIs (MQL, SQL, pipeline, CAC, LTV, ROI), reporting client hebdomadaire, bilan de campagne, tableaux de bord Looker Studio. \\[3pt]
+\textbf{\color{brown}Production Ads :} CapCut, Premiere Pro, After Effects, Canva, Figma, Midjourney (visuels paid, vidéos courtes, UGC). \\[3pt]
+\textbf{\color{brown}Outils \& Pack Office :} Excel, PowerPoint, Google Suite, Notion, Airtable, Slack.
+
+% ============== FORMATION ==============
+\section{Formation}
+
+\expheader{Master 2 Marketing Digital \& E-business}{2018 · 2019}{ESG Paris}{Bac+5}
+\textit{Stratégie digitale, SEO/SEA, e-commerce, data \& automation.}
+
+\vspace{4pt}
+\expheader{Master 1 Communication 360°}{2017 · 2018}{European Communication School · Toulouse}{Bac+4}
+\textit{Communication intégrée · stratégie et exécution.}
+
+\vspace{4pt}
+\expheader{Licence Information-Communication}{2014 · 2017}{Université Côte d'Azur · Nice}{Bac+3}
+\textit{Parcours Organisations \& stratégies numériques.}
+
+\vspace{4pt}
+\expheader{Formation Full-Stack JavaScript}{2024 · 2025}{GOMYCODE}{Complément technique}
+\textit{Stack MERN (React, Node.js, MongoDB, SQL) · pour prototyper, dialoguer avec les équipes produit et tech, et construire mes propres outils marketing.}
+
+\vspace{4pt}
+\expheader{Anglais général}{2013 · 2014}{Kaplan International Languages · Londres}{Année anglophone}
+
+% ============== LANGUES ==============
+\section{Langues}
+
+\textbf{\color{brown}Français} C2 (langue maternelle) \quad\textbullet\quad
+\textbf{\color{brown}Anglais} C1 (année à Londres) \quad\textbullet\quad
+\textbf{\color{brown}Arabe} C1 (langue maternelle)
+
+\end{document}

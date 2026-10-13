@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<title>Prépa entretien STAR · Creative Strategist · Essia Ben Kheder</title>
+<style>
+  :root {
+    --brown: #2A1810;
+    --olive: #7C8136;
+    --grey-dark: #444;
+    --grey-mid: #777;
+    --grey-light: #ccc;
+    --paper: #FFFEF8;
+    --highlight: #FFF8E1;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  @page { size: A4; margin: 15mm; }
+  html, body {
+    background: #ecece8;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+    color: var(--brown);
+    font-size: 10.5pt; line-height: 1.5;
+  }
+  .page {
+    max-width: 820px;
+    margin: 20px auto;
+    padding: 40px 48px;
+    background: var(--paper);
+    box-shadow: 0 10px 40px rgba(0,0,0,.08);
+  }
+
+  header.cover {
+    text-align: center;
+    padding-bottom: 28px;
+    margin-bottom: 32px;
+    border-bottom: 2px solid var(--olive);
+  }
+  header.cover h1 {
+    font-size: 22pt; font-weight: 700;
+    letter-spacing: -0.02em; color: var(--brown);
+    margin-bottom: 6px;
+  }
+  header.cover .subtitle {
+    color: var(--olive); font-size: 13pt; font-weight: 500;
+    margin-bottom: 10px;
+  }
+  header.cover .meta {
+    color: var(--grey-dark); font-size: 10pt;
+  }
+
+  h2 {
+    font-size: 14pt; font-weight: 700;
+    color: var(--brown);
+    margin-top: 32px; margin-bottom: 14px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--olive);
+  }
+  h2 .num {
+    color: var(--olive);
+    font-weight: 700;
+    margin-right: 8px;
+  }
+  h3 {
+    font-size: 11.5pt; font-weight: 700;
+    color: var(--brown);
+    margin-top: 18px; margin-bottom: 6px;
+  }
+  h4 {
+    font-size: 10.5pt; font-weight: 700;
+    color: var(--olive);
+    margin-top: 14px; margin-bottom: 4px;
+  }
+
+  p { margin-bottom: 10px; }
+
+  ul, ol { margin: 8px 0 12px 22px; }
+  li { margin: 4px 0; }
+
+  strong { color: var(--brown); }
+
+  .quote {
+    background: var(--highlight);
+    border-left: 3px solid var(--olive);
+    padding: 10px 14px;
+    margin: 8px 0 14px;
+    font-style: italic;
+    color: var(--grey-dark);
+    font-size: 10.5pt;
+    line-height: 1.55;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0 14px;
+    font-size: 10pt;
+  }
+  table th {
+    text-align: left;
+    padding: 8px 10px;
+    background: var(--olive);
+    color: white;
+    font-weight: 600;
+  }
+  table td {
+    padding: 8px 10px;
+    border-bottom: 1px solid var(--grey-light);
+    vertical-align: top;
+  }
+  table tr:last-child td { border-bottom: none; }
+
+  .callout {
+    background: #f6f5ee;
+    border: 1px solid var(--grey-light);
+    border-radius: 6px;
+    padding: 14px 18px;
+    margin: 14px 0;
+  }
+  .callout strong { color: var(--olive); }
+
+  .warn {
+    background: #fff2e5;
+    border-left: 3px solid #c0691a;
+    padding: 10px 14px;
+    margin: 10px 0;
+    font-size: 10pt;
+  }
+
+  .tagline {
+    text-align: center;
+    font-size: 12pt;
+    color: var(--olive);
+    font-weight: 600;
+    margin-top: 36px;
+    padding-top: 20px;
+    border-top: 1px solid var(--grey-light);
+  }
+
+  @media print {
+    html, body { background: white; }
+    .page { margin: 0; box-shadow: none; max-width: 100%; padding: 0; }
+    .no-print { display: none; }
+    h2 { page-break-after: avoid; }
+    h3, h4 { page-break-after: avoid; }
+    .quote, table, .callout { page-break-inside: avoid; }
+  }
+  .print-hint {
+    position: fixed; top: 12px; right: 12px;
+    background: var(--olive); color: white;
+    padding: 10px 16px; border-radius: 999px;
+    font-size: 12px; cursor: pointer; border: none;
+    font-family: inherit; z-index: 10;
+    box-shadow: 0 4px 12px rgba(0,0,0,.15);
+  }
+  .print-hint:hover { background: var(--brown); }
+</style>
+<style>
+  .star { display: grid; grid-template-columns: 34px 1fr; gap: 4px 10px; margin: 8px 0 16px; }
+  .star .l { font-weight: 700; color: white; background: var(--olive); border-radius: 4px; text-align: center; height: 22px; line-height: 22px; }
+  .star .t { margin-bottom: 6px; }
+  .todo { background: #FDE2E2; padding: 0 4px; border-radius: 3px; font-weight: 600; }
+  .tip { font-size: 9.5pt; color: var(--grey-mid); margin-bottom: 18px; }
+</style>
+</head>
+<body>
+<div class="page">
+
+<header class="cover">
+  <h1>Entretien Creative Strategist</h1>
+  <div class="subtitle">Mes histoires en méthode STAR</div>
+  <div class="meta">Essia Ben Kheder · Social-first · AI-native · Production</div>
+</header>
+
+<h2>Rappel de la méthode</h2>
+<p><strong>S</strong>ituation : le contexte en une phrase. <strong>T</strong>âche : ce qu'on attendait de moi. <strong>A</strong>ction : ce que j'ai fait, moi, avec des verbes concrets (c'est la partie la plus longue). <strong>R</strong>ésultat : le chiffre ou l'impact, puis ce que j'en retiens.</p>
+<p class="tip">Une histoire = 1 min 30 à 2 min. Dire « je » plutôt que « on ». Les zones en rose sont à compléter avec tes vrais chiffres avant l'entretien, sinon les dire de façon qualitative.</p>
+
+<h2>Pitch d'ouverture (60 secondes)</h2>
+<div class="quote">Je suis Essia, profil créatif et hands-on. Depuis 2024, je conçois, scripte, tourne et monte des contenus social-first pour des marques beauté et pharma comme Nuxe, Pierre Fabre ou Blissim, en direct avec leurs équipes brand. Avant ça, j'ai passé trois ans chez LeGratin.io, startup SaaS à Station F, où j'ai construit la stratégie éditoriale et créative de zéro, jusqu'à +20 000 utilisateurs en organique et une contribution à une levée de 1,5 M€. Mon parcours a commencé en agence, avec des concepts de campagnes pour Bonne Maman ou L'Or Espresso. Ce qui me définit : je passe du concept à la vidéo publiée en autonomie, je m'appuie sur la data pour objectiver les choix créatifs, et j'utilise l'IA au quotidien, au point d'avoir codé ma propre app de génération de carrousels, que j'adapte à chaque client.</div>
+
+<h2>Histoire A · Production de bout en bout pour Nuxe</h2>
+<p class="tip">Pour : « Parlez-moi d'un projet créatif dont vous êtes fière », « Comment travaillez-vous avec une marque ? »</p>
+<div class="star">
+  <div class="l">S</div><div class="t">En freelance depuis 2024, Nuxe me confie la production de contenus vidéo en 2025, une marque prestigieuse avec des codes de marque exigeants.</div>
+  <div class="l">T</div><div class="t">Livrer des vidéos social-first fidèles à la DA Nuxe, du concept à la vidéo finale, en coordination directe avec l'équipe brand.</div>
+  <div class="l">A</div><div class="t">J'ai fait la veille des codes et tendances du moment, proposé les concepts, écrit les scripts, dirigé les tournages, puis monté les vidéos. J'ai intégré les retours de l'équipe brand à chaque étape.</div>
+  <div class="l">R</div><div class="t">5 à 6 vidéos produites en 2025, une relation suivie avec la marque. <span class="todo">[résultat à préciser : vues, engagement, retour client, réutilisation en ads ?]</span></div>
+</div>
+
+<h2>Histoire B · Carrousel Studio, mon outil IA maison</h2>
+<p class="tip">Pour : « Comment utilisez-vous l'IA ? », « Un exemple d'innovation », « Comment produire du volume sans perdre la qualité ? ». C'est ton histoire la plus différenciante : propose de montrer l'écran.</p>
+<div class="star">
+  <div class="l">S</div><div class="t">Mes clients freelance avaient besoin de carrousels réguliers sur les réseaux, chacun avec sa propre voix et sa propre DA. Produits à la main, un par un, c'était long et difficile à tenir dans la durée. Exemple : Bel &amp; Blanc, pressing artisanal à Tunis depuis 2001, trois ateliers (La Marsa, Lafayette, Sfax).</div>
+  <div class="l">T</div><div class="t">Mettre en place une chaîne de contenu complète et réutilisable : des articles de fond, puis des carrousels social-first fidèles à chaque marque, produits vite et sans perte de qualité.</div>
+  <div class="l">A</div><div class="t">
+    <ul>
+      <li><strong>Le contenu source</strong> : je rédige les articles de blog experts sur lesquels l'outil s'appuie (62 articles pour Bel &amp; Blanc, avec la voix de l'artisan : « précis, factuel, technique mais accessible »).</li>
+      <li><strong>Un template d'app</strong> que j'ai conçu et codé en JavaScript avec Claude, puis que j'adapte à chaque client : DA, typographies, thèmes visuels, ton, patterns narratifs, langues.</li>
+      <li><strong>Des patterns narratifs</strong> que j'écris moi-même, par exemple pour Bel &amp; Blanc : Le diagnostic (signe visible → cause technique → solution → seuil atelier), Le geste-par-geste, Les causes, Les pièges. Chacun est un brief précis (séquence de slides, ton, tags, CTA) que Claude suit.</li>
+      <li><strong>Les fonctions</strong> : choix de la langue (français et tounsi chez Bel &amp; Blanc), une vingtaine de thèmes visuels, un mode édition pour retoucher chaque slide, un export PNG direct et un suivi « à publier / archivé ».</li>
+    </ul>
+  </div>
+  <div class="l">R</div><div class="t">L'app tourne en production chez <span class="todo">[nombre]</span> clients. Un carrousel de 6 slides se génère en environ 25 secondes, puis je le relis et l'ajuste. Chez Bel &amp; Blanc : 62 articles classés, 36 à publier, 26 en archive. <span class="todo">[à confirmer : 26 = déjà publiés ? + engagement des carrousels]</span> Ce que j'en retiens : je maîtrise toute la chaîne, de l'article au carrousel publié. L'IA fait le gros du travail de déclinaison, la stratégie (patterns, ton, DA) et le regard final restent les miens.</div>
+</div>
+<div class="quote">Phrase à placer : « J'ai construit un template que j'adapte à chaque client. J'écris les articles et les règles narratives, Claude les applique. Je consacre mon temps à l'angle et à la DA. »</div>
+<p class="tip">Captures à montrer si tu partages ton écran (dossier <code>assets-entretien</code>) :</p>
+<p><img src="assets-entretien/carrousel-studio-article.png" style="width:100%;border:1px solid #ccc;margin-bottom:8px"><img src="assets-entretien/carrousel-studio-patterns.png" style="width:100%;border:1px solid #ccc;margin-bottom:8px"><img src="assets-entretien/carrousel-studio-themes.png" style="width:100%;border:1px solid #ccc;margin-bottom:8px"><img src="assets-entretien/carrousel-studio-slide.png" style="width:60%;border:1px solid #ccc"></p>
+
+<h2>Histoire C · La stratégie créative de LeGratin.io</h2>
+<p class="tip">Pour : « Un résultat mesurable », « Comment reliez-vous créa et performance ? », « Construire de zéro ».</p>
+<div class="star">
+  <div class="l">S</div><div class="t">LeGratin.io, startup SaaS B2B à Station F, sans stratégie de contenu à mon arrivée en 2021.</div>
+  <div class="l">T</div><div class="t">Construire la marque et acquérir des utilisateurs en organique, avec peu de budget.</div>
+  <div class="l">A</div><div class="t">J'ai posé la ligne éditoriale et la direction artistique, refondu le site, piloté les vidéos internes et mené 50+ interviews d'experts. J'ai lancé un format de <strong>webinars en LinkedIn Live</strong> (30+ produits) : je choisis les sujets, je recrute des intervenants partenaires (Le Wagon, Jump, Agence Bienfait.co), je crée les visuels et j'anime en direct. J'ai suivi CAC et conversion sur Looker Studio pour garder ce qui marchait.</div>
+  <div class="l">R</div><div class="t">+20 000 utilisateurs acquis en organique, contribution directe à la levée de 1,5 M€, passage au CODIR. LeGratin.io a ensuite été intégrée au groupe Nexoris.</div>
+</div>
+<h4>Exemples de webinars LinkedIn Live (2023)</h4>
+<table>
+  <tr><th>Date</th><th>Sujet</th><th>Intervenants</th></tr>
+  <tr><td>17 mai 2023</td><td>Q&amp;A : les avantages de la plateforme pour les freelances</td><td>Essia (LeGratin.io)</td></tr>
+  <tr><td>8 juin 2023</td><td>Exploration des outils no-code pour freelances</td><td>Essia, Simon Olivier (Agence Bienfait.co), Thomas Bouttefort (Le Wagon)</td></tr>
+  <tr><td>12 juin 2023</td><td>Masterclass SEO : créer une première liste de mots-clés</td><td>LeGratin.io</td></tr>
+  <tr><td>21 sept. 2023</td><td>Plafonds de l'auto-entreprise : optimisation et solutions</td><td>Essia, Léonard Laval (Jump)</td></tr>
+</table>
+<p class="tip">Angle Creative Strategist : un format récurrent, une identité visuelle propre à chaque série, des partenariats avec des marques connues pour élargir l'audience.</p>
+<p><img src="assets-entretien/legratin-webinar-1.png" style="width:24%;border:1px solid #ccc"> <img src="assets-entretien/legratin-webinar-2.png" style="width:24%;border:1px solid #ccc"> <img src="assets-entretien/legratin-webinar-3.png" style="width:24%;border:1px solid #ccc"> <img src="assets-entretien/legratin-webinar-4.png" style="width:24%;border:1px solid #ccc"></p>
+
+<h2>Histoire D · Concepts de campagnes grande conso (KaliKado)</h2>
+<p class="tip">Pour : « Un exemple de concept créatif », « Travailler sur plusieurs marques en parallèle ».</p>
+<div class="star">
+  <div class="l">S</div><div class="t">Agence KaliKado, spécialisée sampling, avec des clients comme Groupe Andros (Bonne Maman, Mamie Nova), L'Or Espresso, L'Arbre Vert, FDJ.</div>
+  <div class="l">T</div><div class="t">Imaginer et piloter des concepts de campagnes multicanal, du pitch au bilan.</div>
+  <div class="l">A</div><div class="t">J'ai conçu les concepts, préparé et présenté les pitchs, piloté la production et rédigé les bilans de campagne. <span class="todo">[choisir une campagne précise à raconter]</span></div>
+  <div class="l">R</div><div class="t"><span class="todo">[résultat de la campagne choisie : marque retenue, gain du pitch, chiffres du bilan]</span></div>
+</div>
+
+<h2>Histoire E · Un retour difficile ou un désaccord</h2>
+<p class="tip">Question presque sûre en entretien. Choisis un vrai cas (Nuxe, Pierre Fabre, LeGratin) et prépare-le sur ce schéma.</p>
+<div class="star">
+  <div class="l">S</div><div class="t"><span class="todo">[le projet et le retour reçu]</span></div>
+  <div class="l">T</div><div class="t">Tenir la qualité créative tout en respectant le besoin de la marque et le délai.</div>
+  <div class="l">A</div><div class="t">J'écoute, je reformule le besoin, je propose deux pistes argumentées (avec données ou exemples qui performent), on tranche ensemble.</div>
+  <div class="l">R</div><div class="t"><span class="todo">[issue concrète]</span> + ce que j'ai changé dans ma méthode depuis.</div>
+</div>
+
+<h2>Questions probables et histoire à utiliser</h2>
+<table>
+  <tr><th>Question</th><th>Histoire</th></tr>
+  <tr><td>Présentez-vous</td><td>Pitch 60 s</td></tr>
+  <tr><td>Un projet dont vous êtes fière</td><td>A (Nuxe)</td></tr>
+  <tr><td>Votre rapport à l'IA</td><td>B (Carrousel Studio)</td></tr>
+  <tr><td>Créa et performance, comment les relier ?</td><td>C (LeGratin)</td></tr>
+  <tr><td>Comment trouvez-vous vos idées ?</td><td>Veille : Tendanciales, TikTok Creative Center, Google Trends, Pentos + A</td></tr>
+  <tr><td>Un concept que vous avez imaginé</td><td>D (KaliKado)</td></tr>
+  <tr><td>Un échec, un conflit, un retour négatif</td><td>E</td></tr>
+  <tr><td>Pourquoi un CDI après le freelance ?</td><td>Envie de s'inscrire dans la durée sur une marque, de suivre les résultats et de grandir avec une équipe</td></tr>
+</table>
+
+<h2>Questions à poser</h2>
+<ul>
+  <li>Comment se répartit le temps entre stratégie, conception et production sur ce poste ?</li>
+  <li>Comment mesurez-vous la réussite d'un contenu ou d'un concept créatif ?</li>
+  <li>Avec qui je travaillerais au quotidien (média, brand, créateurs, clients) ?</li>
+  <li>Quelle place prend l'IA dans la production créative aujourd'hui chez vous ?</li>
+  <li>À quoi ressembleraient mes trois premiers mois réussis ?</li>
+</ul>
+
+</div>
+</body>
+</html>

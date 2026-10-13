@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<title>Essia Ben Kheder · SEO · GEO · Content · AI-native · CV</title>
+<style>
+  :root {
+    --brown: #2A1810;
+    --olive: #7C8136;
+    --grey-dark: #555;
+    --grey-mid: #888;
+    --paper: #FFFEF8;
+  }
+  * { box-sizing: border-box; }
+  @page { size: A4; margin: 0; }
+  html, body {
+    margin: 0; padding: 0;
+    background: #ecece8;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+    color: var(--brown);
+    font-size: 9pt; line-height: 1.3;
+  }
+  .page {
+    width: 210mm;
+    height: 297mm;
+    margin: 20px auto;
+    padding: 8mm 11mm;
+    background: var(--paper);
+    box-shadow: 0 10px 40px rgba(0,0,0,.08);
+    overflow: hidden;
+  }
+
+  .header { text-align: center; margin-bottom: 4px; }
+  .header h1 {
+    font-size: 17pt; font-weight: 700; margin: 0;
+    letter-spacing: -0.02em; color: var(--brown);
+  }
+  .header .role {
+    color: var(--olive); font-size: 10pt; font-weight: 500;
+    margin: 2px 0 3px;
+  }
+  .header .contact {
+    font-size: 8pt; color: var(--grey-dark);
+    display: flex; justify-content: center; flex-wrap: wrap;
+    gap: 3px 12px;
+  }
+  .header .contact a { color: var(--olive); text-decoration: none; }
+
+  section { margin-top: 4px; }
+  h2.section-title {
+    font-size: 8pt; font-weight: 700;
+    color: var(--olive);
+    text-transform: uppercase; letter-spacing: 0.1em;
+    margin: 0 0 2px; padding-bottom: 2px;
+    border-bottom: 1px solid var(--olive);
+  }
+  .profil p { margin: 3px 0 0; font-size: 9pt; line-height: 1.4; text-align: justify; }
+
+  .exp { margin-top: 4px; }
+  .exp-head {
+    display: flex; justify-content: space-between; align-items: baseline;
+    gap: 10px;
+  }
+  .exp-head .title { font-weight: 700; color: var(--olive); font-size: 9.5pt; }
+  .exp-head .period { color: var(--grey-dark); font-size: 8pt; white-space: nowrap; }
+  .exp-sub {
+    display: flex; justify-content: space-between; align-items: baseline;
+    gap: 10px; margin: 0 0 2px;
+  }
+  .exp-sub .company { color: var(--grey-dark); font-size: 8.5pt; }
+  .exp-sub .company strong { color: var(--brown); }
+  .exp-sub .format { color: var(--grey-mid); font-size: 8pt; white-space: nowrap; }
+  .exp ul { margin: 2px 0 0; padding-left: 14px; }
+  .exp li { margin: 1px 0; font-size: 9pt; line-height: 1.35; }
+  .exp li strong { color: var(--brown); }
+
+  .skills-block { margin-top: 3px; font-size: 9pt; line-height: 1.4; }
+  .skills-block .label { font-weight: 700; color: var(--brown); }
+  .skills-block > div { margin-bottom: 0; }
+
+  .form-row {
+    display: flex; justify-content: space-between;
+    font-size: 9pt; line-height: 1.35; margin-top: 2px;
+  }
+  .form-row .left strong { color: var(--brown); }
+  .form-row .right { color: var(--grey-mid); font-size: 8pt; white-space: nowrap; }
+  .langues { font-size: 9pt; margin-top: 3px; }
+  .langues strong { color: var(--brown); }
+
+  @media print {
+    html, body { background: white; }
+    .page {
+      margin: 0; box-shadow: none;
+      padding: 8mm 11mm;
+      page-break-after: avoid;
+    }
+    .no-print { display: none; }
+  }
+  .print-hint {
+    position: fixed; top: 12px; right: 12px;
+    background: var(--olive); color: white;
+    padding: 10px 16px; border-radius: 999px;
+    font-size: 12px; cursor: pointer; border: none;
+    font-family: inherit; z-index: 10;
+    box-shadow: 0 4px 12px rgba(0,0,0,.15);
+  }
+  .print-hint:hover { background: var(--brown); }
+</style>
+</head>
+<body>
+
+<button class="print-hint no-print" onclick="window.print()">⬇ Enregistrer en PDF (Cmd+P)</button>
+
+<div class="page">
+
+  <header class="header">
+    <h1>ESSIA BEN KHEDER</h1>
+    <div class="role">SEO · GEO · Content Strategy · AI-native</div>
+    <div class="contact">
+      <span>✉ essiabenkheder@gmail.com</span>
+      <span>☎ 07 77 00 12 94</span>
+      <span>📍 Paris</span>
+      <a href="https://linkedin.com/in/essiabenkheder">in/essiabenkheder</a>
+      <a href="https://recrutez-essia.com">recrutez-essia.com</a>
+    </div>
+  </header>
+
+  <section class="profil">
+    <h2 class="section-title">Profil</h2>
+    <p>
+      Profil <strong>Content &amp; SEO</strong> en interne (jamais en agence). Chez LeGratin.io, startup Station F, j'ai piloté la stratégie SEO et éditoriale sur 3 ans : stratégie de mots-clés et de contenus, blog, comparatifs ("Le Gratin vs Malt"), plus de 50 interviews d'experts et de Directeurs Techniques (double levier éditorial + backlinks via les sites des interviewés), 30+ webinars. <strong>AI-native</strong> : j'utilise Claude Team au quotidien pour structurer, challenger et accélérer mes contenus. J'ai construit mon propre outil en JavaScript assisté par Claude. Autonome, orthographe irréprochable, obsédée par le "pourquoi" derrière les chiffres.
+    </p>
+  </section>
+
+  <section>
+    <h2 class="section-title">Expérience Professionnelle</h2>
+
+    <div class="exp">
+      <div class="exp-head">
+        <span class="title">Freelance Content &amp; Digital</span>
+        <span class="period">Sept. 2024 → Aujourd'hui</span>
+      </div>
+      <div class="exp-sub">
+        <span class="company"><strong>OseCom</strong> · En direct avec les marques · Paris</span>
+        <span class="format">Freelance</span>
+      </div>
+      <ul>
+        <li>Digital complet pour TPE/PME (<strong>FlatLab</strong> conciergerie, <strong>MKL Energy</strong>) : sites, landing pages, SEO on-page, structuration éditoriale, réseaux sociaux, automatisation.</li>
+        <li>Production audiovisuelle pour marques beauté/pharma (Nuxe, Pierre Fabre, Blissim, Maison Farida, Capsul) : conception, tournage, montage, direction de shootings, formats courts.</li>
+        <li><strong>Outil maison en JavaScript assisté par Claude</strong> qui transforme automatiquement les articles de blog en carrousels sociaux au ton et à la DA de chaque marque. Déployé en production chez un client.</li>
+      </ul>
+    </div>
+
+    <div class="exp">
+      <div class="exp-head">
+        <span class="title">Head of Marketing &amp; Growth (ex-Head of Community)</span>
+        <span class="period">Sept. 2021 → Sept. 2024</span>
+      </div>
+      <div class="exp-sub">
+        <span class="company"><strong>LeGratin.io</strong> · Startup SaaS B2B · Station F (avec 42) · In-house</span>
+        <span class="format">3 ans · CDI · CODIR</span>
+      </div>
+      <ul>
+        <li><strong>Stratégie SEO et contenu</strong> : blog, comparatifs ("Le Gratin vs Malt"), pages produit, articles de fond. Suivi SEMrush, Google Search Console, Google Analytics.</li>
+        <li><strong>Netlinking organique</strong> : backlinks générés via les sites des 50+ interviewés (experts et Directeurs Techniques) et des partenaires.</li>
+        <li>30+ webinars produits comme dispositif de lead gen et contenu, newsletters segmentées, pages de conversion.</li>
+        <li>Collaboration directe avec les équipes produit, vente et communication (CODIR hebdomadaire) pour aligner le contenu sur les signaux de recherche et le business.</li>
+        <li><strong>Résultat : +20 000 utilisateurs acquis en organique</strong>, contribution directe à la levée de 1,5 M€ (oct. 2022). LeGratin.io intégrée au groupe Nexoris.</li>
+      </ul>
+    </div>
+
+    <div class="exp">
+      <div class="exp-head">
+        <span class="title">Cheffe de projet &amp; Business Developer</span>
+        <span class="period">Mai 2019 → Janv. 2021</span>
+      </div>
+      <div class="exp-sub">
+        <span class="company"><strong>Agence KaliKado</strong> · Conseil &amp; Sampling · Neuilly-sur-Seine</span>
+        <span class="format">1 an 9 mois · CDI</span>
+      </div>
+      <ul>
+        <li>Cycle complet : prospection, pitch, production, bilan chiffré. Clients grande conso : Groupe Andros (Bonne Maman, Mamie Nova), L'Or Espresso, L'Arbre Vert, FDJ.</li>
+      </ul>
+    </div>
+
+    <div class="exp">
+      <div class="exp-head">
+        <span class="title">Cheffe de projet Digital</span>
+        <span class="period">Sept. 2018 → Mai 2019</span>
+      </div>
+      <div class="exp-sub">
+        <span class="company"><strong>Agence Bergamotte</strong> · Éditoriale B2B · Paris 15</span>
+        <span class="format">9 mois · CDI</span>
+      </div>
+      <ul>
+        <li>Comptes institutionnels (Axa, Macif, Matmut, Banque Populaire) : contenus SEO, newsletters, scripts vidéo, benchmarks, pilotage éditorial de A à Z.</li>
+      </ul>
+    </div>
+
+    <div class="exp">
+      <div class="exp-head">
+        <span class="title">Chargée de communication &amp; développement</span>
+        <span class="period">Sept. 2017 → Sept. 2018</span>
+      </div>
+      <div class="exp-sub">
+        <span class="company"><strong>Pigier</strong> · École de commerce · Toulouse</span>
+        <span class="format">1 an · CDI</span>
+      </div>
+      <ul>
+        <li>Stratégie communication globale en autonomie : contenus multi-formats, RP, campagnes radio et affichage, événements.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Compétences &amp; Outils</h2>
+    <div class="skills-block">
+      <div><span class="label">SEO :</span> stratégie éditoriale, blog, comparatifs, pages produit, netlinking organique, suivi <strong>SEMrush (expert)</strong>, Google Search Console, GA4.</div>
+      <div><span class="label">GEO (Generative Engine Optimization) :</span> familière avec le sujet (optimisation contenus pour citations dans Claude, ChatGPT, Perplexity), à approfondir sur un vrai périmètre.</div>
+      <div><span class="label">Content Strategy :</span> calendrier éditorial, articles de fond, 50+ interviews d'experts publiées chez LeGratin.io, 30+ webinars produits.</div>
+      <div><span class="label">IA au quotidien :</span> <strong>Claude Team (Skills &amp; MCP, expert)</strong>, ChatGPT, Midjourney, Runway · structurer, challenger, accélérer la production.</div>
+      <div><span class="label">Dev &amp; Automatisation :</span> JavaScript, React, Node.js (GOMYCODE) · outil IA maison déployé en production · Make, n8n, Zapier.</div>
+      <div><span class="label">Mesure &amp; Analytics :</span> GA4, Looker Studio, HubSpot, reporting hebdomadaire, A/B testing.</div>
+      <div><span class="label">Rédaction &amp; Visuel :</span> syntaxe et orthographe irréprochables (FR), copywriting, Figma, Canva, CapCut, Premiere Pro.</div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Formation</h2>
+    <div class="form-row">
+      <span class="left"><strong>Master 2 Marketing Digital &amp; E-business</strong> · ESG Paris</span>
+      <span class="right">2018 · 2019</span>
+    </div>
+    <div class="form-row">
+      <span class="left"><strong>Master 1 Communication 360°</strong> · ECS Toulouse</span>
+      <span class="right">2017 · 2018</span>
+    </div>
+    <div class="form-row">
+      <span class="left"><strong>Licence Information-Communication</strong> · Université Côte d'Azur · Nice</span>
+      <span class="right">2014 · 2017</span>
+    </div>
+    <div class="form-row">
+      <span class="left"><strong>Formation Full-Stack JavaScript</strong> (Stack MERN) · GOMYCODE</span>
+      <span class="right">2024 · 2025</span>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Langues</h2>
+    <div class="langues">
+      <strong>Français</strong> C2 (langue maternelle) &nbsp;·&nbsp; <strong>Anglais</strong> C1 (année à Londres, Kaplan) &nbsp;·&nbsp; <strong>Arabe</strong> C1 (langue maternelle)
+    </div>
+  </section>
+
+</div>
+
+</body>
+</html>

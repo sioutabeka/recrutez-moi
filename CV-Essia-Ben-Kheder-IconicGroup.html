@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<title>Essia Ben Kheder · Communication & Marketing Manager · CV</title>
+<style>
+  :root {
+    --brown: #2A1810;
+    --olive: #7C8136;
+    --grey-dark: #555;
+    --grey-mid: #888;
+    --paper: #FFFEF8;
+  }
+  * { box-sizing: border-box; }
+  @page { size: A4; margin: 0; }
+  html, body {
+    margin: 0; padding: 0;
+    background: #ecece8;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+    color: var(--brown);
+    font-size: 9pt; line-height: 1.3;
+  }
+  .page {
+    width: 210mm;
+    height: 297mm;
+    margin: 20px auto;
+    padding: 8mm 11mm;
+    background: var(--paper);
+    box-shadow: 0 10px 40px rgba(0,0,0,.08);
+    overflow: hidden;
+  }
+
+  /* HEADER */
+  .header { text-align: center; margin-bottom: 4px; }
+  .header h1 {
+    font-size: 17pt; font-weight: 700; margin: 0;
+    letter-spacing: -0.02em; color: var(--brown);
+  }
+  .header .role {
+    color: var(--olive); font-size: 10pt; font-weight: 500;
+    margin: 2px 0 3px;
+  }
+  .header .contact {
+    font-size: 8pt; color: var(--grey-dark);
+    display: flex; justify-content: center; flex-wrap: wrap;
+    gap: 3px 12px;
+  }
+  .header .contact a { color: var(--olive); text-decoration: none; }
+
+  /* SECTION */
+  section { margin-top: 4px; }
+  h2.section-title {
+    font-size: 8pt; font-weight: 700;
+    color: var(--olive);
+    text-transform: uppercase; letter-spacing: 0.1em;
+    margin: 0 0 2px; padding-bottom: 2px;
+    border-bottom: 1px solid var(--olive);
+  }
+
+  /* PROFIL */
+  .profil p { margin: 3px 0 0; font-size: 9pt; line-height: 1.4; text-align: justify; }
+
+  /* EXPERIENCE */
+  .exp { margin-top: 4px; }
+  .exp-head {
+    display: flex; justify-content: space-between; align-items: baseline;
+    gap: 10px;
+  }
+  .exp-head .title { font-weight: 700; color: var(--olive); font-size: 9.5pt; }
+  .exp-head .period { color: var(--grey-dark); font-size: 8pt; white-space: nowrap; }
+  .exp-sub {
+    display: flex; justify-content: space-between; align-items: baseline;
+    gap: 10px; margin: 0 0 2px;
+  }
+  .exp-sub .company { color: var(--grey-dark); font-size: 8.5pt; }
+  .exp-sub .company strong { color: var(--brown); }
+  .exp-sub .format { color: var(--grey-mid); font-size: 8pt; white-space: nowrap; }
+  .exp ul { margin: 2px 0 0; padding-left: 14px; }
+  .exp li { margin: 1px 0; font-size: 9pt; line-height: 1.35; }
+  .exp li strong { color: var(--brown); }
+
+  /* SKILLS */
+  .skills-block { margin-top: 3px; font-size: 9pt; line-height: 1.4; }
+  .skills-block .label {
+    font-weight: 700; color: var(--brown);
+  }
+  .skills-block > div { margin-bottom: 0; }
+
+  /* FORMATION & LANGUES compacts */
+  .form-row {
+    display: flex; justify-content: space-between;
+    font-size: 9pt; line-height: 1.35; margin-top: 2px;
+  }
+  .form-row .left { color: var(--brown); }
+  .form-row .left strong { color: var(--brown); }
+  .form-row .right { color: var(--grey-mid); font-size: 8pt; white-space: nowrap; }
+  .langues { font-size: 9pt; margin-top: 3px; }
+  .langues strong { color: var(--brown); }
+
+  /* PRINT */
+  @media print {
+    html, body { background: white; }
+    .page {
+      margin: 0; box-shadow: none;
+      padding: 9mm 12mm;
+      page-break-after: avoid;
+    }
+    .no-print { display: none; }
+  }
+  .print-hint {
+    position: fixed; top: 12px; right: 12px;
+    background: var(--olive); color: white;
+    padding: 10px 16px; border-radius: 999px;
+    font-size: 12px; cursor: pointer; border: none;
+    font-family: inherit; z-index: 10;
+    box-shadow: 0 4px 12px rgba(0,0,0,.15);
+  }
+  .print-hint:hover { background: var(--brown); }
+</style>
+</head>
+<body>
+
+<button class="print-hint no-print" onclick="window.print()">⬇ Enregistrer en PDF (Cmd+P)</button>
+
+<div class="page">
+
+  <!-- HEADER -->
+  <header class="header">
+    <h1>ESSIA BEN KHEDER</h1>
+    <div class="role">Communication &amp; Marketing Manager · AI-native · Hands-on</div>
+    <div class="contact">
+      <span>✉ essiabenkheder@gmail.com</span>
+      <span>☎ 07 77 00 12 94</span>
+      <span>📍 Paris</span>
+      <a href="https://linkedin.com/in/essiabenkheder">in/essiabenkheder</a>
+      <a href="https://recrutez-essia.com">recrutez-essia.com</a>
+    </div>
+  </header>
+
+  <!-- PROFIL -->
+  <section class="profil">
+    <h2 class="section-title">Profil</h2>
+    <p>
+      Profil <strong>Communication &amp; Marketing hands-on</strong>, à la croisée de la marque, du contenu et du business. J'ai <strong>structuré, scalé et piloté</strong> la fonction marketing d'une startup Station F de 4 à l'intégration groupe. <strong>AI-native</strong> : j'utilise l'IA au quotidien pour produire, automatiser, analyser · et j'explore de nouveaux usages (outil maison JS + Claude déployé en production). Parcours mêlant startup tech (LeGratin.io) et activité indépendante avec des marques <strong>beauté, pharma, lifestyle, hospitalité</strong> (Nuxe, Pierre Fabre, Blissim, Maison Farida, FlatLab). Entrepreneuriale, polyvalente, orientée production et exécution.
+    </p>
+  </section>
+
+  <!-- EXPÉRIENCE -->
+  <section>
+    <h2 class="section-title">Expérience Professionnelle</h2>
+
+    <div class="exp">
+      <div class="exp-head">
+        <span class="title">Freelance Communication, Content &amp; Production</span>
+        <span class="period">Sept. 2024 → Aujourd'hui</span>
+      </div>
+      <div class="exp-sub">
+        <span class="company"><strong>OseCom</strong> · En direct marques · Beauté · Pharma · Lifestyle · Hospitalité</span>
+        <span class="format">Freelance</span>
+      </div>
+      <ul>
+        <li>Production audiovisuelle pour <strong>Nuxe (5-6 vidéos 2025), Pierre Fabre, Blissim, Maison Farida, Capsul</strong> : conception, tournage, montage, shootings, UGC + coordination de prestataires.</li>
+        <li>Pilotage éditorial social (Instagram, TikTok). Digital complet pour <strong>FlatLab (hospitalité)</strong> : site, réseaux, automatisation + supports commerciaux (plaquettes, fiches, kits).</li>
+        <li><strong>AI-native + exploration de nouveaux usages</strong> : Claude Team (Skills &amp; MCP), Midjourney, ChatGPT, Runway dans mes process. Outil IA maison en JavaScript assisté par Claude déployé en production chez un client.</li>
+      </ul>
+    </div>
+
+    <div class="exp">
+      <div class="exp-head">
+        <span class="title">Communication &amp; Marketing Manager</span>
+        <span class="period">Sept. 2021 → Sept. 2024</span>
+      </div>
+      <div class="exp-sub">
+        <span class="company"><strong>LeGratin.io</strong> · Startup SaaS B2B · Station F (avec 42) · Paris</span>
+        <span class="format">3 ans · CDI</span>
+      </div>
+      <ul>
+        <li>Arrivée à 4 personnes, <strong>construction et structuration</strong> de la fonction communication &amp; marketing de bout en bout : brand, éditorial, social, CRM HubSpot, RP, événements (<strong>VivaTech, Station F</strong>), SEO, acquisition. Mise en place des process, templates et workflows. <strong>Pilotage du budget</strong> et <strong>encadrement de 2 juniors</strong>.</li>
+        <li>Pilotage du site, 50+ interviews d'experts publiées, 30+ webinars produits, newsletters segmentées B2B/B2C, supports commerciaux (sales enablement).</li>
+        <li><strong>Scale 4 personnes → +20 000 utilisateurs acquis en organique.</strong> La traction marketing a servi de preuve directe à la levée de 1,5 M€. LeGratin.io intégrée au groupe Nexoris.</li>
+      </ul>
+    </div>
+
+    <div class="exp">
+      <div class="exp-head">
+        <span class="title">Cheffe de projet &amp; Business Developer</span>
+        <span class="period">Mai 2019 → Janv. 2021</span>
+      </div>
+      <div class="exp-sub">
+        <span class="company"><strong>Agence KaliKado</strong> · Conseil &amp; Sampling · Neuilly-sur-Seine</span>
+        <span class="format">1 an 9 mois · CDI</span>
+      </div>
+      <ul>
+        <li>Cycle complet agence (prospection, pitch, production, bilan). Clients grande conso : <strong>Groupe Andros (Bonne Maman, Mamie Nova), L'Or Espresso, L'Arbre Vert, FDJ</strong>. Campagnes sampling multi-canal : box hôtelières, partenariats e-commerce, jeux-concours.</li>
+      </ul>
+    </div>
+
+    <div class="exp">
+      <div class="exp-head">
+        <span class="title">Cheffe de projet Digital</span>
+        <span class="period">Sept. 2018 → Mai 2019</span>
+      </div>
+      <div class="exp-sub">
+        <span class="company"><strong>Agence Bergamotte</strong> · Éditoriale B2B · Paris 15</span>
+        <span class="format">9 mois · CDI</span>
+      </div>
+      <ul>
+        <li>Comptes institutionnels : <strong>Axa, Macif, Matmut, Banque Populaire</strong>. Projets éditoriaux digitaux et print de A à Z (cadrage, planning, prestataires, budgets, qualité).</li>
+      </ul>
+    </div>
+
+    <div class="exp">
+      <div class="exp-head">
+        <span class="title">Chargée de communication &amp; développement</span>
+        <span class="period">Sept. 2017 → Sept. 2018</span>
+      </div>
+      <div class="exp-sub">
+        <span class="company"><strong>Pigier</strong> · École de commerce · Toulouse</span>
+        <span class="format">1 an · CDI</span>
+      </div>
+      <ul>
+        <li>Stratégie communication globale et digitale en autonomie. Campagnes radio et affichage (conception, achat média, déploiement), RP, événements.</li>
+      </ul>
+    </div>
+
+    <div class="exp">
+      <div class="exp-head">
+        <span class="title">Planning stratégique</span>
+        <span class="period">2015</span>
+      </div>
+      <div class="exp-sub">
+        <span class="company"><strong>Groupe Nice-Matin</strong> · Régie publicitaire · Nice</span>
+        <span class="format">Premier poste</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section>
+    <h2 class="section-title">Compétences &amp; Outils</h2>
+    <div class="skills-block">
+      <div><span class="label">IA :</span> Claude Team (Skills &amp; MCP, expert), ChatGPT, Midjourney, Runway, ElevenLabs · intégration process éditoriaux, production, automatisation.</div>
+      <div><span class="label">Production &amp; Contenu :</span> CapCut, Premiere Pro, After Effects, Canva, Figma, Photoshop · tournage, montage, UGC, carrousels, visuels social.</div>
+      <div><span class="label">Social &amp; Content :</span> Instagram, TikTok, LinkedIn, calendrier éditorial, formats natifs, pilotage KPIs.</div>
+      <div><span class="label">CRM, Newsletters, Website :</span> HubSpot, Brevo, Lemlist · segmentation B2B/B2C, automation, SEO/GEO, WordPress.</div>
+      <div><span class="label">Paid &amp; Analytics :</span> Google Ads, LinkedIn Ads, Meta Ads, TikTok Ads, GA4, Looker Studio, SEMrush.</div>
+      <div><span class="label">RP &amp; Événements :</span> relations presse, VivaTech, Station F, salons B2B, activations.</div>
+      <div><span class="label">Automatisation &amp; nouveaux usages IA :</span> Make, n8n, Zapier · JavaScript, React, Node.js (GOMYCODE) pour construire mes propres outils marketing · Notion, Airtable.</div>
+    </div>
+  </section>
+
+  <!-- FORMATION -->
+  <section>
+    <h2 class="section-title">Formation</h2>
+    <div class="form-row">
+      <span class="left"><strong>Master 2 Marketing Digital &amp; E-business</strong> · ESG Paris</span>
+      <span class="right">2018 · 2019</span>
+    </div>
+    <div class="form-row">
+      <span class="left"><strong>Master 1 Communication 360°</strong> · ECS Toulouse</span>
+      <span class="right">2017 · 2018</span>
+    </div>
+    <div class="form-row">
+      <span class="left"><strong>Licence Information-Communication</strong> · Université Côte d'Azur · Nice</span>
+      <span class="right">2014 · 2017</span>
+    </div>
+    <div class="form-row">
+      <span class="left"><strong>Formation Full-Stack JavaScript</strong> (Stack MERN) · GOMYCODE</span>
+      <span class="right">2024 · 2025</span>
+    </div>
+  </section>
+
+  <!-- LANGUES -->
+  <section>
+    <h2 class="section-title">Langues</h2>
+    <div class="langues">
+      <strong>Français</strong> C2 (langue maternelle) &nbsp;·&nbsp; <strong>Anglais</strong> C1 (année à Londres) &nbsp;·&nbsp; <strong>Arabe</strong> C1 (langue maternelle)
+    </div>
+  </section>
+
+</div>
+
+</body>
+</html>

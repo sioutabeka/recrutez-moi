@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<title>Cas pratiques · Entretien Pigier Paris La Villette · Essia Ben Kheder</title>
+<style>
+  :root {
+    --brown: #2A1810;
+    --olive: #7C8136;
+    --grey-dark: #444;
+    --grey-mid: #777;
+    --grey-light: #ccc;
+    --paper: #FFFEF8;
+    --highlight: #FFF8E1;
+    --sand: #f6f5ee;
+    --green: #4a7c3f;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  @page { size: A4; margin: 15mm; }
+  html, body {
+    background: #ecece8;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+    color: var(--brown);
+    font-size: 10.5pt; line-height: 1.55;
+  }
+  .page {
+    max-width: 820px;
+    margin: 20px auto;
+    padding: 40px 48px;
+    background: var(--paper);
+    box-shadow: 0 10px 40px rgba(0,0,0,.08);
+  }
+
+  header.cover {
+    text-align: center;
+    padding-bottom: 28px;
+    margin-bottom: 32px;
+    border-bottom: 2px solid var(--olive);
+  }
+  header.cover h1 {
+    font-size: 22pt; font-weight: 700;
+    letter-spacing: -0.02em; color: var(--brown);
+    margin-bottom: 6px;
+  }
+  header.cover .subtitle {
+    color: var(--olive); font-size: 13pt; font-weight: 500;
+    margin-bottom: 10px;
+  }
+  header.cover .meta {
+    color: var(--grey-dark); font-size: 10pt;
+  }
+
+  h2 {
+    font-size: 14pt; font-weight: 700;
+    color: var(--brown);
+    margin-top: 32px; margin-bottom: 10px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--olive);
+  }
+  h2 .num {
+    color: var(--olive);
+    font-weight: 700;
+    margin-right: 8px;
+  }
+  h3 {
+    font-size: 11.5pt; font-weight: 700;
+    color: var(--brown);
+    margin-top: 20px; margin-bottom: 8px;
+  }
+  h4 {
+    font-size: 10.5pt; font-weight: 700;
+    color: var(--olive);
+    margin-top: 14px; margin-bottom: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 9.5pt;
+  }
+
+  p { margin-bottom: 10px; }
+  ul, ol { margin: 8px 0 12px 22px; }
+  li { margin: 4px 0; }
+  strong { color: var(--brown); }
+
+  .case {
+    background: white;
+    border: 1px solid var(--grey-light);
+    border-radius: 6px;
+    padding: 18px 22px;
+    margin: 14px 0;
+  }
+
+  .question {
+    background: var(--sand);
+    border-left: 3px solid var(--grey-mid);
+    padding: 10px 14px;
+    margin: 6px 0 14px;
+    font-style: italic;
+    color: var(--grey-dark);
+    font-size: 10.5pt;
+  }
+
+  .answer {
+    background: var(--highlight);
+    border-left: 4px solid var(--olive);
+    padding: 14px 18px;
+    margin: 10px 0;
+    font-size: 10.5pt;
+    line-height: 1.65;
+  }
+  .answer p { margin-bottom: 8px; }
+  .answer p:last-child { margin-bottom: 0; }
+
+  .framework {
+    background: #f0f4e8;
+    border-left: 3px solid var(--green);
+    padding: 10px 14px;
+    margin: 8px 0;
+    font-size: 10pt;
+  }
+  .framework strong { color: var(--green); }
+
+  .warn {
+    background: #fff2e5;
+    border-left: 3px solid #c0691a;
+    padding: 10px 14px;
+    margin: 10px 0;
+    font-size: 10pt;
+  }
+
+  .label {
+    display: inline-block;
+    background: var(--olive);
+    color: white;
+    font-size: 8.5pt;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    margin-right: 6px;
+    vertical-align: 2px;
+  }
+
+  .case-title {
+    font-size: 12pt;
+    font-weight: 700;
+    color: var(--brown);
+    margin-bottom: 4px;
+  }
+
+  @media print {
+    html, body { background: white; }
+    .page { margin: 0; box-shadow: none; max-width: 100%; padding: 0; }
+    .no-print { display: none; }
+    h2, h3, h4 { page-break-after: avoid; }
+    .case { page-break-inside: avoid; }
+  }
+  .print-hint {
+    position: fixed; top: 12px; right: 12px;
+    background: var(--olive); color: white;
+    padding: 10px 16px; border-radius: 999px;
+    font-size: 12px; cursor: pointer; border: none;
+    font-family: inherit; z-index: 10;
+    box-shadow: 0 4px 12px rgba(0,0,0,.15);
+  }
+  .print-hint:hover { background: var(--brown); }
+</style>
+</head>
+<body>
+
+<button class="print-hint no-print" onclick="window.print()">⬇ Enregistrer en PDF (Cmd+P)</button>
+
+<div class="page">
+
+  <header class="cover">
+    <h1>Cas pratiques · Mises en situation</h1>
+    <div class="subtitle">Entretien Pigier Paris La Villette · Chargée des Relations Entreprises</div>
+    <div class="meta">Essia Ben Kheder · 12 cas probables &amp; réponses-type · Oct. 2026</div>
+  </header>
+
+  <h2><span class="num">0.</span>Les 3 principes pour répondre à un cas pratique</h2>
+
+  <ol>
+    <li><strong>Reformuler avant de répondre.</strong> « Si je comprends bien, l'étudiant en question est en 2e année de BTS, et il n'a toujours pas de proposition d'entreprise. C'est bien ça ? » Tu gagnes 10 sec pour penser et tu évites de répondre à côté.</li>
+    <li><strong>Donner une méthode, pas un verdict.</strong> « Je commencerais par un diagnostic » bat « il faut lui refaire son CV ». La méthode montre que tu réfléchis en pro, pas en instinct.</li>
+    <li><strong>Toujours une étape de suivi.</strong> « Et je recontacte à J+15 pour voir ce qui a bougé. » Le suivi, c'est le marqueur du métier bien fait.</li>
+  </ol>
+
+  <div class="framework">
+    <strong>Framework universel pour un cas :</strong> <strong>Écouter → Diagnostiquer → Agir → Suivre.</strong> Si tu suis cette grille sur chaque cas, tu es solide.
+  </div>
+
+  <h2><span class="num">1.</span>Cas · Accompagnement étudiant</h2>
+
+  <div class="case">
+    <div class="case-title"><span class="label">CAS 1</span>L'étudiant qui ne trouve pas d'alternance</div>
+    <div class="question">« Un étudiant en 2e année de BTS Com est à un mois de la rentrée et n'a toujours pas trouvé d'entreprise d'alternance. Comment vous l'accompagnez ? »</div>
+
+    <h4>Framework</h4>
+    <div class="framework"><strong>Diagnostic → Repositionnement → Actions concrètes → Suivi serré.</strong></div>
+
+    <h4>Réponse-type</h4>
+    <div class="answer">
+      <p>« D'abord, un rendez-vous d'une heure, en vrai, pour faire un diagnostic honnête : où en est-il concrètement ? Combien d'entretiens, combien de refus, pour quelles raisons ? Est-ce que le blocage vient du <strong>CV, de la posture en entretien, du ciblage des entreprises, ou de l'offre de formation</strong> qu'il doit vendre ?</p>
+
+      <p>Ensuite, en fonction du diagnostic, actions concrètes. Si c'est le CV, on le refait ensemble en 1h. Si c'est la posture, 2 ou 3 simulations d'entretien enregistrées, qu'on réécoute. Si c'est le ciblage, je l'aide à élargir ou à resserrer selon ce qui a du sens. Et je mobilise mon réseau d'entreprises partenaires : je lui propose directement 3 à 5 contacts qualifiés dans la semaine.</p>
+
+      <p>Enfin, un point à J+10 pour voir ce qui a bougé. S'il n'y a rien, on re-cadre. L'idée c'est de ne jamais le laisser seul face à sa recherche. »</p>
+    </div>
+
+    <div class="warn"><strong>Piège :</strong> ne pas dire « il doit prendre sur lui » ou « c'est à lui de se bouger ». Tu dois montrer que l'accompagnement est actif, pas qu'il repose sur l'étudiant.</div>
+  </div>
+
+  <div class="case">
+    <div class="case-title"><span class="label">CAS 2</span>L'étudiant qui refuse toutes les propositions</div>
+    <div class="question">« Un étudiant refuse les 3 entreprises que vous lui avez proposées. Que faites-vous ? »</div>
+
+    <h4>Réponse-type</h4>
+    <div class="answer">
+      <p>« Je refais le point avec lui, sans jugement. Pour quelles raisons il refuse ? Est-ce les missions, la localisation, la taille de l'entreprise, le secteur, le feeling en entretien ? J'écoute vraiment, parce que soit c'est un vrai signal (il a identifié un critère qu'on n'avait pas pris en compte), soit c'est un biais (il a peur de s'engager, il attend "mieux", il n'ose pas se projeter).</p>
+
+      <p>Si c'est un signal, je réajuste la liste des entreprises que je lui propose. Si c'est un biais, je lui parle très franchement : <strong>à un mois de la rentrée, la "meilleure" entreprise, c'est celle qui dit oui</strong>. On peut faire une excellente alternance dans une boîte qu'on n'aurait pas choisie en premier. Et on peut rater une boîte "parfaite" sur le papier.</p>
+
+      <p>Si après ça il refuse encore, je lui pose la question qui compte : <strong>est-ce que vraiment, cette formation en alternance, c'est ce qu'il veut ?</strong> Parce que sinon on perd son temps et le nôtre. »</p>
+    </div>
+  </div>
+
+  <div class="case">
+    <div class="case-title"><span class="label">CAS 3</span>L'étudiant avec un CV catastrophique</div>
+    <div class="question">« Un étudiant vient en RDV avec un CV mal fait et une faible confiance en lui. Vous avez 30 minutes. »</div>
+
+    <h4>Réponse-type</h4>
+    <div class="answer">
+      <p>« Je ne commence pas par le CV. Je commence par <strong>lui demander de me raconter ce qu'il a fait de concret cette année</strong> : stages, jobs d'été, projets d'école, engagements associatifs, et même ce qui lui plaît dans la vie en dehors des cours. En général, en 10 minutes, j'ai trouvé 3 ou 4 choses très valorisables que son CV ne disait pas.</p>
+
+      <p>Ensuite, on refait le CV ensemble en direct, à partir de ce qu'il m'a raconté. Je lui montre les règles de base : titres forts, verbes d'action, chiffres partout où c'est possible. Et je lui laisse comme devoir d'ici le lendemain d'y ajouter 3 détails chiffrés ou précis sur chaque expérience.</p>
+
+      <p>Sur la confiance : je lui dis une chose simple. <strong>En entretien, personne ne voit la version du CV, on voit toi</strong>. Donc on va aussi travailler ta façon de parler de toi, pas juste le papier. »</p>
+    </div>
+  </div>
+
+  <h2><span class="num">2.</span>Cas · Chasser et développer des entreprises</h2>
+
+  <div class="case">
+    <div class="case-title"><span class="label">CAS 4</span>Développer le bassin La Villette</div>
+    <div class="question">« Vous arrivez en poste. Comment construisez-vous votre portefeuille d'entreprises partenaires sur La Villette ? »</div>
+
+    <h4>Framework</h4>
+    <div class="framework"><strong>Mapping territorial → Segmentation → Prospection ciblée → Fidélisation.</strong></div>
+
+    <h4>Réponse-type</h4>
+    <div class="answer">
+      <p>« Première étape : <strong>mapping territorial</strong>. Je découpe le bassin autour de La Villette en 3 ou 4 segments : les PME tech du 19e, les grands groupes installés dans le quartier, les acteurs culturels (La Villette, Philharmonie, Grande Halle), les commerces et services locaux. Chaque segment correspond à des typologies d'alternants différents.</p>
+
+      <p>Deuxième étape : <strong>je récupère la data interne</strong>. Qui sont nos entreprises partenaires historiques ? Lesquelles ont recruté chez nous l'an dernier ? Lesquelles ont décroché ? Je consolide une base propre et je priorise les comptes à réactiver avant de prospecter du neuf.</p>
+
+      <p>Troisième étape : <strong>prospection ciblée</strong>. LinkedIn Sales Navigator pour mapper les décideurs RH ou managers par secteur. Approche multi-canal : un message personnalisé LinkedIn, suivi d'un email, puis d'un RDV physique parce que la proximité est un atout majeur pour l'alternance. Je m'appuie aussi sur les anciens Pigier déjà en poste comme introductions chaudes.</p>
+
+      <p>Quatrième étape : <strong>fidélisation structurée</strong>. Chaque entreprise partenaire doit recevoir au minimum 3 points de contact par an : un bilan de l'alternance en cours, une invitation à un job dating ou à une JPO, et un point de rentrée pour anticiper la promo suivante. »</p>
+    </div>
+  </div>
+
+  <div class="case">
+    <div class="case-title"><span class="label">CAS 5</span>La PME qui dit non à l'alternance</div>
+    <div class="question">« Vous appelez une PME de 30 personnes qui vous dit : "Non, on prend pas d'alternant, c'est trop lourd à gérer." Que répondez-vous ? »</div>
+
+    <h4>Réponse-type</h4>
+    <div class="answer">
+      <p>« Je ne commence pas par vendre. Je commence par comprendre. "Qu'est-ce qui vous paraît lourd exactement ? Le temps du tuteur, l'administratif, l'intégration ?"</p>
+
+      <p>Souvent la réponse est "le tuteur n'a pas le temps". Alors je recadre : <strong>un bon alternant, ce n'est pas une charge, c'est une capacité supplémentaire</strong>. Un alternant en com, en commercial ou en gestion, c'est quelqu'un qui va livrer du travail concret dès les 3 premiers mois. Et sur l'administratif, c'est Pigier qui porte le gros du dossier.</p>
+
+      <p>Ensuite je demande un vrai droit à faire mes preuves : "Est-ce que vous accepteriez de rencontrer un ou deux de nos étudiants, sans engagement, juste pour voir à quoi ça ressemble ?" 80% des réticences tombent au moment de la rencontre.</p>
+
+      <p>Et si c'est toujours non, je garde le contact chaud. Je rappelle à N+6 avec un angle différent (un cas client sur une PME similaire, par exemple). <strong>Le non d'aujourd'hui, c'est le oui dans 18 mois</strong>. »</p>
+    </div>
+  </div>
+
+  <div class="case">
+    <div class="case-title"><span class="label">CAS 6</span>Organiser 20 RDV entreprises en 1 semaine</div>
+    <div class="question">« Vous avez 20 PME à contacter dans la semaine. Comment vous organisez-vous ? »</div>
+
+    <h4>Réponse-type</h4>
+    <div class="answer">
+      <p>« Je découpe la semaine en blocs. <strong>Lundi matin</strong> : préparation. Je qualifie les 20 PME (secteur, taille, décideur, info récente), je prépare un pitch adapté à chaque segment et un email de suivi type.</p>
+
+      <p><strong>Lundi après-midi à mercredi</strong> : séquences multi-canal. Jour 1 : message LinkedIn personnalisé. Jour 2 : email avec pitch court et proposition de RDV. Jour 3 : appel téléphonique. Je ne laisse pas filtre vocal couper la séquence.</p>
+
+      <p><strong>Jeudi-vendredi</strong> : RDV planifiés et relances des indécis. Je consolide un tracker simple : contact → réponse → RDV → suite.</p>
+
+      <p>Mon objectif réaliste sur 20 PME froides : <strong>3 à 5 RDV concrets</strong> et 5 à 7 contacts à nurture. Le reste reste en pipeline pour les semaines suivantes. »</p>
+    </div>
+  </div>
+
+  <h2><span class="num">3.</span>Cas · Match étudiant / entreprise</h2>
+
+  <div class="case">
+    <div class="case-title"><span class="label">CAS 7</span>Comment identifier un bon match</div>
+    <div class="question">« Qu'est-ce qui fait, pour vous, un bon match entre un étudiant et une entreprise ? »</div>
+
+    <h4>Réponse-type</h4>
+    <div class="answer">
+      <p>« Pour moi, un bon match tient sur 3 critères, dans cet ordre :</p>
+
+      <p><strong>1. Le fit missions / compétences.</strong> L'étudiant doit arriver avec un socle qui lui permet d'être rapidement utile. Et l'entreprise doit avoir vraiment un besoin, pas juste "un pair de bras pas cher".</p>
+
+      <p><strong>2. Le fit humain avec le tuteur.</strong> C'est le critère le plus sous-estimé et le plus déterminant. Un bon tuteur, c'est quelqu'un qui a envie de transmettre et qui a le temps. Un mauvais tuteur, c'est le début d'une rupture de contrat.</p>
+
+      <p><strong>3. Le fit projet pro.</strong> Est-ce que ce que l'étudiant va faire pendant 2 ans correspond au métier qu'il veut faire derrière ? Si oui, il va s'investir. Si non, il va décrocher.</p>
+
+      <p>Mon travail, c'est de poser ces 3 questions tôt dans le processus, pas de les découvrir à J+45. »</p>
+    </div>
+  </div>
+
+  <div class="case">
+    <div class="case-title"><span class="label">CAS 8</span>Match imparfait mais urgent</div>
+    <div class="question">« Un étudiant va perdre sa place en formation s'il n'a pas de contrat à J+15. La seule entreprise disponible n'est pas idéale sur le fit missions. Que faites-vous ? »</div>
+
+    <h4>Réponse-type</h4>
+    <div class="answer">
+      <p>« Je joue cartes sur table avec les deux côtés.</p>
+
+      <p>Avec l'<strong>entreprise</strong> : je vois si on peut ajuster les missions pour qu'elles collent mieux au programme de formation. Souvent une PME est flexible si on structure la demande.</p>
+
+      <p>Avec l'<strong>étudiant</strong> : je lui dis la vérité. "Cette entreprise n'est pas idéale, mais c'est l'option disponible. Si tu la prends, tu valides ton année et tu gagnes 2 ans d'expérience terrain. Si tu la refuses, tu risques de perdre ta place. Toi, qu'est-ce que tu préfères ?" Je le laisse décider, mais informé.</p>
+
+      <p>Et dans tous les cas, je mets en place un <strong>suivi renforcé à M+1</strong> pour détecter tôt les signaux de décrochage. »</p>
+    </div>
+  </div>
+
+  <h2><span class="num">4.</span>Cas · Gestion de conflits</h2>
+
+  <div class="case">
+    <div class="case-title"><span class="label">CAS 9</span>Entreprise mécontente de l'alternant</div>
+    <div class="question">« Une entreprise vous appelle à J+30 pour vous dire que l'alternant ne convient pas et qu'ils veulent rompre. Que faites-vous ? »</div>
+
+    <h4>Réponse-type</h4>
+    <div class="answer">
+      <p>« Je me déplace sur site dans les 48 heures. Je rencontre d'abord le tuteur <strong>seul</strong>, pour écouter sa version sans que l'étudiant soit dans la pièce. Puis l'étudiant seul.</p>
+
+      <p>Dans 70% des cas, le vrai problème n'est pas celui annoncé. C'est souvent un décalage d'attentes qui n'a jamais été exprimé, ou un sujet de posture (ponctualité, communication, autonomie). Je recadre très clairement les points avec l'étudiant, je mets des engagements concrets et chiffrés, et je refais un point à J+15.</p>
+
+      <p>Si vraiment la greffe ne prend pas, je ne force pas. Je prépare une rupture propre à l'amiable et je repositionne l'étudiant dans une autre entreprise. <strong>L'important c'est que l'entreprise reste partenaire pour la promo suivante</strong>, et qu'elle ait eu le sentiment qu'on l'a prise au sérieux. »</p>
+    </div>
+  </div>
+
+  <div class="case">
+    <div class="case-title"><span class="label">CAS 10</span>Étudiant qui se plaint de son entreprise</div>
+    <div class="question">« Un étudiant vient vous voir en vous disant que son tuteur ne lui donne rien à faire et qu'il perd son temps. »</div>
+
+    <h4>Réponse-type</h4>
+    <div class="answer">
+      <p>« D'abord, questions précises : "Donne-moi des exemples concrets. Qu'est-ce que tu as demandé, comment, à qui ?" Souvent l'étudiant attend qu'on vienne le solliciter alors qu'en alternance, c'est à lui d'aller chercher.</p>
+
+      <p>Si c'est un vrai problème de pilotage côté entreprise, j'appelle le tuteur en direct. Pas pour accuser, pour <strong>faire un point d'étape honnête</strong> : "Comment ça se passe de votre côté ? Est-ce qu'il manque de missions ? Comment on peut mieux cadrer ?"</p>
+
+      <p>Je propose un rituel simple : <strong>un point hebdo de 30 minutes</strong> entre le tuteur et l'étudiant, avec un ordre du jour clair. 90% des problèmes d'alternance viennent d'un manque de rituel. »</p>
+    </div>
+  </div>
+
+  <h2><span class="num">5.</span>Cas · Événementiel &amp; stratégie</h2>
+
+  <div class="case">
+    <div class="case-title"><span class="label">CAS 11</span>Organiser un job dating en 3 semaines</div>
+    <div class="question">« Vous devez organiser un job dating sur le campus dans 3 semaines. Donnez-moi votre plan. »</div>
+
+    <h4>Réponse-type</h4>
+    <div class="answer">
+      <p>« Trois semaines, c'est serré mais tenable. Je découpe en 3 blocs :</p>
+
+      <p><strong>Semaine 1 · recrutement des entreprises.</strong> Objectif : 15 à 20 entreprises confirmées. Je priorise les partenaires historiques (ils viennent plus facilement) et je complète par 5 à 10 nouveaux comptes stratégiques. Un pack d'invitation clair : date, format, profils d'étudiants disponibles, bénéfice concret pour eux.</p>
+
+      <p><strong>Semaine 2 · préparation étudiants.</strong> 2 à 3 ateliers obligatoires : refonte CV express, elevator pitch, simulations d'entretien chrono. Chaque étudiant repart avec un planning personnalisé des entreprises qu'il va rencontrer.</p>
+
+      <p><strong>Semaine 3 · logistique et J-J.</strong> Salle, café, badges, planning minuté. Un point d'ouverture de 15 min pour expliquer le format. Un suivi écrit à J+3 pour relancer les matchs qui ont bien matché.</p>
+
+      <p>Ma métrique de succès : <strong>pas le nombre d'entreprises présentes, mais le nombre de contrats signés dans les 30 jours qui suivent</strong>. »</p>
+    </div>
+  </div>
+
+  <div class="case">
+    <div class="case-title"><span class="label">CAS 12</span>Priorités dans les 6 premiers mois</div>
+    <div class="question">« Quelles seraient vos 3 priorités dans les 6 premiers mois sur ce poste ? »</div>
+
+    <h4>Réponse-type</h4>
+    <div class="answer">
+      <p>« Trois priorités, dans l'ordre.</p>
+
+      <p><strong>1. Mois 1-2 · comprendre et consolider.</strong> Me former en interne, rencontrer chaque entreprise partenaire active (idéalement en vrai), auditer la base, identifier les comptes dormants à réactiver, et me caler avec l'équipe pédagogique sur les profils d'étudiants attendus.</p>
+
+      <p><strong>2. Mois 2-4 · ouvrir le pipeline.</strong> Développer 15 à 20 nouveaux partenaires sur le bassin La Villette, en priorisant les secteurs sous-couverts. Mettre en place un process clair d'onboarding des nouvelles entreprises.</p>
+
+      <p><strong>3. Mois 4-6 · structurer l'accompagnement étudiant.</strong> Mettre en place des rituels d'accompagnement individuels (RDV de rentrée, point mi-parcours, préparation entretiens), et outiller le suivi (tableau de bord placement, taux de signature, qualité du matching).</p>
+
+      <p>Au bout de 6 mois, l'objectif c'est que chaque étudiant du campus ait un plan de placement actif, et que l'équipe aie une vraie visibilité sur le pipeline entreprises. »</p>
+    </div>
+  </div>
+
+  <h2><span class="num">6.</span>Les 5 phrases qui marquent dans un cas</h2>
+
+  <ol>
+    <li>« <strong>Je commence par un diagnostic honnête, pas par une solution.</strong> »</li>
+    <li>« <strong>Le non d'aujourd'hui, c'est le oui dans 18 mois.</strong> »</li>
+    <li>« <strong>En alternance, c'est à l'étudiant d'aller chercher, pas à l'entreprise d'anticiper.</strong> »</li>
+    <li>« <strong>90% des problèmes d'alternance viennent d'un manque de rituel.</strong> »</li>
+    <li>« <strong>Mon objectif ce n'est pas le nombre de RDV, c'est le nombre de contrats signés.</strong> »</li>
+  </ol>
+
+  <div class="framework">
+    <strong>Rappel final :</strong> dans un cas pratique, le recruteur ne cherche pas LA bonne réponse. Il cherche <strong>une méthode structurée, une capacité à prioriser, et une maturité relationnelle</strong>. Si tu montres les trois, tu as gagné.
+  </div>
+
+</div>
+
+</body>
+</html>

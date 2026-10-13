@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<title>Essia Ben Kheder · Chief Marketing Officer · CV</title>
+<style>
+  :root {
+    --brown: #2A1810;
+    --olive: #7C8136;
+    --grey-dark: #555;
+    --grey-mid: #888;
+    --paper: #FFFEF8;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  @page { size: A4; margin: 0; }
+  html, body {
+    background: #ecece8;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+    color: var(--brown);
+    font-size: 9pt; line-height: 1.3;
+  }
+  .page {
+    width: 210mm; height: 297mm;
+    margin: 20px auto;
+    padding: 8mm 11mm;
+    background: var(--paper);
+    box-shadow: 0 10px 40px rgba(0,0,0,.08);
+    overflow: hidden;
+  }
+
+  .header {
+    display: flex; align-items: center; gap: 16px;
+    margin-bottom: 10px;
+  }
+  .photo {
+    width: 72px; height: 72px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center 20%;
+    border: 2px solid var(--olive);
+    flex-shrink: 0;
+  }
+  .header-text { flex: 1; }
+  .header h1 {
+    font-size: 18pt; font-weight: 700;
+    letter-spacing: -0.02em; color: var(--brown);
+  }
+  .header .role {
+    color: var(--olive); font-size: 10.5pt; font-weight: 500;
+    margin: 2px 0 4px;
+  }
+  .header .contact {
+    font-size: 9pt; color: var(--grey-dark);
+    display: flex; flex-wrap: wrap;
+    gap: 2px 14px;
+  }
+  .header .contact a { color: var(--olive); text-decoration: none; }
+
+  section { margin-top: 7px; }
+  h2.section-title {
+    font-size: 8.5pt; font-weight: 700;
+    color: var(--olive);
+    text-transform: uppercase; letter-spacing: 0.1em;
+    margin-bottom: 3px; padding-bottom: 2px;
+    border-bottom: 1px solid var(--olive);
+  }
+
+  .profil p { margin-top: 3px; font-size: 9.5pt; line-height: 1.4; text-align: justify; }
+
+  .exp { margin-top: 6px; }
+  .exp-head {
+    display: flex; justify-content: space-between; align-items: baseline;
+    gap: 10px;
+  }
+  .exp-head .title { font-weight: 700; color: var(--olive); font-size: 10pt; }
+  .exp-head .period { color: var(--grey-dark); font-size: 8.5pt; white-space: nowrap; }
+  .exp-sub {
+    display: flex; justify-content: space-between; align-items: baseline;
+    gap: 10px; margin: 1px 0 2px;
+  }
+  .exp-sub .company { color: var(--grey-dark); font-size: 8.5pt; }
+  .exp-sub .company strong { color: var(--brown); }
+  .exp-sub .format { color: var(--grey-mid); font-size: 8.5pt; white-space: nowrap; }
+  .exp ul { margin-top: 2px; padding-left: 14px; }
+  .exp li { margin: 1px 0; font-size: 9pt; line-height: 1.35; }
+  .exp li strong { color: var(--brown); }
+
+  .skills { margin-top: 3px; font-size: 9pt; line-height: 1.4; }
+  .skills .label { font-weight: 700; color: var(--brown); }
+  .skills > div { margin-bottom: 1px; }
+
+  .bottom-row {
+    display: grid; grid-template-columns: 1.6fr 1fr;
+    gap: 24px; margin-top: 7px;
+  }
+  .form-item {
+    display: flex; justify-content: space-between;
+    font-size: 9pt; line-height: 1.3; margin-top: 2px;
+  }
+  .form-item .left strong { color: var(--brown); }
+  .form-item .right { color: var(--grey-mid); font-size: 8pt; white-space: nowrap; }
+  .langues { font-size: 9pt; margin-top: 3px; line-height: 1.5; }
+  .langues strong { color: var(--brown); }
+  .langues div { margin-bottom: 1px; }
+
+  @media print {
+    html, body { background: white; }
+    .page { margin: 0; box-shadow: none; }
+    .no-print { display: none; }
+  }
+  .print-hint {
+    position: fixed; top: 12px; right: 12px;
+    background: var(--olive); color: white;
+    padding: 10px 16px; border-radius: 999px;
+    font-size: 12px; cursor: pointer; border: none;
+    font-family: inherit; z-index: 10;
+    box-shadow: 0 4px 12px rgba(0,0,0,.15);
+  }
+  .print-hint:hover { background: var(--brown); }
+</style>
+</head>
+<body>
+
+<button class="print-hint no-print" onclick="window.print()">⬇ Enregistrer en PDF (Cmd+P)</button>
+
+<div class="page">
+
+  <header class="header">
+    <img class="photo" src="essia-photo.jpg" alt="Essia Ben Kheder" />
+    <div class="header-text">
+      <h1>ESSIA BEN KHEDER</h1>
+      <div class="role">Chief Marketing Officer · Scale-up · Growth · Hands-on · Data-driven</div>
+      <div class="contact">
+        <span>✉ essiabenkheder@gmail.com</span>
+        <span>☎ 07 77 00 12 94</span>
+        <span>📍 Paris</span>
+        <a href="https://linkedin.com/in/essiabenkheder">in/essiabenkheder</a>
+        <a href="https://recrutez-essia.com">recrutez-essia.com</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="profil">
+    <h2 class="section-title">Profil</h2>
+    <p>
+      9 ans en marketing &amp; growth, dont 3 ans comme <strong>Head of Marketing &amp; Growth, CODIR et actionnaire</strong> d'une scale-up (LeGratin.io, Station F). Arrivée à 4 personnes, j'ai <strong>structuré et scalé</strong> la fonction marketing de zéro jusqu'à l'intégration au groupe Nexoris. Profil <strong>entrepreneurial, data-driven, hands-on</strong>, à l'aise sur la vision stratégique comme sur l'exécution opérationnelle. Pilotage des leviers d'acquisition, conversion, fidélisation, image de marque, performance commerciale. Management d'équipes, encadrement de prestataires, aisance avec les décideurs. <strong>AI-native</strong> au quotidien.
+    </p>
+  </section>
+
+  <section>
+    <h2 class="section-title">Expérience Professionnelle</h2>
+
+    <div class="exp">
+      <div class="exp-head">
+        <span class="title">Head of Marketing &amp; Growth (ex-Head of Community)</span>
+        <span class="period">Sept. 2021 → Sept. 2024</span>
+      </div>
+      <div class="exp-sub">
+        <span class="company"><strong>LeGratin.io</strong> · Scale-up tech française · Station F (avec 42) · Groupe Nexoris</span>
+        <span class="format">3 ans · CDI · CODIR · Actionnaire</span>
+      </div>
+      <ul>
+        <li><strong>Construction et structuration de la fonction marketing de zéro</strong> à l'intégration groupe : stratégie, process, outils, templates, workflows, équipe.</li>
+        <li><strong>Pilotage des leviers d'acquisition</strong> : paid (Google Ads, LinkedIn Ads), SEO, inbound, outbound, lead gen, CRM (HubSpot), events (VivaTech, Station F), 30+ webinars, 50+ interviews d'experts (double levier éditorial + backlinks).</li>
+        <li><strong>Funnel bi-face</strong> B2B grands comptes + B2C utilisateurs. Structuration et optimisation du parcours de conversion.</li>
+        <li><strong>Culture data &amp; performance</strong> : KPIs (CAC, pipeline, taux de conversion, ROI), dashboards Looker Studio, reporting hebdomadaire au CODIR, arbitrage budgétaire.</li>
+        <li><strong>Management</strong> : encadrement de 2 juniors (UX/UI + marketing), pilotage de prestataires externes, collaboration transverse (Produit, Tech, Sales, Direction).</li>
+        <li><strong>Résultats</strong> : +20 000 utilisateurs acquis en organique sur budget contraint, contribution directe à la levée de 1,5 M€ (oct. 2022). LeGratin.io intégrée au groupe Nexoris.</li>
+      </ul>
+    </div>
+
+    <div class="exp">
+      <div class="exp-head">
+        <span class="title">Freelance Marketing, Content &amp; Développement d'outils IA</span>
+        <span class="period">Sept. 2024 → Aujourd'hui</span>
+      </div>
+      <div class="exp-sub">
+        <span class="company"><strong>OseCom</strong> · En direct avec les marques · Paris</span>
+        <span class="format">Freelance</span>
+      </div>
+      <ul>
+        <li>Clients variés : Nuxe, Pierre Fabre, Blissim, Maison Farida, FlatLab. Production, digital complet, accompagnement conseil.</li>
+        <li><strong>Construction d'un outil IA maison en JavaScript</strong> assisté par Claude, déployé en production chez un client. Illustration concrète de ma capacité à opérer l'IA et livrer.</li>
+      </ul>
+    </div>
+
+    <div class="exp">
+      <div class="exp-head">
+        <span class="title">Cheffe de projet &amp; Business Developer</span>
+        <span class="period">Mai 2019 → Janv. 2021</span>
+      </div>
+      <div class="exp-sub">
+        <span class="company"><strong>Agence KaliKado</strong> · Conseil &amp; Événementiel · Neuilly-sur-Seine</span>
+        <span class="format">1 an 9 mois · CDI</span>
+      </div>
+      <ul>
+        <li>Cycle complet agence : prospection, pitch, négociation, exécution, bilan chiffré. Clients grands comptes : <strong>Groupe Andros (Bonne Maman, Mamie Nova), L'Or Espresso, L'Arbre Vert, FDJ</strong>.</li>
+      </ul>
+    </div>
+
+    <div class="exp">
+      <div class="exp-head">
+        <span class="title">Cheffe de projet Digital</span>
+        <span class="period">Sept. 2018 → Mai 2019</span>
+      </div>
+      <div class="exp-sub">
+        <span class="company"><strong>Agence Bergamotte</strong> · Éditoriale B2B · Paris 15</span>
+        <span class="format">9 mois · CDI</span>
+      </div>
+      <ul>
+        <li>Comptes institutionnels (<strong>Axa, Macif, Matmut, Banque Populaire</strong>). Pilotage éditorial de A à Z.</li>
+      </ul>
+    </div>
+
+    <div class="exp">
+      <div class="exp-head">
+        <span class="title">Chargée de communication &amp; développement</span>
+        <span class="period">Sept. 2017 → Sept. 2018</span>
+      </div>
+      <div class="exp-sub">
+        <span class="company"><strong>Pigier</strong> · École de commerce · Toulouse</span>
+        <span class="format">1 an · CDI</span>
+      </div>
+      <ul>
+        <li>Stratégie communication en autonomie : campagnes multi-canal, événements, RP.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Compétences &amp; Outils</h2>
+    <div class="skills">
+      <div><span class="label">Stratégie marketing :</span> plan annuel, positionnement, propositions de valeur, structuration de la fonction, roadmap, transformation.</div>
+      <div><span class="label">Acquisition &amp; Growth :</span> paid (Google Ads, LinkedIn Ads, Meta Ads), SEO, inbound/outbound, lead gen, événements, partenariats éditoriaux.</div>
+      <div><span class="label">CRM &amp; Lifecycle :</span> HubSpot, Brevo · segmentation, workflows, nurturing, activation, fidélisation.</div>
+      <div><span class="label">Data &amp; Performance :</span> GA4, Looker Studio, SEMrush · KPIs (CAC, pipeline, ROI), dashboards, A/B testing, pilotage ROI budgets.</div>
+      <div><span class="label">Brand &amp; Content :</span> positionnement, identité, 50+ interviews d'experts, 30+ webinars, RP, événements B2B.</div>
+      <div><span class="label">Management :</span> encadrement de 2 juniors, pilotage prestataires, collaboration transverse (Produit, Tech, Sales, Direction).</div>
+      <div><span class="label">IA &amp; Dev :</span> Claude Team (Skills &amp; MCP), ChatGPT, Midjourney · Full-Stack JavaScript (GOMYCODE), construction d'outils maison.</div>
+    </div>
+  </section>
+
+  <div class="bottom-row">
+    <section style="margin-top:0">
+      <h2 class="section-title">Formation</h2>
+      <div class="form-item">
+        <span class="left"><strong>M2 Marketing Digital &amp; E-business</strong> · ESG Paris</span>
+        <span class="right">2018 · 2019</span>
+      </div>
+      <div class="form-item">
+        <span class="left"><strong>M1 Communication 360°</strong> · ECS Toulouse</span>
+        <span class="right">2017 · 2018</span>
+      </div>
+      <div class="form-item">
+        <span class="left"><strong>Licence Information-Communication</strong> · UCA Nice</span>
+        <span class="right">2014 · 2017</span>
+      </div>
+      <div class="form-item">
+        <span class="left"><strong>Full-Stack JavaScript</strong> · GOMYCODE</span>
+        <span class="right">2024 · 2025</span>
+      </div>
+    </section>
+
+    <section style="margin-top:0">
+      <h2 class="section-title">Langues</h2>
+      <div class="langues">
+        <div><strong>Français</strong> · C2 (langue maternelle)</div>
+        <div><strong>Anglais</strong> · C1 (année à Londres)</div>
+        <div><strong>Arabe</strong> · C1 (langue maternelle)</div>
+      </div>
+    </section>
+  </div>
+
+</div>
+
+</body>
+</html>

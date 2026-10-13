@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<title>Essia Ben Kheder · Responsable Promotion Post-Bac · CV ESSCA</title>
+<style>
+  :root {
+    --brown: #2A1810;
+    --olive: #7C8136;
+    --grey-dark: #555;
+    --grey-mid: #888;
+    --paper: #FFFEF8;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  @page { size: A4; margin: 0; }
+  html, body {
+    background: #ecece8;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+    color: var(--brown);
+    font-size: 8.5pt; line-height: 1.28;
+  }
+  .page {
+    width: 210mm; height: 297mm;
+    margin: 20px auto;
+    padding: 7mm 11mm;
+    background: var(--paper);
+    box-shadow: 0 10px 40px rgba(0,0,0,.08);
+    overflow: hidden;
+  }
+
+  .header {
+    display: flex; align-items: center; gap: 16px;
+    margin-bottom: 10px;
+  }
+  .photo {
+    width: 72px; height: 72px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center 20%;
+    border: 2px solid var(--olive);
+    flex-shrink: 0;
+  }
+  .header-text { flex: 1; }
+  .header h1 {
+    font-size: 18pt; font-weight: 700;
+    letter-spacing: -0.02em; color: var(--brown);
+  }
+  .header .role {
+    color: var(--olive); font-size: 10.5pt; font-weight: 500;
+    margin: 2px 0 4px;
+  }
+  .header .contact {
+    font-size: 9pt; color: var(--grey-dark);
+    display: flex; flex-wrap: wrap;
+    gap: 2px 14px;
+  }
+  .header .contact a { color: var(--olive); text-decoration: none; }
+
+  section { margin-top: 6px; }
+  h2.section-title {
+    font-size: 8.5pt; font-weight: 700;
+    color: var(--olive);
+    text-transform: uppercase; letter-spacing: 0.1em;
+    margin-bottom: 3px; padding-bottom: 2px;
+    border-bottom: 1px solid var(--olive);
+  }
+
+  .profil p { margin-top: 3px; font-size: 9pt; line-height: 1.38; text-align: justify; }
+
+  .exp { margin-top: 5px; }
+  .exp-head {
+    display: flex; justify-content: space-between; align-items: baseline;
+    gap: 10px;
+  }
+  .exp-head .title { font-weight: 700; color: var(--olive); font-size: 9.5pt; }
+  .exp-head .period { color: var(--grey-dark); font-size: 8pt; white-space: nowrap; }
+  .exp-sub {
+    display: flex; justify-content: space-between; align-items: baseline;
+    gap: 10px; margin: 1px 0 2px;
+  }
+  .exp-sub .company { color: var(--grey-dark); font-size: 8pt; }
+  .exp-sub .company strong { color: var(--brown); }
+  .exp-sub .format { color: var(--grey-mid); font-size: 8pt; white-space: nowrap; }
+  .exp ul { margin-top: 2px; padding-left: 14px; }
+  .exp li { margin: 1px 0; font-size: 8.5pt; line-height: 1.32; }
+  .exp li strong { color: var(--brown); }
+
+  .skills { margin-top: 3px; font-size: 8.5pt; line-height: 1.38; }
+  .skills .label { font-weight: 700; color: var(--brown); }
+  .skills > div { margin-bottom: 1px; }
+
+  .bottom-row {
+    display: grid; grid-template-columns: 1.6fr 1fr;
+    gap: 24px; margin-top: 7px;
+  }
+  .form-item {
+    display: flex; justify-content: space-between;
+    font-size: 8.5pt; line-height: 1.3; margin-top: 2px;
+  }
+  .form-item .left strong { color: var(--brown); }
+  .form-item .right { color: var(--grey-mid); font-size: 8pt; white-space: nowrap; }
+  .langues { font-size: 8.5pt; margin-top: 3px; line-height: 1.5; }
+  .langues strong { color: var(--brown); }
+  .langues div { margin-bottom: 1px; }
+
+  @media print {
+    html, body { background: white; }
+    .page { margin: 0; box-shadow: none; }
+    .no-print { display: none; }
+  }
+  .print-hint {
+    position: fixed; top: 12px; right: 12px;
+    background: var(--olive); color: white;
+    padding: 10px 16px; border-radius: 999px;
+    font-size: 12px; cursor: pointer; border: none;
+    font-family: inherit; z-index: 10;
+    box-shadow: 0 4px 12px rgba(0,0,0,.15);
+  }
+  .print-hint:hover { background: var(--brown); }
+</style>
+</head>
+<body>
+
+<button class="print-hint no-print" onclick="window.print()">⬇ Enregistrer en PDF (Cmd+P)</button>
+
+<div class="page">
+
+  <header class="header">
+    <img class="photo" src="essia-photo.jpg" alt="Essia Ben Kheder" />
+    <div class="header-text">
+      <h1>ESSIA BEN KHEDER</h1>
+      <div class="role">Responsable Promotion &amp; Développement Commercial · Post-Bac · Data &amp; Terrain · Expérience candidat</div>
+      <div class="contact">
+        <span>✉ essiabenkheder@gmail.com</span>
+        <span>☎ 07 77 00 12 94</span>
+        <span>📍 Paris</span>
+        <a href="https://linkedin.com/in/essiabenkheder">in/essiabenkheder</a>
+        <a href="https://recrutez-essia.com">recrutez-essia.com</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="profil">
+    <h2 class="section-title">Profil</h2>
+    <p>
+      Je conçois la promotion comme un métier <strong>à la fois stratégique et très opérationnel</strong> : construire un plan multi-canal, mais aussi être sur un salon, intervenir en lycée, lire un dashboard, segmenter une base. 9 ans en marketing, communication &amp; développement commercial avec une double culture <strong>enseignement supérieur</strong> (école de commerce Pigier, un an en autonomie) et <strong>acquisition B2C data-driven</strong> à grande échelle (LeGratin.io, Head of Marketing &amp; Growth, scale-up Station F, CODIR). <strong>Orientation résultats</strong>, aisance publique, goût du terrain, culture CRM &amp; data.
+    </p>
+  </section>
+
+  <section>
+    <h2 class="section-title">Expérience Professionnelle</h2>
+
+    <div class="exp">
+      <div class="exp-head">
+        <span class="title">Head of Marketing &amp; Growth (ex-Head of Community)</span>
+        <span class="period">Sept. 2021 → Sept. 2024</span>
+      </div>
+      <div class="exp-sub">
+        <span class="company"><strong>LeGratin.io</strong> · Scale-up tech française · Station F · Groupe Nexoris</span>
+        <span class="format">3 ans · CDI · CODIR · Actionnaire</span>
+      </div>
+      <ul>
+        <li><strong>Acquisition B2C à grande échelle :</strong> stratégie d'acquisition d'une communauté de freelances. +20 000 utilisateurs acquis majoritairement en organique, approche multi-canal (digital, événements, partenariats, prescripteurs).</li>
+        <li><strong>Segmentation cibles &amp; parcours :</strong> segmentation par persona et par parcours, construction de communications dédiées du premier contact à la conversion (expérience candidat de l'inscription à l'activation).</li>
+        <li><strong>Plan d'actions multi-canal :</strong> salons (VivaTech), événements, interventions externes, prescripteurs (42 Station F, partenaires), digital, SEO, LinkedIn, 30+ webinars, 50+ interviews d'experts.</li>
+        <li><strong>Pilotage data &amp; CRM :</strong> HubSpot (segmentation, workflows, lead scoring), dashboards Looker Studio (coût d'acquisition, taux de conversion, ROI), reporting hebdo au CODIR, recommandations stratégiques.</li>
+        <li><strong>Management &amp; animation transverse :</strong> encadrement de 2 juniors (UX/UI + marketing), pilotage d'agences et prestataires, collaboration transverse (Produit, Tech, Sales, Direction), harmonisation des pratiques.</li>
+        <li><strong>Représentation terrain :</strong> prises de parole publiques, interventions externes, interviews, incarnation de la marque auprès de communautés diverses.</li>
+      </ul>
+    </div>
+
+    <div class="exp">
+      <div class="exp-head">
+        <span class="title">Chargée de communication &amp; développement</span>
+        <span class="period">Sept. 2017 → Sept. 2018</span>
+      </div>
+      <div class="exp-sub">
+        <span class="company"><strong>Pigier</strong> · École de commerce post-bac &amp; post-bac+2 · Toulouse</span>
+        <span class="format">1 an · CDI · Autonomie complète</span>
+      </div>
+      <ul>
+        <li><strong>Promotion de l'école auprès des lycéens et prescripteurs :</strong> participation à des salons étudiants, interventions en lycées, journées portes ouvertes, relations avec professeurs et conseillers d'orientation.</li>
+        <li><strong>Développement commercial post-bac :</strong> suivi des candidatures, communications adressées aux candidats et à leurs familles, pilotage de l'expérience candidat jusqu'à l'inscription.</li>
+        <li>Stratégie de communication en autonomie : campagnes multi-canal, événements, RP, relations presse locale.</li>
+      </ul>
+    </div>
+
+    <div class="exp">
+      <div class="exp-head">
+        <span class="title">Freelance Marketing, Content &amp; Direction créative</span>
+        <span class="period">Sept. 2024 → Aujourd'hui</span>
+      </div>
+      <div class="exp-sub">
+        <span class="company"><strong>OseCom</strong> · Marques B2C · Paris</span>
+        <span class="format">Freelance</span>
+      </div>
+      <ul>
+        <li>Clients : <strong>Nuxe, Pierre Fabre, Blissim, Maison Farida, FlatLab</strong>. Direction créative, production vidéo, UGC, communications candidats. Construction d'un outil IA en JavaScript déployé en production chez un client.</li>
+      </ul>
+    </div>
+
+    <div class="exp">
+      <div class="exp-head">
+        <span class="title">Cheffe de projet &amp; Business Developer</span>
+        <span class="period">Mai 2019 → Janv. 2021</span>
+      </div>
+      <div class="exp-sub">
+        <span class="company"><strong>Agence KaliKado</strong> · Conseil, Événementiel &amp; Communication 360° · Neuilly-sur-Seine</span>
+        <span class="format">1 an 9 mois · CDI</span>
+      </div>
+      <ul>
+        <li>Comptes grands publics : <strong>Groupe Andros (Bonne Maman, Mamie Nova), L'Or Espresso, L'Arbre Vert, FDJ</strong>. Événementiel, activations consumer, pilotage prestataires.</li>
+      </ul>
+    </div>
+
+    <div class="exp">
+      <div class="exp-head">
+        <span class="title">Cheffe de projet Digital</span>
+        <span class="period">Sept. 2018 → Mai 2019</span>
+      </div>
+      <div class="exp-sub">
+        <span class="company"><strong>Agence Bergamotte</strong> · Éditoriale B2B · Paris 15 · Comptes institutionnels : Axa, Macif, Matmut, Banque Populaire. Pilotage éditorial de A à Z.</span>
+        <span class="format">9 mois · CDI</span>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Compétences &amp; Outils</h2>
+    <div class="skills">
+      <div><span class="label">Stratégie promotion &amp; développement :</span> plan multi-canal, segmentation cibles, approche territoriale, prescripteurs, parcours candidat.</div>
+      <div><span class="label">Terrain :</span> salons, interventions en établissement, journées portes ouvertes, événements, prises de parole, incarnation de marque.</div>
+      <div><span class="label">Digital :</span> SEO, SEA (Google Ads), LinkedIn, Meta Ads, campagnes acquisition, retargeting, nurturing automatisé.</div>
+      <div><span class="label">CRM &amp; Data :</span> HubSpot, Brevo (équiv. Dynamics / Salesforce) · segmentation, workflows, lead scoring, Looker Studio, Excel, GA4 · coût d'acquisition, parcours de conversion, ROI.</div>
+      <div><span class="label">Management &amp; animation réseau :</span> encadrement 2 juniors, pilotage agences, collaboration transverse multi-équipes, harmonisation des pratiques.</div>
+      <div><span class="label">Expérience candidat :</span> communications tout au long du parcours, cohérence du premier contact à l'admission.</div>
+      <div><span class="label">IA &amp; Dev :</span> Claude Team (Skills &amp; MCP), ChatGPT, Midjourney · Full-Stack JavaScript (GOMYCODE).</div>
+    </div>
+  </section>
+
+  <div class="bottom-row">
+    <section style="margin-top:0">
+      <h2 class="section-title">Formation</h2>
+      <div class="form-item">
+        <span class="left"><strong>M2 Marketing Digital &amp; E-business</strong> · ESG Paris</span>
+        <span class="right">2018 · 2019</span>
+      </div>
+      <div class="form-item">
+        <span class="left"><strong>M1 Communication 360°</strong> · ECS Toulouse</span>
+        <span class="right">2017 · 2018</span>
+      </div>
+      <div class="form-item">
+        <span class="left"><strong>Licence Information-Communication</strong> · UCA Nice</span>
+        <span class="right">2014 · 2017</span>
+      </div>
+      <div class="form-item">
+        <span class="left"><strong>Full-Stack JavaScript</strong> · GOMYCODE</span>
+        <span class="right">2024 · 2025</span>
+      </div>
+    </section>
+
+    <section style="margin-top:0">
+      <h2 class="section-title">Langues</h2>
+      <div class="langues">
+        <div><strong>Français</strong> · C2 (langue maternelle)</div>
+        <div><strong>Anglais</strong> · C1 (année à Londres)</div>
+        <div><strong>Arabe</strong> · C1 (langue maternelle)</div>
+      </div>
+    </section>
+  </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<title>Essia Ben Kheder · Consultant Media B2B · CV Dentsu Creative</title>
+<style>
+  :root {
+    --brown: #2A1810;
+    --olive: #7C8136;
+    --grey-dark: #555;
+    --grey-mid: #888;
+    --paper: #FFFEF8;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  @page { size: A4; margin: 0; }
+  html, body {
+    background: #ecece8;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+    color: var(--brown);
+    font-size: 9pt; line-height: 1.3;
+  }
+  .page {
+    width: 210mm; height: 297mm;
+    margin: 20px auto;
+    padding: 8mm 11mm;
+    background: var(--paper);
+    box-shadow: 0 10px 40px rgba(0,0,0,.08);
+    overflow: hidden;
+  }
+
+  .header {
+    display: flex; align-items: center; gap: 16px;
+    margin-bottom: 10px;
+  }
+  .photo {
+    width: 72px; height: 72px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center 20%;
+    border: 2px solid var(--olive);
+    flex-shrink: 0;
+  }
+  .header-text { flex: 1; }
+  .header h1 {
+    font-size: 18pt; font-weight: 700;
+    letter-spacing: -0.02em; color: var(--brown);
+  }
+  .header .role {
+    color: var(--olive); font-size: 10.5pt; font-weight: 500;
+    margin: 2px 0 4px;
+  }
+  .header .contact {
+    font-size: 9pt; color: var(--grey-dark);
+    display: flex; flex-wrap: wrap;
+    gap: 2px 14px;
+  }
+  .header .contact a { color: var(--olive); text-decoration: none; }
+
+  section { margin-top: 7px; }
+  h2.section-title {
+    font-size: 8.5pt; font-weight: 700;
+    color: var(--olive);
+    text-transform: uppercase; letter-spacing: 0.1em;
+    margin-bottom: 3px; padding-bottom: 2px;
+    border-bottom: 1px solid var(--olive);
+  }
+
+  .profil p { margin-top: 3px; font-size: 9.5pt; line-height: 1.4; text-align: justify; }
+
+  .exp { margin-top: 6px; }
+  .exp-head {
+    display: flex; justify-content: space-between; align-items: baseline;
+    gap: 10px;
+  }
+  .exp-head .title { font-weight: 700; color: var(--olive); font-size: 10pt; }
+  .exp-head .period { color: var(--grey-dark); font-size: 8.5pt; white-space: nowrap; }
+  .exp-sub {
+    display: flex; justify-content: space-between; align-items: baseline;
+    gap: 10px; margin: 1px 0 2px;
+  }
+  .exp-sub .company { color: var(--grey-dark); font-size: 8.5pt; }
+  .exp-sub .company strong { color: var(--brown); }
+  .exp-sub .format { color: var(--grey-mid); font-size: 8.5pt; white-space: nowrap; }
+  .exp ul { margin-top: 2px; padding-left: 14px; }
+  .exp li { margin: 1px 0; font-size: 9pt; line-height: 1.35; }
+  .exp li strong { color: var(--brown); }
+
+  .skills { margin-top: 3px; font-size: 9pt; line-height: 1.4; }
+  .skills .label { font-weight: 700; color: var(--brown); }
+  .skills > div { margin-bottom: 1px; }
+
+  .bottom-row {
+    display: grid; grid-template-columns: 1.6fr 1fr;
+    gap: 24px; margin-top: 7px;
+  }
+  .form-item {
+    display: flex; justify-content: space-between;
+    font-size: 9pt; line-height: 1.3; margin-top: 2px;
+  }
+  .form-item .left strong { color: var(--brown); }
+  .form-item .right { color: var(--grey-mid); font-size: 8pt; white-space: nowrap; }
+  .langues { font-size: 9pt; margin-top: 3px; line-height: 1.5; }
+  .langues strong { color: var(--brown); }
+  .langues div { margin-bottom: 1px; }
+
+  @media print {
+    html, body { background: white; }
+    .page { margin: 0; box-shadow: none; }
+    .no-print { display: none; }
+  }
+  .print-hint {
+    position: fixed; top: 12px; right: 12px;
+    background: var(--olive); color: white;
+    padding: 10px 16px; border-radius: 999px;
+    font-size: 12px; cursor: pointer; border: none;
+    font-family: inherit; z-index: 10;
+    box-shadow: 0 4px 12px rgba(0,0,0,.15);
+  }
+  .print-hint:hover { background: var(--brown); }
+</style>
+</head>
+<body>
+
+<button class="print-hint no-print" onclick="window.print()">⬇ Enregistrer en PDF (Cmd+P)</button>
+
+<div class="page">
+
+  <header class="header">
+    <img class="photo" src="essia-photo.jpg" alt="Essia Ben Kheder" />
+    <div class="header-text">
+      <h1>ESSIA BEN KHEDER</h1>
+      <div class="role">Consultant Media B2B · Grands comptes · Digital 360° · Data-driven · AI-native</div>
+      <div class="contact">
+        <span>✉ essiabenkheder@gmail.com</span>
+        <span>☎ 07 77 00 12 94</span>
+        <span>📍 Paris</span>
+        <a href="https://linkedin.com/in/essiabenkheder">in/essiabenkheder</a>
+        <a href="https://recrutez-essia.com">recrutez-essia.com</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="profil">
+    <h2 class="section-title">Profil</h2>
+    <p>
+      9 ans de marketing &amp; media, dont une double culture <strong>agence (KaliKado, Bergamotte) et annonceur B2B grands comptes</strong> (LeGratin.io, Head of Marketing &amp; Growth, CODIR). Pilotage autonome de portefeuilles clients grands comptes (Groupe Andros, FDJ, Axa, Macif, Décathlon, BPCE, Veolia, Doctolib). Maîtrise des <strong>leviers media online et offline</strong> : SEO, SEA, LinkedIn Ads, Display, Social, événementiel, RP, presse. Culture <strong>données et performance</strong>, sens du résultat, aisance avec décideurs. Anglais courant (année à Londres).
+    </p>
+  </section>
+
+  <section>
+    <h2 class="section-title">Expérience Professionnelle</h2>
+
+    <div class="exp">
+      <div class="exp-head">
+        <span class="title">Head of Marketing &amp; Growth (ex-Head of Community)</span>
+        <span class="period">Sept. 2021 → Sept. 2024</span>
+      </div>
+      <div class="exp-sub">
+        <span class="company"><strong>LeGratin.io</strong> · Scale-up tech française · Station F · Groupe Nexoris</span>
+        <span class="format">3 ans · CDI · CODIR · Actionnaire</span>
+      </div>
+      <ul>
+        <li><strong>Pilotage media B2B grands comptes</strong> : Décathlon, Groupe BPCE, Veolia, Doctolib, La Poste… Analyse des audiences, briefs stratégiques, recommandations, cahiers des charges, arbitrage des leviers.</li>
+        <li><strong>Dispositifs digital 360° :</strong> Google Ads (SEA), LinkedIn Ads, SEO, inbound, display, retargeting, marketing automation (HubSpot), lead gen.</li>
+        <li><strong>Dispositifs offline :</strong> événementiel B2B (VivaTech, Station F), RP, interviews d'experts, 30+ webinars.</li>
+        <li><strong>Culture performance :</strong> dashboards Looker Studio, KPIs (CAC, pipeline, ROI, taux de conversion), reporting hebdomadaire, arbitrage budgétaire mensuel.</li>
+        <li><strong>Développement commercial :</strong> fidélisation, up-sell, recommandations push. Contribution directe à la levée de 1,5 M€ en 2022.</li>
+      </ul>
+    </div>
+
+    <div class="exp">
+      <div class="exp-head">
+        <span class="title">Freelance Marketing, Content &amp; Développement d'outils IA</span>
+        <span class="period">Sept. 2024 → Aujourd'hui</span>
+      </div>
+      <div class="exp-sub">
+        <span class="company"><strong>OseCom</strong> · En direct avec les marques · Paris</span>
+        <span class="format">Freelance</span>
+      </div>
+      <ul>
+        <li>Clients variés : <strong>Nuxe, Pierre Fabre, Blissim, Maison Farida, FlatLab</strong>. Production, digital complet, accompagnement conseil.</li>
+        <li>Construction d'un <strong>outil IA en JavaScript</strong> (assisté par Claude), déployé en production chez un client. Illustration de ma capacité à opérer l'IA et à livrer.</li>
+      </ul>
+    </div>
+
+    <div class="exp">
+      <div class="exp-head">
+        <span class="title">Cheffe de projet &amp; Business Developer</span>
+        <span class="period">Mai 2019 → Janv. 2021</span>
+      </div>
+      <div class="exp-sub">
+        <span class="company"><strong>Agence KaliKado</strong> · Conseil, Événementiel &amp; Communication 360° · Neuilly-sur-Seine</span>
+        <span class="format">1 an 9 mois · CDI</span>
+      </div>
+      <ul>
+        <li>Gestion autonome d'un portefeuille grands comptes : <strong>Groupe Andros (Bonne Maman, Mamie Nova), L'Or Espresso, L'Arbre Vert, FDJ</strong>.</li>
+        <li>Cycle complet agence : brief, recommandation stratégique, négociation, pilotage de la production, bilan chiffré. Fidélisation, recommandations push, satisfaction client.</li>
+      </ul>
+    </div>
+
+    <div class="exp">
+      <div class="exp-head">
+        <span class="title">Cheffe de projet Digital</span>
+        <span class="period">Sept. 2018 → Mai 2019</span>
+      </div>
+      <div class="exp-sub">
+        <span class="company"><strong>Agence Bergamotte</strong> · Éditoriale B2B · Paris 15</span>
+        <span class="format">9 mois · CDI</span>
+      </div>
+      <ul>
+        <li>Comptes institutionnels grands groupes : <strong>Axa, Macif, Matmut, Banque Populaire</strong>. Pilotage éditorial de A à Z, coordination créatifs et prestataires, respect budgets et deadlines.</li>
+      </ul>
+    </div>
+
+    <div class="exp">
+      <div class="exp-head">
+        <span class="title">Chargée de communication &amp; développement</span>
+        <span class="period">Sept. 2017 → Sept. 2018</span>
+      </div>
+      <div class="exp-sub">
+        <span class="company"><strong>Pigier</strong> · École de commerce · Toulouse</span>
+        <span class="format">1 an · CDI</span>
+      </div>
+      <ul>
+        <li>Stratégie communication en autonomie : campagnes multi-canal, événements, RP, négociation presse.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Compétences &amp; Outils</h2>
+    <div class="skills">
+      <div><span class="label">Media digital :</span> SEA (Google Ads), SEO, LinkedIn Ads, Meta Ads, Display, Social, retargeting, lead gen · maîtrise des leviers B2B.</div>
+      <div><span class="label">Media offline :</span> événementiel B2B, RP, presse, affichage, interviews d'experts, webinars.</div>
+      <div><span class="label">Conseil &amp; Recommandation :</span> briefs, cahiers des charges, analyse audiences &amp; tendances, arbitrage des leviers, budgets, négociation.</div>
+      <div><span class="label">Data &amp; Performance :</span> GA4, Looker Studio, SEMrush, HubSpot · KPIs (CAC, pipeline, ROI, taux conv.), dashboards, reporting décideurs.</div>
+      <div><span class="label">Gestion portefeuille clients :</span> fidélisation, recommandations push, satisfaction, suivi personnalisé, grands comptes nationaux et internationaux.</div>
+      <div><span class="label">IA &amp; Outils :</span> Claude Team (Skills &amp; MCP), ChatGPT, Midjourney · Full-Stack JavaScript (GOMYCODE), construction d'outils maison.</div>
+    </div>
+  </section>
+
+  <div class="bottom-row">
+    <section style="margin-top:0">
+      <h2 class="section-title">Formation</h2>
+      <div class="form-item">
+        <span class="left"><strong>M2 Marketing Digital &amp; E-business</strong> · ESG Paris</span>
+        <span class="right">2018 · 2019</span>
+      </div>
+      <div class="form-item">
+        <span class="left"><strong>M1 Communication 360°</strong> · ECS Toulouse</span>
+        <span class="right">2017 · 2018</span>
+      </div>
+      <div class="form-item">
+        <span class="left"><strong>Licence Information-Communication</strong> · UCA Nice</span>
+        <span class="right">2014 · 2017</span>
+      </div>
+      <div class="form-item">
+        <span class="left"><strong>Full-Stack JavaScript</strong> · GOMYCODE</span>
+        <span class="right">2024 · 2025</span>
+      </div>
+    </section>
+
+    <section style="margin-top:0">
+      <h2 class="section-title">Langues</h2>
+      <div class="langues">
+        <div><strong>Français</strong> · C2 (langue maternelle)</div>
+        <div><strong>Anglais</strong> · C1 (année à Londres)</div>
+        <div><strong>Arabe</strong> · C1 (langue maternelle)</div>
+      </div>
+    </section>
+  </div>
+
+</div>
+
+</body>
+</html>

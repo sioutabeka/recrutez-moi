@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<title>Essia Ben Kheder · Lettre de motivation · ESSCA</title>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --brown: #2A1810;
+    --olive: #7C8136;
+    --grey-dark: #444;
+    --paper: #FFFEF8;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  @page { size: A4; margin: 0; }
+  html, body {
+    background: #ecece8;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+    color: var(--brown);
+    font-size: 11pt; line-height: 1.55;
+  }
+  .page {
+    width: 210mm; min-height: 297mm;
+    margin: 20px auto;
+    padding: 28mm 25mm;
+    background: var(--paper);
+    box-shadow: 0 10px 40px rgba(0,0,0,.08);
+  }
+
+  .top {
+    display: flex; justify-content: space-between;
+    margin-bottom: 50px;
+    font-size: 10pt; color: var(--grey-dark);
+    line-height: 1.4;
+  }
+  .top .left strong { color: var(--brown); display: block; font-size: 11pt; margin-bottom: 2px; }
+  .top .right { text-align: right; }
+  .top .right strong { color: var(--brown); display: block; font-size: 11pt; margin-bottom: 2px; }
+
+  .date { text-align: right; margin-bottom: 40px; color: var(--grey-dark); font-size: 10.5pt; }
+
+  .objet { margin-bottom: 24px; font-weight: 600; }
+
+  .salutation { margin-bottom: 18px; }
+
+  p { margin-bottom: 14px; text-align: justify; }
+
+  .signoff { margin-top: 22px; }
+
+  .signature-line { margin-top: 16px; font-family: 'Caveat', cursive; font-size: 26pt; color: var(--brown); line-height: 1; }
+
+  @media print {
+    html, body { background: white; }
+    .page { margin: 0; box-shadow: none; }
+    .no-print { display: none; }
+  }
+  .print-hint {
+    position: fixed; top: 12px; right: 12px;
+    background: var(--olive); color: white;
+    padding: 10px 16px; border-radius: 999px;
+    font-size: 12px; cursor: pointer; border: none;
+    font-family: inherit; z-index: 10;
+    box-shadow: 0 4px 12px rgba(0,0,0,.15);
+  }
+  .print-hint:hover { background: var(--brown); }
+</style>
+</head>
+<body>
+
+<button class="print-hint no-print" onclick="window.print()">⬇ Enregistrer en PDF (Cmd+P)</button>
+
+<div class="page">
+
+  <div class="top">
+    <div class="left">
+      <strong>Essia Ben Kheder</strong>
+      Paris<br />
+      07 77 00 12 94<br />
+      essiabenkheder@gmail.com<br />
+      recrutez-essia.com
+    </div>
+    <div class="right">
+      <strong>ESSCA · Campus Paris</strong>
+      À l'attention de la Direction du Recrutement
+    </div>
+  </div>
+
+  <div class="date">Paris, le 8 octobre 2026</div>
+
+  <div class="objet">Objet : candidature au poste de Responsable Promotion &amp; Développement Commercial Post-Bac</div>
+
+  <div class="salutation">Madame, Monsieur,</div>
+
+  <p>
+    Mon parcours a commencé dans l'enseignement supérieur. Pendant un an chez <strong>Pigier Toulouse</strong>, j'ai piloté en autonomie la communication et le développement d'une école post-bac : salons étudiants, interventions en lycées, portes ouvertes, relations avec les professeurs et les conseillers d'orientation, suivi des candidatures jusqu'à l'inscription. J'ai découvert là que la promotion d'une formation est un métier à la fois très humain et très exigeant sur la donnée.
+  </p>
+
+  <p>
+    Les huit années suivantes m'ont permis de muscler la dimension <strong>acquisition et pilotage data</strong>. Trois ans comme <strong>Head of Marketing &amp; Growth</strong> chez LeGratin.io (scale-up Station F, CODIR, actionnaire) où j'ai construit une communauté de plus de 20 000 utilisateurs majoritairement en organique, piloté le CRM, structuré les parcours de conversion, suivi des indicateurs précis de coût d'acquisition et de ROI, et animé un réseau transverse. Puis deux ans en agences (KaliKado, Bergamotte) sur grands comptes et institutionnels.
+  </p>
+
+  <p>
+    L'offre de l'ESSCA correspond précisément à l'intersection de ces deux terrains : <strong>la connaissance intime de l'écosystème post-bac et de ses prescripteurs, et la rigueur d'un marketing moderne, piloté par la donnée et déployé sur plusieurs campus</strong>. C'est exactement ce que j'ai envie de faire, et là où je peux apporter le plus de valeur immédiate.
+  </p>
+
+  <p>
+    Mon activité freelance actuelle me permet de rejoindre vos équipes dès à présent. Je serais ravie d'échanger avec vous sur votre stratégie de recrutement et sur ce que je peux concrètement y apporter.
+  </p>
+
+  <div class="signoff">
+    Avec mes salutations les plus respectueuses,
+  </div>
+
+  <div class="signature-line">Essia Ben Kheder</div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<title>Essia Ben Kheder · Communication · Événements · Content · CV Moka.Care</title>
+<style>
+  :root {
+    --brown: #2A1810;
+    --olive: #7C8136;
+    --grey-dark: #555;
+    --grey-mid: #888;
+    --paper: #FFFEF8;
+  }
+  * { box-sizing: border-box; }
+  @page { size: A4; margin: 0; }
+  html, body {
+    margin: 0; padding: 0;
+    background: #ecece8;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+    color: var(--brown);
+    font-size: 9pt; line-height: 1.3;
+  }
+  .page {
+    width: 210mm;
+    height: 297mm;
+    margin: 20px auto;
+    padding: 8mm 11mm;
+    background: var(--paper);
+    box-shadow: 0 10px 40px rgba(0,0,0,.08);
+    overflow: hidden;
+  }
+
+  /* HEADER */
+  .header { text-align: center; margin-bottom: 4px; }
+  .header h1 {
+    font-size: 17pt; font-weight: 700; margin: 0;
+    letter-spacing: -0.02em; color: var(--brown);
+  }
+  .header .role {
+    color: var(--olive); font-size: 10pt; font-weight: 500;
+    margin: 2px 0 3px;
+  }
+  .header .contact {
+    font-size: 8pt; color: var(--grey-dark);
+    display: flex; justify-content: center; flex-wrap: wrap;
+    gap: 3px 12px;
+  }
+  .header .contact a { color: var(--olive); text-decoration: none; }
+
+  /* SECTION */
+  section { margin-top: 4px; }
+  h2.section-title {
+    font-size: 8pt; font-weight: 700;
+    color: var(--olive);
+    text-transform: uppercase; letter-spacing: 0.1em;
+    margin: 0 0 2px; padding-bottom: 2px;
+    border-bottom: 1px solid var(--olive);
+  }
+
+  /* PROFIL */
+  .profil p { margin: 3px 0 0; font-size: 9pt; line-height: 1.4; text-align: justify; }
+
+  /* EXPERIENCE */
+  .exp { margin-top: 4px; }
+  .exp-head {
+    display: flex; justify-content: space-between; align-items: baseline;
+    gap: 10px;
+  }
+  .exp-head .title { font-weight: 700; color: var(--olive); font-size: 9.5pt; }
+  .exp-head .period { color: var(--grey-dark); font-size: 8pt; white-space: nowrap; }
+  .exp-sub {
+    display: flex; justify-content: space-between; align-items: baseline;
+    gap: 10px; margin: 0 0 2px;
+  }
+  .exp-sub .company { color: var(--grey-dark); font-size: 8.5pt; }
+  .exp-sub .company strong { color: var(--brown); }
+  .exp-sub .format { color: var(--grey-mid); font-size: 8pt; white-space: nowrap; }
+  .exp ul { margin: 2px 0 0; padding-left: 14px; }
+  .exp li { margin: 1px 0; font-size: 9pt; line-height: 1.35; }
+  .exp li strong { color: var(--brown); }
+
+  /* SKILLS */
+  .skills-block { margin-top: 3px; font-size: 9pt; line-height: 1.4; }
+  .skills-block .label {
+    font-weight: 700; color: var(--brown);
+  }
+  .skills-block > div { margin-bottom: 0; }
+
+  /* FORMATION & LANGUES compacts */
+  .form-row {
+    display: flex; justify-content: space-between;
+    font-size: 9pt; line-height: 1.35; margin-top: 2px;
+  }
+  .form-row .left { color: var(--brown); }
+  .form-row .left strong { color: var(--brown); }
+  .form-row .right { color: var(--grey-mid); font-size: 8pt; white-space: nowrap; }
+  .langues { font-size: 9pt; margin-top: 3px; }
+  .langues strong { color: var(--brown); }
+
+  /* PRINT */
+  @media print {
+    html, body { background: white; }
+    .page {
+      margin: 0; box-shadow: none;
+      padding: 8mm 11mm;
+      page-break-after: avoid;
+    }
+    .no-print { display: none; }
+  }
+  .print-hint {
+    position: fixed; top: 12px; right: 12px;
+    background: var(--olive); color: white;
+    padding: 10px 16px; border-radius: 999px;
+    font-size: 12px; cursor: pointer; border: none;
+    font-family: inherit; z-index: 10;
+    box-shadow: 0 4px 12px rgba(0,0,0,.15);
+  }
+  .print-hint:hover { background: var(--brown); }
+</style>
+</head>
+<body>
+
+<button class="print-hint no-print" onclick="window.print()">⬇ Enregistrer en PDF (Cmd+P)</button>
+
+<div class="page">
+
+  <!-- HEADER -->
+  <header class="header">
+    <h1>ESSIA BEN KHEDER</h1>
+    <div class="role">Communication · Événements · Content · Startup B2B</div>
+    <div class="contact">
+      <span>✉ essiabenkheder@gmail.com</span>
+      <span>☎ 07 77 00 12 94</span>
+      <span>📍 Paris</span>
+      <a href="https://linkedin.com/in/essiabenkheder">in/essiabenkheder</a>
+      <a href="https://recrutez-essia.com">recrutez-essia.com</a>
+    </div>
+  </header>
+
+  <!-- PROFIL -->
+  <section class="profil">
+    <h2 class="section-title">Profil</h2>
+    <p>
+      Profil <strong>communication externe &amp; interne</strong>, à l'aise sur les trois leviers que Moka.Care recherche : <strong>engagement clients</strong> (événements B2B, newsletters, sales enablement), <strong>engagement utilisateurs</strong> (visuels, vidéos, campagnes d'adoption) et <strong>thought leadership</strong> (RP, storytelling, pages site). Parcours mêlant <strong>startup B2B HR tech</strong> (LeGratin.io, Station F) et production audiovisuelle en direct avec les marques (Nuxe, Pierre Fabre, Blissim). Expertise Figma, CapCut, Premiere Pro. Sens du storytelling et goût pour les sujets d'impact : bien-être au travail, santé mentale, RH.
+    </p>
+  </section>
+
+  <!-- EXPÉRIENCE -->
+  <section>
+    <h2 class="section-title">Expérience Professionnelle</h2>
+
+    <div class="exp">
+      <div class="exp-head">
+        <span class="title">Freelance Communication, Content &amp; Production</span>
+        <span class="period">Sept. 2024 → Aujourd'hui</span>
+      </div>
+      <div class="exp-sub">
+        <span class="company"><strong>OseCom</strong> · En direct avec les marques · Paris</span>
+        <span class="format">Freelance</span>
+      </div>
+      <ul>
+        <li>Production audiovisuelle pour <strong>Nuxe (5-6 vidéos 2025), Pierre Fabre, Blissim, Maison Farida, Capsul</strong> : conception, tournage, montage, direction de shootings, vidéos courtes, UGC.</li>
+        <li>Création de visuels, carrousels, posters, supports communication print &amp; digital (Figma, CapCut, Premiere Pro, Canva, Photoshop).</li>
+        <li>Pilotage éditorial social (Instagram, TikTok, Reels), newsletters, communication produit pour TPE/PME (FlatLab, MKL Energy).</li>
+      </ul>
+    </div>
+
+    <div class="exp">
+      <div class="exp-head">
+        <span class="title">Communication &amp; Marketing Manager</span>
+        <span class="period">Sept. 2021 → Sept. 2024</span>
+      </div>
+      <div class="exp-sub">
+        <span class="company"><strong>LeGratin.io</strong> · Startup B2B HR tech · Station F · Cible DRH &amp; Directeurs Techniques</span>
+        <span class="format">3 ans · CDI</span>
+      </div>
+      <ul>
+        <li><strong>Engagement clients grands comptes</strong> : organisation de 30+ webinars clients, événements B2B (<strong>VivaTech, Station F</strong>), newsletters segmentées, communications CRM (HubSpot).</li>
+        <li><strong>Sales enablement</strong> : création de slides, argumentaires, case studies et supports commerciaux pour les équipes vente.</li>
+        <li><strong>Thought leadership &amp; RP</strong> : 50+ interviews d'experts et de Directeurs Techniques publiées, communiqués, relations presse, brand content.</li>
+        <li><strong>Scale 4 personnes → +20 000 utilisateurs acquis</strong>. Traction qui a servi de preuve directe à la levée de 1,5 M€. LeGratin.io intégrée au groupe Nexoris.</li>
+      </ul>
+    </div>
+
+    <div class="exp">
+      <div class="exp-head">
+        <span class="title">Cheffe de projet &amp; Business Developer</span>
+        <span class="period">Mai 2019 → Janv. 2021</span>
+      </div>
+      <div class="exp-sub">
+        <span class="company"><strong>Agence KaliKado</strong> · Conseil &amp; Événementiel B2C · Neuilly-sur-Seine</span>
+        <span class="format">1 an 9 mois · CDI</span>
+      </div>
+      <ul>
+        <li>Pilotage de campagnes événementielles multi-canal pour <strong>Groupe Andros (Bonne Maman, Mamie Nova), L'Or Espresso, L'Arbre Vert, FDJ</strong> : box, partenariats, jeux-concours, bilans chiffrés présentés en direct aux clients.</li>
+      </ul>
+    </div>
+
+    <div class="exp">
+      <div class="exp-head">
+        <span class="title">Cheffe de projet Digital</span>
+        <span class="period">Sept. 2018 → Mai 2019</span>
+      </div>
+      <div class="exp-sub">
+        <span class="company"><strong>Agence Bergamotte</strong> · Éditoriale B2B grands comptes · Paris 15</span>
+        <span class="format">9 mois · CDI</span>
+      </div>
+      <ul>
+        <li>Comptes institutionnels grands groupes : <strong>Axa, Macif, Matmut, Banque Populaire</strong>. Pilotage projets éditoriaux digitaux et print de A à Z : cadrage, prestataires, budgets, qualité.</li>
+      </ul>
+    </div>
+
+    <div class="exp">
+      <div class="exp-head">
+        <span class="title">Chargée de communication &amp; développement</span>
+        <span class="period">Sept. 2017 → Sept. 2018</span>
+      </div>
+      <div class="exp-sub">
+        <span class="company"><strong>Pigier</strong> · École de commerce · Toulouse</span>
+        <span class="format">1 an · CDI</span>
+      </div>
+      <ul>
+        <li>Stratégie communication globale en autonomie. Campagnes radio et affichage (conception + achat média + déploiement), RP, événements, contenus multi-formats.</li>
+      </ul>
+    </div>
+
+    <div class="exp">
+      <div class="exp-head">
+        <span class="title">Planning stratégique</span>
+        <span class="period">2015</span>
+      </div>
+      <div class="exp-sub">
+        <span class="company"><strong>Groupe Nice-Matin</strong> · Régie publicitaire · Nice</span>
+        <span class="format">Premier poste</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section>
+    <h2 class="section-title">Compétences &amp; Outils</h2>
+    <div class="skills-block">
+      <div><span class="label">Design &amp; Visuel :</span> <strong>Figma</strong>, Canva, Photoshop, Illustrator, Midjourney · création posters, slides, visuels social, supports commerciaux.</div>
+      <div><span class="label">Montage vidéo :</span> <strong>CapCut, Premiere Pro, After Effects</strong> · interviews vidéos, formats courts, UGC, vidéos campagne.</div>
+      <div><span class="label">Événementiel B2B :</span> organisation webinars (30+ chez LeGratin), événements clients, stands, conférences (VivaTech, Station F).</div>
+      <div><span class="label">CRM &amp; Newsletters :</span> HubSpot, Brevo, Lemlist · segmentation, campagnes B2B, communication produit.</div>
+      <div><span class="label">RP &amp; Thought Leadership :</span> communiqués de presse, tribunes, interviews d'experts, pages site.</div>
+      <div><span class="label">Content &amp; Social :</span> Instagram, TikTok, LinkedIn, calendrier éditorial, blog, storytelling.</div>
+      <div><span class="label">IA au quotidien :</span> Claude Team (Skills &amp; MCP, expert), ChatGPT, Midjourney, Runway · production et exploration de nouveaux usages.</div>
+      <div><span class="label">Gestion :</span> Notion, Airtable, Slack, Google Suite, Pack Office.</div>
+    </div>
+  </section>
+
+  <!-- FORMATION -->
+  <section>
+    <h2 class="section-title">Formation</h2>
+    <div class="form-row">
+      <span class="left"><strong>Master 2 Marketing Digital &amp; E-business</strong> · ESG Paris</span>
+      <span class="right">2018 · 2019</span>
+    </div>
+    <div class="form-row">
+      <span class="left"><strong>Master 1 Communication 360°</strong> · ECS Toulouse</span>
+      <span class="right">2017 · 2018</span>
+    </div>
+    <div class="form-row">
+      <span class="left"><strong>Licence Information-Communication</strong> · Université Côte d'Azur · Nice</span>
+      <span class="right">2014 · 2017</span>
+    </div>
+    <div class="form-row">
+      <span class="left"><strong>Formation Full-Stack JavaScript</strong> (Stack MERN) · GOMYCODE</span>
+      <span class="right">2024 · 2025</span>
+    </div>
+  </section>
+
+  <!-- LANGUES -->
+  <section>
+    <h2 class="section-title">Langues</h2>
+    <div class="langues">
+      <strong>Français</strong> C2 (langue maternelle) &nbsp;·&nbsp; <strong>Anglais</strong> C1 (année à Londres, Kaplan) &nbsp;·&nbsp; <strong>Arabe</strong> C1 (langue maternelle)
+    </div>
+  </section>
+
+</div>
+
+</body>
+</html>

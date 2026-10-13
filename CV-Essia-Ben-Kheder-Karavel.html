@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<title>Essia Ben Kheder · Head of Social Media · CV Karavel</title>
+<style>
+  :root {
+    --brown: #2A1810;
+    --olive: #7C8136;
+    --grey-dark: #555;
+    --grey-mid: #888;
+    --paper: #FFFEF8;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  @page { size: A4; margin: 0; }
+  html, body {
+    background: #ecece8;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+    color: var(--brown);
+    font-size: 9pt; line-height: 1.3;
+  }
+  .page {
+    width: 210mm; height: 297mm;
+    margin: 20px auto;
+    padding: 8mm 11mm;
+    background: var(--paper);
+    box-shadow: 0 10px 40px rgba(0,0,0,.08);
+    overflow: hidden;
+  }
+
+  .header {
+    display: flex; align-items: center; gap: 16px;
+    margin-bottom: 10px;
+  }
+  .photo {
+    width: 72px; height: 72px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center 20%;
+    border: 2px solid var(--olive);
+    flex-shrink: 0;
+  }
+  .header-text { flex: 1; }
+  .header h1 {
+    font-size: 18pt; font-weight: 700;
+    letter-spacing: -0.02em; color: var(--brown);
+  }
+  .header .role {
+    color: var(--olive); font-size: 10.5pt; font-weight: 500;
+    margin: 2px 0 4px;
+  }
+  .header .contact {
+    font-size: 9pt; color: var(--grey-dark);
+    display: flex; flex-wrap: wrap;
+    gap: 2px 14px;
+  }
+  .header .contact a { color: var(--olive); text-decoration: none; }
+
+  section { margin-top: 7px; }
+  h2.section-title {
+    font-size: 8.5pt; font-weight: 700;
+    color: var(--olive);
+    text-transform: uppercase; letter-spacing: 0.1em;
+    margin-bottom: 3px; padding-bottom: 2px;
+    border-bottom: 1px solid var(--olive);
+  }
+
+  .profil p { margin-top: 3px; font-size: 9.5pt; line-height: 1.4; text-align: justify; }
+
+  .exp { margin-top: 6px; }
+  .exp-head {
+    display: flex; justify-content: space-between; align-items: baseline;
+    gap: 10px;
+  }
+  .exp-head .title { font-weight: 700; color: var(--olive); font-size: 10pt; }
+  .exp-head .period { color: var(--grey-dark); font-size: 8.5pt; white-space: nowrap; }
+  .exp-sub {
+    display: flex; justify-content: space-between; align-items: baseline;
+    gap: 10px; margin: 1px 0 2px;
+  }
+  .exp-sub .company { color: var(--grey-dark); font-size: 8.5pt; }
+  .exp-sub .company strong { color: var(--brown); }
+  .exp-sub .format { color: var(--grey-mid); font-size: 8.5pt; white-space: nowrap; }
+  .exp ul { margin-top: 2px; padding-left: 14px; }
+  .exp li { margin: 1px 0; font-size: 9pt; line-height: 1.35; }
+  .exp li strong { color: var(--brown); }
+
+  .skills { margin-top: 3px; font-size: 9pt; line-height: 1.4; }
+  .skills .label { font-weight: 700; color: var(--brown); }
+  .skills > div { margin-bottom: 1px; }
+
+  .bottom-row {
+    display: grid; grid-template-columns: 1.6fr 1fr;
+    gap: 24px; margin-top: 7px;
+  }
+  .form-item {
+    display: flex; justify-content: space-between;
+    font-size: 9pt; line-height: 1.3; margin-top: 2px;
+  }
+  .form-item .left strong { color: var(--brown); }
+  .form-item .right { color: var(--grey-mid); font-size: 8pt; white-space: nowrap; }
+  .langues { font-size: 9pt; margin-top: 3px; line-height: 1.5; }
+  .langues strong { color: var(--brown); }
+  .langues div { margin-bottom: 1px; }
+
+  @media print {
+    html, body { background: white; }
+    .page { margin: 0; box-shadow: none; }
+    .no-print { display: none; }
+  }
+  .print-hint {
+    position: fixed; top: 12px; right: 12px;
+    background: var(--olive); color: white;
+    padding: 10px 16px; border-radius: 999px;
+    font-size: 12px; cursor: pointer; border: none;
+    font-family: inherit; z-index: 10;
+    box-shadow: 0 4px 12px rgba(0,0,0,.15);
+  }
+  .print-hint:hover { background: var(--brown); }
+</style>
+</head>
+<body>
+
+<button class="print-hint no-print" onclick="window.print()">⬇ Enregistrer en PDF (Cmd+P)</button>
+
+<div class="page">
+
+  <header class="header">
+    <img class="photo" src="essia-photo.jpg" alt="Essia Ben Kheder" />
+    <div class="header-text">
+      <h1>ESSIA BEN KHEDER</h1>
+      <div class="role">Head of Social Media · Content vidéo · Créateurs &amp; UGC · B2C lifestyle · Data-driven</div>
+      <div class="contact">
+        <span>✉ essiabenkheder@gmail.com</span>
+        <span>☎ 07 77 00 12 94</span>
+        <span>📍 Paris</span>
+        <a href="https://linkedin.com/in/essiabenkheder">in/essiabenkheder</a>
+        <a href="https://recrutez-essia.com">recrutez-essia.com</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="profil">
+    <h2 class="section-title">Profil</h2>
+    <p>
+      9 ans en marketing &amp; social media, à l'aise sur la vision stratégique comme sur l'exécution contenu. Expertise construite sur deux terrains complémentaires : <strong>freelance pour des marques lifestyle &amp; beauté grand public</strong> (Nuxe, Pierre Fabre, Blissim, Maison Farida) sur la production de contenu vidéo, UGC, short-form, Reels, TikTok, création de concepts éditoriaux, direction de shootings · et <strong>Head of Marketing &amp; Growth d'une scale-up tech</strong> (LeGratin.io, Station F, CODIR, actionnaire) où j'ai piloté la stratégie éditoriale, les communautés, les créateurs partenaires et la performance data. Profil <strong>stratégique et très opérationnel</strong>, créatif, test &amp; learn, AI-native au quotidien.
+    </p>
+  </section>
+
+  <section>
+    <h2 class="section-title">Expérience Professionnelle</h2>
+
+    <div class="exp">
+      <div class="exp-head">
+        <span class="title">Freelance Social Media, Content &amp; Direction créative</span>
+        <span class="period">Sept. 2024 → Aujourd'hui</span>
+      </div>
+      <div class="exp-sub">
+        <span class="company"><strong>OseCom</strong> · Marques beauté, lifestyle &amp; retail · Paris</span>
+        <span class="format">Freelance</span>
+      </div>
+      <ul>
+        <li>Clients : <strong>Nuxe, Pierre Fabre, Blissim, Maison Farida, FlatLab</strong>. Pensée social-first dès l'origine, pas de simples déclinaisons de campagnes.</li>
+        <li><strong>Production vidéo courte</strong> (Reels, TikTok, Shorts) : 5-6 vidéos / an pour Nuxe en 2025, courtes-formes récurrentes pour Blissim, UGC et short-form pour Maison Farida.</li>
+        <li><strong>Direction créative &amp; direction de shootings</strong> : plateaux, modèles, scénographie, cadrage plateformes. Montage, étalonnage, sous-titrage, versioning par format.</li>
+        <li><strong>Veille continue</strong> sur formats émergents et tendances TikTok / Reels. Capacité à distinguer une tendance activable pour la marque d'une tendance à laisser passer.</li>
+        <li><strong>Outil IA maison en JavaScript</strong> assisté par Claude, déployé en production chez un client pour accélérer la production de contenu.</li>
+      </ul>
+    </div>
+
+    <div class="exp">
+      <div class="exp-head">
+        <span class="title">Head of Marketing &amp; Growth (ex-Head of Community)</span>
+        <span class="period">Sept. 2021 → Sept. 2024</span>
+      </div>
+      <div class="exp-sub">
+        <span class="company"><strong>LeGratin.io</strong> · Scale-up tech française · Station F (avec 42) · Groupe Nexoris</span>
+        <span class="format">3 ans · CDI · CODIR · Actionnaire</span>
+      </div>
+      <ul>
+        <li><strong>Stratégie éditoriale et pilotage de communautés</strong> : construction d'une ligne éditoriale forte sur LinkedIn (marque + ambassadeur CEO), YouTube, blog et newsletters. Territoires éditoriaux, formats récurrents propriétaires, calendriers.</li>
+        <li><strong>Créateurs &amp; influence</strong> : 50+ interviews d'experts du secteur freelance, construites comme un réseau d'ambassadeurs récurrents (voyages créateurs du concept : contenu + relais + backlinks).</li>
+        <li><strong>UGC &amp; témoignages voyageurs</strong> appliqués aux freelances : collecte, mise en forme, réutilisation sur les canaux propres. Transformation progressive de la communauté en ambassadeurs.</li>
+        <li><strong>30+ webinars</strong> et formats éditoriaux récurrents : création de concepts identifiables, test &amp; learn, capitalisation sur ce qui performe.</li>
+        <li><strong>Management</strong> : encadrement de 2 juniors (UX/UI + marketing), pilotage d'agences et prestataires externes, collaboration transverse (Produit, Tech, Sales).</li>
+        <li><strong>Pilotage performance</strong> : dashboards Looker Studio (reach, engagement, performance vidéo, trafic, contribution business), reporting hebdomadaire au CODIR, arbitrage budgétaire. <strong>+20 000 utilisateurs acquis</strong>, contribution à la levée de 1,5 M€.</li>
+      </ul>
+    </div>
+
+    <div class="exp">
+      <div class="exp-head">
+        <span class="title">Cheffe de projet &amp; Business Developer</span>
+        <span class="period">Mai 2019 → Janv. 2021</span>
+      </div>
+      <div class="exp-sub">
+        <span class="company"><strong>Agence KaliKado</strong> · Conseil &amp; Événementiel · Clients grand public</span>
+        <span class="format">1 an 9 mois · CDI</span>
+      </div>
+      <ul>
+        <li>Comptes grand public : <strong>Groupe Andros (Bonne Maman, Mamie Nova), L'Or Espresso, L'Arbre Vert, FDJ</strong>. Jeux-concours, événementiel, activations consumer.</li>
+      </ul>
+    </div>
+
+    <div class="exp">
+      <div class="exp-head">
+        <span class="title">Cheffe de projet Digital</span>
+        <span class="period">Sept. 2018 → Mai 2019</span>
+      </div>
+      <div class="exp-sub">
+        <span class="company"><strong>Agence Bergamotte</strong> · Éditoriale · Paris 15</span>
+        <span class="format">9 mois · CDI</span>
+      </div>
+      <ul>
+        <li>Comptes grands groupes (<strong>Axa, Macif, Matmut, Banque Populaire</strong>). Pilotage éditorial de A à Z, coordination créatifs et prestataires.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Compétences &amp; Outils</h2>
+    <div class="skills">
+      <div><span class="label">Plateformes :</span> Instagram, TikTok, Facebook, YouTube, LinkedIn · codes propres à chaque plateforme, formats natifs, usages community.</div>
+      <div><span class="label">Contenu vidéo :</span> Reels, TikTok, Shorts, UGC, short-form · tournage, montage, direction de shootings, écriture scénaristique.</div>
+      <div><span class="label">Stratégie éditoriale :</span> ligne éditoriale, territoires, concepts récurrents propriétaires, calendriers, test &amp; learn, veille tendances.</div>
+      <div><span class="label">Créateurs &amp; Influence :</span> sourcing, négociation, coordination, ambassadeurs récurrents, réutilisation contenus créateurs sur canaux propres.</div>
+      <div><span class="label">Data &amp; Performance :</span> GA4, Looker Studio, Meta Business, SEMrush · reach, engagement, performance vidéo, contribution business.</div>
+      <div><span class="label">Management :</span> encadrement de 2 juniors, pilotage prestataires et agences, collaboration transverse (créa, marque, communication, CRM).</div>
+      <div><span class="label">IA &amp; Outils :</span> Claude Team (Skills &amp; MCP), ChatGPT, Midjourney, CapCut, Suite Adobe · Full-Stack JavaScript (GOMYCODE).</div>
+    </div>
+  </section>
+
+  <div class="bottom-row">
+    <section style="margin-top:0">
+      <h2 class="section-title">Formation</h2>
+      <div class="form-item">
+        <span class="left"><strong>M2 Marketing Digital &amp; E-business</strong> · ESG Paris</span>
+        <span class="right">2018 · 2019</span>
+      </div>
+      <div class="form-item">
+        <span class="left"><strong>M1 Communication 360°</strong> · ECS Toulouse</span>
+        <span class="right">2017 · 2018</span>
+      </div>
+      <div class="form-item">
+        <span class="left"><strong>Licence Information-Communication</strong> · UCA Nice</span>
+        <span class="right">2014 · 2017</span>
+      </div>
+      <div class="form-item">
+        <span class="left"><strong>Full-Stack JavaScript</strong> · GOMYCODE</span>
+        <span class="right">2024 · 2025</span>
+      </div>
+    </section>
+
+    <section style="margin-top:0">
+      <h2 class="section-title">Langues</h2>
+      <div class="langues">
+        <div><strong>Français</strong> · C2 (langue maternelle)</div>
+        <div><strong>Anglais</strong> · C1 (année à Londres)</div>
+        <div><strong>Arabe</strong> · C1 (langue maternelle)</div>
+      </div>
+    </section>
+  </div>
+
+</div>
+
+</body>
+</html>

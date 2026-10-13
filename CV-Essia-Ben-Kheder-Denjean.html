@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<title>Essia Ben Kheder · Responsable Communication · CV Denjean &amp; Associés</title>
+<style>
+  :root {
+    --brown: #2A1810;
+    --olive: #7C8136;
+    --grey-dark: #555;
+    --grey-mid: #888;
+    --paper: #FFFEF8;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  @page { size: A4; margin: 0; }
+  html, body {
+    background: #ecece8;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+    color: var(--brown);
+    font-size: 8.5pt; line-height: 1.28;
+  }
+  .page {
+    width: 210mm; height: 297mm;
+    margin: 20px auto;
+    padding: 7mm 11mm;
+    background: var(--paper);
+    box-shadow: 0 10px 40px rgba(0,0,0,.08);
+    overflow: hidden;
+  }
+
+  .header {
+    display: flex; align-items: center; gap: 16px;
+    margin-bottom: 10px;
+  }
+  .photo {
+    width: 72px; height: 72px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center 20%;
+    border: 2px solid var(--olive);
+    flex-shrink: 0;
+  }
+  .header-text { flex: 1; }
+  .header h1 {
+    font-size: 18pt; font-weight: 700;
+    letter-spacing: -0.02em; color: var(--brown);
+  }
+  .header .role {
+    color: var(--olive); font-size: 10.5pt; font-weight: 500;
+    margin: 2px 0 4px;
+  }
+  .header .contact {
+    font-size: 9pt; color: var(--grey-dark);
+    display: flex; flex-wrap: wrap;
+    gap: 2px 14px;
+  }
+  .header .contact a { color: var(--olive); text-decoration: none; }
+
+  section { margin-top: 6px; }
+  h2.section-title {
+    font-size: 8.5pt; font-weight: 700;
+    color: var(--olive);
+    text-transform: uppercase; letter-spacing: 0.1em;
+    margin-bottom: 3px; padding-bottom: 2px;
+    border-bottom: 1px solid var(--olive);
+  }
+
+  .profil p { margin-top: 3px; font-size: 9pt; line-height: 1.38; text-align: justify; }
+
+  .exp { margin-top: 5px; }
+  .exp-head {
+    display: flex; justify-content: space-between; align-items: baseline;
+    gap: 10px;
+  }
+  .exp-head .title { font-weight: 700; color: var(--olive); font-size: 9.5pt; }
+  .exp-head .period { color: var(--grey-dark); font-size: 8pt; white-space: nowrap; }
+  .exp-sub {
+    display: flex; justify-content: space-between; align-items: baseline;
+    gap: 10px; margin: 1px 0 2px;
+  }
+  .exp-sub .company { color: var(--grey-dark); font-size: 8pt; }
+  .exp-sub .company strong { color: var(--brown); }
+  .exp-sub .format { color: var(--grey-mid); font-size: 8pt; white-space: nowrap; }
+  .exp ul { margin-top: 2px; padding-left: 14px; }
+  .exp li { margin: 1px 0; font-size: 8.5pt; line-height: 1.32; }
+  .exp li strong { color: var(--brown); }
+
+  .skills { margin-top: 3px; font-size: 8.5pt; line-height: 1.38; }
+  .skills .label { font-weight: 700; color: var(--brown); }
+  .skills > div { margin-bottom: 1px; }
+
+  .bottom-row {
+    display: grid; grid-template-columns: 1.6fr 1fr;
+    gap: 24px; margin-top: 7px;
+  }
+  .form-item {
+    display: flex; justify-content: space-between;
+    font-size: 8.5pt; line-height: 1.3; margin-top: 2px;
+  }
+  .form-item .left strong { color: var(--brown); }
+  .form-item .right { color: var(--grey-mid); font-size: 8pt; white-space: nowrap; }
+  .langues { font-size: 8.5pt; margin-top: 3px; line-height: 1.5; }
+  .langues strong { color: var(--brown); }
+  .langues div { margin-bottom: 1px; }
+
+  @media print {
+    html, body { background: white; }
+    .page { margin: 0; box-shadow: none; }
+    .no-print { display: none; }
+  }
+  .print-hint {
+    position: fixed; top: 12px; right: 12px;
+    background: var(--olive); color: white;
+    padding: 10px 16px; border-radius: 999px;
+    font-size: 12px; cursor: pointer; border: none;
+    font-family: inherit; z-index: 10;
+    box-shadow: 0 4px 12px rgba(0,0,0,.15);
+  }
+  .print-hint:hover { background: var(--brown); }
+</style>
+</head>
+<body>
+
+<button class="print-hint no-print" onclick="window.print()">⬇ Enregistrer en PDF (Cmd+P)</button>
+
+<div class="page">
+
+  <header class="header">
+    <img class="photo" src="essia-photo.jpg" alt="Essia Ben Kheder" />
+    <div class="header-text">
+      <h1>ESSIA BEN KHEDER</h1>
+      <div class="role">Responsable Communication · Image &amp; Rayonnement · Événementiel &amp; RP · Community · Stratégie</div>
+      <div class="contact">
+        <span>✉ essiabenkheder@gmail.com</span>
+        <span>☎ 07 77 00 12 94</span>
+        <span>📍 Paris</span>
+        <a href="https://linkedin.com/in/essiabenkheder">in/essiabenkheder</a>
+        <a href="https://recrutez-essia.com">recrutez-essia.com</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="profil">
+    <h2 class="section-title">Profil</h2>
+    <p>
+      Je conçois la communication comme un métier <strong>stratégique et très opérationnel</strong> : porter une vision à moyen terme, mais aussi écrire un communiqué, cadrer un film, briefer une graphiste, relancer un journaliste. 9 ans en marketing &amp; communication, dont 3 ans en <strong>rattachement direct au fondateur</strong> d'une scale-up (CODIR, actionnaire) où j'ai construit l'image, le rayonnement et la fonction communication de zéro. <strong>Ambitieuse, autonome, force de proposition</strong>, à l'aise avec les décideurs, les journalistes et les équipes créatives.
+    </p>
+  </section>
+
+  <section>
+    <h2 class="section-title">Expérience Professionnelle</h2>
+
+    <div class="exp">
+      <div class="exp-head">
+        <span class="title">Head of Marketing &amp; Communication (ex-Head of Community)</span>
+        <span class="period">Sept. 2021 → Sept. 2024</span>
+      </div>
+      <div class="exp-sub">
+        <span class="company"><strong>LeGratin.io</strong> · Scale-up tech française · Station F · Groupe Nexoris · Rattachement direct au Président fondateur</span>
+        <span class="format">3 ans · CDI · CODIR · Actionnaire</span>
+      </div>
+      <ul>
+        <li><strong>Stratégie de communication</strong> construite avec le Président fondateur, déclinée en plan annuel et roadmap pluriannuelle. Garante de la cohérence de l'image sur l'ensemble des supports.</li>
+        <li><strong>Supports de communication :</strong> site internet, plaquettes, affiches, communiqués de presse, vidéos corporate, posts réseaux sociaux, newsletters, décks commerciaux, livres blancs.</li>
+        <li><strong>Community management :</strong> LinkedIn (marque + ambassadeur CEO), YouTube (interviews, démos, lives). Création de concepts éditoriaux récurrents, calendrier éditorial, test &amp; learn.</li>
+        <li><strong>Relations presse &amp; influence :</strong> réseau de journalistes et experts, relances actives, interviews, prises de parole, 50+ interviews d'experts du secteur, retombées presse (écrite, web, podcasts).</li>
+        <li><strong>Événementiel :</strong> VivaTech, Station F, 30+ webinars, événements internes (collaborateurs) et externes (clients, prospects, communauté freelance), partenariat 42.</li>
+        <li><strong>Management &amp; prestataires :</strong> encadrement de 2 juniors (UX/UI + marketing), pilotage d'agences et partenaires externes, transverse Produit / Tech / Sales / Direction.</li>
+        <li><strong>Veille stratégique &amp; concurrentielle</strong> permanente (positionnement, codes, tendances, campagnes). Dashboards Looker Studio, reporting hebdo au CODIR.</li>
+        <li><strong>Résultats :</strong> +20 000 utilisateurs acquis, contribution directe à la levée de 1,5 M€ (oct. 2022), intégration au groupe Nexoris.</li>
+      </ul>
+    </div>
+
+    <div class="exp">
+      <div class="exp-head">
+        <span class="title">Freelance Communication, Content &amp; Direction créative</span>
+        <span class="period">Sept. 2024 → Aujourd'hui</span>
+      </div>
+      <div class="exp-sub">
+        <span class="company"><strong>OseCom</strong> · Marques lifestyle &amp; retail · Paris</span>
+        <span class="format">Freelance</span>
+      </div>
+      <ul>
+        <li>Clients : <strong>Nuxe, Pierre Fabre, Blissim, Maison Farida, FlatLab</strong>. Direction créative, production vidéo, Instagram, Reels, UGC, direction de shootings.</li>
+        <li>Construction d'un outil IA en JavaScript (assisté par Claude), déployé en production chez un client.</li>
+      </ul>
+    </div>
+
+    <div class="exp">
+      <div class="exp-head">
+        <span class="title">Cheffe de projet &amp; Business Developer</span>
+        <span class="period">Mai 2019 → Janv. 2021</span>
+      </div>
+      <div class="exp-sub">
+        <span class="company"><strong>Agence KaliKado</strong> · Conseil, Événementiel &amp; Communication 360° · Neuilly-sur-Seine</span>
+        <span class="format">1 an 9 mois · CDI</span>
+      </div>
+      <ul>
+        <li>Portefeuille grands comptes : <strong>Groupe Andros (Bonne Maman, Mamie Nova), L'Or Espresso, L'Arbre Vert, FDJ</strong>. Pilotage événementiel, activations, supports de com.</li>
+      </ul>
+    </div>
+
+    <div class="exp">
+      <div class="exp-head">
+        <span class="title">Cheffe de projet Digital</span>
+        <span class="period">Sept. 2018 → Mai 2019</span>
+      </div>
+      <div class="exp-sub">
+        <span class="company"><strong>Agence Bergamotte</strong> · Éditoriale B2B · Paris 15</span>
+        <span class="format">9 mois · CDI</span>
+      </div>
+      <ul>
+        <li>Comptes institutionnels (<strong>Axa, Macif, Matmut, Banque Populaire</strong>). Pilotage éditorial de A à Z, coordination graphistes et prestataires.</li>
+      </ul>
+    </div>
+
+    <div class="exp">
+      <div class="exp-head">
+        <span class="title">Chargée de communication &amp; développement</span>
+        <span class="period">Sept. 2017 → Sept. 2018</span>
+      </div>
+      <div class="exp-sub">
+        <span class="company"><strong>Pigier</strong> · École de commerce · Toulouse · Stratégie communication en autonomie : événements étudiants, campagnes multi-canal, RP.</span>
+        <span class="format">1 an · CDI</span>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Compétences &amp; Outils</h2>
+    <div class="skills">
+      <div><span class="label">Stratégie :</span> plan de communication 360°, roadmap pluriannuelle, positionnement, image &amp; rayonnement, cohérence éditoriale.</div>
+      <div><span class="label">Supports :</span> site, plaquettes, affiches, communiqués, vidéos corporate, décks, livres blancs, newsletters.</div>
+      <div><span class="label">Community :</span> LinkedIn, YouTube, Instagram · ligne éditoriale, calendrier, formats natifs, concepts récurrents.</div>
+      <div><span class="label">Relations presse &amp; influence :</span> réseau journalistes, relances, interviews, prises de parole, retombées.</div>
+      <div><span class="label">Événementiel :</span> VivaTech, Station F, salons, webinars, lancements, événements internes &amp; externes.</div>
+      <div><span class="label">Management :</span> encadrement 2 juniors (dont UX/UI graphiste), pilotage agences &amp; prestataires, collaboration transverse.</div>
+      <div><span class="label">Veille &amp; analyse :</span> veille stratégique et concurrentielle, dashboards Looker Studio, reporting décideurs.</div>
+      <div><span class="label">IA &amp; Dev :</span> Claude Team (Skills &amp; MCP), ChatGPT, Midjourney · Full-Stack JavaScript (GOMYCODE).</div>
+    </div>
+  </section>
+
+  <div class="bottom-row">
+    <section style="margin-top:0">
+      <h2 class="section-title">Formation</h2>
+      <div class="form-item">
+        <span class="left"><strong>M2 Marketing Digital &amp; E-business</strong> · ESG Paris</span>
+        <span class="right">2018 · 2019</span>
+      </div>
+      <div class="form-item">
+        <span class="left"><strong>M1 Communication 360°</strong> · ECS Toulouse</span>
+        <span class="right">2017 · 2018</span>
+      </div>
+      <div class="form-item">
+        <span class="left"><strong>Licence Information-Communication</strong> · UCA Nice</span>
+        <span class="right">2014 · 2017</span>
+      </div>
+      <div class="form-item">
+        <span class="left"><strong>Full-Stack JavaScript</strong> · GOMYCODE</span>
+        <span class="right">2024 · 2025</span>
+      </div>
+    </section>
+
+    <section style="margin-top:0">
+      <h2 class="section-title">Langues</h2>
+      <div class="langues">
+        <div><strong>Français</strong> · C2 (langue maternelle)</div>
+        <div><strong>Anglais</strong> · C1 (année à Londres)</div>
+        <div><strong>Arabe</strong> · C1 (langue maternelle)</div>
+      </div>
+    </section>
+  </div>
+
+</div>
+
+</body>
+</html>

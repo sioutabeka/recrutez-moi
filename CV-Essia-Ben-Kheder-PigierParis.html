@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<title>Essia Ben Kheder · Chargée Relations Entreprises · CV Pigier Paris</title>
+<style>
+  :root {
+    --brown: #2A1810;
+    --olive: #7C8136;
+    --grey-dark: #555;
+    --grey-mid: #888;
+    --paper: #FFFEF8;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  @page { size: A4; margin: 0; }
+  html, body {
+    background: #ecece8;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+    color: var(--brown);
+    font-size: 8.5pt; line-height: 1.28;
+  }
+  .page {
+    width: 210mm; height: 297mm;
+    margin: 20px auto;
+    padding: 7mm 11mm;
+    background: var(--paper);
+    box-shadow: 0 10px 40px rgba(0,0,0,.08);
+    overflow: hidden;
+  }
+
+  .header {
+    display: flex; align-items: center; gap: 16px;
+    margin-bottom: 10px;
+  }
+  .photo {
+    width: 72px; height: 72px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center 20%;
+    border: 2px solid var(--olive);
+    flex-shrink: 0;
+  }
+  .header-text { flex: 1; }
+  .header h1 {
+    font-size: 18pt; font-weight: 700;
+    letter-spacing: -0.02em; color: var(--brown);
+  }
+  .header .role {
+    color: var(--olive); font-size: 10.5pt; font-weight: 500;
+    margin: 2px 0 4px;
+  }
+  .header .contact {
+    font-size: 9pt; color: var(--grey-dark);
+    display: flex; flex-wrap: wrap;
+    gap: 2px 14px;
+  }
+  .header .contact a { color: var(--olive); text-decoration: none; }
+
+  section { margin-top: 6px; }
+  h2.section-title {
+    font-size: 8.5pt; font-weight: 700;
+    color: var(--olive);
+    text-transform: uppercase; letter-spacing: 0.1em;
+    margin-bottom: 3px; padding-bottom: 2px;
+    border-bottom: 1px solid var(--olive);
+  }
+
+  .profil p { margin-top: 3px; font-size: 9pt; line-height: 1.38; text-align: justify; }
+
+  .exp { margin-top: 5px; }
+  .exp-head {
+    display: flex; justify-content: space-between; align-items: baseline;
+    gap: 10px;
+  }
+  .exp-head .title { font-weight: 700; color: var(--olive); font-size: 9.5pt; }
+  .exp-head .period { color: var(--grey-dark); font-size: 8pt; white-space: nowrap; }
+  .exp-sub {
+    display: flex; justify-content: space-between; align-items: baseline;
+    gap: 10px; margin: 1px 0 2px;
+  }
+  .exp-sub .company { color: var(--grey-dark); font-size: 8pt; }
+  .exp-sub .company strong { color: var(--brown); }
+  .exp-sub .format { color: var(--grey-mid); font-size: 8pt; white-space: nowrap; }
+  .exp ul { margin-top: 2px; padding-left: 14px; }
+  .exp li { margin: 1px 0; font-size: 8.5pt; line-height: 1.32; }
+  .exp li strong { color: var(--brown); }
+
+  .skills { margin-top: 3px; font-size: 8.5pt; line-height: 1.38; }
+  .skills .label { font-weight: 700; color: var(--brown); }
+  .skills > div { margin-bottom: 1px; }
+
+  .bottom-row {
+    display: grid; grid-template-columns: 1.6fr 1fr;
+    gap: 24px; margin-top: 7px;
+  }
+  .form-item {
+    display: flex; justify-content: space-between;
+    font-size: 8.5pt; line-height: 1.3; margin-top: 2px;
+  }
+  .form-item .left strong { color: var(--brown); }
+  .form-item .right { color: var(--grey-mid); font-size: 8pt; white-space: nowrap; }
+  .langues { font-size: 8.5pt; margin-top: 3px; line-height: 1.5; }
+  .langues strong { color: var(--brown); }
+  .langues div { margin-bottom: 1px; }
+
+  @media print {
+    html, body { background: white; }
+    .page { margin: 0; box-shadow: none; }
+    .no-print { display: none; }
+  }
+  .print-hint {
+    position: fixed; top: 12px; right: 12px;
+    background: var(--olive); color: white;
+    padding: 10px 16px; border-radius: 999px;
+    font-size: 12px; cursor: pointer; border: none;
+    font-family: inherit; z-index: 10;
+    box-shadow: 0 4px 12px rgba(0,0,0,.15);
+  }
+  .print-hint:hover { background: var(--brown); }
+</style>
+</head>
+<body>
+
+<button class="print-hint no-print" onclick="window.print()">⬇ Enregistrer en PDF (Cmd+P)</button>
+
+<div class="page">
+
+  <header class="header">
+    <img class="photo" src="essia-photo.jpg" alt="Essia Ben Kheder" />
+    <div class="header-text">
+      <h1>ESSIA BEN KHEDER</h1>
+      <div class="role">Chargée des Relations Entreprises · Développement commercial · Alternance · Accompagnement étudiants</div>
+      <div class="contact">
+        <span>✉ essiabenkheder@gmail.com</span>
+        <span>☎ 07 77 00 12 94</span>
+        <span>📍 Paris</span>
+        <a href="https://linkedin.com/in/essiabenkheder">in/essiabenkheder</a>
+        <a href="https://recrutez-essia.com">recrutez-essia.com</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="profil">
+    <h2 class="section-title">Profil</h2>
+    <p>
+      <strong>Ancienne de la maison Pigier</strong> (campus Toulouse, 2017-2018), je souhaite revenir dans un univers que je connais et que j'aime : la formation supérieure, l'alternance, le lien avec les entreprises et l'accompagnement des jeunes vers leur premier poste. Mes 9 années d'expérience m'ont permis de muscler une véritable <strong>fibre commerciale</strong> : prospection grands comptes (Décathlon, Groupe BPCE, Veolia, Doctolib, Groupe Andros, FDJ), négociation, fidélisation partenaires, pilotage autonome d'un portefeuille. <strong>Dynamique, force de proposition, culture du résultat</strong>, à l'aise avec des interlocuteurs très différents (dirigeants, RH, étudiants, familles).
+    </p>
+  </section>
+
+  <section>
+    <h2 class="section-title">Expérience Professionnelle</h2>
+
+    <div class="exp">
+      <div class="exp-head">
+        <span class="title">Head of Marketing &amp; Growth</span>
+        <span class="period">Sept. 2021 → Sept. 2024</span>
+      </div>
+      <div class="exp-sub">
+        <span class="company"><strong>LeGratin.io</strong> · Scale-up tech française · Station F · Groupe Nexoris</span>
+        <span class="format">3 ans · CODIR · Actionnaire</span>
+      </div>
+      <ul>
+        <li><strong>Prospection &amp; fidélisation grands comptes :</strong> acquisition d'un portefeuille de clients B2B (Décathlon, Groupe BPCE, Veolia, Doctolib, La Poste). Qualification des besoins, négociation, suivi, up-sell, satisfaction partenaires.</li>
+        <li><strong>Développement d'un réseau de partenaires :</strong> 50+ experts et créateurs ambassadeurs, animation long terme, événements, partenariats stratégiques (42 Station F, VivaTech).</li>
+        <li><strong>Promotion externe &amp; prise de parole :</strong> 30+ webinars, interventions publiques, interviews, incarnation de la marque. Aisance à porter un discours commercial clair devant des publics variés.</li>
+        <li><strong>Accompagnement de la communauté freelance :</strong> onboarding, suivi, animation, mise en relation entre talents et entreprises clientes (match entre profils et besoins concrets).</li>
+        <li><strong>Culture résultat :</strong> dashboards, KPIs (pipeline, taux conv., LTV), reporting hebdo au CODIR, contribution directe à la levée de 1,5 M€ (oct. 2022), intégration au groupe Nexoris.</li>
+      </ul>
+    </div>
+
+    <div class="exp">
+      <div class="exp-head">
+        <span class="title">Cheffe de projet &amp; Business Developer</span>
+        <span class="period">Mai 2019 → Janv. 2021</span>
+      </div>
+      <div class="exp-sub">
+        <span class="company"><strong>Agence KaliKado</strong> · Conseil, Événementiel &amp; Communication 360° · Neuilly-sur-Seine</span>
+        <span class="format">1 an 9 mois</span>
+      </div>
+      <ul>
+        <li><strong>Prospection active &amp; développement commercial</strong> sur un portefeuille grands comptes : <strong>Groupe Andros (Bonne Maman, Mamie Nova), L'Or Espresso, L'Arbre Vert, FDJ</strong>.</li>
+        <li><strong>Cycle commercial complet en autonomie :</strong> identification des opportunités, pitch, négociation, closing, exécution, bilan chiffré présenté au client.</li>
+        <li><strong>Fidélisation long terme :</strong> suivi relationnel régulier, propositions récurrentes, recommandations push, satisfaction client.</li>
+      </ul>
+    </div>
+
+    <div class="exp">
+      <div class="exp-head">
+        <span class="title">Chargée de communication &amp; développement</span>
+        <span class="period">Sept. 2017 → Sept. 2018</span>
+      </div>
+      <div class="exp-sub">
+        <span class="company"><strong>PIGIER Toulouse</strong> · École de commerce post-bac &amp; post-bac+2 · Formations Bac+2 à Bac+5 en alternance</span>
+        <span class="format">1 an · Autonomie complète</span>
+      </div>
+      <ul>
+        <li><strong>Promotion des formations en alternance</strong> auprès des lycéens, familles, professeurs et conseillers d'orientation : salons étudiants, interventions en lycées, journées portes ouvertes, relations prescripteurs.</li>
+        <li><strong>Relation entreprises :</strong> prospection locale pour identifier des entreprises partenaires, promotion des formations auprès de recruteurs et services RH, mise en relation étudiants / entreprises.</li>
+        <li><strong>Accompagnement étudiants :</strong> suivi des candidatures, communications dédiées, accompagnement jusqu'à l'inscription et à l'intégration en entreprise d'accueil.</li>
+        <li><strong>Stratégie communication en autonomie :</strong> campagnes multi-canal, événements internes et externes, relations presse locale, négociation partenariats.</li>
+      </ul>
+    </div>
+
+    <div class="exp">
+      <div class="exp-head">
+        <span class="title">Freelance Marketing, Content &amp; Direction créative</span>
+        <span class="period">Sept. 2024 → Aujourd'hui</span>
+      </div>
+      <div class="exp-sub">
+        <span class="company"><strong>OseCom</strong> · En direct avec les marques · Paris</span>
+        <span class="format"></span>
+      </div>
+      <ul>
+        <li>Clients : <strong>Nuxe, Pierre Fabre, Blissim, Maison Farida, FlatLab</strong>. Développement commercial direct, négociation tarifaire, livraison, fidélisation partenaires sur plusieurs saisons.</li>
+        <li>Pilotage complet en autonomie : prospection, cadrage besoin, propale, négociation, exécution, facturation, suivi relationnel.</li>
+      </ul>
+    </div>
+
+    <div class="exp">
+      <div class="exp-head">
+        <span class="title">Cheffe de projet Digital</span>
+        <span class="period">Sept. 2018 → Mai 2019</span>
+      </div>
+      <div class="exp-sub">
+        <span class="company"><strong>Agence Bergamotte</strong> · Éditoriale B2B · Paris 15 · Comptes institutionnels : Axa, Macif, Matmut, Banque Populaire.</span>
+        <span class="format">9 mois</span>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Compétences</h2>
+    <div class="skills">
+      <div><span class="label">Développement commercial :</span> prospection, pitch, négociation, closing, fidélisation partenaires, up-sell, suivi relationnel long terme.</div>
+      <div><span class="label">Univers formation :</span> alternance, promotion de formations, relations lycées &amp; prescripteurs, suivi candidatures, accompagnement étudiants.</div>
+      <div><span class="label">Accompagnement étudiants :</span> coaching, aide à la refonte de CV, simulations d'entretien, préparation à l'intégration en entreprise.</div>
+      <div><span class="label">Interlocuteurs :</span> aisance avec dirigeants, RH, formateurs, étudiants, familles, prescripteurs externes.</div>
+      <div><span class="label">Outils :</span> HubSpot (CRM), Excel, Looker Studio, Suite Office, LinkedIn Sales Navigator · Claude &amp; ChatGPT au quotidien.</div>
+      <div><span class="label">Qualités :</span> autonomie, culture résultat, dynamisme, force de proposition, excellent relationnel, sens du service.</div>
+    </div>
+  </section>
+
+  <div class="bottom-row">
+    <section style="margin-top:0">
+      <h2 class="section-title">Formation</h2>
+      <div class="form-item">
+        <span class="left"><strong>M2 Marketing Digital &amp; E-business</strong> · ESG Paris</span>
+        <span class="right">2018 · 2019</span>
+      </div>
+      <div class="form-item">
+        <span class="left"><strong>M1 Communication 360°</strong> · ECS Toulouse</span>
+        <span class="right">2017 · 2018</span>
+      </div>
+      <div class="form-item">
+        <span class="left"><strong>Licence Information-Communication</strong> · UCA Nice</span>
+        <span class="right">2014 · 2017</span>
+      </div>
+      <div class="form-item">
+        <span class="left"><strong>Full-Stack JavaScript</strong> · GOMYCODE</span>
+        <span class="right">2024 · 2025</span>
+      </div>
+    </section>
+
+    <section style="margin-top:0">
+      <h2 class="section-title">Langues</h2>
+      <div class="langues">
+        <div><strong>Français</strong> · C2 (langue maternelle)</div>
+        <div><strong>Anglais</strong> · C1 (année à Londres)</div>
+        <div><strong>Arabe</strong> · C1 (langue maternelle)</div>
+      </div>
+    </section>
+  </div>
+
+</div>
+
+</body>
+</html>

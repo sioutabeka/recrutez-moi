@@ -13,7 +13,7 @@ recrutez-essia.com · linkedin.com/in/essiabenkheder
 
 Je construis et pilote des fonctions marketing & communication complètes, de la stratégie à l'exécution, en autonomie ou en équipe. 9 ans de parcours entre régie publicitaire, agences, plateforme tech et activité indépendante : un socle polyvalent qui combine marketing, communication, contenu éditorial, growth, community, brand et direction de projets.
 
-Preuve récente : 3 ans chez LeGratin.io (plateforme tech incubée à Station F, CODIR, actionnaire) où j'ai construit la fonction marketing & communication de bout en bout — +20 000 utilisateurs acquis en organique, 50+ interviews d'experts, 30+ webinars produits, contribution directe à la levée de 1,5 M€ (intégration au groupe Nexoris depuis).
+Preuve récente : 3 ans chez LeGratin.io (plateforme tech incubée à Station F, CODIR, actionnaire) où j'ai construit la fonction marketing & communication de bout en bout · +20 000 utilisateurs acquis en organique, 50+ interviews d'experts, 30+ webinars produits, contribution directe à la levée de 1,5 M€ (intégration au groupe Nexoris depuis).
 
 Trilingue FR · EN · AR (C2 · C1 · C1). Formée au développement full-stack JavaScript en 2024-2025 pour intégrer les nouveaux outils (IA, no-code, automatisation) aux process marketing sans dépendre d'un tiers.
 

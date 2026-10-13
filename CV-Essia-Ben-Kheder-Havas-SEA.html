@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<title>Essia Ben Kheder · Consultante SEA & Performance · CV</title>
+<style>
+  :root {
+    --brown: #2A1810;
+    --olive: #7C8136;
+    --grey-dark: #555;
+    --grey-mid: #888;
+    --paper: #FFFEF8;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0;
+    background: #ecece8;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+    color: var(--brown);
+    font-size: 10.5pt; line-height: 1.4;
+  }
+  .page {
+    max-width: 210mm;
+    min-height: 297mm;
+    margin: 20px auto;
+    padding: 15mm 16mm;
+    background: var(--paper);
+    box-shadow: 0 10px 40px rgba(0,0,0,.08);
+  }
+
+  /* HEADER */
+  .header { text-align: center; margin-bottom: 10px; }
+  .header h1 {
+    font-size: 22pt; font-weight: 700; margin: 0;
+    letter-spacing: -0.02em; color: var(--brown);
+  }
+  .header .role {
+    color: var(--olive); font-size: 11pt; font-weight: 500;
+    margin: 4px 0 10px;
+  }
+  .header .contact {
+    font-size: 9pt; color: var(--grey-dark);
+    display: flex; justify-content: center; flex-wrap: wrap;
+    gap: 6px 14px;
+  }
+  .header .contact a { color: var(--olive); text-decoration: none; }
+  .header .contact a:hover { text-decoration: underline; }
+
+  /* SECTION */
+  section { margin-top: 14px; }
+  h2.section-title {
+    font-size: 9pt; font-weight: 700;
+    color: var(--olive);
+    text-transform: uppercase; letter-spacing: 0.1em;
+    margin: 0 0 4px; padding-bottom: 3px;
+    border-bottom: 1.5px solid var(--olive);
+  }
+
+  /* PROFIL */
+  .profil p { margin: 6px 0 0; font-size: 10pt; line-height: 1.5; text-align: justify; }
+
+  /* EXPERIENCE */
+  .exp { margin-top: 10px; break-inside: avoid; page-break-inside: avoid; }
+  .exp-head {
+    display: flex; justify-content: space-between; align-items: baseline;
+    gap: 12px;
+  }
+  .exp-head .title { font-weight: 700; color: var(--brown); font-size: 10.5pt; }
+  .exp-head .period { color: var(--grey-dark); font-size: 9pt; white-space: nowrap; }
+  .exp-sub {
+    display: flex; justify-content: space-between; align-items: baseline;
+    gap: 12px; margin: 2px 0 4px;
+  }
+  .exp-sub .company { color: var(--grey-dark); font-style: italic; font-size: 9.5pt; }
+  .exp-sub .format { color: var(--grey-mid); font-size: 9pt; white-space: nowrap; }
+  .exp ul { margin: 4px 0 0; padding-left: 16px; }
+  .exp li { margin: 2px 0; font-size: 10pt; line-height: 1.4; }
+  .exp li strong { color: var(--brown); }
+
+  /* SKILLS */
+  .skills-block { margin-top: 6px; font-size: 10pt; line-height: 1.55; }
+  .skills-block .label {
+    display: inline-block; min-width: 150px;
+    font-weight: 700; color: var(--brown);
+  }
+
+  /* FORMATION */
+  .form-item { margin-top: 6px; break-inside: avoid; page-break-inside: avoid; }
+  .form-item .italic { color: var(--grey-dark); font-size: 9.5pt; font-style: italic; }
+
+  /* LANGUES */
+  .langues { font-size: 10pt; margin-top: 6px; }
+  .langues strong { color: var(--brown); }
+
+  /* PRINT */
+  @media print {
+    html, body { background: white; }
+    .page {
+      margin: 0; box-shadow: none;
+      padding: 12mm 14mm;
+      min-height: auto;
+    }
+    .no-print { display: none; }
+  }
+  .print-hint {
+    position: fixed; top: 12px; right: 12px;
+    background: var(--olive); color: white;
+    padding: 10px 16px; border-radius: 999px;
+    font-size: 12px; cursor: pointer; border: none;
+    font-family: inherit; z-index: 10;
+    box-shadow: 0 4px 12px rgba(0,0,0,.15);
+  }
+  .print-hint:hover { background: var(--brown); }
+</style>
+</head>
+<body>
+
+<button class="print-hint no-print" onclick="window.print()">⬇ Enregistrer en PDF (Cmd+P)</button>
+
+<div class="page">
+
+  <!-- HEADER -->
+  <header class="header">
+    <h1>ESSIA BEN KHEDER</h1>
+    <div class="role">Consultante SEA &amp; Performance Marketing</div>
+    <div class="contact">
+      <span>✉ essiabenkheder@gmail.com</span>
+      <span>☎ 07 77 00 12 94</span>
+      <span>📍 Paris</span>
+      <a href="https://linkedin.com/in/essiabenkheder">in/essiabenkheder</a>
+      <a href="https://recrutez-essia.com">recrutez-essia.com</a>
+    </div>
+  </header>
+
+  <!-- PROFIL -->
+  <section class="profil">
+    <h2 class="section-title">Profil</h2>
+    <p>
+      Profil marketing orienté <strong>performance et acquisition</strong>,
+      formé en agence (Bergamotte, KaliKado), puis déployé en interne sur
+      un SaaS B2B (LeGratin.io, Station F). Pilotage de campagnes
+      multi-leviers (SEA, paid social, inbound, outbound), analyse de la
+      performance (KPIs, CAC, ROI), tracking, reporting client. 9 ans
+      d'expérience terrain, culture SEA et data-driven, à l'aise avec
+      Google Ads, LinkedIn Ads, Meta Ads, GA4, Looker Studio et HubSpot.
+      Je recherche aujourd'hui à rejoindre une agence performance de
+      référence.
+    </p>
+  </section>
+
+  <!-- EXPÉRIENCE -->
+  <section>
+    <h2 class="section-title">Expérience Professionnelle</h2>
+
+    <div class="exp">
+      <div class="exp-head">
+        <span class="title">LeGratin.io · Marketing &amp; Performance Manager</span>
+        <span class="period">Sept. 2021 → Sept. 2024</span>
+      </div>
+      <div class="exp-sub">
+        <span class="company">SaaS B2B · Marketplace freelances IT · Station F · Paris</span>
+        <span class="format">3 ans · CDI</span>
+      </div>
+      <ul>
+        <li>Pilotage complet des leviers d'acquisition : <strong>SEA (Google Ads)</strong>, paid social (<strong>LinkedIn Ads, Meta Ads</strong>), SEO, inbound, outbound, lead gen.</li>
+        <li>Mise en place du <strong>tracking GA4</strong>, HubSpot CRM, synchronisation sales enablement, reporting hebdomadaire au CODIR.</li>
+        <li>Pilotage des <strong>KPIs performance</strong> : MQL, SQL, pipeline, CAC, ROI, analyse du funnel.</li>
+        <li>Génération bi-face : B2B côté clients grands comptes, B2C côté utilisateurs freelances.</li>
+        <li><strong>Résultats : +20 000 utilisateurs acquis en organique sur budget contraint, 50+ webinars (lead gen), contribution directe à la levée de 1,5 M€ (oct. 2022).</strong> LeGratin intégrée au groupe Nexoris.</li>
+      </ul>
+    </div>
+
+    <div class="exp">
+      <div class="exp-head">
+        <span class="title">OseCom · Freelance Marketing &amp; Performance</span>
+        <span class="period">Sept. 2024 → Aujourd'hui</span>
+      </div>
+      <div class="exp-sub">
+        <span class="company">En direct avec les marques · Paris · Hybride</span>
+        <span class="format">Freelance · Temps plein</span>
+      </div>
+      <ul>
+        <li>Campagnes paid social pour marques beauté/pharma (<strong>Nuxe, Pierre Fabre, Blissim</strong>) : Meta Ads, TikTok Ads.</li>
+        <li>Accompagnement e-commerce TPE/PME : setup tracking, landing pages, CRO, optimisation des parcours.</li>
+        <li>Production des assets paid (vidéos courtes, visuels social, UGC) pour test &amp; learn rapide.</li>
+      </ul>
+    </div>
+
+    <div class="exp">
+      <div class="exp-head">
+        <span class="title">Agence KaliKado · Cheffe de projet &amp; Business Developer</span>
+        <span class="period">Mai 2019 → Janv. 2021</span>
+      </div>
+      <div class="exp-sub">
+        <span class="company">Agence Conseil &amp; Solutions Sampling · Neuilly-sur-Seine</span>
+        <span class="format">1 an 9 mois · CDI</span>
+      </div>
+      <ul>
+        <li><strong>Cycle complet agence :</strong> prospection B2B, pitch, négociation, exécution, bilan chiffré.</li>
+        <li>Portefeuille clients : Groupe Andros (Bonne Maman, Mamie Nova), L'Or Espresso, L'Arbre Vert, FDJ.</li>
+        <li>Pilotage de campagnes sampling multi-canaux : box hôtelières, partenariats e-commerce, jeux-concours.</li>
+        <li>Présentation des bilans de performance en direct aux clients.</li>
+      </ul>
+    </div>
+
+    <div class="exp">
+      <div class="exp-head">
+        <span class="title">Agence Bergamotte · Cheffe de projet Digital</span>
+        <span class="period">Sept. 2018 → Mai 2019</span>
+      </div>
+      <div class="exp-sub">
+        <span class="company">Agence B2B · Secteur régulé · Paris 15</span>
+        <span class="format">9 mois · CDI</span>
+      </div>
+      <ul>
+        <li>Comptes institutionnels grands comptes : <strong>Axa, Macif, Matmut, Banque Populaire</strong>.</li>
+        <li>Pilotage projets éditoriaux digitaux de A à Z : cadrage, planning, prestataires, budgets, qualité.</li>
+        <li>Contenus SEO, newsletters, benchmarks concurrentiels, recommandations stratégiques.</li>
+      </ul>
+    </div>
+
+    <div class="exp">
+      <div class="exp-head">
+        <span class="title">Pigier · Chargée de communication &amp; développement</span>
+        <span class="period">Sept. 2017 → Sept. 2018</span>
+      </div>
+      <div class="exp-sub">
+        <span class="company">École de commerce · Toulouse</span>
+        <span class="format">1 an · CDI</span>
+      </div>
+      <ul>
+        <li>Stratégie de communication globale et digitale, en autonomie complète.</li>
+        <li>Campagnes radio et affichage (conception + <strong>achat média</strong> + déploiement).</li>
+        <li>Relations presse, événements, contenus multi-formats.</li>
+      </ul>
+    </div>
+
+    <div class="exp">
+      <div class="exp-head">
+        <span class="title">Groupe Nice-Matin · Planning stratégique</span>
+        <span class="period">2015</span>
+      </div>
+      <div class="exp-sub">
+        <span class="company">Régie publicitaire · Nice</span>
+        <span class="format">Premier poste</span>
+      </div>
+      <ul>
+        <li>Analyse stratégique, veille médias, data audience.</li>
+        <li>Coordination de projets au sein de la régie publicitaire du groupe.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section>
+    <h2 class="section-title">Compétences techniques</h2>
+    <div class="skills-block">
+      <div><span class="label">Paid Media &amp; SEA :</span> Google Ads, Bing Ads, LinkedIn Ads, Meta Ads, TikTok Ads, Amazon Ads (notions), setup campagnes, optimisation, A/B testing.</div>
+      <div><span class="label">Analytics &amp; Tracking :</span> GA4, Google Tag Manager, Looker Studio, SEMrush, Search Console, UTM, pixel social.</div>
+      <div><span class="label">CRM &amp; Automation :</span> HubSpot, Brevo, Lemlist, Make, PhantomBuster, marketing automation, scoring, segmentation.</div>
+      <div><span class="label">SEO &amp; Content :</span> SEO on-page, GEO (Generative Engine Optimization), stratégie éditoriale, landing pages, CRO.</div>
+      <div><span class="label">Reporting &amp; Pilotage :</span> KPIs (MQL, SQL, pipeline, CAC, LTV, ROI), reporting client hebdomadaire, bilan de campagne, tableaux de bord Looker Studio.</div>
+      <div><span class="label">Production Ads :</span> CapCut, Premiere Pro, After Effects, Canva, Figma, Midjourney (visuels paid, vidéos courtes, UGC).</div>
+      <div><span class="label">Pack Office :</span> Excel, PowerPoint, Google Suite, Notion, Airtable, Slack.</div>
+    </div>
+  </section>
+
+  <!-- FORMATION -->
+  <section>
+    <h2 class="section-title">Formation</h2>
+
+    <div class="form-item">
+      <div class="exp-head">
+        <span class="title">Master 2 Marketing Digital &amp; E-business</span>
+        <span class="period">2018 · 2019 · ESG Paris</span>
+      </div>
+      <div class="italic">Stratégie digitale, SEO/SEA, e-commerce, data &amp; automation.</div>
+    </div>
+
+    <div class="form-item">
+      <div class="exp-head">
+        <span class="title">Master 1 Communication 360°</span>
+        <span class="period">2017 · 2018 · ECS Toulouse</span>
+      </div>
+      <div class="italic">Communication intégrée · stratégie et exécution.</div>
+    </div>
+
+    <div class="form-item">
+      <div class="exp-head">
+        <span class="title">Licence Information-Communication</span>
+        <span class="period">2014 · 2017 · Université Côte d'Azur</span>
+      </div>
+      <div class="italic">Parcours Organisations &amp; stratégies numériques.</div>
+    </div>
+
+    <div class="form-item">
+      <div class="exp-head">
+        <span class="title">Formation Full-Stack JavaScript</span>
+        <span class="period">2024 · 2025 · GOMYCODE</span>
+      </div>
+      <div class="italic">Stack MERN pour prototyper, dialoguer avec les équipes produit et tech, et développer mes propres outils marketing.</div>
+    </div>
+
+    <div class="form-item">
+      <div class="exp-head">
+        <span class="title">Anglais général</span>
+        <span class="period">2013 · 2014 · Kaplan International Languages · Londres</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- LANGUES -->
+  <section>
+    <h2 class="section-title">Langues</h2>
+    <div class="langues">
+      <strong>Français</strong> C2 (langue maternelle)
+      &nbsp;•&nbsp;
+      <strong>Anglais</strong> C1 (année à Londres)
+      &nbsp;•&nbsp;
+      <strong>Arabe</strong> C1 (langue maternelle)
+    </div>
+  </section>
+
+</div>
+
+</body>
+</html>

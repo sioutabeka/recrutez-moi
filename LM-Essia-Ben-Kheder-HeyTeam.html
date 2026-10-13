@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<title>Essia Ben Kheder · Lettre · HeyTeam</title>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600&family=Caveat:wght@500&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --brown: #2A1810;
+    --olive: #7C8136;
+    --grey-dark: #555;
+    --grey-mid: #888;
+    --paper: #FFFEF8;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  @page { size: A4; margin: 0; }
+  html, body {
+    background: #ecece8;
+    font-family: 'Public Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: var(--brown);
+    font-size: 11pt; line-height: 1.65;
+  }
+  .page {
+    width: 210mm; height: 297mm;
+    margin: 20px auto;
+    padding: 30mm 32mm 25mm 32mm;
+    background: var(--paper);
+    box-shadow: 0 10px 40px rgba(0,0,0,.08);
+    display: flex; flex-direction: column;
+  }
+
+  /* En-tête ultra sobre : juste coordonnées en haut à droite */
+  .coords {
+    text-align: right;
+    font-size: 9.5pt; color: var(--grey-dark);
+    line-height: 1.5;
+    margin-bottom: 36px;
+  }
+  .coords .name {
+    font-weight: 600; color: var(--brown); font-size: 11pt;
+    margin-bottom: 2px;
+  }
+  .coords a { color: var(--grey-dark); text-decoration: none; }
+
+  /* Destinataire & date */
+  .date {
+    font-size: 10pt; color: var(--grey-dark);
+    margin-bottom: 36px;
+  }
+
+  /* Corps = pure prose */
+  p { margin-bottom: 14px; }
+  p strong { color: var(--brown); font-weight: 600; }
+
+  /* Signature manuscrite */
+  .signature {
+    margin-top: 36px;
+  }
+  .signature .close {
+    margin-bottom: 24px;
+    font-size: 10.5pt;
+  }
+  .signature .name {
+    font-family: 'Caveat', cursive;
+    font-size: 28pt;
+    color: var(--brown);
+    line-height: 1;
+    margin-left: 4px;
+  }
+
+  @media print {
+    html, body { background: white; }
+    .page { margin: 0; box-shadow: none; }
+    .no-print { display: none; }
+  }
+  .print-hint {
+    position: fixed; top: 12px; right: 12px;
+    background: var(--olive); color: white;
+    padding: 10px 16px; border-radius: 999px;
+    font-size: 12px; cursor: pointer; border: none;
+    font-family: inherit; z-index: 10;
+    box-shadow: 0 4px 12px rgba(0,0,0,.15);
+  }
+  .print-hint:hover { background: var(--brown); }
+</style>
+</head>
+<body>
+
+<button class="print-hint no-print" onclick="window.print()">⬇ Enregistrer en PDF (Cmd+P)</button>
+
+<div class="page">
+
+  <div class="coords">
+    <div class="name">Essia Ben Kheder</div>
+    <div>essiabenkheder@gmail.com · 07 77 00 12 94</div>
+    <div><a href="https://recrutez-essia.com">recrutez-essia.com</a></div>
+  </div>
+
+  <div class="date">Paris, octobre 2026</div>
+
+  <p>Bonjour,</p>
+
+  <p>
+    Après 3 ans en interne chez LeGratin.io, startup SaaS B2B Station F, et 2 ans en freelance en direct avec les marques, j'ai une envie claire : m'embarquer à nouveau dans une aventure d'équipe, autour d'un produit auquel je crois, dans un contexte où mes idées deviennent des actions dès le lendemain.
+  </p>
+
+  <p>
+    Votre fiche m'a arrêtée pour trois raisons. La <strong>mission</strong> d'abord : devenir le leader européen de l'expérience collaborateur, avec un produit qui touche directement les gens au travail — c'est un terrain où je peux m'investir sur la durée, pas juste exécuter.
+  </p>
+
+  <p>
+    Ensuite, la ligne <strong>"accepter travailler avec des agents IA"</strong>. Vous l'écrivez noir sur blanc dans vos attendus. Je suis déjà cette personne : Claude Team avec Skills &amp; MCP fait partie de mes workflows au quotidien, et j'ai construit mon propre agent en JavaScript pour un client. C'est rare qu'une boîte l'affiche aussi clairement, et ça me donne envie de rejoindre une équipe où cette pratique est actée.
+  </p>
+
+  <p>
+    Enfin, la <strong>taille et le moment</strong>. Scale-up d'une trentaine de personnes, hiérarchie horizontale, décisions rapides, clients CAC40 : c'est exactement la phase que j'ai préférée dans ma carrière, et celle que je cherche à retrouver après deux ans en freelance.
+  </p>
+
+  <p>
+    Un mot sur mon profil : vous verrez que j'ai eu des rôles plus seniors ces dernières années. Mon envie aujourd'hui est de comprendre les enjeux, trouver les solutions et les mettre en œuvre moi-même, dans une équipe exigeante et pragmatique.
+  </p>
+
+  <p>Discutons quand vous voulez.</p>
+
+  <div class="signature">
+    <div class="close">Bien à vous,</div>
+    <div class="name">Essia</div>
+  </div>
+
+</div>
+
+</body>
+</html>
